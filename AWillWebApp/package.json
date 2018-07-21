@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"dev": "webpack-dashboard -c -t -p 3000 -- node ./wwwroot/Dist/bundle.js",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"wbp": "webpack-cli --mode development --entry ./wwwroot/Source/app.js --output wwwroot/Dist/bundle.js --progress",
 		"wbpc": "webpack"

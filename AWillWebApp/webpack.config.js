@@ -14,9 +14,10 @@ const mode = 'development'
 module.exports = {
 	context: __dirname,
 	devtool: 'source-map',
-	externals: [
-		'window'
-	],
+	externals: {
+		jQuery: 'jQuery',
+		window: 'window'
+	},
 	entry: path.resolve(__dirname, 'wwwroot', 'Source', inputEntryFile),
 	mode,
 	module: {
