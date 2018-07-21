@@ -20,4 +20,8 @@
     <TypeScriptCompile Include="wwwroot\Source\app.ts" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="npm run wbpc" />
+  </Target>
+
 </Project>
