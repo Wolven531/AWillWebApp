@@ -1,0 +1,16 @@
+{
+	"name": "awillwebapp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"wbp": "webpack-cli --mode development --entry ./wwwroot/Source/app.js --output wwwroot/Dist/bundle.js --progress"
+	},
+	"author": "Anthony Williams",
+	"license": "ISC",
+	"devDependencies": {
+		"webpack": "^4.16.1",
+		"webpack-cli": "^3.1.0"
+	}
+}

@@ -1,1 +1,3 @@
-﻿document.getElementById('fillthis').innerHTML = getText()
+﻿import { getText } from './lib'
+
+document.getElementById('fillthis').innerHTML = getText()
