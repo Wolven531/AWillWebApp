@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // TODO: find a way to avoid including
 // jquery in app entry as follows
 var jQuery = require("jquery");
-window.$ = window.jQuery = jQuery;
+var $ = window.$ = window.jQuery = jQuery;
 var lib_1 = require("./lib");
 var es6codelib_1 = require("./es6codelib");
 // NOTE: vanilla JS

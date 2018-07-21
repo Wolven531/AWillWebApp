@@ -1,7 +1,7 @@
 ﻿// TODO: find a way to avoid including
 // jquery in app entry as follows
 import * as jQuery from 'jquery'
-(window as any).$ = (window as any).jQuery = jQuery
+const $ = (window as any).$ = (window as any).jQuery = jQuery
 
 import { getText } from './lib'
 import ES6Lib from './es6codelib'

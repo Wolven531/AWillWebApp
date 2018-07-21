@@ -18,16 +18,30 @@ module.exports = {
 	],
 	entry: path.resolve(__dirname, 'wwwroot', 'Source', inputEntryFile),
 	mode,
-	// NOTE: does not actually include jQuery; possibly outdated technique
-	//module: {
-	//	rules: [{
-	//		test: require.resolve('jquery'),
-	//		use: [{
-	//			loader: 'expose-loader',
-	//			options: '$'
-	//		}]
-	//	}]
-	//},
+	module: {
+		rules: [
+			// NOTE: does not actually include jQuery; possibly outdated technique
+			//{
+			//	test: require.resolve('jquery'),
+			//	use: [{
+			//		loader: 'expose-loader',
+			//		options: '$'
+			//	}]
+			//}
+			{
+				test: /\.jsx?$/,
+				use: [
+					{
+						loader: 'babel-loader',
+						options: {
+							presets: ['@babel/preset-env']
+						}
+					}
+				]
+			}
+		]
+	
+	},
 	optimization: {
 		minimize: true
 	},
