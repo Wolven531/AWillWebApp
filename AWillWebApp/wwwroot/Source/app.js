@@ -5,7 +5,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var jQuery = require("jquery");
 window.$ = window.jQuery = jQuery;
 var lib_1 = require("./lib");
+var es6codelib_1 = require("./es6codelib");
+// NOTE: vanilla JS
+document.getElementById('fillthis').appendChild(document.createTextNode(lib_1.getText()));
+// NOTE: jQuery
 $('#fillthiswithjquery').html('Filled by Jquery!');
-document.getElementById('fillthis')
-    .appendChild(document.createTextNode(lib_1.getText()));
+// NOTE: ES6
+var myES6Object = new es6codelib_1.default();
+$('#fillthiswithes6lib').html(myES6Object.getData());
 //# sourceMappingURL=app.js.map
