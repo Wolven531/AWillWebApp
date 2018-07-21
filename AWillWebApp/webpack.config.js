@@ -2,16 +2,32 @@
 const path = require('path')
 const webpack = require('webpack')
 const DashboardPlugin = require('webpack-dashboard/plugin')
+//const jQuery = require('jquery')
 
 const inputEntryFile = 'app.js'
 const outputFile = 'bundle.js'
 const mode = 'development'
 
+//window.$ = window.jQuery = jQuery
+
 module.exports = {
 	context: __dirname,
 	devtool: 'source-map',
+	externals: [
+		'window'
+	],
 	entry: path.resolve(__dirname, 'wwwroot', 'Source', inputEntryFile),
 	mode,
+	// NOTE: does not actually include jQuery; possibly outdated technique
+	//module: {
+	//	rules: [{
+	//		test: require.resolve('jquery'),
+	//		use: [{
+	//			loader: 'expose-loader',
+	//			options: '$'
+	//		}]
+	//	}]
+	//},
 	optimization: {
 		minimize: true
 	},
@@ -33,8 +49,14 @@ module.exports = {
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': '"production"',
 		}),
-		new DashboardPlugin()
-		//new webpack.HotModuleReplacementPlugin()
+		// NOTE: does not actually include jQuery; possibly outdated technique
+		//new webpack.ProvidePlugin({
+		//	$: 'jquery',
+		//	jQuery: 'jquery',
+		//	'window.jQuery': 'jquery'
+		//}),
+		new DashboardPlugin(),
+		new webpack.HotModuleReplacementPlugin()
 	],
 	target: 'web'
 }
