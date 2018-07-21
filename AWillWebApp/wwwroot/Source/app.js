@@ -6,6 +6,8 @@ var jQuery = require("jquery");
 var $ = window.$ = window.jQuery = jQuery;
 var lib_1 = require("./lib");
 var es6codelib_1 = require("./es6codelib");
+require("bootstrap/dist/css/bootstrap.min.css");
+require("../css/site.css");
 // NOTE: vanilla JS
 document.getElementById('fillthis').appendChild(document.createTextNode(lib_1.getText()));
 // NOTE: jQuery

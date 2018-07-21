@@ -1,9 +1,10 @@
-﻿//const ExtractTextPlugin = require('extract-text-webpack-plugin')
+﻿const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
 const DashboardPlugin = require('webpack-dashboard/plugin')
 //const jQuery = require('jquery')
 
+const extractCSS = new ExtractTextPlugin('allstyles.css')
 const inputEntryFile = 'app.js'
 const outputFile = 'bundle.js'
 const mode = 'development'
@@ -29,6 +30,14 @@ module.exports = {
 			//	}]
 			//}
 			{
+				test: /\.css$/,
+				//use: [
+				//	{ loader: 'style-loader' },
+				//	{ loader: 'css-loader' }
+				//]
+				use: extractCSS.extract(['css-loader?minimize'])
+			},
+			{
 				test: /\.jsx?$/,
 				use: [
 					{
@@ -50,6 +59,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'wwwroot', 'Dist')
 	},
 	plugins: [
+		extractCSS,
 		new webpack.ProgressPlugin({ profile: false }),
 		//new webpack.optimize.CommonsChunkPlugin({
 		//	name: 'vendor',
@@ -67,7 +77,8 @@ module.exports = {
 		//new webpack.ProvidePlugin({
 		//	$: 'jquery',
 		//	jQuery: 'jquery',
-		//	'window.jQuery': 'jquery'
+		//	'window.jQuery': 'jquery',
+		//	Popper: ['popper.js', 'default']
 		//}),
 		new DashboardPlugin(),
 		new webpack.HotModuleReplacementPlugin()
