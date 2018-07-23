@@ -28,7 +28,7 @@
     <Exec Command="del wwwroot\Dist\* -r -force&#xD;&#xA;npm run wbpc" />
   </Target>
 
-  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+  <PropertyGroup>
     <TypeScriptTarget>ES5</TypeScriptTarget>
     <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
