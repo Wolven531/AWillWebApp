@@ -3,8 +3,12 @@
 import * as jQuery from 'jquery'
 const $ = (window as any).$ = (window as any).jQuery = jQuery
 
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+
 import { getText } from './lib'
 import ES6Lib from './es6codelib'
+import Counter from './reactcomponent'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/site.css'
@@ -18,3 +22,9 @@ $('#fillthiswithjquery').html('Filled by Jquery!')
 // NOTE: ES6
 const myES6Object = new ES6Lib()
 $('#fillthiswithes6lib').html(myES6Object.getData())
+
+// NOTE: ReactJS
+ReactDOM.render(
+	<Counter />,
+	document.getElementById('basicreactcomponent')
+)

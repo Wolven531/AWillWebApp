@@ -18,7 +18,9 @@ module.exports = {
 		jQuery: 'jQuery',
 		window: 'window'
 	},
-	entry: path.resolve(__dirname, 'wwwroot', 'Source', inputEntryFile),
+	entry: {
+		main: [path.resolve(__dirname, 'wwwroot', 'Source', inputEntryFile)]
+	},
 	mode,
 	module: {
 		rules: [
@@ -44,7 +46,7 @@ module.exports = {
 					{
 						loader: 'babel-loader',
 						options: {
-							presets: ['@babel/preset-env']
+							presets: ['@babel/preset-react', '@babel/preset-env']
 						}
 					}
 				]

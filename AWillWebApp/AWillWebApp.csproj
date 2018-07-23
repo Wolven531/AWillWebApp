@@ -6,8 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\Source\app.ts" />
+    <Content Remove="wwwroot\Source\app.tsx" />
     <Content Remove="wwwroot\Source\lib.ts" />
+    <Content Remove="wwwroot\Source\reactcomponent.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,11 +18,28 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="wwwroot\Source\lib.ts" />
-    <TypeScriptCompile Include="wwwroot\Source\app.ts" />
+    <TypeScriptCompile Include="wwwroot\Source\app.tsx" />
+    <TypeScriptCompile Include="wwwroot\Source\reactcomponent.tsx" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="del wwwroot\Dist\* -r -force&#xD;&#xA;npm run wbpc" />
   </Target>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+    <TypeScriptModuleKind />
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
 
 </Project>
