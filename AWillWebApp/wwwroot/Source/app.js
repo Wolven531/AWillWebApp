@@ -9,6 +9,7 @@ var ReactDOM = require("react-dom");
 var lib_1 = require("./lib");
 var es6codelib_1 = require("./es6codelib");
 var reactcomponent_1 = require("./reactcomponent");
+var fetchdata_1 = require("./fetchdata");
 require("bootstrap/dist/css/bootstrap.min.css");
 require("../css/site.css");
 // NOTE: vanilla JS
@@ -20,4 +21,6 @@ var myES6Object = new es6codelib_1.default();
 $('#fillthiswithes6lib').html(myES6Object.getData());
 // NOTE: ReactJS
 ReactDOM.render(React.createElement(reactcomponent_1.default, null), document.getElementById('basicreactcomponent'));
+// NOTE: ReactJS with API
+ReactDOM.render(React.createElement(fetchdata_1.default, null), document.getElementById('reactcomponentwithapidata'));
 //# sourceMappingURL=app.js.map

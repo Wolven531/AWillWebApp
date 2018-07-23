@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\Source\app.tsx" />
+    <Content Remove="wwwroot\Source\fetchdata.tsx" />
     <Content Remove="wwwroot\Source\lib.ts" />
     <Content Remove="wwwroot\Source\reactcomponent.tsx" />
   </ItemGroup>
@@ -17,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\Source\fetchdata.tsx" />
     <TypeScriptCompile Include="wwwroot\Source\lib.ts" />
     <TypeScriptCompile Include="wwwroot\Source\app.tsx" />
     <TypeScriptCompile Include="wwwroot\Source\reactcomponent.tsx" />

@@ -9,6 +9,7 @@ import * as ReactDOM from 'react-dom'
 import { getText } from './lib'
 import ES6Lib from './es6codelib'
 import Counter from './reactcomponent'
+import FetchData from './fetchdata'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/site.css'
@@ -27,4 +28,10 @@ $('#fillthiswithes6lib').html(myES6Object.getData())
 ReactDOM.render(
 	<Counter />,
 	document.getElementById('basicreactcomponent')
+)
+
+// NOTE: ReactJS with API
+ReactDOM.render(
+	<FetchData />,
+	document.getElementById('reactcomponentwithapidata')
 )
