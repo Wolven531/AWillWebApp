@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/AWillWebApp/Properties/PublishProfiles/AWillWeb - Web Deploy.pubxml
+/azure_web_deploy_publish.json
+/azure_web_deploy_publish.env.parameters.json
