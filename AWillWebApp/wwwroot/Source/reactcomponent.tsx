@@ -1,12 +1,12 @@
 ﻿import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-interface ICounterState {
+export interface ICounterState {
 	count: number
 }
 
 export default class Counter extends React.Component<null, ICounterState> {
-	constructor(props) {
+	constructor(props: any) {
 		super(props)
 		this.state = {
 			count: 0

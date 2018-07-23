@@ -2,13 +2,13 @@
 import 'es6-promise'
 import 'isomorphic-fetch'
 
-interface IFetchDataState {
+export interface IFetchDataState {
 	apiDataObjects: object[]
 	loading: boolean
 }
 
 export default class FetchData extends React.Component<null, IFetchDataState> {
-	constructor(props) {
+	constructor(props: any) {
 		super(props)
 		this.state = {
 			apiDataObjects: [],
