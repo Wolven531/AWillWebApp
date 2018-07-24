@@ -1,47 +1,40 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Content Remove="wwwroot\Source\app.tsx" />
-    <Content Remove="wwwroot\Source\fetchdata.tsx" />
-    <Content Remove="wwwroot\Source\lib.ts" />
-    <Content Remove="wwwroot\Source\reactcomponent.tsx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <TypeScriptCompile Include="wwwroot\Source\fetchdata.tsx" />
-    <TypeScriptCompile Include="wwwroot\Source\lib.ts" />
-    <TypeScriptCompile Include="wwwroot\Source\app.tsx" />
-    <TypeScriptCompile Include="wwwroot\Source\reactcomponent.tsx" />
-  </ItemGroup>
-
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="del wwwroot\Dist\* -r -force&#xD;&#xA;npm run wbpc" />
-  </Target>
-
-  <PropertyGroup>
-    <TypeScriptTarget>ES5</TypeScriptTarget>
-    <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
-    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
-    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
-    <TypeScriptNoImplicitAny>True</TypeScriptNoImplicitAny>
-    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
-    <TypeScriptOutFile></TypeScriptOutFile>
-    <TypeScriptOutDir></TypeScriptOutDir>
-    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
-    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
-    <TypeScriptSourceMap>True</TypeScriptSourceMap>
-    <TypeScriptMapRoot />
-    <TypeScriptSourceRoot>C:\repos\AWillWebApp\AWillWebApp\wwwroot\Source</TypeScriptSourceRoot>
-  </PropertyGroup>
-
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.1</TargetFramework>
+		<TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Remove="wwwroot\Source\app.tsx" />
+		<Content Remove="wwwroot\Source\fetchdata.tsx" />
+		<Content Remove="wwwroot\Source\lib.ts" />
+		<Content Remove="wwwroot\Source\reactcomponent.tsx" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.App" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<TypeScriptCompile Include="wwwroot\Source\fetchdata.tsx" />
+		<TypeScriptCompile Include="wwwroot\Source\lib.ts" />
+		<TypeScriptCompile Include="wwwroot\Source\app.tsx" />
+		<TypeScriptCompile Include="wwwroot\Source\reactcomponent.tsx" />
+	</ItemGroup>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="del wwwroot\Dist\* -r -force&#xD;&#xA;npm run wbpc" />
+	</Target>
+	<PropertyGroup>
+		<TypeScriptTarget>ES5</TypeScriptTarget>
+		<TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+		<TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+		<TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+		<TypeScriptNoImplicitAny>True</TypeScriptNoImplicitAny>
+		<TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+		<TypeScriptOutFile></TypeScriptOutFile>
+		<TypeScriptOutDir></TypeScriptOutDir>
+		<TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+		<TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+		<TypeScriptSourceMap>True</TypeScriptSourceMap>
+		<TypeScriptMapRoot />
+		<TypeScriptSourceRoot>C:\repos\AWillWebApp\AWillWebApp\wwwroot\Source</TypeScriptSourceRoot>
+	</PropertyGroup>
 </Project>
