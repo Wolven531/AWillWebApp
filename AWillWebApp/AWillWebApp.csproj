@@ -4,9 +4,14 @@
 		<TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
 	</PropertyGroup>
 	<ItemGroup>
+		<Content Remove="wwwroot\Source\app.d.ts" />
 		<Content Remove="wwwroot\Source\app.tsx" />
+		<Content Remove="wwwroot\Source\es6codelib.d.ts" />
+		<Content Remove="wwwroot\Source\fetchdata.d.ts" />
 		<Content Remove="wwwroot\Source\fetchdata.tsx" />
+		<Content Remove="wwwroot\Source\lib.d.ts" />
 		<Content Remove="wwwroot\Source\lib.ts" />
+		<Content Remove="wwwroot\Source\reactcomponent.d.ts" />
 		<Content Remove="wwwroot\Source\reactcomponent.tsx" />
 	</ItemGroup>
 	<ItemGroup>
@@ -18,6 +23,9 @@
 		<TypeScriptCompile Include="wwwroot\Source\lib.ts" />
 		<TypeScriptCompile Include="wwwroot\Source\app.tsx" />
 		<TypeScriptCompile Include="wwwroot\Source\reactcomponent.tsx" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="wwwroot\Dist\" />
 	</ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="del wwwroot\Dist\* -r -force&#xD;&#xA;npm run wbpc" />
