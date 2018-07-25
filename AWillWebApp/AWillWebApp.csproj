@@ -25,6 +25,7 @@
 		<TypeScriptCompile Include="wwwroot\Source\reactcomponent.tsx" />
 	</ItemGroup>
 	<ItemGroup>
+	  <Folder Include="Inside\Services\" />
 	  <Folder Include="wwwroot\Dist\" />
 	</ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">

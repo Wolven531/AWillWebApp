@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AWillWebApp.Inside.Models;
+using AWillWebApp.Outside.Repositories;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace AWillWebApp
 {
@@ -11,7 +14,17 @@ namespace AWillWebApp
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 		public void ConfigureServices(IServiceCollection services)
 		{
+			var inMemoryMonsters = new Monster[] {
+				new Monster("monster A", 1, false){ Id = Guid.NewGuid() },
+				new Monster("monster B", 2, false){ Id = Guid.NewGuid() },
+				new Monster("monster C", 3, true){ Id = Guid.NewGuid() },
+				new Monster("monster D", 4, false){ Id = Guid.NewGuid() },
+				new Monster("monster E", 5, true){ Id = Guid.NewGuid() }
+			};
 			services.AddMvc();
+
+			//services.AddSingleton<IMonsterRepository, MonsterRepository>();
+			services.AddSingleton<IMonsterRepository>(new MonsterRepository(inMemoryMonsters));
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

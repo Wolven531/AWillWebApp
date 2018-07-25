@@ -3,16 +3,16 @@ import 'es6-promise'
 import 'isomorphic-fetch'
 
 export interface IFetchDataState {
-	apiDataObjects: object[]
 	loading: boolean
+	monsters: object[]
 }
 
 export default class FetchData extends React.Component<null, IFetchDataState> {
 	constructor(props: any) {
 		super(props)
 		this.state = {
-			apiDataObjects: [],
-			loading: true
+			loading: true,
+			monsters: []
 		}
 		this.refreshData()
 	}
@@ -20,25 +20,27 @@ export default class FetchData extends React.Component<null, IFetchDataState> {
 	public render() {
 		const contents = this.state.loading ?
 			(<p><em>Loading...</em></p>)
-			: (<textarea>{JSON.stringify(this.state.apiDataObjects, null, 4)}</textarea>)
+			: (<textarea>{JSON.stringify(this.state.monsters, null, 4)}</textarea>)
 
 		return (
 			<div>
 				<h1>API Check</h1>
 				<p>This component demonstrates fetching data from the server</p>
-				<button onClick={() => this.refreshData}>Refresh</button>
+				<button onClick={() => this.refreshData}>
+					Refresh
+				</button>
 				{contents}
 			</div>
 		)
 	}
 
 	private refreshData = () => {
-		fetch('api/SampleDummyData/')
+		fetch('api/monsters/')
 			.then(response => response.json())
-			.then(apiDataObjects => {
+			.then(monsters => {
 				this.setState({
-					apiDataObjects,
-					loading: false
+					loading: false,
+					monsters
 				})
 			})
 	}

@@ -18,18 +18,18 @@ var FetchData = /** @class */ (function (_super) {
     function FetchData(props) {
         var _this = _super.call(this, props) || this;
         _this.refreshData = function () {
-            fetch('api/SampleDummyData/')
+            fetch('api/monsters/')
                 .then(function (response) { return response.json(); })
-                .then(function (apiDataObjects) {
+                .then(function (monsters) {
                 _this.setState({
-                    apiDataObjects: apiDataObjects,
-                    loading: false
+                    loading: false,
+                    monsters: monsters
                 });
             });
         };
         _this.state = {
-            apiDataObjects: [],
-            loading: true
+            loading: true,
+            monsters: []
         };
         _this.refreshData();
         return _this;
@@ -39,7 +39,7 @@ var FetchData = /** @class */ (function (_super) {
         var contents = this.state.loading ?
             (React.createElement("p", null,
                 React.createElement("em", null, "Loading...")))
-            : (React.createElement("textarea", null, JSON.stringify(this.state.apiDataObjects, null, 4)));
+            : (React.createElement("textarea", null, JSON.stringify(this.state.monsters, null, 4)));
         return (React.createElement("div", null,
             React.createElement("h1", null, "API Check"),
             React.createElement("p", null, "This component demonstrates fetching data from the server"),
