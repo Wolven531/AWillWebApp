@@ -1,11 +1,15 @@
-﻿using AWillWebApp.Inside.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿// <copyright file="MonsterRepository.cs" company="AWill Inc">
+// Copyright (c) 2018 AWill Inc; All rights reserved.
+// </copyright>
 
 namespace AWillWebApp.Outside.Repositories
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Threading.Tasks;
+	using AWillWebApp.Inside.Models;
+
 	public class MonsterRepository : IMonsterRepository
 	{
 		private readonly List<Monster> _monsters;

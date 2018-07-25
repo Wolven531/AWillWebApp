@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using AWillWebApp.Inside.Models;
-using AWillWebApp.Outside.Repositories;
-using Microsoft.AspNetCore.Mvc;
+﻿// <copyright file="MonsterController.cs" company="AWill Inc">
+// Copyright (c) 2018 AWill Inc; All rights reserved.
+// </copyright>
 
 namespace AWillWebApp.Controllers
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Threading.Tasks;
+	using AWillWebApp.Inside.Models;
+	using AWillWebApp.Outside.Repositories;
+	using Microsoft.AspNetCore.Mvc;
+
 	[Route("api/monsters")]
 	[ApiController]
 	public class MonsterController : ControllerBase

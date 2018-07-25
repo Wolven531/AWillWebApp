@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿// <copyright file="Monster.cs" company="AWill Inc">
+// Copyright (c) 2018 AWill Inc; All rights reserved.
+// </copyright>
 
 namespace AWillWebApp.Inside.Models
 {
+	using System;
+
 	public class Monster
 	{
-		public Monster(string name, int stars, Boolean isAwake)
+		public Monster(string name, int stars, bool isAwake)
 		{
 			Name = name;
 			Stars = stars;

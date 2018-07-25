@@ -16,7 +16,9 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.App" />
+		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.1" />
 		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+		<PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
 	</ItemGroup>
 	<ItemGroup>
 		<TypeScriptCompile Include="wwwroot\Source\fetchdata.tsx" />
@@ -25,8 +27,8 @@
 		<TypeScriptCompile Include="wwwroot\Source\reactcomponent.tsx" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Inside\Services\" />
-	  <Folder Include="wwwroot\Dist\" />
+		<Folder Include="Inside\Services\" />
+		<Folder Include="wwwroot\Dist\" />
 	</ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="del wwwroot\Dist\* -r -force&#xD;&#xA;npm run wbpc" />

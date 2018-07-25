@@ -1,13 +1,17 @@
-﻿using AWillWebApp.Inside.Models;
-using AWillWebApp.Outside.Repositories;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿// <copyright file="Startup.cs" company="AWill Inc">
+// Copyright (c) 2018 AWill Inc; All rights reserved.
+// </copyright>
 
 namespace AWillWebApp
 {
+	using System;
+	using AWillWebApp.Inside.Models;
+	using AWillWebApp.Outside.Repositories;
+	using Microsoft.AspNetCore.Builder;
+	using Microsoft.AspNetCore.Hosting;
+	using Microsoft.AspNetCore.Http;
+	using Microsoft.Extensions.DependencyInjection;
+
 	public class Startup
 	{
 		// This method gets called by the runtime. Use this method to add services to the container.
