@@ -33,4 +33,4 @@ var Counter = /** @class */ (function (_super) {
     return Counter;
 }(React.Component));
 exports.default = Counter;
-//# sourceMappingURL=reactcomponent.js.map
+//# sourceMappingURL=counter.js.map

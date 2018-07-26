@@ -4,15 +4,7 @@
 		<TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
 	</PropertyGroup>
 	<ItemGroup>
-		<Content Remove="wwwroot\Source\app.d.ts" />
-		<Content Remove="wwwroot\Source\app.tsx" />
-		<Content Remove="wwwroot\Source\es6codelib.d.ts" />
-		<Content Remove="wwwroot\Source\fetchdata.d.ts" />
-		<Content Remove="wwwroot\Source\fetchdata.tsx" />
-		<Content Remove="wwwroot\Source\lib.d.ts" />
-		<Content Remove="wwwroot\Source\lib.ts" />
-		<Content Remove="wwwroot\Source\reactcomponent.d.ts" />
-		<Content Remove="wwwroot\Source\reactcomponent.tsx" />
+	  <Content Remove="wwwroot\Source\*.d.ts" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.App" />
@@ -24,7 +16,7 @@
 		<TypeScriptCompile Include="wwwroot\Source\fetchdata.tsx" />
 		<TypeScriptCompile Include="wwwroot\Source\lib.ts" />
 		<TypeScriptCompile Include="wwwroot\Source\app.tsx" />
-		<TypeScriptCompile Include="wwwroot\Source\reactcomponent.tsx" />
+		<TypeScriptCompile Include="wwwroot\Source\counter.tsx" />
 	</ItemGroup>
 	<ItemGroup>
 		<Folder Include="Inside\Services\" />

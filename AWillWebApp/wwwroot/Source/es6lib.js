@@ -9,4 +9,4 @@ var ES6Lib = /** @class */ (function () {
     return ES6Lib;
 }());
 exports.default = ES6Lib;
-//# sourceMappingURL=es6codelib.js.map
+//# sourceMappingURL=es6lib.js.map

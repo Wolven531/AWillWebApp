@@ -7,20 +7,20 @@ var $ = window.$ = window.jQuery = jQuery;
 var React = require("react");
 var ReactDOM = require("react-dom");
 var lib_1 = require("./lib");
-var es6codelib_1 = require("./es6codelib");
-var reactcomponent_1 = require("./reactcomponent");
+var es6lib_1 = require("./es6lib");
+var counter_1 = require("./counter");
 var fetchdata_1 = require("./fetchdata");
-require("bootstrap/dist/css/bootstrap.min.css");
+//import 'bootstrap/dist/css/bootstrap.min.css'
 require("../css/site.css");
 // NOTE: vanilla JS
 document.getElementById('fillthis').appendChild(document.createTextNode(lib_1.getText()));
 // NOTE: jQuery
 $('#fillthiswithjquery').html('Filled by Jquery!');
 // NOTE: ES6
-var myES6Object = new es6codelib_1.default();
+var myES6Object = new es6lib_1.default();
 $('#fillthiswithes6lib').html(myES6Object.getData());
 // NOTE: ReactJS
-ReactDOM.render(React.createElement(reactcomponent_1.default, null), document.getElementById('basicreactcomponent'));
+ReactDOM.render(React.createElement(counter_1.default, null), document.getElementById('basicreactcomponent'));
 // NOTE: ReactJS with API
 ReactDOM.render(React.createElement(fetchdata_1.default, null), document.getElementById('reactcomponentwithapidata'));
 //# sourceMappingURL=app.js.map

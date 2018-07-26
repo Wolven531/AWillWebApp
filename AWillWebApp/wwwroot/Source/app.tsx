@@ -7,11 +7,11 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
 import { getText } from './lib'
-import ES6Lib from './es6codelib'
-import Counter from './reactcomponent'
+import ES6Lib from './es6lib'
+import Counter from './counter'
 import FetchData from './fetchdata'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/site.css'
 
 // NOTE: vanilla JS
