@@ -18,12 +18,13 @@ namespace AWillWebApp
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 		public void ConfigureServices(IServiceCollection services)
 		{
-			var inMemoryMonsters = new Monster[] {
-				new Monster("monster A", 1, false){ Id = Guid.NewGuid() },
-				new Monster("monster B", 2, false){ Id = Guid.NewGuid() },
-				new Monster("monster C", 3, true){ Id = Guid.NewGuid() },
-				new Monster("monster D", 4, false){ Id = Guid.NewGuid() },
-				new Monster("monster E", 5, true){ Id = Guid.NewGuid() }
+			var inMemoryMonsters = new Monster[]
+			{
+				new Monster("monster A", 1, false) { Id = Guid.NewGuid() },
+				new Monster("monster B", 2, false) { Id = Guid.NewGuid() },
+				new Monster("monster C", 3, true) { Id = Guid.NewGuid() },
+				new Monster("monster D", 4, false) { Id = Guid.NewGuid() },
+				new Monster("monster E", 5, true) { Id = Guid.NewGuid() }
 			};
 			services.AddMvc();
 
@@ -44,8 +45,7 @@ namespace AWillWebApp
 			app.UseMvc(routes =>
 				{
 					routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
-				}
-			);
+				});
 		}
 	}
 }

@@ -1,21 +1,22 @@
-using AWillWebApp.Inside.Models;
-using AWillWebApp.Outside.Repositories;
-using FluentAssertions;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Xunit;
+// <copyright file="MonsterRepositoryTests.cs" company="AWill Inc">
+// Copyright (c) 2018 AWill Inc; All rights reserved.
+// </copyright>
 
 namespace AWillWebApp.Tests.Outside.Repositories
 {
+	using System;
+	using System.Diagnostics.CodeAnalysis;
+	using System.Linq;
+	using System.Threading.Tasks;
+	using AWillWebApp.Inside.Models;
+	using AWillWebApp.Outside.Repositories;
+	using FluentAssertions;
+	using Xunit;
+
+	[SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "Test names should contain underscores for readability")]
 	public class MonsterRepositoryTests
 	{
 		private MonsterRepository fixture;
-
-		public MonsterRepositoryTests()
-		{
-
-		}
 
 		[Fact]
 		public async Task GetMonsterNames_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfStrings()
@@ -37,7 +38,8 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		public async Task GetMonsterNames_WhenRepositoryHasMonsters_ShouldReturnListOfMonsterNamesAsStrings()
 		{
 			// Setup
-			var monsters = new Monster[] {
+			var monsters = new Monster[]
+			{
 				new Monster("name 1", 3, false),
 				new Monster("name 2", 3, false)
 			};
@@ -72,7 +74,8 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		public async Task GetMonsters_WhenRepositoryHasMonsters_ShouldReturnListOfMonstersAsModelObjects()
 		{
 			// Setup
-			var monsters = new Monster[] {
+			var monsters = new Monster[]
+			{
 				new Monster("name 1", 3, false),
 				new Monster("name 2", 3, false)
 			};
@@ -110,8 +113,9 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			var id1 = Guid.NewGuid();
 			var id2 = Guid.NewGuid();
 			var expected = new Monster("name 2", 3, false) { Id = id2 };
-			var monsters = new Monster[] {
-				new Monster("name 1", 3, false){ Id = id1 },
+			var monsters = new Monster[]
+			{
+				new Monster("name 1", 3, false) { Id = id1 },
 				expected
 			};
 

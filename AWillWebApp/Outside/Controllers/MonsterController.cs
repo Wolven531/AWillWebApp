@@ -17,9 +17,9 @@ namespace AWillWebApp.Controllers
 	{
 		private readonly IMonsterRepository _MonsterRepository;
 
-		public MonsterController(IMonsterRepository _monsterRepository)
+		public MonsterController(IMonsterRepository monsterRepository)
 		{
-			_MonsterRepository = _monsterRepository;
+			_MonsterRepository = monsterRepository;
 		}
 
 		// GET: api/monsters/names

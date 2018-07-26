@@ -37,6 +37,7 @@ namespace AWillWebApp.Outside.Repositories
 			{
 				return Task.FromResult(existingMonster);
 			}
+
 			_monsters.Add(newMonster);
 
 			return Task.FromResult(newMonster);
