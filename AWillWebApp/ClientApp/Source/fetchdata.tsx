@@ -7,7 +7,7 @@ export interface IFetchDataState {
 	monsters: object[]
 }
 
-export default class FetchData extends React.Component<null, IFetchDataState> {
+export default class FetchData extends React.Component<{}, IFetchDataState> {
 	constructor(props: any) {
 		super(props)
 		this.state = {

@@ -147,7 +147,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		}
 
 		[Fact]
-		public async Task AddMonster_WhenRepositoryIsEmptyAndNewMonsterHasNewId_ShouldAddMonsterWithIdAndReturnIt()
+		public async Task AddMonster_WhenRepositoryIsEmptyAndNewMonsterHasExistingId_ShouldAddMonsterWithIdAndReturnIt()
 		{
 			// Setup
 			var monsters = Enumerable.Empty<Monster>();

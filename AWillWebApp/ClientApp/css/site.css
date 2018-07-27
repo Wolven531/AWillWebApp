@@ -1,0 +1,18 @@
+﻿body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}
+
+#app {
+	background-color: rgba(0, 0, 200, .8);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: space-around;
+}
+
+#app > * {
+	margin: 10px;
+}

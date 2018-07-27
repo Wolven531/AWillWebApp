@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"baseUrl": ".",
+		"module": "es2015",
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"target": "es5",
+		"jsx": "react",
+		"sourceMap": true,
+		"skipDefaultLibCheck": true,
+		"strict": true,
+		"types": [ "webpack-env" ],
+		"lib": [
+			"dom",
+			"es5",
+			"es2015.promise"
+			//"es6",
+			//"es7",
+			//"es2017"
+		],
+		"noImplicitAny": true,
+		"noImplicitThis": true
+		//"noEmitOnError": false,
+		//"removeComments": true,
+		//"rootDir": "./wwwroot/Source",
+		//"outDir": "./wwwroot/Dist",
+		//"outFile": "bundle.js",
+		//"listEmittedFiles": true,
+		//"watch": false,
+		//"strictNullChecks": true,
+		//"allowSyntheticDefaultImports": true,
+		//"importHelpers": true
+	},
+	//"compileOnSave": true,
+	//"include": [ "./wwwroot/Source/**/*" ],
+	"exclude": [
+		"bin",
+		"node_modules",
+		"www/dist"
+		//"scripts"
+	]
+}

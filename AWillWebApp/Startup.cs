@@ -10,6 +10,7 @@ namespace AWillWebApp
 	using Microsoft.AspNetCore.Builder;
 	using Microsoft.AspNetCore.Hosting;
 	using Microsoft.AspNetCore.Http;
+	using Microsoft.AspNetCore.SpaServices.Webpack;
 	using Microsoft.Extensions.DependencyInjection;
 
 	public class Startup
@@ -38,6 +39,12 @@ namespace AWillWebApp
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
+				app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+				{
+					HotModuleReplacement = true,
+					HotModuleReplacementServerPort = 6000,
+					ReactHotModuleReplacement = false
+				});
 			}
 
 			app.UseStaticFiles();
@@ -45,6 +52,7 @@ namespace AWillWebApp
 			app.UseMvc(routes =>
 				{
 					routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+					routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Home", action = "Index" });
 				});
 		}
 	}
