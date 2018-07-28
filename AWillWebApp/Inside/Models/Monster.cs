@@ -8,11 +8,12 @@ namespace AWillWebApp.Inside.Models
 
 	public class Monster
 	{
-		public Monster(string name, int stars, bool isAwake)
+		public Monster(string name, int stars, bool isAwake, Element element)
 		{
 			Name = name;
 			Stars = stars;
 			IsAwake = isAwake;
+			Element = element;
 		}
 
 		public string Name { get; }
@@ -22,5 +23,7 @@ namespace AWillWebApp.Inside.Models
 		public bool IsAwake { get; }
 
 		public Guid Id { get; set; }
-	}
+
+		public Element Element { get; }
+}
 }
