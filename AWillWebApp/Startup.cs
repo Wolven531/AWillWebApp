@@ -21,11 +21,11 @@ namespace AWillWebApp
 		{
 			var inMemoryMonsters = new Monster[]
 			{
-				new Monster("monster A", 1, false) { Id = Guid.NewGuid() },
-				new Monster("monster B", 2, false) { Id = Guid.NewGuid() },
-				new Monster("monster C", 3, true) { Id = Guid.NewGuid() },
-				new Monster("monster D", 4, false) { Id = Guid.NewGuid() },
-				new Monster("monster E", 5, true) { Id = Guid.NewGuid() }
+				new Monster("monster A", 1, false, Element.Fire) { Id = Guid.NewGuid() },
+				new Monster("monster B", 2, false, Element.Dark) { Id = Guid.NewGuid() },
+				new Monster("monster C", 3, true, Element.Light) { Id = Guid.NewGuid() },
+				new Monster("monster D", 4, false, Element.Water) { Id = Guid.NewGuid() },
+				new Monster("monster E", 5, true, Element.Wind) { Id = Guid.NewGuid() }
 			};
 			services.AddMvc();
 

@@ -1,4 +1,4 @@
-﻿// <copyright file="Monster.cs" company="AWill Inc">
+﻿// <copyright file="Element.cs" company="AWill Inc">
 // Copyright (c) 2018 AWill Inc; All rights reserved.
 // </copyright>
 
@@ -6,10 +6,10 @@ namespace AWillWebApp.Inside.Models
 {
 	public enum Element
 	{
+		Dark,
 		Fire,
-		Water,
-		Wind,
 		Light,
-		Dark
+		Water,
+		Wind
 	}
 }
