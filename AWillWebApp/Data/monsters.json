@@ -1,0 +1,2477 @@
+[
+	{
+		"awakenedName": "Bailey",
+		"element": "Light",
+		"name": "Boomerang Warrior"
+	},
+	{
+		"awakenedName": "Maruna",
+		"element": "Fire",
+		"name": "Boomerang Warrior"
+	},
+	{
+		"awakenedName": "Martina",
+		"element": "Dark",
+		"name": "Boomerang Warrior"
+	},
+	{
+		"awakenedName": "Sabrina",
+		"element": "Water",
+		"name": "Boomerang Warrior"
+	},
+	{
+		"awakenedName": "Zenobia",
+		"element": "Wind",
+		"name": "Boomerang Warrior"
+	},
+	{
+		"awakenedName": "Talia",
+		"element": "Water",
+		"name": "Chakram Dancer"
+	},
+	{
+		"awakenedName": "Shaina",
+		"element": "Fire",
+		"name": "Chakram Dancer"
+	},
+	{
+		"awakenedName": "Melissa",
+		"element": "Wind",
+		"name": "Chakram Dancer"
+	},
+	{
+		"awakenedName": "Deva",
+		"element": "Light",
+		"name": "Chakram Dancer"
+	},
+	{
+		"awakenedName": "Belita",
+		"element": "Dark",
+		"name": "Chakram Dancer"
+	},
+	{
+		"awakenedName": "Ophilia",
+		"element": "Fire",
+		"name": "Paladin"
+	},
+	{
+		"awakenedName": "Josephine",
+		"element": "Water",
+		"name": "Paladin"
+	},
+	{
+		"awakenedName": "Louise",
+		"element": "Wind",
+		"name": "Paladin"
+	},
+	{
+		"awakenedName": "Jeanne",
+		"element": "Light",
+		"name": "Paladin"
+	},
+	{
+		"awakenedName": "Leona",
+		"element": "Dark",
+		"name": "Paladin"
+	},
+	{
+		"awakenedName": "Homunculus",
+		"element": "Fire",
+		"name": "Homunculus"
+	},
+	{
+		"awakenedName": "Homunculus",
+		"element": "Dark",
+		"name": "Homunculus"
+	},
+	{
+		"awakenedName": "Homunculus",
+		"element": "Light",
+		"name": "Homunculus"
+	},
+	{
+		"awakenedName": "Homunculus",
+		"element": "Wind",
+		"name": "Homunculus"
+	},
+	{
+		"awakenedName": "Homunculus",
+		"element": "Water",
+		"name": "Homunculus"
+	},
+	{
+		"awakenedName": "Lamor",
+		"element": "Fire",
+		"name": "Low Elemental"
+	},
+	{
+		"awakenedName": "Tigresse",
+		"element": "Water",
+		"name": "Low Elemental"
+	},
+	{
+		"awakenedName": "Samour",
+		"element": "Wind",
+		"name": "Low Elemental"
+	},
+	{
+		"awakenedName": "Fran",
+		"element": "Light",
+		"name": "Fairy Queen"
+	},
+	{
+		"awakenedName": "Tablo",
+		"element": "Light",
+		"name": "Dice Magician"
+	},
+	{
+		"awakenedName": "Morris",
+		"element": "Wind",
+		"name": "Dice Magician"
+	},
+	{
+		"awakenedName": "Reno",
+		"element": "Water",
+		"name": "Dice Magician"
+	},
+	{
+		"awakenedName": "Monte",
+		"element": "Dark",
+		"name": "Dice Magician"
+	},
+	{
+		"awakenedName": "Ludo",
+		"element": "Fire",
+		"name": "Dice Magician"
+	},
+	{
+		"awakenedName": "Triana",
+		"element": "Wind",
+		"name": "Harp Magician"
+	},
+	{
+		"awakenedName": "Celia",
+		"element": "Light",
+		"name": "Harp Magician"
+	},
+	{
+		"awakenedName": "Sonnet",
+		"element": "Water",
+		"name": "Harp Magician"
+	},
+	{
+		"awakenedName": "Harmonia",
+		"element": "Fire",
+		"name": "Harp Magician"
+	},
+	{
+		"awakenedName": "Vivachel",
+		"element": "Dark",
+		"name": "Harp Magician"
+	},
+	{
+		"awakenedName": "Helena",
+		"element": "Fire",
+		"name": "Unicorn"
+	},
+	{
+		"awakenedName": "Amelia",
+		"element": "Water",
+		"name": "Unicorn"
+	},
+	{
+		"awakenedName": "Diana",
+		"element": "Wind",
+		"name": "Unicorn"
+	},
+	{
+		"awakenedName": "Eleanor",
+		"element": "Light",
+		"name": "Unicorn"
+	},
+	{
+		"awakenedName": "Alexandra",
+		"element": "Dark",
+		"name": "Unicorn"
+	},
+	{
+		"awakenedName": "Mo Long",
+		"element": "Water",
+		"name": "Panda Warrior"
+	},
+	{
+		"awakenedName": "Feng Yan",
+		"element": "Wind",
+		"name": "Panda Warrior"
+	},
+	{
+		"awakenedName": "Xiong Fei",
+		"element": "Fire",
+		"name": "Panda Warrior"
+	},
+	{
+		"awakenedName": "Tian Lang",
+		"element": "Light",
+		"name": "Panda Warrior"
+	},
+	{
+		"awakenedName": "Mi Ying",
+		"element": "Dark",
+		"name": "Panda Warrior"
+	},
+	{
+		"awakenedName": "Daphnis",
+		"element": "Fire",
+		"name": "Fairy King"
+	},
+	{
+		"awakenedName": "Oberon",
+		"element": "Light",
+		"name": "Fairy King"
+	},
+	{
+		"awakenedName": "Psamathe",
+		"element": "Water",
+		"name": "Fairy King"
+	},
+	{
+		"awakenedName": "Ganymede",
+		"element": "Wind",
+		"name": "Fairy King"
+	},
+	{
+		"awakenedName": "Nyx",
+		"element": "Dark",
+		"name": "Fairy King"
+	},
+	{
+		"awakenedName": "Sekhmet",
+		"element": "Fire",
+		"name": "Desert Queen"
+	},
+	{
+		"awakenedName": "Isis",
+		"element": "Light",
+		"name": "Desert Queen"
+	},
+	{
+		"awakenedName": "Bastet",
+		"element": "Water",
+		"name": "Desert Queen"
+	},
+	{
+		"awakenedName": "Hathor",
+		"element": "Wind",
+		"name": "Desert Queen"
+	},
+	{
+		"awakenedName": "Nephthys",
+		"element": "Dark",
+		"name": "Desert Queen"
+	},
+	{
+		"awakenedName": "Okeanos",
+		"element": "Fire",
+		"name": "Sea Emperor"
+	},
+	{
+		"awakenedName": "Pontos",
+		"element": "Light",
+		"name": "Sea Emperor"
+	},
+	{
+		"awakenedName": "Poseidon",
+		"element": "Water",
+		"name": "Sea Emperor"
+	},
+	{
+		"awakenedName": "Manannan",
+		"element": "Dark",
+		"name": "Sea Emperor"
+	},
+	{
+		"awakenedName": "Triton",
+		"element": "Wind",
+		"name": "Sea Emperor"
+	},
+	{
+		"awakenedName": "Tesarion",
+		"element": "Fire",
+		"name": "Ifrit"
+	},
+	{
+		"awakenedName": "Elsharion",
+		"element": "Light",
+		"name": "Ifrit"
+	},
+	{
+		"awakenedName": "Theomars",
+		"element": "Water",
+		"name": "Ifrit"
+	},
+	{
+		"awakenedName": "Veromos",
+		"element": "Dark",
+		"name": "Ifrit"
+	},
+	{
+		"awakenedName": "Akhamamir",
+		"element": "Wind",
+		"name": "Ifrit"
+	},
+	{
+		"awakenedName": "Elenoa",
+		"element": "Light",
+		"name": "Polar Queen"
+	},
+	{
+		"awakenedName": "Alicia",
+		"element": "Water",
+		"name": "Polar Queen"
+	},
+	{
+		"awakenedName": "Lydia",
+		"element": "Dark",
+		"name": "Polar Queen"
+	},
+	{
+		"awakenedName": "Tiana",
+		"element": "Wind",
+		"name": "Polar Queen"
+	},
+	{
+		"awakenedName": "Brandia",
+		"element": "Fire",
+		"name": "Polar Queen"
+	},
+	{
+		"awakenedName": "Nigong",
+		"element": "Light",
+		"name": "Pioneer"
+	},
+	{
+		"awakenedName": "Woosa",
+		"element": "Water",
+		"name": "Pioneer"
+	},
+	{
+		"awakenedName": "Woonsa",
+		"element": "Dark",
+		"name": "Pioneer"
+	},
+	{
+		"awakenedName": "Pungbaek",
+		"element": "Wind",
+		"name": "Pioneer"
+	},
+	{
+		"awakenedName": "Chiwu",
+		"element": "Fire",
+		"name": "Pioneer"
+	},
+	{
+		"awakenedName": "Asima",
+		"element": "Light",
+		"name": "Hell Lady"
+	},
+	{
+		"awakenedName": "Beth",
+		"element": "Water",
+		"name": "Hell Lady"
+	},
+	{
+		"awakenedName": "Craka",
+		"element": "Dark",
+		"name": "Hell Lady"
+	},
+	{
+		"awakenedName": "Ethna",
+		"element": "Wind",
+		"name": "Hell Lady"
+	},
+	{
+		"awakenedName": "Raki",
+		"element": "Fire",
+		"name": "Hell Lady"
+	},
+	{
+		"awakenedName": "Shazam",
+		"element": "Light",
+		"name": "Beast Monk"
+	},
+	{
+		"awakenedName": "Chandra",
+		"element": "Water",
+		"name": "Beast Monk"
+	},
+	{
+		"awakenedName": "Rahul",
+		"element": "Dark",
+		"name": "Beast Monk"
+	},
+	{
+		"awakenedName": "Ritesh",
+		"element": "Wind",
+		"name": "Beast Monk"
+	},
+	{
+		"awakenedName": "Kumar",
+		"element": "Fire",
+		"name": "Beast Monk"
+	},
+	{
+		"awakenedName": "Artamiel",
+		"element": "Light",
+		"name": "Archangel"
+	},
+	{
+		"awakenedName": "Ariel",
+		"element": "Water",
+		"name": "Archangel"
+	},
+	{
+		"awakenedName": "Fermion",
+		"element": "Dark",
+		"name": "Archangel"
+	},
+	{
+		"awakenedName": "Eladriel",
+		"element": "Wind",
+		"name": "Archangel"
+	},
+	{
+		"awakenedName": "Velajuel",
+		"element": "Fire",
+		"name": "Archangel"
+	},
+	{
+		"awakenedName": "Qitian Dasheng",
+		"element": "Light",
+		"name": "Monkey King"
+	},
+	{
+		"awakenedName": "Shi Hou",
+		"element": "Water",
+		"name": "Monkey King"
+	},
+	{
+		"awakenedName": "Son Zhang Lao",
+		"element": "Dark",
+		"name": "Monkey King"
+	},
+	{
+		"awakenedName": "Xing Zhe",
+		"element": "Wind",
+		"name": "Monkey King"
+	},
+	{
+		"awakenedName": "Mei Hou Wang",
+		"element": "Fire",
+		"name": "Monkey King"
+	},
+	{
+		"awakenedName": "Jager",
+		"element": "Light",
+		"name": "Dragon Knight"
+	},
+	{
+		"awakenedName": "Chow",
+		"element": "Water",
+		"name": "Dragon Knight"
+	},
+	{
+		"awakenedName": "Ragdoll",
+		"element": "Dark",
+		"name": "Dragon Knight"
+	},
+	{
+		"awakenedName": "Leo",
+		"element": "Wind",
+		"name": "Dragon Knight"
+	},
+	{
+		"awakenedName": "Laika",
+		"element": "Fire",
+		"name": "Dragon Knight"
+	},
+	{
+		"awakenedName": "Lora",
+		"element": "Light",
+		"name": "Occult Girl"
+	},
+	{
+		"awakenedName": "Anavel",
+		"element": "Water",
+		"name": "Occult Girl"
+	},
+	{
+		"awakenedName": "Nicki",
+		"element": "Dark",
+		"name": "Occult Girl"
+	},
+	{
+		"awakenedName": "Charlotte",
+		"element": "Wind",
+		"name": "Occult Girl"
+	},
+	{
+		"awakenedName": "Rica",
+		"element": "Fire",
+		"name": "Occult Girl"
+	},
+	{
+		"awakenedName": "Laima",
+		"element": "Light",
+		"name": "Oracle"
+	},
+	{
+		"awakenedName": "Praha",
+		"element": "Water",
+		"name": "Oracle"
+	},
+	{
+		"awakenedName": "Giana",
+		"element": "Dark",
+		"name": "Oracle"
+	},
+	{
+		"awakenedName": "Seara",
+		"element": "Wind",
+		"name": "Oracle"
+	},
+	{
+		"awakenedName": "Juno",
+		"element": "Fire",
+		"name": "Oracle"
+	},
+	{
+		"awakenedName": "Taor",
+		"element": "Water",
+		"name": "Chimera"
+	},
+	{
+		"awakenedName": "Zeratu",
+		"element": "Dark",
+		"name": "Chimera"
+	},
+	{
+		"awakenedName": "Lagmaron",
+		"element": "Wind",
+		"name": "Chimera"
+	},
+	{
+		"awakenedName": "Rakan",
+		"element": "Fire",
+		"name": "Chimera"
+	},
+	{
+		"awakenedName": "Shan",
+		"element": "Light",
+		"name": "Chimera"
+	},
+	{
+		"awakenedName": "Sigmarus",
+		"element": "Water",
+		"name": "Phoenix"
+	},
+	{
+		"awakenedName": "Jaara",
+		"element": "Dark",
+		"name": "Phoenix"
+	},
+	{
+		"awakenedName": "Teshar",
+		"element": "Wind",
+		"name": "Phoenix"
+	},
+	{
+		"awakenedName": "Perna",
+		"element": "Fire",
+		"name": "Phoenix"
+	},
+	{
+		"awakenedName": "Eludia",
+		"element": "Light",
+		"name": "Phoenix"
+	},
+	{
+		"awakenedName": "Verad",
+		"element": "Water",
+		"name": "Dragon"
+	},
+	{
+		"awakenedName": "Grogen",
+		"element": "Dark",
+		"name": "Dragon"
+	},
+	{
+		"awakenedName": "Jamire",
+		"element": "Wind",
+		"name": "Dragon"
+	},
+	{
+		"awakenedName": "Zaiross",
+		"element": "Fire",
+		"name": "Dragon"
+	},
+	{
+		"awakenedName": "Zerath",
+		"element": "Light",
+		"name": "Dragon"
+	},
+	{
+		"awakenedName": "Camilla",
+		"element": "Water",
+		"name": "Valkyrja"
+	},
+	{
+		"awakenedName": "Trinity",
+		"element": "Dark",
+		"name": "Valkyrja"
+	},
+	{
+		"awakenedName": "Katarina",
+		"element": "Wind",
+		"name": "Valkyrja"
+	},
+	{
+		"awakenedName": "Vanessa",
+		"element": "Fire",
+		"name": "Valkyrja"
+	},
+	{
+		"awakenedName": "Akroma",
+		"element": "Light",
+		"name": "Valkyrja"
+	},
+	{
+		"awakenedName": "Windy",
+		"element": "Wind",
+		"name": "Jack-o’-lantern"
+	},
+	{
+		"awakenedName": "Chilling",
+		"element": "Water",
+		"name": "Jack-o’-lantern"
+	},
+	{
+		"awakenedName": "Dusky",
+		"element": "Dark",
+		"name": "Jack-o’-lantern"
+	},
+	{
+		"awakenedName": "Smokey",
+		"element": "Fire",
+		"name": "Jack-o’-lantern"
+	},
+	{
+		"awakenedName": "Misty",
+		"element": "Light",
+		"name": "Jack-o’-lantern"
+	},
+	{
+		"awakenedName": "Imesety",
+		"element": "Wind",
+		"name": "Horus"
+	},
+	{
+		"awakenedName": "Wedjat",
+		"element": "Light",
+		"name": "Horus"
+	},
+	{
+		"awakenedName": "Qebehsenuef",
+		"element": "Water",
+		"name": "Horus"
+	},
+	{
+		"awakenedName": "Amduat",
+		"element": "Dark",
+		"name": "Horus"
+	},
+	{
+		"awakenedName": "Duamutef",
+		"element": "Fire",
+		"name": "Horus"
+	},
+	{
+		"awakenedName": "Iunu",
+		"element": "Wind",
+		"name": "Anubis"
+	},
+	{
+		"awakenedName": "Avaris",
+		"element": "Water",
+		"name": "Anubis"
+	},
+	{
+		"awakenedName": "Khmun",
+		"element": "Fire",
+		"name": "Anubis"
+	},
+	{
+		"awakenedName": "Thebae",
+		"element": "Dark",
+		"name": "Anubis"
+	},
+	{
+		"awakenedName": "Amarna",
+		"element": "Light",
+		"name": "Anubis"
+	},
+	{
+		"awakenedName": "Olivia",
+		"element": "Wind",
+		"name": "Neostone Agent"
+	},
+	{
+		"awakenedName": "Emma",
+		"element": "Water",
+		"name": "Neostone Agent"
+	},
+	{
+		"awakenedName": "Lisa",
+		"element": "Fire",
+		"name": "Neostone Agent"
+	},
+	{
+		"awakenedName": "Sylvia",
+		"element": "Dark",
+		"name": "Neostone Agent"
+	},
+	{
+		"awakenedName": "Illianna",
+		"element": "Light",
+		"name": "Neostone Agent"
+	},
+	{
+		"awakenedName": "Logan",
+		"element": "Wind",
+		"name": "Neostone Fighter"
+	},
+	{
+		"awakenedName": "Ryan",
+		"element": "Water",
+		"name": "Neostone Fighter"
+	},
+	{
+		"awakenedName": "Karl",
+		"element": "Dark",
+		"name": "Neostone Fighter"
+	},
+	{
+		"awakenedName": "Trevor",
+		"element": "Fire",
+		"name": "Neostone Fighter"
+	},
+	{
+		"awakenedName": "Lucas",
+		"element": "Light",
+		"name": "Neostone Fighter"
+	},
+	{
+		"awakenedName": "Tanya",
+		"element": "Wind",
+		"name": "Assassin"
+	},
+	{
+		"awakenedName": "Stella",
+		"element": "Water",
+		"name": "Assassin"
+	},
+	{
+		"awakenedName": "Isabelle",
+		"element": "Dark",
+		"name": "Assassin"
+	},
+	{
+		"awakenedName": "Lexy",
+		"element": "Fire",
+		"name": "Assassin"
+	},
+	{
+		"awakenedName": "Natalie",
+		"element": "Light",
+		"name": "Assassin"
+	},
+	{
+		"awakenedName": "Lupinus",
+		"element": "Wind",
+		"name": "Magic Knight"
+	},
+	{
+		"awakenedName": "Lapis",
+		"element": "Water",
+		"name": "Magic Knight"
+	},
+	{
+		"awakenedName": "Lanett",
+		"element": "Dark",
+		"name": "Magic Knight"
+	},
+	{
+		"awakenedName": "Astar",
+		"element": "Fire",
+		"name": "Magic Knight"
+	},
+	{
+		"awakenedName": "Iris",
+		"element": "Light",
+		"name": "Magic Knight"
+	},
+	{
+		"awakenedName": "Cichlid",
+		"element": "Wind",
+		"name": "Mermaid"
+	},
+	{
+		"awakenedName": "Tetra",
+		"element": "Water",
+		"name": "Mermaid"
+	},
+	{
+		"awakenedName": "Betta",
+		"element": "Dark",
+		"name": "Mermaid"
+	},
+	{
+		"awakenedName": "Platy",
+		"element": "Fire",
+		"name": "Mermaid"
+	},
+	{
+		"awakenedName": "Molly",
+		"element": "Light",
+		"name": "Mermaid"
+	},
+	{
+		"awakenedName": "Barque",
+		"element": "Wind",
+		"name": "Pirate Captain"
+	},
+	{
+		"awakenedName": "Galleon",
+		"element": "Water",
+		"name": "Pirate Captain"
+	},
+	{
+		"awakenedName": "Frigate",
+		"element": "Dark",
+		"name": "Pirate Captain"
+	},
+	{
+		"awakenedName": "Carrack",
+		"element": "Fire",
+		"name": "Pirate Captain"
+	},
+	{
+		"awakenedName": "Brig",
+		"element": "Light",
+		"name": "Pirate Captain"
+	},
+	{
+		"awakenedName": "Hraesvelg",
+		"element": "Wind",
+		"name": "Barbaric King"
+	},
+	{
+		"awakenedName": "Aegir",
+		"element": "Water",
+		"name": "Barbaric King"
+	},
+	{
+		"awakenedName": "Hrungnir",
+		"element": "Dark",
+		"name": "Barbaric King"
+	},
+	{
+		"awakenedName": "Surtr",
+		"element": "Fire",
+		"name": "Barbaric King"
+	},
+	{
+		"awakenedName": "Mimirr",
+		"element": "Light",
+		"name": "Barbaric King"
+	},
+	{
+		"awakenedName": "Chasun",
+		"element": "Wind",
+		"name": "Sky Dancer"
+	},
+	{
+		"awakenedName": "Yeonhong",
+		"element": "Light",
+		"name": "Sky Dancer"
+	},
+	{
+		"awakenedName": "Mihyang",
+		"element": "Water",
+		"name": "Sky Dancer"
+	},
+	{
+		"awakenedName": "Hwahee",
+		"element": "Fire",
+		"name": "Sky Dancer"
+	},
+	{
+		"awakenedName": "Wolyung",
+		"element": "Dark",
+		"name": "Sky Dancer"
+	},
+	{
+		"awakenedName": "Taurus",
+		"element": "Wind",
+		"name": "Kobold Bomber"
+	},
+	{
+		"awakenedName": "Malaka",
+		"element": "Water",
+		"name": "Kobold Bomber"
+	},
+	{
+		"awakenedName": "Bering",
+		"element": "Dark",
+		"name": "Kobold Bomber"
+	},
+	{
+		"awakenedName": "Zibrolta",
+		"element": "Fire",
+		"name": "Kobold Bomber"
+	},
+	{
+		"awakenedName": "Dover",
+		"element": "Light",
+		"name": "Kobold Bomber"
+	},
+	{
+		"awakenedName": "Aquila",
+		"element": "Wind",
+		"name": "Brownie Magician"
+	},
+	{
+		"awakenedName": "Orion",
+		"element": "Water",
+		"name": "Brownie Magician"
+	},
+	{
+		"awakenedName": "Korona",
+		"element": "Dark",
+		"name": "Brownie Magician"
+	},
+	{
+		"awakenedName": "Draco",
+		"element": "Fire",
+		"name": "Brownie Magician"
+	},
+	{
+		"awakenedName": "Gemini",
+		"element": "Light",
+		"name": "Brownie Magician"
+	},
+	{
+		"awakenedName": "Xiao Lin",
+		"element": "Water",
+		"name": "Kung Fu Girl"
+	},
+	{
+		"awakenedName": "Fei",
+		"element": "Dark",
+		"name": "Kung Fu Girl"
+	},
+	{
+		"awakenedName": "Hong Hua",
+		"element": "Fire",
+		"name": "Kung Fu Girl"
+	},
+	{
+		"awakenedName": "Liu Mei",
+		"element": "Light",
+		"name": "Kung Fu Girl"
+	},
+	{
+		"awakenedName": "Ling Ling",
+		"element": "Wind",
+		"name": "Kung Fu Girl"
+	},
+	{
+		"awakenedName": "Rigel",
+		"element": "Water",
+		"name": "Lich"
+	},
+	{
+		"awakenedName": "Grego",
+		"element": "Dark",
+		"name": "Lich"
+	},
+	{
+		"awakenedName": "Antares",
+		"element": "Fire",
+		"name": "Lich"
+	},
+	{
+		"awakenedName": "Halphas",
+		"element": "Light",
+		"name": "Lich"
+	},
+	{
+		"awakenedName": "Fuco",
+		"element": "Wind",
+		"name": "Lich"
+	},
+	{
+		"awakenedName": "Fedora",
+		"element": "Water",
+		"name": "Death Knight"
+	},
+	{
+		"awakenedName": "Dias",
+		"element": "Dark",
+		"name": "Death Knight"
+	},
+	{
+		"awakenedName": "Arnold",
+		"element": "Fire",
+		"name": "Death Knight"
+	},
+	{
+		"awakenedName": "Conrad",
+		"element": "Light",
+		"name": "Death Knight"
+	},
+	{
+		"awakenedName": "Briand",
+		"element": "Wind",
+		"name": "Death Knight"
+	},
+	{
+		"awakenedName": "Su",
+		"element": "Water",
+		"name": "Rakshasa"
+	},
+	{
+		"awakenedName": "Ran",
+		"element": "Dark",
+		"name": "Rakshasa"
+	},
+	{
+		"awakenedName": "Hwa",
+		"element": "Fire",
+		"name": "Rakshasa"
+	},
+	{
+		"awakenedName": "Pang",
+		"element": "Light",
+		"name": "Rakshasa"
+	},
+	{
+		"awakenedName": "Yen",
+		"element": "Wind",
+		"name": "Rakshasa"
+	},
+	{
+		"awakenedName": "Michelle",
+		"element": "Wind",
+		"name": "Epikion Priest"
+	},
+	{
+		"awakenedName": "Chloe",
+		"element": "Fire",
+		"name": "Epikion Priest"
+	},
+	{
+		"awakenedName": "Rina",
+		"element": "Water",
+		"name": "Epikion Priest"
+	},
+	{
+		"awakenedName": "Iona",
+		"element": "Light",
+		"name": "Epikion Priest"
+	},
+	{
+		"awakenedName": "Rasheed",
+		"element": "Dark",
+		"name": "Epikion Priest"
+	},
+	{
+		"awakenedName": "Julianne",
+		"element": "Light",
+		"name": "Vampire"
+	},
+	{
+		"awakenedName": "Liesel",
+		"element": "Water",
+		"name": "Vampire"
+	},
+	{
+		"awakenedName": "Verdehile",
+		"element": "Fire",
+		"name": "Vampire"
+	},
+	{
+		"awakenedName": "Cadiz",
+		"element": "Dark",
+		"name": "Vampire"
+	},
+	{
+		"awakenedName": "Argen",
+		"element": "Wind",
+		"name": "Vampire"
+	},
+	{
+		"awakenedName": "Luer",
+		"element": "Water",
+		"name": "Phantom Thief"
+	},
+	{
+		"awakenedName": "Guillaume",
+		"element": "Dark",
+		"name": "Phantom Thief"
+	},
+	{
+		"awakenedName": "Jean",
+		"element": "Fire",
+		"name": "Phantom Thief"
+	},
+	{
+		"awakenedName": "Louis",
+		"element": "Light",
+		"name": "Phantom Thief"
+	},
+	{
+		"awakenedName": "Julien",
+		"element": "Wind",
+		"name": "Phantom Thief"
+	},
+	{
+		"awakenedName": "Julie",
+		"element": "Water",
+		"name": "Pierret"
+	},
+	{
+		"awakenedName": "Luna",
+		"element": "Dark",
+		"name": "Pierret"
+	},
+	{
+		"awakenedName": "Clara",
+		"element": "Fire",
+		"name": "Pierret"
+	},
+	{
+		"awakenedName": "Eva",
+		"element": "Light",
+		"name": "Pierret"
+	},
+	{
+		"awakenedName": "Sophia",
+		"element": "Wind",
+		"name": "Pierret"
+	},
+	{
+		"awakenedName": "Susano",
+		"element": "Water",
+		"name": "Ninja"
+	},
+	{
+		"awakenedName": "Garo",
+		"element": "Fire",
+		"name": "Ninja"
+	},
+	{
+		"awakenedName": "Han",
+		"element": "Dark",
+		"name": "Ninja"
+	},
+	{
+		"awakenedName": "Gin",
+		"element": "Light",
+		"name": "Ninja"
+	},
+	{
+		"awakenedName": "Orochi",
+		"element": "Wind",
+		"name": "Ninja"
+	},
+	{
+		"awakenedName": "Sian",
+		"element": "Water",
+		"name": "Joker"
+	},
+	{
+		"awakenedName": "Liebli",
+		"element": "Dark",
+		"name": "Joker"
+	},
+	{
+		"awakenedName": "Jojo",
+		"element": "Fire",
+		"name": "Joker"
+	},
+	{
+		"awakenedName": "Figaro",
+		"element": "Light",
+		"name": "Joker"
+	},
+	{
+		"awakenedName": "Lushen",
+		"element": "Wind",
+		"name": "Joker"
+	},
+	{
+		"awakenedName": "Izaria",
+		"element": "Water",
+		"name": "Succubus"
+	},
+	{
+		"awakenedName": "Isael",
+		"element": "Dark",
+		"name": "Succubus"
+	},
+	{
+		"awakenedName": "Akia",
+		"element": "Fire",
+		"name": "Succubus"
+	},
+	{
+		"awakenedName": "Aria",
+		"element": "Light",
+		"name": "Succubus"
+	},
+	{
+		"awakenedName": "Selena",
+		"element": "Wind",
+		"name": "Succubus"
+	},
+	{
+		"awakenedName": "Icares",
+		"element": "Dark",
+		"name": "Sylphid"
+	},
+	{
+		"awakenedName": "Fria",
+		"element": "Fire",
+		"name": "Sylphid"
+	},
+	{
+		"awakenedName": "Mihael",
+		"element": "Light",
+		"name": "Sylphid"
+	},
+	{
+		"awakenedName": "Acasis",
+		"element": "Wind",
+		"name": "Sylphid"
+	},
+	{
+		"awakenedName": "Lumirecia",
+		"element": "Water",
+		"name": "Sylphid"
+	},
+	{
+		"awakenedName": "Aschubel",
+		"element": "Dark",
+		"name": "Sylph"
+	},
+	{
+		"awakenedName": "Baretta",
+		"element": "Fire",
+		"name": "Sylph"
+	},
+	{
+		"awakenedName": "Eredas",
+		"element": "Light",
+		"name": "Sylph"
+	},
+	{
+		"awakenedName": "Shimitae",
+		"element": "Wind",
+		"name": "Sylph"
+	},
+	{
+		"awakenedName": "Tyron",
+		"element": "Water",
+		"name": "Sylph"
+	},
+	{
+		"awakenedName": "Tilasha",
+		"element": "Dark",
+		"name": "Undine"
+	},
+	{
+		"awakenedName": "Atenai",
+		"element": "Fire",
+		"name": "Undine"
+	},
+	{
+		"awakenedName": "Icasha",
+		"element": "Light",
+		"name": "Undine"
+	},
+	{
+		"awakenedName": "Delphoi",
+		"element": "Wind",
+		"name": "Undine"
+	},
+	{
+		"awakenedName": "Mikene",
+		"element": "Water",
+		"name": "Undine"
+	},
+	{
+		"awakenedName": "Kamiya",
+		"element": "Dark",
+		"name": "Nine-tailed Fox"
+	},
+	{
+		"awakenedName": "Shihwa",
+		"element": "Fire",
+		"name": "Nine-tailed Fox"
+	},
+	{
+		"awakenedName": "Chamie",
+		"element": "Light",
+		"name": "Nine-tailed Fox"
+	},
+	{
+		"awakenedName": "Arang",
+		"element": "Wind",
+		"name": "Nine-tailed Fox"
+	},
+	{
+		"awakenedName": "Soha",
+		"element": "Water",
+		"name": "Nine-tailed Fox"
+	},
+	{
+		"awakenedName": "Dova",
+		"element": "Light",
+		"name": "Harg"
+	},
+	{
+		"awakenedName": "Racuni",
+		"element": "Fire",
+		"name": "Harg"
+	},
+	{
+		"awakenedName": "Kroa",
+		"element": "Dark",
+		"name": "Harg"
+	},
+	{
+		"awakenedName": "Raviti",
+		"element": "Wind",
+		"name": "Harg"
+	},
+	{
+		"awakenedName": "Remy",
+		"element": "Water",
+		"name": "Harg"
+	},
+	{
+		"awakenedName": "Adrian",
+		"element": "Fire",
+		"name": "Elven Ranger"
+	},
+	{
+		"awakenedName": "Lucien",
+		"element": "Light",
+		"name": "Elven Ranger"
+	},
+	{
+		"awakenedName": "Erwin",
+		"element": "Wind",
+		"name": "Elven Ranger"
+	},
+	{
+		"awakenedName": "Isillen",
+		"element": "Dark",
+		"name": "Elven Ranger"
+	},
+	{
+		"awakenedName": "Eluin",
+		"element": "Water",
+		"name": "Elven Ranger"
+	},
+	{
+		"awakenedName": "Bulldozer",
+		"element": "Fire",
+		"name": "Frankenstein"
+	},
+	{
+		"awakenedName": "Crawler",
+		"element": "Dark",
+		"name": "Frankenstein"
+	},
+	{
+		"awakenedName": "Driller",
+		"element": "Light",
+		"name": "Frankenstein"
+	},
+	{
+		"awakenedName": "Crane",
+		"element": "Wind",
+		"name": "Frankenstein"
+	},
+	{
+		"awakenedName": "Tractor",
+		"element": "Water",
+		"name": "Frankenstein"
+	},
+	{
+		"awakenedName": "Sonora",
+		"element": "Fire",
+		"name": "Mummy"
+	},
+	{
+		"awakenedName": "Karakum",
+		"element": "Dark",
+		"name": "Mummy"
+	},
+	{
+		"awakenedName": "Sahara",
+		"element": "Light",
+		"name": "Mummy"
+	},
+	{
+		"awakenedName": "Namib",
+		"element": "Wind",
+		"name": "Mummy"
+	},
+	{
+		"awakenedName": "Nubia",
+		"element": "Water",
+		"name": "Mummy"
+	},
+	{
+		"awakenedName": "Sin",
+		"element": "Fire",
+		"name": "Martial Artist"
+	},
+	{
+		"awakenedName": "Jackie",
+		"element": "Dark",
+		"name": "Martial Artist"
+	},
+	{
+		"awakenedName": "Hiro",
+		"element": "Light",
+		"name": "Martial Artist"
+	},
+	{
+		"awakenedName": "Lo",
+		"element": "Wind",
+		"name": "Martial Artist"
+	},
+	{
+		"awakenedName": "Luan",
+		"element": "Water",
+		"name": "Martial Artist"
+	},
+	{
+		"awakenedName": "Ignicus",
+		"element": "Fire",
+		"name": "Charger Shark"
+	},
+	{
+		"awakenedName": "Calicus",
+		"element": "Dark",
+		"name": "Charger Shark"
+	},
+	{
+		"awakenedName": "Rumicus",
+		"element": "Light",
+		"name": "Charger Shark"
+	},
+	{
+		"awakenedName": "Zephicus",
+		"element": "Wind",
+		"name": "Charger Shark"
+	},
+	{
+		"awakenedName": "Aqcus",
+		"element": "Water",
+		"name": "Charger Shark"
+	},
+	{
+		"awakenedName": "Anne",
+		"element": "Fire",
+		"name": "Cow Girl"
+	},
+	{
+		"awakenedName": "Loren",
+		"element": "Light",
+		"name": "Cow Girl"
+	},
+	{
+		"awakenedName": "Cassie",
+		"element": "Dark",
+		"name": "Cow Girl"
+	},
+	{
+		"awakenedName": "Hannah",
+		"element": "Wind",
+		"name": "Cow Girl"
+	},
+	{
+		"awakenedName": "Sera",
+		"element": "Water",
+		"name": "Cow Girl"
+	},
+	{
+		"awakenedName": "Basalt",
+		"element": "Dark",
+		"name": "Battle Mammoth"
+	},
+	{
+		"awakenedName": "Marble",
+		"element": "Light",
+		"name": "Battle Mammoth"
+	},
+	{
+		"awakenedName": "Olivine",
+		"element": "Wind",
+		"name": "Battle Mammoth"
+	},
+	{
+		"awakenedName": "Talc",
+		"element": "Water",
+		"name": "Battle Mammoth"
+	},
+	{
+		"awakenedName": "Granite",
+		"element": "Fire",
+		"name": "Battle Mammoth"
+	},
+	{
+		"awakenedName": "Kuna",
+		"element": "Dark",
+		"name": "Penguin Knight"
+	},
+	{
+		"awakenedName": "Dona",
+		"element": "Light",
+		"name": "Penguin Knight"
+	},
+	{
+		"awakenedName": "Mav",
+		"element": "Wind",
+		"name": "Penguin Knight"
+	},
+	{
+		"awakenedName": "Toma",
+		"element": "Water",
+		"name": "Penguin Knight"
+	},
+	{
+		"awakenedName": "Naki",
+		"element": "Fire",
+		"name": "Penguin Knight"
+	},
+	{
+		"awakenedName": "Baekdu",
+		"element": "Light",
+		"name": "Beast Hunter"
+	},
+	{
+		"awakenedName": "Suri",
+		"element": "Wind",
+		"name": "Beast Hunter"
+	},
+	{
+		"awakenedName": "Gangchun",
+		"element": "Water",
+		"name": "Beast Hunter"
+	},
+	{
+		"awakenedName": "Nangrim",
+		"element": "Fire",
+		"name": "Beast Hunter"
+	},
+	{
+		"awakenedName": "Hannam",
+		"element": "Dark",
+		"name": "Beast Hunter"
+	},
+	{
+		"awakenedName": "Woonhak",
+		"element": "Dark",
+		"name": "Taoist"
+	},
+	{
+		"awakenedName": "Woochi",
+		"element": "Wind",
+		"name": "Taoist"
+	},
+	{
+		"awakenedName": "Gildong",
+		"element": "Water",
+		"name": "Taoist"
+	},
+	{
+		"awakenedName": "Hwadam",
+		"element": "Light",
+		"name": "Taoist"
+	},
+	{
+		"awakenedName": "Gunpyeong",
+		"element": "Fire",
+		"name": "Taoist"
+	},
+	{
+		"awakenedName": "Glinodon",
+		"element": "Light",
+		"name": "Lizardman"
+	},
+	{
+		"awakenedName": "Velfinodon",
+		"element": "Wind",
+		"name": "Lizardman"
+	},
+	{
+		"awakenedName": "Kernodon",
+		"element": "Water",
+		"name": "Lizardman"
+	},
+	{
+		"awakenedName": "Igmanodon",
+		"element": "Fire",
+		"name": "Lizardman"
+	},
+	{
+		"awakenedName": "Devinodon",
+		"element": "Dark",
+		"name": "Lizardman"
+	},
+	{
+		"awakenedName": "Grotau",
+		"element": "Light",
+		"name": "Minotauros"
+	},
+	{
+		"awakenedName": "Eintau",
+		"element": "Wind",
+		"name": "Minotauros"
+	},
+	{
+		"awakenedName": "Urtau",
+		"element": "Water",
+		"name": "Minotauros"
+	},
+	{
+		"awakenedName": "Burentau",
+		"element": "Fire",
+		"name": "Minotauros"
+	},
+	{
+		"awakenedName": "Kamatau",
+		"element": "Dark",
+		"name": "Minotauros"
+	},
+	{
+		"awakenedName": "Tien Qin",
+		"element": "Light",
+		"name": "Drunken Master"
+	},
+	{
+		"awakenedName": "Huan",
+		"element": "Wind",
+		"name": "Drunken Master"
+	},
+	{
+		"awakenedName": "Mao",
+		"element": "Water",
+		"name": "Drunken Master"
+	},
+	{
+		"awakenedName": "Xiao Chun",
+		"element": "Fire",
+		"name": "Drunken Master"
+	},
+	{
+		"awakenedName": "Wei Shin",
+		"element": "Dark",
+		"name": "Drunken Master"
+	},
+	{
+		"awakenedName": "Silver",
+		"element": "Light",
+		"name": "Living Armor"
+	},
+	{
+		"awakenedName": "Copper",
+		"element": "Wind",
+		"name": "Living Armor"
+	},
+	{
+		"awakenedName": "Nickel",
+		"element": "Water",
+		"name": "Living Armor"
+	},
+	{
+		"awakenedName": "Iron",
+		"element": "Fire",
+		"name": "Living Armor"
+	},
+	{
+		"awakenedName": "Zinc",
+		"element": "Dark",
+		"name": "Living Armor"
+	},
+	{
+		"awakenedName": "Prom",
+		"element": "Light",
+		"name": "Grim Reaper"
+	},
+	{
+		"awakenedName": "Hiva",
+		"element": "Wind",
+		"name": "Grim Reaper"
+	},
+	{
+		"awakenedName": "Hemos",
+		"element": "Water",
+		"name": "Grim Reaper"
+	},
+	{
+		"awakenedName": "Sath",
+		"element": "Fire",
+		"name": "Grim Reaper"
+	},
+	{
+		"awakenedName": "Thrain",
+		"element": "Dark",
+		"name": "Grim Reaper"
+	},
+	{
+		"awakenedName": "Linda",
+		"element": "Light",
+		"name": "Mystic Witch"
+	},
+	{
+		"awakenedName": "Silia",
+		"element": "Wind",
+		"name": "Mystic Witch"
+	},
+	{
+		"awakenedName": "Megan",
+		"element": "Water",
+		"name": "Mystic Witch"
+	},
+	{
+		"awakenedName": "Rebecca",
+		"element": "Fire",
+		"name": "Mystic Witch"
+	},
+	{
+		"awakenedName": "Gina",
+		"element": "Dark",
+		"name": "Mystic Witch"
+	},
+	{
+		"awakenedName": "Imp Champion",
+		"element": "Light",
+		"name": "Imp Champion"
+	},
+	{
+		"awakenedName": "Pigma",
+		"element": "Wind",
+		"name": "Imp Champion"
+	},
+	{
+		"awakenedName": "Yaku",
+		"element": "Water",
+		"name": "Imp Champion"
+	},
+	{
+		"awakenedName": "Fairo",
+		"element": "Fire",
+		"name": "Imp Champion"
+	},
+	{
+		"awakenedName": "Loque",
+		"element": "Dark",
+		"name": "Imp Champion"
+	},
+	{
+		"awakenedName": "Roger",
+		"element": "Wind",
+		"name": "Bounty Hunter"
+	},
+	{
+		"awakenedName": "Wayne",
+		"element": "Water",
+		"name": "Bounty Hunter"
+	},
+	{
+		"awakenedName": "Randy",
+		"element": "Fire",
+		"name": "Bounty Hunter"
+	},
+	{
+		"awakenedName": "Jamie",
+		"element": "Dark",
+		"name": "Bounty Hunter"
+	},
+	{
+		"awakenedName": "Walkers",
+		"element": "Light",
+		"name": "Bounty Hunter"
+	},
+	{
+		"awakenedName": "Fami",
+		"element": "Light",
+		"name": "Magical Archer"
+	},
+	{
+		"awakenedName": "Ardella",
+		"element": "Wind",
+		"name": "Magical Archer"
+	},
+	{
+		"awakenedName": "Bethony",
+		"element": "Dark",
+		"name": "Magical Archer"
+	},
+	{
+		"awakenedName": "Sharron",
+		"element": "Water",
+		"name": "Magical Archer"
+	},
+	{
+		"awakenedName": "Chris",
+		"element": "Light",
+		"name": "Magical Archer"
+	},
+	{
+		"awakenedName": "Cassandra",
+		"element": "Fire",
+		"name": "Magical Archer"
+	},
+	{
+		"awakenedName": "Kai'en",
+		"element": "Fire",
+		"name": "Vagabond"
+	},
+	{
+		"awakenedName": "Allen",
+		"element": "Water",
+		"name": "Vagabond"
+	},
+	{
+		"awakenedName": "Jubelle",
+		"element": "Dark",
+		"name": "Vagabond"
+	},
+	{
+		"awakenedName": "Darion",
+		"element": "Light",
+		"name": "Vagabond"
+	},
+	{
+		"awakenedName": "Roid",
+		"element": "Wind",
+		"name": "Vagabond"
+	},
+	{
+		"awakenedName": "Naomi",
+		"element": "Wind",
+		"name": "Martial Cat"
+	},
+	{
+		"awakenedName": "Mina",
+		"element": "Water",
+		"name": "Martial Cat"
+	},
+	{
+		"awakenedName": "Mei",
+		"element": "Fire",
+		"name": "Martial Cat"
+	},
+	{
+		"awakenedName": "Miho",
+		"element": "Dark",
+		"name": "Martial Cat"
+	},
+	{
+		"awakenedName": "Xiao Ling",
+		"element": "Light",
+		"name": "Martial Cat"
+	},
+	{
+		"awakenedName": "Hina",
+		"element": "Wind",
+		"name": "Amazon"
+	},
+	{
+		"awakenedName": "Ellin",
+		"element": "Water",
+		"name": "Amazon"
+	},
+	{
+		"awakenedName": "Ceres",
+		"element": "Fire",
+		"name": "Amazon"
+	},
+	{
+		"awakenedName": "Mara",
+		"element": "Dark",
+		"name": "Amazon"
+	},
+	{
+		"awakenedName": "Lyn",
+		"element": "Light",
+		"name": "Amazon"
+	},
+	{
+		"awakenedName": "Dagorr",
+		"element": "Wind",
+		"name": "Bearman"
+	},
+	{
+		"awakenedName": "Gruda",
+		"element": "Water",
+		"name": "Bearman"
+	},
+	{
+		"awakenedName": "Kungen",
+		"element": "Fire",
+		"name": "Bearman"
+	},
+	{
+		"awakenedName": "Haken",
+		"element": "Dark",
+		"name": "Bearman"
+	},
+	{
+		"awakenedName": "Ahman",
+		"element": "Light",
+		"name": "Bearman"
+	},
+	{
+		"awakenedName": "Moria",
+		"element": "Wind",
+		"name": "High Elemental"
+	},
+	{
+		"awakenedName": "Ellena",
+		"element": "Water",
+		"name": "High Elemental"
+	},
+	{
+		"awakenedName": "Kahli",
+		"element": "Fire",
+		"name": "High Elemental"
+	},
+	{
+		"awakenedName": "Jumaline",
+		"element": "Dark",
+		"name": "High Elemental"
+	},
+	{
+		"awakenedName": "Shren",
+		"element": "Light",
+		"name": "High Elemental"
+	},
+	{
+		"awakenedName": "Purian",
+		"element": "Water",
+		"name": "Inferno"
+	},
+	{
+		"awakenedName": "Tagaros",
+		"element": "Fire",
+		"name": "Inferno"
+	},
+	{
+		"awakenedName": "Drogan",
+		"element": "Dark",
+		"name": "Inferno"
+	},
+	{
+		"awakenedName": "Eludain",
+		"element": "Light",
+		"name": "Inferno"
+	},
+	{
+		"awakenedName": "Anduril",
+		"element": "Wind",
+		"name": "Inferno"
+	},
+	{
+		"awakenedName": "Kahn",
+		"element": "Water",
+		"name": "Griffon"
+	},
+	{
+		"awakenedName": "Spectra",
+		"element": "Fire",
+		"name": "Griffon"
+	},
+	{
+		"awakenedName": "Varus",
+		"element": "Dark",
+		"name": "Griffon"
+	},
+	{
+		"awakenedName": "Shamann",
+		"element": "Light",
+		"name": "Griffon"
+	},
+	{
+		"awakenedName": "Bernard",
+		"element": "Wind",
+		"name": "Griffon"
+	},
+	{
+		"awakenedName": "Kuhn",
+		"element": "Water",
+		"name": "Golem"
+	},
+	{
+		"awakenedName": "Kugo",
+		"element": "Fire",
+		"name": "Golem"
+	},
+	{
+		"awakenedName": "Maggi",
+		"element": "Dark",
+		"name": "Golem"
+	},
+	{
+		"awakenedName": "Groggo",
+		"element": "Light",
+		"name": "Golem"
+	},
+	{
+		"awakenedName": "Ragion",
+		"element": "Wind",
+		"name": "Golem"
+	},
+	{
+		"awakenedName": "Shailoq",
+		"element": "Water",
+		"name": "Serpent"
+	},
+	{
+		"awakenedName": "Fao",
+		"element": "Fire",
+		"name": "Serpent"
+	},
+	{
+		"awakenedName": "Mantura",
+		"element": "Dark",
+		"name": "Serpent"
+	},
+	{
+		"awakenedName": "Elpuria",
+		"element": "Light",
+		"name": "Serpent"
+	},
+	{
+		"awakenedName": "Ermeda",
+		"element": "Wind",
+		"name": "Serpent"
+	},
+	{
+		"awakenedName": "Sharman",
+		"element": "Light",
+		"name": "Salamander"
+	},
+	{
+		"awakenedName": "Decamaron",
+		"element": "Dark",
+		"name": "Salamander"
+	},
+	{
+		"awakenedName": "Krakdon",
+		"element": "Fire",
+		"name": "Salamander"
+	},
+	{
+		"awakenedName": "Kaimann",
+		"element": "Water",
+		"name": "Salamander"
+	},
+	{
+		"awakenedName": "Lukan",
+		"element": "Wind",
+		"name": "Salamander"
+	},
+	{
+		"awakenedName": "Icaru",
+		"element": "Water",
+		"name": "Inugami"
+	},
+	{
+		"awakenedName": "Raoq",
+		"element": "Fire",
+		"name": "Inugami"
+	},
+	{
+		"awakenedName": "Kro",
+		"element": "Dark",
+		"name": "Inugami"
+	},
+	{
+		"awakenedName": "Belladeon",
+		"element": "Light",
+		"name": "Inugami"
+	},
+	{
+		"awakenedName": "Ramahan",
+		"element": "Wind",
+		"name": "Inugami"
+	},
+	{
+		"awakenedName": "Ramira",
+		"element": "Water",
+		"name": "Harpy"
+	},
+	{
+		"awakenedName": "Lucasha",
+		"element": "Fire",
+		"name": "Harpy"
+	},
+	{
+		"awakenedName": "Hellea",
+		"element": "Dark",
+		"name": "Harpy"
+	},
+	{
+		"awakenedName": "Kabilla",
+		"element": "Light",
+		"name": "Harpy"
+	},
+	{
+		"awakenedName": "Prilea",
+		"element": "Wind",
+		"name": "Harpy"
+	},
+	{
+		"awakenedName": "Elucia",
+		"element": "Water",
+		"name": "Fairy"
+	},
+	{
+		"awakenedName": "Iselia",
+		"element": "Fire",
+		"name": "Fairy"
+	},
+	{
+		"awakenedName": "Neal",
+		"element": "Light",
+		"name": "Fairy"
+	},
+	{
+		"awakenedName": "Aeilene",
+		"element": "Wind",
+		"name": "Fairy"
+	},
+	{
+		"awakenedName": "Sorin",
+		"element": "Dark",
+		"name": "Fairy"
+	},
+	{
+		"awakenedName": "Shushu",
+		"element": "Light",
+		"name": "Howl"
+	},
+	{
+		"awakenedName": "Chacha",
+		"element": "Dark",
+		"name": "Howl"
+	},
+	{
+		"awakenedName": "Lala",
+		"element": "Fire",
+		"name": "Howl"
+	},
+	{
+		"awakenedName": "Lulu",
+		"element": "Water",
+		"name": "Howl"
+	},
+	{
+		"awakenedName": "Chichi",
+		"element": "Wind",
+		"name": "Howl"
+	},
+	{
+		"awakenedName": "Rizak",
+		"element": "Dark",
+		"name": "Garuda"
+	},
+	{
+		"awakenedName": "Cahule",
+		"element": "Fire",
+		"name": "Garuda"
+	},
+	{
+		"awakenedName": "Konamiya",
+		"element": "Water",
+		"name": "Garuda"
+	},
+	{
+		"awakenedName": "Teon",
+		"element": "Light",
+		"name": "Garuda"
+	},
+	{
+		"awakenedName": "Lindermen",
+		"element": "Wind",
+		"name": "Garuda"
+	},
+	{
+		"awakenedName": "Shamar",
+		"element": "Light",
+		"name": "Hellhound"
+	},
+	{
+		"awakenedName": "Sieq",
+		"element": "Fire",
+		"name": "Hellhound"
+	},
+	{
+		"awakenedName": "Shumar",
+		"element": "Dark",
+		"name": "Hellhound"
+	},
+	{
+		"awakenedName": "Tarq",
+		"element": "Water",
+		"name": "Hellhound"
+	},
+	{
+		"awakenedName": "Gamir",
+		"element": "Wind",
+		"name": "Hellhound"
+	},
+	{
+		"awakenedName": "Bremis",
+		"element": "Fire",
+		"name": "Elemental"
+	},
+	{
+		"awakenedName": "Camules",
+		"element": "Dark",
+		"name": "Elemental"
+	},
+	{
+		"awakenedName": "Daharenos",
+		"element": "Water",
+		"name": "Elemental"
+	},
+	{
+		"awakenedName": "Priz",
+		"element": "Light",
+		"name": "Elemental"
+	},
+	{
+		"awakenedName": "Taharus",
+		"element": "Wind",
+		"name": "Elemental"
+	},
+	{
+		"awakenedName": "Taru",
+		"element": "Light",
+		"name": "Imp"
+	},
+	{
+		"awakenedName": "Garok",
+		"element": "Dark",
+		"name": "Imp"
+	},
+	{
+		"awakenedName": "Cogma",
+		"element": "Fire",
+		"name": "Imp"
+	},
+	{
+		"awakenedName": "Fynn",
+		"element": "Water",
+		"name": "Imp"
+	},
+	{
+		"awakenedName": "Ralph",
+		"element": "Wind",
+		"name": "Imp"
+	},
+	{
+		"awakenedName": "Cheryl",
+		"element": "Light",
+		"name": "Pixie"
+	},
+	{
+		"awakenedName": "Camaryn",
+		"element": "Dark",
+		"name": "Pixie"
+	},
+	{
+		"awakenedName": "Tatu",
+		"element": "Fire",
+		"name": "Pixie"
+	},
+	{
+		"awakenedName": "Kacey",
+		"element": "Water",
+		"name": "Pixie"
+	},
+	{
+		"awakenedName": "Shannon",
+		"element": "Wind",
+		"name": "Pixie"
+	},
+	{
+		"awakenedName": "Colleen",
+		"element": "Fire",
+		"name": "Harpu"
+	},
+	{
+		"awakenedName": "Seren",
+		"element": "Dark",
+		"name": "Harpu"
+	},
+	{
+		"awakenedName": "Sisroo",
+		"element": "Water",
+		"name": "Harpu"
+	},
+	{
+		"awakenedName": "Sia",
+		"element": "Light",
+		"name": "Harpu"
+	},
+	{
+		"awakenedName": "Seal",
+		"element": "Wind",
+		"name": "Harpu"
+	},
+	{
+		"awakenedName": "Kaz",
+		"element": "Water",
+		"name": "Samurai"
+	},
+	{
+		"awakenedName": "Sige",
+		"element": "Dark",
+		"name": "Samurai"
+	},
+	{
+		"awakenedName": "Jun",
+		"element": "Fire",
+		"name": "Samurai"
+	},
+	{
+		"awakenedName": "Tosi",
+		"element": "Light",
+		"name": "Samurai"
+	},
+	{
+		"awakenedName": "Kaito",
+		"element": "Wind",
+		"name": "Samurai"
+	},
+	{
+		"awakenedName": "Jansson",
+		"element": "Light",
+		"name": "Viking"
+	},
+	{
+		"awakenedName": "Geoffrey",
+		"element": "Fire",
+		"name": "Viking"
+	},
+	{
+		"awakenedName": "Janssen",
+		"element": "Dark",
+		"name": "Viking"
+	},
+	{
+		"awakenedName": "Huga",
+		"element": "Water",
+		"name": "Viking"
+	},
+	{
+		"awakenedName": "Walter",
+		"element": "Wind",
+		"name": "Viking"
+	},
+	{
+		"awakenedName": "Gorgo",
+		"element": "Dark",
+		"name": "Warbear"
+	},
+	{
+		"awakenedName": "Dagora",
+		"element": "Water",
+		"name": "Warbear"
+	},
+	{
+		"awakenedName": "Ursha",
+		"element": "Fire",
+		"name": "Warbear"
+	},
+	{
+		"awakenedName": "Lusha",
+		"element": "Light",
+		"name": "Warbear"
+	},
+	{
+		"awakenedName": "Ramagos",
+		"element": "Wind",
+		"name": "Warbear"
+	},
+	{
+		"awakenedName": "Shakan",
+		"element": "Wind",
+		"name": "Werewolf"
+	},
+	{
+		"awakenedName": "Vigor",
+		"element": "Water",
+		"name": "Werewolf"
+	},
+	{
+		"awakenedName": "Garoche",
+		"element": "Fire",
+		"name": "Werewolf"
+	},
+	{
+		"awakenedName": "Jultan",
+		"element": "Dark",
+		"name": "Werewolf"
+	},
+	{
+		"awakenedName": "Eshir",
+		"element": "Light",
+		"name": "Werewolf"
+	},
+	{
+		"awakenedName": "Arkajan",
+		"element": "Light",
+		"name": "Yeti"
+	},
+	{
+		"awakenedName": "Tantra",
+		"element": "Fire",
+		"name": "Yeti"
+	},
+	{
+		"awakenedName": "Kumae",
+		"element": "Dark",
+		"name": "Yeti"
+	},
+	{
+		"awakenedName": "Kunda",
+		"element": "Water",
+		"name": "Yeti"
+	},
+	{
+		"awakenedName": "Rakaja",
+		"element": "Wind",
+		"name": "Yeti"
+	}
+]
