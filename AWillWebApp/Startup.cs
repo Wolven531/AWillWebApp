@@ -4,7 +4,8 @@
 
 namespace AWillWebApp
 {
-	using System;
+	using System.IO;
+	using System.Text;
 	using AWillWebApp.Inside.Models;
 	using AWillWebApp.Outside.Repositories;
 	using Microsoft.AspNetCore.Builder;
@@ -12,6 +13,7 @@ namespace AWillWebApp
 	using Microsoft.AspNetCore.Http;
 	using Microsoft.AspNetCore.SpaServices.Webpack;
 	using Microsoft.Extensions.DependencyInjection;
+	using Newtonsoft.Json;
 
 	public class Startup
 	{
@@ -19,17 +21,15 @@ namespace AWillWebApp
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 		public void ConfigureServices(IServiceCollection services)
 		{
-			var inMemoryMonsters = new Monster[]
-			{
-				new Monster("monster A", 1, false, Element.Fire) { Id = Guid.NewGuid() },
-				new Monster("monster B", 2, false, Element.Dark) { Id = Guid.NewGuid() },
-				new Monster("monster C", 3, true, Element.Light) { Id = Guid.NewGuid() },
-				new Monster("monster D", 4, false, Element.Water) { Id = Guid.NewGuid() },
-				new Monster("monster E", 5, true, Element.Wind) { Id = Guid.NewGuid() }
-			};
+			var monsterData = File.ReadAllText(
+				Path.GetRelativePath(
+					Directory.GetCurrentDirectory(),
+					Path.Join("Data", "monsters.json")),
+				Encoding.UTF8);
+			var inMemoryMonsters = JsonConvert.DeserializeObject<Monster[]>(monsterData);
+
 			services.AddMvc();
 
-			//services.AddSingleton<IMonsterRepository, MonsterRepository>();
 			services.AddSingleton<IMonsterRepository>(new MonsterRepository(inMemoryMonsters));
 		}
 
