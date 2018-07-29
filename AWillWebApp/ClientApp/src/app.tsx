@@ -34,7 +34,7 @@ class App extends React.Component {
 		)
 	}
 }
-console.log(`testing AWILL`)
+
 ReactDOM.render(<App />, document.getElementById('app'))
 
 //// NOTE: ReactJS

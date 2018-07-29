@@ -909,7 +909,6 @@ var App = /** @class */ (function (_super) {
     };
     return App;
 }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]));
-console.log("testing AWILL");
 __WEBPACK_IMPORTED_MODULE_2_react_dom__["render"](__WEBPACK_IMPORTED_MODULE_1_react__["createElement"](App, null), document.getElementById('app'));
 //// NOTE: ReactJS
 //ReactDOM.render(

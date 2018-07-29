@@ -40,17 +40,11 @@ module.exports = (env) => {
 					test: /\.(jsx?)$/,
 					include: /src/,
 					use: { loader: 'babel-loader' }
-					// exclude: [
-					// 	path.resolve(__dirname, 'ClientApp', 'node_modules')
-					// ]
 				},
 				{
 					test: /\.tsx?$/,
 					include: /src/,
 					use: 'ts-loader'
-					// exclude: [
-					// 	path.resolve(__dirname, 'ClientApp', 'node_modules')
-					// ]
 				},
 				{
 					test: /\.css$/,
@@ -68,8 +62,8 @@ module.exports = (env) => {
 		// 	//	context: __dirname,
 		// 	//	manifest: require('./ClientApp/dist/vendor-manifest.json')
 		// 	//})
-		// ].concat(isDevBuild ? [
-		// 	// Plugins that apply in development builds only
+			// ].concat(isDevBuild ? [
+			// 	// Plugins that apply in development builds only
 		// 	//new webpack.SourceMapDevToolPlugin({
 		// 	//	filename: '[file].map', // Remove this line if you prefer inline source maps
 		// 	//	moduleFilenameTemplate: path.relative(bundleOutputDir, '[resourcePath]') // Point sourcemap entries to the original file locations on disk
