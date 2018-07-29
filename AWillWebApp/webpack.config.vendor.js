@@ -30,10 +30,10 @@ module.exports = (env) => {
 			],
 		},
 		output: {
-			path: path.resolve('.', 'ClientApp', 'dist'),
+			path: path.join(__dirname, 'ClientApp', 'dist'),
 			publicPath: 'dist/',
 			filename: '[name].js',
-			library: '[name]_[hash]',
+			library: '[name]_[hash]'
 		},
 		plugins: [
 			extractCSS,
@@ -42,7 +42,7 @@ module.exports = (env) => {
 				jQuery: 'jquery'
 			}), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)
 			new webpack.DllPlugin({
-				path: path.join(bundleOutputDir, '[name]-manifest.json'),
+				path: path.join(__dirname, 'ClientApp', 'dist', '[name]-manifest.json'),
 				name: '[name]_[hash]'
 			}),
 			new webpack.DefinePlugin({
