@@ -36,8 +36,9 @@
 	//"include": [ "./wwwroot/Source/**/*" ],
 	"exclude": [
 		"bin",
-		"node_modules",
-		"www/dist"
+		"dist",
+		"node_modules"
+		//"www/dist"
 		//"scripts"
 	]
 }

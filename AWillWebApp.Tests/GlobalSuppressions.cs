@@ -44,3 +44,8 @@ using System.Diagnostics.CodeAnalysis;
 	"SA1306:Field names must begin with lower-case letter",
 	Justification = "Private members should begin with underscore")
 ]
+[assembly: SuppressMessage(
+	"StyleCop.CSharp.LayoutRules",
+	"SA1515:Single-line comment must be preceded by blank line",
+	Justification = "Fights with the auto commenter")
+]

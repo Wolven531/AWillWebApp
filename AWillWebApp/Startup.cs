@@ -10,16 +10,20 @@ namespace AWillWebApp
 	using AWillWebApp.Outside.Repositories;
 	using Microsoft.AspNetCore.Builder;
 	using Microsoft.AspNetCore.Hosting;
-	using Microsoft.AspNetCore.Http;
-	using Microsoft.AspNetCore.SpaServices.Webpack;
+	//using Microsoft.AspNetCore.Http;
+	//using Microsoft.AspNetCore.Mvc;
+	//using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
+	//using Microsoft.AspNetCore.SpaServices.StaticFiles;
+	//using Microsoft.AspNetCore.SpaServices.Webpack;
 	using Microsoft.Extensions.DependencyInjection;
+	using Microsoft.Extensions.FileProviders;
 	using Newtonsoft.Json;
 
-	public class Startup
+	public sealed class Startup
 	{
 		// This method gets called by the runtime. Use this method to add services to the container.
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-		public void ConfigureServices(IServiceCollection services)
+		public static void ConfigureServices(IServiceCollection services)
 		{
 			var monsterData = File.ReadAllText(
 				Path.GetRelativePath(
@@ -29,31 +33,94 @@ namespace AWillWebApp
 			var inMemoryMonsters = JsonConvert.DeserializeObject<Monster[]>(monsterData);
 
 			services.AddMvc();
-
+			//services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 			services.AddSingleton<IMonsterRepository>(new MonsterRepository(inMemoryMonsters));
+			//// In production, the React files will be served from this directory
+			//services.AddSpaStaticFiles(configuration =>
+			//{
+			//	configuration.RootPath = Path.Combine("ClientApp", "public");
+			//});
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		public static void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
-				app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
-				{
-					HotModuleReplacement = true,
-					HotModuleReplacementServerPort = 6000,
-					ReactHotModuleReplacement = false
-				});
+				//app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+				//{
+				//	HotModuleReplacement = true,
+				//	HotModuleReplacementServerPort = 6000,
+				//	ReactHotModuleReplacement = false
+				//});
+			}
+			else
+			{
+				app.UseExceptionHandler("/Error");
+				app.UseHsts();
 			}
 
+			app.UseHttpsRedirection();
 			app.UseStaticFiles();
-
+			app.UseStaticFiles(new StaticFileOptions()
+			{
+				FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "ClientApp", "dist")),
+				RequestPath = "/dist"
+			});
 			app.UseMvc(routes =>
-				{
-					routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
-					routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Home", action = "Index" });
-				});
+			{
+				routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+				routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Home", action = "Index" });
+			});
+
+			//app.UseStaticFiles(new StaticFileOptions() {
+			//	FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "ClientApp", "public")),
+			//	RequestPath = "/"
+			//});
+			//app.GetService<ISpaStaticFileProvider>().FileProvider = new PhysicalFileProvider
+			//env.WebRootPath = "ClientApp/public/";
+
+			//app.UseSpaStaticFiles();
+
+			//app.UseMvc(routes =>
+			//	{
+			//		routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+			//		routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Home", action = "Index" });
+			//	});
+			//app.UseMvc(routes =>
+			//{
+			//	routes.MapRoute(
+			//		name: "default",
+			//		template: "{controller}/{action=Index}/{id?}");
+			//});
+			//app.Use(request =>
+			//{
+			//	if (request.
+			//	return request;
+			//});
+
+			//app.UseSpa(spa =>
+			//{
+				//spa.Options.DefaultPage = "ClientApp/public/index.html";
+				//spa.Options.DefaultPage = Path.Combine(Directory.GetCurrentDirectory(), "ClientApp", "public", "index.html");
+				//spa.Options.DefaultPageStaticFileOptions = new StaticFileOptions()
+				//{
+				//	FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "ClientApp", "dist")),
+				//	RequestPath = "/dist"
+				//};
+
+				//spa.Options.DefaultPageStaticFileOptions = new StaticFileOptions()
+				//{
+				//	FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "ClientApp", "public"))
+				//	//RequestPath = "/"
+				//};
+				//spa.Options.SourcePath = "ClientApp/src";
+				//if (env.IsDevelopment())
+				//{
+				//	spa.UseReactDevelopmentServer(npmScript: "start");
+				//}
+			//});
 		}
 	}
 }

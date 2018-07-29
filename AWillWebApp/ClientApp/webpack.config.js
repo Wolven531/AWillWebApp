@@ -1,63 +1,84 @@
-﻿const ExtractTextPlugin = require('extract-text-webpack-plugin')
+﻿// const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
-const webpack = require('webpack')
+// const webpack = require('webpack')
 //const DashboardPlugin = require('webpack-dashboard/plugin')
 //const { CheckerPlugin } = require('awesome-typescript-loader')
-const CheckerPlugin = require('awesome-typescript-loader').CheckerPlugin
+//const CheckerPlugin = require('awesome-typescript-loader').CheckerPlugin
 ////const jQuery = require('jquery')
 
 //const extractCSS = new ExtractTextPlugin('allstyles.css')
 //const inputEntryFile = 'app.tsx'
 //const outputFile = 'bundle.js'
-const mode = 'development'
+// const mode = 'development'
 
-const bundleOutputDir = './ClientApp/dist/'
+// const bundleOutputDir = './ClientApp/dist/'
 
 //window.$ = window.jQuery = jQuery
 
 module.exports = (env) => {
 	const isDevBuild = !(env && env.prod)
 	return [{
-		stats: { modules: false },
+		stats: 'verbose',//'normal'|'verbose'
 		entry: {
 			//main: path.relative(
 			//	__dirname,
-			//	path.join('ClientApp', 'Source', 'app.tsx')
+			//	path.join('ClientApp', 'src', 'app.tsx')
 			//)
-			main: './ClientApp/Source/app.tsx'
+			//main: './ClientApp/src/app.tsx'
+			main: path.resolve(__dirname, 'src', 'app.tsx')
 		},
 		resolve: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
 		output: {
-			path: path.resolve('.', 'ClientApp', 'dist'),
+			path: path.resolve(__dirname, 'dist'),
 			filename: '[name].js',
 			publicPath: 'dist/'
 		},
-		mode,
+		// mode,
 		module: {
 			rules: [
-				{ test: /\.(jsx?)$/, include: /ClientApp/, use: { loader: 'babel-loader' } },
-				{ test: /\.tsx?$/, include: /ClientApp/, use: 'awesome-typescript-loader?silent=true' },
-				{ test: /\.css$/, use: isDevBuild ? ['style-loader', 'css-loader'] : ExtractTextPlugin.extract({ use: 'css-loader?minimize' }) },
+				{
+					test: /\.(jsx?)$/,
+					include: /src/,
+					use: { loader: 'babel-loader' }
+					// exclude: [
+					// 	path.resolve(__dirname, 'ClientApp', 'node_modules')
+					// ]
+				},
+				{
+					test: /\.tsx?$/,
+					include: /src/,
+					use: 'ts-loader'
+					// exclude: [
+					// 	path.resolve(__dirname, 'ClientApp', 'node_modules')
+					// ]
+				},
+				{
+					test: /\.css$/,
+					use: ['style-loader', 'css-loader']
+					// use: isDevBuild ?
+					// 	['style-loader', 'css-loader'] :
+					// 	ExtractTextPlugin.extract({ use: 'css-loader?minimize' })
+				},
 				{ test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' }
 			]
-		},
-		plugins: [
-			new CheckerPlugin(),
-			new webpack.DllReferencePlugin({
-				context: __dirname,
-				manifest: require('./ClientApp/dist/vendor-manifest.json')
-			})
-		].concat(isDevBuild ? [
-			// Plugins that apply in development builds only
-			new webpack.SourceMapDevToolPlugin({
-				filename: '[file].map', // Remove this line if you prefer inline source maps
-				moduleFilenameTemplate: path.relative(bundleOutputDir, '[resourcePath]') // Point sourcemap entries to the original file locations on disk
-			})
-		] : [
-			// Plugins that apply in production builds only
-			new webpack.optimize.UglifyJsPlugin(),
-			new ExtractTextPlugin('allstyles.css')
-		])
+		}
+		// plugins: [
+		// 	//new CheckerPlugin(),
+		// 	//new webpack.DllReferencePlugin({
+		// 	//	context: __dirname,
+		// 	//	manifest: require('./ClientApp/dist/vendor-manifest.json')
+		// 	//})
+		// ].concat(isDevBuild ? [
+		// 	// Plugins that apply in development builds only
+		// 	//new webpack.SourceMapDevToolPlugin({
+		// 	//	filename: '[file].map', // Remove this line if you prefer inline source maps
+		// 	//	moduleFilenameTemplate: path.relative(bundleOutputDir, '[resourcePath]') // Point sourcemap entries to the original file locations on disk
+		// 	//})
+		// ] : [
+		// 	// Plugins that apply in production builds only
+		// 	//new webpack.optimize.UglifyJsPlugin(),
+		// 	//new ExtractTextPlugin('allstyles.css')
+		// ])
 
 		//context: __dirname,
 		////devtool: 'source-map',
@@ -66,7 +87,7 @@ module.exports = (env) => {
 		//	window: 'window'
 		//},
 		//entry: {
-		//	main: [path.resolve(__dirname, 'wwwroot', 'Source', inputEntryFile)]
+		//	main: [path.resolve(__dirname, 'wwwroot', 'src', inputEntryFile)]
 		//},
 		//mode,
 		//module: {
