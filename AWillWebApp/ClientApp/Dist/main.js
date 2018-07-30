@@ -30868,14 +30868,14 @@ var FetchData = /** @class */ (function (_super) {
     FetchData.prototype.render = function () {
         var _this = this;
         var contents = this.state.loading ?
-            (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("p", null,
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("em", null, "Loading...")))
-            : (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("textarea", null, JSON.stringify(this.state.monsters, null, 4)));
-        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("p", null,
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("em", null, "Loading...")) :
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("textarea", { readOnly: true, value: JSON.stringify(this.state.monsters, null, 4) });
+        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "fetchdata" },
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h1", null, "API Check"),
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("p", null, "This component demonstrates fetching data from the server"),
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: function () { return _this.refreshData; } }, "Refresh"),
-            contents));
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
+                contents,
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: function () { return _this.refreshData; } }, "Refresh"))));
     };
     return FetchData;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]));
@@ -32638,7 +32638,7 @@ exports = module.exports = __webpack_require__(34)(false);
 
 
 // module
-exports.push([module.i, "body {\r\n\theight: 100vh;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\twidth: 100vw;\r\n}\r\n\r\n#app {\r\n\tbackground-color: rgba(0, 0, 200, .8);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\theight: 100vh;\r\n\tjustify-content: space-around;\r\n}\r\n\r\n#app > * {\r\n\tmargin: 10px;\r\n}\r\n", ""]);
+exports.push([module.i, "body {\r\n\tmargin: 0;\r\n\toverflow-y: scroll;\r\n\tpadding: 0;\r\n}\r\n\r\n#app {\r\n\talign-self: stretch;\r\n\tbackground-color: rgba(0, 0, 200, .8);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\tpadding-bottom: 50px;\r\n\toverflow-y: hidden;\r\n}\r\n\r\n#app > * {\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\tflex-direction: column;\r\n\tmargin: 10px;\r\n}\r\n\r\n.fetchdata {\r\n\talign-items: center;\r\n\tbackground-color: rgba(0, 200, 0, .8);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-around;\r\n}\r\n\r\n.fetchdata > div {\r\n\talign-items: center;\r\n\talign-self: stretch;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tpadding: 10px;\r\n}\r\n\r\n.fetchdata textarea {\r\n\tdisplay: flex;\r\n\tmargin-bottom: 10px;\r\n\tmin-height: 200px;\r\n\twidth: 80%;\r\n}\r\n", ""]);
 
 // exports
 

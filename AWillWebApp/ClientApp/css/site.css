@@ -1,18 +1,45 @@
 ﻿body {
-	height: 100vh;
 	margin: 0;
+	overflow-y: scroll;
 	padding: 0;
-	width: 100vw;
 }
 
 #app {
+	align-self: stretch;
 	background-color: rgba(0, 0, 200, .8);
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	overflow-y: hidden;
 }
 
 #app > * {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
 	margin: 10px;
+}
+
+.fetchdata {
+	align-items: center;
+	background-color: rgba(0, 200, 0, .8);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.fetchdata > div {
+	align-items: center;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.fetchdata textarea {
+	display: flex;
+	margin-bottom: 10px;
+	min-height: 200px;
+	width: 80%;
 }

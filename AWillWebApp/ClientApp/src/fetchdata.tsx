@@ -19,17 +19,18 @@ export default class FetchData extends React.Component<{}, IFetchDataState> {
 
 	public render() {
 		const contents = this.state.loading ?
-			(<p><em>Loading...</em></p>)
-			: (<textarea>{JSON.stringify(this.state.monsters, null, 4)}</textarea>)
+			<p><em>Loading...</em></p> :
+			<textarea readOnly={true} value={JSON.stringify(this.state.monsters, null, 4)}></textarea>
 
 		return (
-			<div>
+			<div className="fetchdata">
 				<h1>API Check</h1>
-				<p>This component demonstrates fetching data from the server</p>
-				<button onClick={() => this.refreshData}>
-					Refresh
-				</button>
-				{contents}
+				<div>
+					{contents}
+					<button onClick={() => this.refreshData}>
+						Refresh
+					</button>
+				</div>
 			</div>
 		)
 	}
