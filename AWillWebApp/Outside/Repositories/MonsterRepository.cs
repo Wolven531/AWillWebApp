@@ -16,7 +16,11 @@ namespace AWillWebApp.Outside.Repositories
 
 		public MonsterRepository(IEnumerable<Monster> monsters)
 		{
-			_monsters = new List<Monster>(monsters);
+			_monsters = new List<Monster>();
+			foreach (var monster in monsters)
+			{
+				AddMonster(monster);
+			}
 		}
 
 		public Task<Monster> GetMonster(Guid id) => Task.FromResult(_monsters.FirstOrDefault(monster => monster.Id == id));
@@ -30,6 +34,11 @@ namespace AWillWebApp.Outside.Repositories
 			if (newMonster.Id == Guid.Empty)
 			{
 				newMonster.Id = Guid.NewGuid();
+			}
+
+			if (newMonster.Number < 1)
+			{
+				newMonster.Number = _monsters.Count + 1;
 			}
 
 			var existingMonster = _monsters.FirstOrDefault(monster => monster.Id == newMonster.Id);

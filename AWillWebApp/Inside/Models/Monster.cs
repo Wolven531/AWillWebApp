@@ -5,11 +5,14 @@
 namespace AWillWebApp.Inside.Models
 {
 	using System;
+	using Newtonsoft.Json;
+	using Newtonsoft.Json.Converters;
 
 	public class Monster
 	{
-		public Monster(string name, int stars, bool isAwake, Element element)
+		public Monster(string awakenedName, string name, int stars, bool isAwake, Element element)
 		{
+			AwakenedName = awakenedName;
 			Name = name;
 			Stars = stars;
 			IsAwake = isAwake;
@@ -29,12 +32,15 @@ namespace AWillWebApp.Inside.Models
 		/// </summary>
 		public int Number { get; set; }
 
+		public string AwakenedName { get; }
+
 		public string Name { get; }
 
 		public int Stars { get; }
 
 		public bool IsAwake { get; }
 
+		[JsonConverter(typeof(StringEnumConverter))]
 		public Element Element { get; }
-}
+	}
 }

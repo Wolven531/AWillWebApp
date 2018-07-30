@@ -40,8 +40,8 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			// Setup
 			var monsters = new Monster[]
 			{
-				new Monster("name 1", 3, false, Element.Dark),
-				new Monster("name 2", 3, false, Element.Fire)
+				new Monster("awake 1", "name 1", 3, false, Element.Dark),
+				new Monster("awake 2", "name 2", 3, false, Element.Fire)
 			};
 			var expected = new string[] { "name 1", "name 2" };
 
@@ -76,8 +76,8 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			// Setup
 			var monsters = new Monster[]
 			{
-				new Monster("name 1", 3, false, Element.Light),
-				new Monster("name 2", 3, false, Element.Water)
+				new Monster("awake 1", "name 1", 3, false, Element.Light),
+				new Monster("awake 2", "name 2", 3, false, Element.Water)
 			};
 			var expected = monsters;
 
@@ -112,10 +112,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			// Setup
 			var id1 = Guid.NewGuid();
 			var id2 = Guid.NewGuid();
-			var expected = new Monster("name 2", 3, false, Element.Wind) { Id = id2 };
+			var expected = new Monster("awake 2", "name 2", 3, false, Element.Wind) { Id = id2 };
 			var monsters = new Monster[]
 			{
-				new Monster("name 1", 3, false, Element.Light) { Id = id1 },
+				new Monster("awake 1", "name 1", 3, false, Element.Light) { Id = id1 },
 				expected
 			};
 
@@ -133,7 +133,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		{
 			// Setup
 			var monsters = Enumerable.Empty<Monster>();
-			var expected = new Monster("name 1", 3, false, Element.Fire);
+			var expected = new Monster("awake 1", "name 1", 3, false, Element.Fire);
 			var originalId = expected.Id;
 
 			fixture = new MonsterRepository(monsters);
@@ -151,7 +151,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		{
 			// Setup
 			var monsters = Enumerable.Empty<Monster>();
-			var expected = new Monster("name 1", 3, false, Element.Wind) { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") };
+			var expected = new Monster("awake 1", "name 1", 3, false, Element.Wind) { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") };
 
 			fixture = new MonsterRepository(monsters);
 
@@ -160,6 +160,43 @@ namespace AWillWebApp.Tests.Outside.Repositories
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
+		}
+
+		[Fact]
+		public async Task AddMonster_WhenRepositoryIsEmptyAndNewMonsterHasNumberZero_ShouldAddMonsterWithNumberAndReturnIt()
+		{
+			// Setup
+			var monsters = Enumerable.Empty<Monster>();
+			var newMonster = new Monster("awake 1", "name 1", 3, false, Element.Wind);
+			var expected = new Monster("awake 1", "name 1", 3, false, Element.Wind) { Number = 1 };
+
+			fixture = new MonsterRepository(monsters);
+
+			// Execute
+			var actual = await fixture.AddMonster(newMonster);
+
+			// Verify
+			actual.Should().BeEquivalentTo(expected, options => options.Excluding(monster => monster.Id));
+		}
+
+		[Fact]
+		public async Task AddMonster_WhenRepositoryHasMonstersAndNewMonsterHasNumberZero_ShouldAddMonsterWithNumberAndReturnIt()
+		{
+			// Setup
+			var newMonster = new Monster("awake 1", "name 1", 3, false, Element.Wind);
+			var expected = new Monster("awake 1", "name 1", 3, false, Element.Wind) { Number = 2 };
+			var monsters = new Monster[]
+			{
+				new Monster("awake 1", "name 1", 3, false, Element.Light)
+			};
+
+			fixture = new MonsterRepository(monsters);
+
+			// Execute
+			var actual = await fixture.AddMonster(newMonster);
+
+			// Verify
+			actual.Should().BeEquivalentTo(expected, options => options.Excluding(monster => monster.Id));
 		}
 	}
 }
