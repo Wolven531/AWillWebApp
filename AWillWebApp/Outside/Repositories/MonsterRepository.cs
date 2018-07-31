@@ -30,7 +30,7 @@ namespace AWillWebApp.Outside.Repositories
 			var allNames = new List<string>();
 			foreach (var monster in _monsters)
 			{
-				allNames.AddRange(new[] { monster.Name, monster.AwakenedName });
+				allNames.AddRange(new[] { $"{monster.Element} {monster.Name}", monster.AwakenedName });
 			}
 
 			return Task.FromResult(allNames.AsEnumerable());

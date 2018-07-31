@@ -43,7 +43,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 				new Monster("awake 1", "name 1", 3, false, Element.Dark, "awakenedimg", "img", null, null, null, null, null),
 				new Monster("awake 2", "name 2", 3, false, Element.Fire, "awakenedimg2", "img2", null, null, null, null, null),
 			};
-			var expected = new string[] { "name 1", "awake 1", "name 2", "awake 2" };
+			var expected = new string[] { "Dark name 1", "awake 1", "Fire name 2", "awake 2" };
 
 			fixture = new MonsterRepository(monsters);
 
