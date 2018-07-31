@@ -25,7 +25,16 @@ namespace AWillWebApp.Outside.Repositories
 
 		public Task<Monster> GetMonster(Guid id) => Task.FromResult(_monsters.FirstOrDefault(monster => monster.Id == id));
 
-		public Task<IEnumerable<string>> GetMonsterNames() => Task.FromResult(_monsters.Select(monster => monster.Name));
+		public Task<IEnumerable<string>> GetMonsterNames()
+		{
+			var allNames = new List<string>();
+			foreach (var monster in _monsters)
+			{
+				allNames.AddRange(new[] { monster.Name, monster.AwakenedName });
+			}
+
+			return Task.FromResult(allNames.AsEnumerable());
+		}
 
 		public Task<IEnumerable<Monster>> GetMonsters() => Task.FromResult(_monsters.AsEnumerable());
 
