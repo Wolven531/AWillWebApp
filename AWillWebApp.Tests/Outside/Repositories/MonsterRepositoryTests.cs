@@ -40,8 +40,8 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			// Setup
 			var monsters = new Monster[]
 			{
-				new Monster("awake 1", "name 1", 3, false, Element.Dark),
-				new Monster("awake 2", "name 2", 3, false, Element.Fire)
+				new Monster("awake 1", "name 1", 3, false, Element.Dark, "awakenedimg", "img", null, null, null, null, null),
+				new Monster("awake 2", "name 2", 3, false, Element.Fire, "awakenedimg2", "img2", null, null, null, null, null),
 			};
 			var expected = new string[] { "name 1", "name 2" };
 
@@ -76,8 +76,8 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			// Setup
 			var monsters = new Monster[]
 			{
-				new Monster("awake 1", "name 1", 3, false, Element.Light),
-				new Monster("awake 2", "name 2", 3, false, Element.Water)
+				new Monster("awake 1", "name 1", 3, false, Element.Light, "awakenedimg", "img", null, null, null, null, null),
+				new Monster("awake 2", "name 2", 3, false, Element.Water, "awakenedimg2", "img2", null, null, null, null, null)
 			};
 			var expected = monsters;
 
@@ -112,10 +112,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			// Setup
 			var id1 = Guid.NewGuid();
 			var id2 = Guid.NewGuid();
-			var expected = new Monster("awake 2", "name 2", 3, false, Element.Wind) { Id = id2 };
+			var expected = new Monster("awake 2", "name 2", 3, false, Element.Wind, "awakenedimg2", "img2", null, null, null, null, null) { Id = id2 };
 			var monsters = new Monster[]
 			{
-				new Monster("awake 1", "name 1", 3, false, Element.Light) { Id = id1 },
+				new Monster("awake 1", "name 1", 3, false, Element.Light, "awakenedimg", "img", null, null, null, null, null) { Id = id1 },
 				expected
 			};
 
@@ -133,7 +133,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		{
 			// Setup
 			var monsters = Enumerable.Empty<Monster>();
-			var expected = new Monster("awake 1", "name 1", 3, false, Element.Fire);
+			var expected = new Monster("awake 1", "name 1", 3, false, Element.Fire, "awakenedimg", "img", null, null, null, null, null);
 			var originalId = expected.Id;
 
 			fixture = new MonsterRepository(monsters);
@@ -151,7 +151,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		{
 			// Setup
 			var monsters = Enumerable.Empty<Monster>();
-			var expected = new Monster("awake 1", "name 1", 3, false, Element.Wind) { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") };
+			var expected = new Monster("awake 1", "name 1", 3, false, Element.Wind, "awakenedimg", "img", null, null, null, null, null) { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") };
 
 			fixture = new MonsterRepository(monsters);
 
@@ -167,8 +167,8 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		{
 			// Setup
 			var monsters = Enumerable.Empty<Monster>();
-			var newMonster = new Monster("awake 1", "name 1", 3, false, Element.Wind);
-			var expected = new Monster("awake 1", "name 1", 3, false, Element.Wind) { Number = 1 };
+			var newMonster = new Monster("awake 1", "name 1", 3, false, Element.Wind, "awakenedimg", "img", null, null, null, null, null);
+			var expected = new Monster("awake 1", "name 1", 3, false, Element.Wind, "awakenedimg", "img", null, null, null, null, null) { Number = 1 };
 
 			fixture = new MonsterRepository(monsters);
 
@@ -183,11 +183,11 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		public async Task AddMonster_WhenRepositoryHasMonstersAndNewMonsterHasNumberZero_ShouldAddMonsterWithNumberAndReturnIt()
 		{
 			// Setup
-			var newMonster = new Monster("awake 1", "name 1", 3, false, Element.Wind);
-			var expected = new Monster("awake 1", "name 1", 3, false, Element.Wind) { Number = 2 };
+			var newMonster = new Monster("awake 2", "name 2", 3, false, Element.Wind, "awakenedimg2", "img2", null, null, null, null, null);
+			var expected = new Monster("awake 2", "name 2", 3, false, Element.Wind, "awakenedimg2", "img2", null, null, null, null, null) { Number = 2 };
 			var monsters = new Monster[]
 			{
-				new Monster("awake 1", "name 1", 3, false, Element.Light)
+				new Monster("awake 1", "name 1", 4, false, Element.Light, "awakenedimg", "img", null, null, null, null, null)
 			};
 
 			fixture = new MonsterRepository(monsters);

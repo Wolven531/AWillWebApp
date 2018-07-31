@@ -10,13 +10,32 @@ namespace AWillWebApp.Inside.Models
 
 	public class Monster
 	{
-		public Monster(string awakenedName, string name, int stars, bool isAwake, Element element)
+		public Monster(
+			string awakenedName,
+			string name,
+			int rating,
+			bool isAwake,
+			Element element,
+			string awakenedImage,
+			string image,
+			string earlyRuneList,
+			string earlyRuneValues,
+			string lateRuneList,
+			string lateRuneValues,
+			string statPriority)
 		{
 			AwakenedName = awakenedName;
 			Name = name;
-			Stars = stars;
+			Rating = rating;
 			IsAwake = isAwake;
 			Element = element;
+			AwakenedImage = awakenedImage;
+			Image = image;
+			EarlyRuneList = earlyRuneList;
+			EarlyRuneValues = earlyRuneValues;
+			LateRuneList = lateRuneList;
+			LateRuneValues = lateRuneValues;
+			StatPriority = statPriority;
 		}
 
 		/// <summary>
@@ -36,11 +55,25 @@ namespace AWillWebApp.Inside.Models
 
 		public string Name { get; }
 
-		public int Stars { get; }
+		public int Rating { get; }
 
 		public bool IsAwake { get; }
 
 		[JsonConverter(typeof(StringEnumConverter))]
 		public Element Element { get; }
+
+		public string AwakenedImage { get; }
+
+		public string Image { get; }
+
+		public string EarlyRuneList { get; }
+
+		public string EarlyRuneValues { get; }
+
+		public string LateRuneList { get; }
+
+		public string LateRuneValues { get; }
+
+		public string StatPriority { get; }
 	}
 }
