@@ -1,2477 +1,5447 @@
 [
 	{
 		"awakenedName": "Bailey",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(SPD/CRIT Rate%/ATK%)",
 		"element": "Light",
-		"name": "Boomerang Warrior"
+		"lateRuneList": "Swift / Nemesis",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Boomerang Warrior",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Maruna",
+		"earlyRuneList": "Despair / Blade",
+		"earlyRuneValues": "(ATK%/ATK%/ATK%)",
 		"element": "Fire",
-		"name": "Boomerang Warrior"
+		"lateRuneList": "Despair / Nemesis",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Boomerang Warrior",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Martina",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(SPD/ATK%/ATK%)",
 		"element": "Dark",
-		"name": "Boomerang Warrior"
+		"lateRuneList": "Rage / Focus",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Boomerang Warrior",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Sabrina",
+		"earlyRuneList": "Fatal / Energy",
+		"earlyRuneValues": "(SPD/ATK%/HP%)",
 		"element": "Water",
-		"name": "Boomerang Warrior"
+		"lateRuneList": "Violent / Focus",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Boomerang Warrior",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Zenobia",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(SPD/ATK%/ATK%)",
 		"element": "Wind",
-		"name": "Boomerang Warrior"
+		"lateRuneList": "Violent / Blade",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Boomerang Warrior",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Talia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(SPD/ATK%/ATK%)",
 		"element": "Water",
-		"name": "Chakram Dancer"
+		"lateRuneList": "Rage / Blade",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Chakram Dancer",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Shaina",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(ATK%/ATK%/ATK%)",
 		"element": "Fire",
-		"name": "Chakram Dancer"
+		"lateRuneList": "Despair / Focus",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Chakram Dancer",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Melissa",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(SPD/ATK%/ATK%)",
 		"element": "Wind",
-		"name": "Chakram Dancer"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Chakram Dancer",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Deva",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(ATK%/ATK%/ATK%)",
 		"element": "Light",
-		"name": "Chakram Dancer"
+		"lateRuneList": "Despair / Blade",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Chakram Dancer",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Belita",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(ATK%/ATK%/ATK%)",
 		"element": "Dark",
-		"name": "Chakram Dancer"
+		"lateRuneList": "Rage / Will",
+		"lateRuneValues": "(SPD/CRIT DMG%/ATK%)",
+		"name": "Chakram Dancer",
+		"rating": 4,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Ophilia",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(HP%/HP%/HP%)",
 		"element": "Fire",
-		"name": "Paladin"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(SPD/HP%/HP%)",
+		"name": "Paladin",
+		"rating": 5,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Josephine",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(SPD/HP%/HP%)",
 		"element": "Water",
-		"name": "Paladin"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(SPD/HP%/HP%)",
+		"name": "Paladin",
+		"rating": 5,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Louise",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(HP%/HP%/HP%)",
 		"element": "Wind",
-		"name": "Paladin"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(SPD/HP%/HP%)",
+		"name": "Paladin",
+		"rating": 5,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Jeanne",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(HP%/HP%/HP%)",
 		"element": "Light",
-		"name": "Paladin"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(HP%/HP%/HP%)",
+		"name": "Paladin",
+		"rating": 5,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Leona",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(DEF%/DEF%/DEF%)",
 		"element": "Dark",
-		"name": "Paladin"
+		"lateRuneList": "Violent / Guard",
+		"lateRuneValues": "(DEF%/DEF%/DEF%)",
+		"name": "Paladin",
+		"rating": 5,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Homunculus",
+		"earlyRuneList": "",
+		"earlyRuneValues": "",
 		"element": "Fire",
-		"name": "Homunculus"
+		"lateRuneList": "Rage / Blade",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Homunculus",
+		"rating": 5,
+		"statPriority": "Atk%, Crit D%, Crit R%"
 	},
 	{
 		"awakenedName": "Homunculus",
+		"earlyRuneList": "",
+		"earlyRuneValues": "",
 		"element": "Dark",
-		"name": "Homunculus"
+		"lateRuneList": "",
+		"lateRuneValues": "",
+		"name": "Homunculus",
+		"rating": 5,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Homunculus",
+		"earlyRuneList": "",
+		"earlyRuneValues": "",
 		"element": "Light",
-		"name": "Homunculus"
+		"lateRuneList": "",
+		"lateRuneValues": "",
+		"name": "Homunculus",
+		"rating": 5,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Homunculus",
+		"earlyRuneList": "",
+		"earlyRuneValues": "",
 		"element": "Wind",
-		"name": "Homunculus"
+		"lateRuneList": "Rage / Blade",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Homunculus",
+		"rating": 5,
+		"statPriority": "Crit D%, Spd, Crit R%,"
 	},
 	{
 		"awakenedName": "Homunculus",
+		"earlyRuneList": "",
+		"earlyRuneValues": "",
 		"element": "Water",
-		"name": "Homunculus"
+		"lateRuneList": "Despair / Blade",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Homunculus",
+		"rating": 5,
+		"statPriority": "Atk%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Lamor",
+		"earlyRuneList": "",
+		"earlyRuneValues": "",
 		"element": "Fire",
-		"name": "Low Elemental"
+		"lateRuneList": "",
+		"lateRuneValues": "",
+		"name": "Low Elemental",
+		"rating": 1,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Tigresse",
+		"earlyRuneList": "",
+		"earlyRuneValues": "",
 		"element": "Water",
-		"name": "Low Elemental"
+		"lateRuneList": "",
+		"lateRuneValues": "",
+		"name": "Low Elemental",
+		"rating": 1,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Samour",
+		"earlyRuneList": "",
+		"earlyRuneValues": "",
 		"element": "Wind",
-		"name": "Low Elemental"
+		"lateRuneList": "",
+		"lateRuneValues": "",
+		"name": "Low Elemental",
+		"rating": 1,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Fran",
+		"earlyRuneList": "Fatal / Energy",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Fairy Queen"
+		"lateRuneList": "Violent / Energy",
+		"lateRuneValues": "(Atk%/Hp%/Atk%)",
+		"name": "Fairy Queen",
+		"rating": 3,
+		"statPriority": "Atk%, Hp%, Spd"
 	},
 	{
 		"awakenedName": "Tablo",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Dice Magician"
+		"lateRuneList": "Violent / Focus",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Dice Magician",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Morris",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Dice Magician"
+		"lateRuneList": "Violent / Focus",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Dice Magician",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Acc%"
 	},
 	{
 		"awakenedName": "Reno",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Spd/Crit D%/Atk%)",
 		"element": "Water",
-		"name": "Dice Magician"
+		"lateRuneList": "Violent / Blade",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Dice Magician",
+		"rating": 4,
+		"statPriority": "Crit D%, Crit R%, Atk%"
 	},
 	{
 		"awakenedName": "Monte",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Spd/Crit D%/Atk%)",
 		"element": "Dark",
-		"name": "Dice Magician"
+		"lateRuneList": "Violent / Blade",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Dice Magician",
+		"rating": 4,
+		"statPriority": "Crit D%, Crit R%, Atk%"
 	},
 	{
 		"awakenedName": "Ludo",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Dice Magician"
+		"lateRuneList": "Rage / Blade",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Dice Magician",
+		"rating": 4,
+		"statPriority": "Atk%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Triana",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Harp Magician"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Harp Magician",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Celia",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Harp Magician"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Harp Magician",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Sonnet",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Harp Magician"
+		"lateRuneList": "Violent / Focus",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Harp Magician",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Harmonia",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Harp Magician"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Harp Magician",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Vivachel",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Harp Magician"
+		"lateRuneList": "Swift / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Harp Magician",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Helena",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Unicorn"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Crit D%/Hp%)",
+		"name": "Unicorn",
+		"rating": 5,
+		"statPriority": "Hp%, Spd, Crit R%"
 	},
 	{
 		"awakenedName": "Amelia",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Unicorn"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Unicorn",
+		"rating": 5,
+		"statPriority": "Hp%, Spd, Acc%"
 	},
 	{
 		"awakenedName": "Diana",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Spd/Crit D%/Atk%)",
 		"element": "Wind",
-		"name": "Unicorn"
+		"lateRuneList": "Violent / Blade",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Unicorn",
+		"rating": 5,
+		"statPriority": "Hp%, Spd, Crit R%"
 	},
 	{
 		"awakenedName": "Eleanor",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Unicorn"
+		"lateRuneList": "Swift / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Unicorn",
+		"rating": 5,
+		"statPriority": "Hp%, Spd, Def%"
 	},
 	{
 		"awakenedName": "Alexandra",
+		"earlyRuneList": "Despair / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Unicorn"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Unicorn",
+		"rating": 5,
+		"statPriority": "Hp%, Spd, Acc%"
 	},
 	{
 		"awakenedName": "Mo Long",
+		"earlyRuneList": "2x Energy / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Panda Warrior"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Panda Warrior",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Feng Yan",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Crit R%/Def%)",
 		"element": "Wind",
-		"name": "Panda Warrior"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Panda Warrior",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Xiong Fei",
+		"earlyRuneList": "2x Guard / Focus",
+		"earlyRuneValues": "(Spd/Def%/Acc%)",
 		"element": "Fire",
-		"name": "Panda Warrior"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Panda Warrior",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Tian Lang",
+		"earlyRuneList": "2x Energy / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Panda Warrior"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Panda Warrior",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Mi Ying",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Panda Warrior"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Panda Warrior",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Daphnis",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Fairy King"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Fairy King",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Oberon",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Fairy King"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Fairy King",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Psamathe",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Fairy King"
+		"lateRuneList": "Despair / Nemesis",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Fairy King",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Ganymede",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Wind",
-		"name": "Fairy King"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Fairy King",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Nyx",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Fairy King"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Fairy King",
+		"rating": 5,
+		"statPriority": "Spd, Atk%, Hp%"
 	},
 	{
 		"awakenedName": "Sekhmet",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Desert Queen"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Desert Queen",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Isis",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Light",
-		"name": "Desert Queen"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Desert Queen",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Bastet",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Desert Queen"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Desert Queen",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Hathor",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Wind",
-		"name": "Desert Queen"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Desert Queen",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Nephthys",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Desert Queen"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Desert Queen",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Okeanos",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Sea Emperor"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Sea Emperor",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Pontos",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Sea Emperor"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Sea Emperor",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Poseidon",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Sea Emperor"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Sea Emperor",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Manannan",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Sea Emperor"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Sea Emperor",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Triton",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Wind",
-		"name": "Sea Emperor"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Sea Emperor",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Tesarion",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Ifrit"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Ifrit",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Atk%"
 	},
 	{
 		"awakenedName": "Elsharion",
+		"earlyRuneList": "",
+		"earlyRuneValues": "",
 		"element": "Light",
-		"name": "Ifrit"
+		"lateRuneList": "",
+		"lateRuneValues": "",
+		"name": "Ifrit",
+		"rating": 5,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Theomars",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Ifrit"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Ifrit",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Veromos",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Ifrit"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Ifrit",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Akhamamir",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Ifrit"
+		"lateRuneList": "Rage / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Ifrit",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Elenoa",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Polar Queen"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Polar Queen",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Alicia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Polar Queen"
+		"lateRuneList": "Rage / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Polar Queen",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lydia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Polar Queen"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Polar Queen",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Tiana",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Polar Queen"
+		"lateRuneList": "Swift / Will",
+		"lateRuneValues": "(Spd/Hp%/Atk%)",
+		"name": "Polar Queen",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Atk%"
 	},
 	{
 		"awakenedName": "Brandia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Polar Queen"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Polar Queen",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Nigong",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Pioneer"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Pioneer",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Res%"
 	},
 	{
 		"awakenedName": "Woosa",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Pioneer"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Pioneer",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Crit R%"
 	},
 	{
 		"awakenedName": "Woonsa",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Acc%)",
 		"element": "Dark",
-		"name": "Pioneer"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd%/Hp%/Hp%)",
+		"name": "Pioneer",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Pungbaek",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Pioneer"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pioneer",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Chiwu",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Pioneer"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Pioneer",
+		"rating": 5,
+		"statPriority": "Spd, Atk%, Acc%"
 	},
 	{
 		"awakenedName": "Asima",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R/Atk%)",
 		"element": "Light",
-		"name": "Hell Lady"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Hell Lady",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Beth",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Hell Lady"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Hell Lady",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Craka",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Hell Lady"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd%/Hp%/Hp%)",
+		"name": "Hell Lady",
+		"rating": 5,
+		"statPriority": "Hp%, Res%, Spd"
 	},
 	{
 		"awakenedName": "Ethna",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Hell Lady"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Hell Lady",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Raki",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Hell Lady"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Hell Lady",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Shazam",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Beast Monk"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Beast Monk",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Chandra",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Beast Monk"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Beast Monk",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Rahul",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Beast Monk"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Beast Monk",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Ritesh",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Beast Monk"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Beast Monk",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Kumar",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Beast Monk"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Beast Monk",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Artamiel",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Spd/Hp%/Def%)",
 		"element": "Light",
-		"name": "Archangel"
+		"lateRuneList": "Despair / Nemesis",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Archangel",
+		"rating": 5,
+		"statPriority": "Hp%, Def%, Res%"
 	},
 	{
 		"awakenedName": "Ariel",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Archangel"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Archangel",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Res%, Def%"
 	},
 	{
 		"awakenedName": "Fermion",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Crit R%/Hp%)",
 		"element": "Dark",
-		"name": "Archangel"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Archangel",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Eladriel",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Archangel"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Archangel",
+		"rating": 5,
+		"statPriority": "Hp%, Def%, Spd"
 	},
 	{
 		"awakenedName": "Velajuel",
+		"earlyRuneList": "Swift / Guard",
+		"earlyRuneValues": "(Spd/Def%/Def%)",
 		"element": "Fire",
-		"name": "Archangel"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Crit D%/Def%)",
+		"name": "Archangel",
+		"rating": 5,
+		"statPriority": "Spd, Def%, Crit R%"
 	},
 	{
 		"awakenedName": "Qitian Dasheng",
+		"earlyRuneList": "Fatal / Energy",
+		"earlyRuneValues": "(Atk%/Atk%/Hp%)",
 		"element": "Light",
-		"name": "Monkey King"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Hp%)",
+		"name": "Monkey King",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Shi Hou",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Monkey King"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Monkey King",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Son Zhang Lao",
+		"earlyRuneList": "Fatal / Energy",
+		"earlyRuneValues": "(Atk%/Atk%/Hp%)",
 		"element": "Dark",
-		"name": "Monkey King"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Hp%)",
+		"name": "Monkey King",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Xing Zhe",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Monkey King"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Monkey King",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Mei Hou Wang",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Monkey King"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Monkey King",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Jager",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Dragon Knight"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Hp%)",
+		"name": "Dragon Knight",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Chow",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Dragon Knight"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Hp%)",
+		"name": "Dragon Knight",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Ragdoll",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Dragon Knight"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Atk%)",
+		"name": "Dragon Knight",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Leo",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Dragon Knight"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Dragon Knight",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Laika",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Dragon Knight"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Dragon Knight",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lora",
+		"earlyRuneList": "Fatal / Energy",
+		"earlyRuneValues": "(Atk%/Atk%/Hp%)",
 		"element": "Light",
-		"name": "Occult Girl"
+		"lateRuneList": "Despair / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Hp%)",
+		"name": "Occult Girl",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Anavel",
+		"earlyRuneList": "Fatal / Energy",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Occult Girl"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Atk%)",
+		"name": "Occult Girl",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Nicki",
+		"earlyRuneList": "Fatal / Energy",
+		"earlyRuneValues": "(Atk%/Atk%/Hp%)",
 		"element": "Dark",
-		"name": "Occult Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Hp%)",
+		"name": "Occult Girl",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Charlotte",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Occult Girl"
+		"lateRuneList": "Despair / Will",
+		"lateRuneValues": "(SPD/Crit D%/Atk%)",
+		"name": "Occult Girl",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Rica",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Occult Girl"
+		"lateRuneList": "Despair / Blade",
+		"lateRuneValues": "(SPD/Crit D%/Atk%)",
+		"name": "Occult Girl",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Laima",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Crit R%/Hp%)",
 		"element": "Light",
-		"name": "Oracle"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Oracle",
+		"rating": 5,
+		"statPriority": "Atk%, Acc%, Hp%, Spd"
 	},
 	{
 		"awakenedName": "Praha",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Hp%)",
 		"element": "Water",
-		"name": "Oracle"
+		"lateRuneList": "Despair / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Oracle",
+		"rating": 5,
+		"statPriority": "Spd, Crit R%, Acc%"
 	},
 	{
 		"awakenedName": "Giana",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Oracle"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Atk%/Hp%)",
+		"name": "Oracle",
+		"rating": 5,
+		"statPriority": "Spd, Crit R%, Acc%"
 	},
 	{
 		"awakenedName": "Seara",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Oracle"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd%/Atk%/Atk%)",
+		"name": "Oracle",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Juno",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Oracle"
+		"lateRuneList": "Despair / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Oracle",
+		"rating": 5,
+		"statPriority": "Spd, Crit R%, Acc%"
 	},
 	{
 		"awakenedName": "Taor",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Chimera"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Chimera",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Zeratu",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Chimera"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Chimera",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lagmaron",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Chimera"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Chimera",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Rakan",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Crit R%/Hp%)",
 		"element": "Fire",
-		"name": "Chimera"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Chimera",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Shan",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Chimera"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Atk%)",
+		"name": "Chimera",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Sigmarus",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Phoenix"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Phoenix",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Jaara",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Phoenix"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Phoenix",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Teshar",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Phoenix"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Phoenix",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Perna",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Phoenix"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Phoenix",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Eludia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Phoenix"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Phoenix",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Verad",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Def%)",
 		"element": "Water",
-		"name": "Dragon"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Dragon",
+		"rating": 5,
+		"statPriority": "Spd, Def%, Crit R%"
 	},
 	{
 		"awakenedName": "Grogen",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Dragon"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Dragon",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Jamire",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Atk%)",
 		"element": "Wind",
-		"name": "Dragon"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Atk%)",
+		"name": "Dragon",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Zaiross",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Dragon"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Dragon",
+		"rating": 5,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Zerath",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Dragon"
+		"lateRuneList": "Rage / Will",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Dragon",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Camilla",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Crit R%/Hp%)",
 		"element": "Water",
-		"name": "Valkyrja"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd%/Crit D%/Hp%)",
+		"name": "Valkyrja",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Trinity",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Valkyrja"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Valkyrja",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Katarina",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Valkyrja"
+		"lateRuneList": "Rage / Will",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Valkyrja",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Vanessa",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Valkyrja"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Valkyrja",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Res%"
 	},
 	{
 		"awakenedName": "Akroma",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Valkyrja"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Valkyrja",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Windy",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Jack-o’-lantern"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Jack-o’-lantern",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Chilling",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Water",
-		"name": "Jack-o’-lantern"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Jack-o’-lantern",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Dusky",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Jack-o’-lantern"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Jack-o’-lantern",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Smokey",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Jack-o’-lantern"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Jack-o’-lantern",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Misty",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Jack-o’-lantern"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Jack-o’-lantern",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Imesety",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Horus"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Horus",
+		"rating": 4,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Wedjat",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Horus"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Horus",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Qebehsenuef",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Horus"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Horus",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Amduat",
+		"earlyRuneList": "Despair / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Horus"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Hp%)",
+		"name": "Horus",
+		"rating": 4,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Duamutef",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Def%)",
 		"element": "Fire",
-		"name": "Horus"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Def%)",
+		"name": "Horus",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Iunu",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Anubis"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Anubis",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Avaris",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Anubis"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Anubis",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Khmun",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Anubis"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Anubis",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Thebae",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Anubis"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Anubis",
+		"rating": 5,
+		"statPriority": "Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Amarna",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Spd/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Anubis"
+		"lateRuneList": "Violent / Blade",
+		"lateRuneValues": "(Spd/Atk%/Atk%)",
+		"name": "Anubis",
+		"rating": 4,
+		"statPriority": "Spd, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Olivia",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Neostone Agent"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Neostone Agent",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Emma",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Neostone Agent"
+		"lateRuneList": "Violent / Focus",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Neostone Agent",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Lisa",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Spd%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Neostone Agent"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Neostone Agent",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Sylvia",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Neostone Agent"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Neostone Agent",
+		"rating": 5,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Illianna",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Neostone Agent"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Neostone Agent",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Logan",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Neostone Fighter"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Neostone Fighter",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Ryan",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Neostone Fighter"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Neostone Fighter",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Karl",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Neostone Fighter"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Neostone Fighter",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Trevor",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Neostone Fighter"
+		"lateRuneList": "Vampire / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Neostone Fighter",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lucas",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Spd/Crit D%/Atk%)",
 		"element": "Light",
-		"name": "Neostone Fighter"
+		"lateRuneList": "Violent / Blade",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Neostone Fighter",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Tanya",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Assassin"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Assassin",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Stella",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Assassin"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Assassin",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Isabelle",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Assassin"
+		"lateRuneList": "Rage / Blade",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Assassin",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lexy",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Assassin"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Assassin",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Natalie",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Assassin"
+		"lateRuneList": "Violent / Focus",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Assassin",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lupinus",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Magic Knight"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Magic Knight",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lapis",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Magic Knight"
+		"lateRuneList": "Vampire / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Magic Knight",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Lanett",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Magic Knight"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Magic Knight",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Astar",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Magic Knight"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Magic Knight",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Iris",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Magic Knight"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd%/Hp%/Hp%)",
+		"name": "Magic Knight",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Cichlid",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Mermaid"
+		"lateRuneList": "Violent / Energy",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Mermaid",
+		"rating": 4,
+		"statPriority": "Hp%, Acc%, Spd"
 	},
 	{
 		"awakenedName": "Tetra",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Water",
-		"name": "Mermaid"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Mermaid",
+		"rating": 4,
+		"statPriority": "Hp%, Acc%, Spd"
 	},
 	{
 		"awakenedName": "Betta",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Mermaid"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Mermaid",
+		"rating": 4,
+		"statPriority": "Hp%, Def%, Spd"
 	},
 	{
 		"awakenedName": "Platy",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Mermaid"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Mermaid",
+		"rating": 4,
+		"statPriority": "Hp%, Def%, Spd"
 	},
 	{
 		"awakenedName": "Molly",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Mermaid"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Mermaid",
+		"rating": 4,
+		"statPriority": "Hp%, Def%, Spd"
 	},
 	{
 		"awakenedName": "Barque",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Pirate Captain"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pirate Captain",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Galleon",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Atk%/Acc%)",
 		"element": "Water",
-		"name": "Pirate Captain"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Pirate Captain",
+		"rating": 4,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Frigate",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Atk%/Acc%)",
 		"element": "Dark",
-		"name": "Pirate Captain"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Pirate Captain",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Carrack",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(Atk%/Atk%/Acc%)",
 		"element": "Fire",
-		"name": "Pirate Captain"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pirate Captain",
+		"rating": 4,
+		"statPriority": "Atk%, Crit R%, Spd"
 	},
 	{
 		"awakenedName": "Brig",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Pirate Captain"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pirate Captain",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hraesvelg",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Barbaric King"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Barbaric King",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Aegir",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Barbaric King"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Barbaric King",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hrungnir",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Barbaric King"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Atk%/Atk%)",
+		"name": "Barbaric King",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Surtr",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Barbaric King"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Barbaric King",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Mimirr",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Barbaric King"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Barbaric King",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Chasun",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Sky Dancer"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd%/Hp%/Hp%)",
+		"name": "Sky Dancer",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Yeonhong",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Sky Dancer"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Atk%)",
+		"name": "Sky Dancer",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Mihyang",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Sky Dancer"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Atk%/Atk%)",
+		"name": "Sky Dancer",
+		"rating": 4,
+		"statPriority": "Spd, Atk%, Acc%"
 	},
 	{
 		"awakenedName": "Hwahee",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Sky Dancer"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Sky Dancer",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Wolyung",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Sky Dancer"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Sky Dancer",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Taurus",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Kobold Bomber"
+		"lateRuneList": "Fatal / Will",
+		"lateRuneValues": "(Atk%/Atk%/Atk%)",
+		"name": "Kobold Bomber",
+		"rating": 4,
+		"statPriority": "Atk%, Spd, Hp%"
 	},
 	{
 		"awakenedName": "Malaka",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Kobold Bomber"
+		"lateRuneList": "Fatal / Will",
+		"lateRuneValues": "(Atk%/Atk%/Atk%)",
+		"name": "Kobold Bomber",
+		"rating": 4,
+		"statPriority": "Atk%, Spd, Hp%"
 	},
 	{
 		"awakenedName": "Bering",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Kobold Bomber"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Kobold Bomber",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Zibrolta",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Kobold Bomber"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Kobold Bomber",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Dover",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Kobold Bomber"
+		"lateRuneList": "Fatal / Will",
+		"lateRuneValues": "(Atk%/Atk%/Atk%)",
+		"name": "Kobold Bomber",
+		"rating": 4,
+		"statPriority": "Atk%, Spd, Hp%"
 	},
 	{
 		"awakenedName": "Aquila",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Brownie Magician"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Brownie Magician",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Orion",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Brownie Magician"
+		"lateRuneList": "Swift / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Brownie Magician",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%, Def%"
 	},
 	{
 		"awakenedName": "Korona",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Brownie Magician"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Brownie Magician",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Draco",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Brownie Magician"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Brownie Magician",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Gemini",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Brownie Magician"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Brownie Magician",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Xiao Lin",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Kung Fu Girl"
+		"lateRuneList": "Vampire / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Kung Fu Girl",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Fei",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Kung Fu Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Kung Fu Girl",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hong Hua",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Kung Fu Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Kung Fu Girl",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Liu Mei",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Kung Fu Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Kung Fu Girl",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Ling Ling",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Kung Fu Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Kung Fu Girl",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Rigel",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Water",
-		"name": "Lich"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Lich",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Grego",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Dark",
-		"name": "Lich"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Lich",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Antares",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Lich"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Lich",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Halphas",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Lich"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Lich",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Fuco",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Wind",
-		"name": "Lich"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Lich",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Fedora",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Death Knight"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Death Knight",
+		"rating": 4,
+		"statPriority": "Hp%, Def%, Res%"
 	},
 	{
 		"awakenedName": "Dias",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Death Knight"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Death Knight",
+		"rating": 4,
+		"statPriority": "Hp%, Def%, Res%"
 	},
 	{
 		"awakenedName": "Arnold",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Death Knight"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Death Knight",
+		"rating": 4,
+		"statPriority": "Hp%, Def%, Res%"
 	},
 	{
 		"awakenedName": "Conrad",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Death Knight"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Death Knight",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Briand",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Death Knight"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Death Knight",
+		"rating": 4,
+		"statPriority": "Hp%, Def%, Res%"
 	},
 	{
 		"awakenedName": "Su",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Rakshasa"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Rakshasa",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Ran",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Atk%/Acc%)",
 		"element": "Dark",
-		"name": "Rakshasa"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Rakshasa",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Hwa",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Rakshasa"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Rakshasa",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Pang",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Atk%/Acc%)",
 		"element": "Light",
-		"name": "Rakshasa"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Rakshasa",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Yen",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Rakshasa"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Rakshasa",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Michelle",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Epikion Priest"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Epikion Priest",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Chloe",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Epikion Priest"
+		"lateRuneList": "Swift / Will",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Epikion Priest",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Rina",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Epikion Priest"
+		"lateRuneList": "3x Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Epikion Priest",
+		"rating": 3,
+		"statPriority": "Hp%, Def%, Res%"
 	},
 	{
 		"awakenedName": "Iona",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Epikion Priest"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Epikion Priest",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Rasheed",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Atk%/Atk%/Hp%)",
 		"element": "Dark",
-		"name": "Epikion Priest"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Atk%/Hp%)",
+		"name": "Epikion Priest",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Julianne",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Vampire"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Vampire",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Liesel",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Vampire"
+		"lateRuneList": "Rage / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Vampire",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Verdehile",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Spd/Crit R%/Hp%)",
 		"element": "Fire",
-		"name": "Vampire"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Vampire",
+		"rating": 4,
+		"statPriority": "Crit R%, Spd, Atk%"
 	},
 	{
 		"awakenedName": "Cadiz",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Vampire"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Vampire",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Argen",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Vampire"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Vampire",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Luer",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Water",
-		"name": "Phantom Thief"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Acc%)",
+		"name": "Phantom Thief",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Guillaume",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Phantom Thief"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Phantom Thief",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Jean",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Phantom Thief"
+		"lateRuneList": "Rage / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Phantom Thief",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Louis",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Light",
-		"name": "Phantom Thief"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Acc%)",
+		"name": "Phantom Thief",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Julien",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Phantom Thief"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Phantom Thief",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Julie",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Pierret"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pierret",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Luna",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Pierret"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pierret",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Clara",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Pierret"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Pierret",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Acc%"
 	},
 	{
 		"awakenedName": "Eva",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Pierret"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pierret",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Sophia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Pierret"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pierret",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Susano",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Ninja"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Ninja",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Garo",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Ninja"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Ninja",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Han",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Ninja"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Ninja",
+		"rating": 5,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Gin",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Ninja"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Ninja",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Orochi",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Ninja"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Ninja",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Sian",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Joker"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Joker",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Liebli",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Joker"
+		"lateRuneList": "Fatal / Will",
+		"lateRuneValues": "(Atk%/Atk%/Atk%)",
+		"name": "Joker",
+		"rating": 4,
+		"statPriority": "Atk%, Spd, Res%"
 	},
 	{
 		"awakenedName": "Jojo",
+		"earlyRuneList": "Fatal / Focus",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Joker"
+		"lateRuneList": "Violent / Focus",
+		"lateRuneValues": "(Atk%/Atk%/Atk%)",
+		"name": "Joker",
+		"rating": 4,
+		"statPriority": "Atk%, Spd, Res%"
 	},
 	{
 		"awakenedName": "Figaro",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Joker"
+		"lateRuneList": "Rage / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Joker",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lushen",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Joker"
+		"lateRuneList": "Rage / Blade",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Joker",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Izaria",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Succubus"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Succubus",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Isael",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Succubus"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Succubus",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Akia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Succubus"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Succubus",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Aria",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Succubus"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Succubus",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Selena",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Succubus"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Succubus",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Icares",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Sylphid"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Sylphid",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Def%"
 	},
 	{
 		"awakenedName": "Fria",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Spd/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Sylphid"
+		"lateRuneList": "Despair / Nemesis",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Sylphid",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Mihael",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Sylphid"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Sylphid",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Def%"
 	},
 	{
 		"awakenedName": "Acasis",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Sylphid"
+		"lateRuneList": "Despair / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Sylphid",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Acc%"
 	},
 	{
 		"awakenedName": "Lumirecia",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Sylphid"
+		"lateRuneList": "3x Energy",
+		"lateRuneValues": "(Hp%/Def%/Def%)",
+		"name": "Sylphid",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Def%"
 	},
 	{
 		"awakenedName": "Aschubel",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Atk%/Acc%)",
 		"element": "Dark",
-		"name": "Sylph"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Sylph",
+		"rating": 4,
+		"statPriority": "Spd, Acc%, Hp%"
 	},
 	{
 		"awakenedName": "Baretta",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Fire",
-		"name": "Sylph"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Acc%)",
+		"name": "Sylph",
+		"rating": 4,
+		"statPriority": "Spd, Acc%, Hp%"
 	},
 	{
 		"awakenedName": "Eredas",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Atk%/Acc%)",
 		"element": "Light",
-		"name": "Sylph"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Sylph",
+		"rating": 4,
+		"statPriority": "Spd, Acc%, Hp%"
 	},
 	{
 		"awakenedName": "Shimitae",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Sylph"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Sylph",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Tyron",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Atk%/Acc%)",
 		"element": "Water",
-		"name": "Sylph"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Sylph",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Tilasha",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Undine"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Undine",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Crit R%"
 	},
 	{
 		"awakenedName": "Atenai",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Undine"
+		"lateRuneList": "Despair / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Undine",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Crit R%"
 	},
 	{
 		"awakenedName": "Icasha",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Undine"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Undine",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Crit R%"
 	},
 	{
 		"awakenedName": "Delphoi",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Undine"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Undine",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Crit R%"
 	},
 	{
 		"awakenedName": "Mikene",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Undine"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Undine",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Crit R%"
 	},
 	{
 		"awakenedName": "Kamiya",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Nine-tailed Fox"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Nine-tailed Fox",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Shihwa",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Nine-tailed Fox"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Nine-tailed Fox",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Chamie",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Nine-tailed Fox"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Nine-tailed Fox",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Arang",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Nine-tailed Fox"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Nine-tailed Fox",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Soha",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Nine-tailed Fox"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Nine-tailed Fox",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Dova",
+		"earlyRuneList": "Swift / Revenge",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Harg"
+		"lateRuneList": "Violent / Energy",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Harg",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Racuni",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Harg"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Harg",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kroa",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Def%/Def%)",
 		"element": "Dark",
-		"name": "Harg"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Def%/Def%)",
+		"name": "Harg",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Raviti",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Def%/Def%)",
 		"element": "Wind",
-		"name": "Harg"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Def%/Def%)",
+		"name": "Harg",
+		"rating": 4,
+		"statPriority": "Hp%, Spd, Def%"
 	},
 	{
 		"awakenedName": "Remy",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Def%/Def%)",
 		"element": "Water",
-		"name": "Harg"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Harg",
+		"rating": 3,
+		"statPriority": "Hp%, Spd, Def%"
 	},
 	{
 		"awakenedName": "Adrian",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Elven Ranger"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Acc%)",
+		"name": "Elven Ranger",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Lucien",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Elven Ranger"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Elven Ranger",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Erwin",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Elven Ranger"
+		"lateRuneList": "Despair / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Elven Ranger",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Isillen",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Elven Ranger"
+		"lateRuneList": "Violent / Blade",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Elven Ranger",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Eluin",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Elven Ranger"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Elven Ranger",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Bulldozer",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Crit R%/Def%)",
 		"element": "Fire",
-		"name": "Frankenstein"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Frankenstein",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Crawler",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Crit R%/Def%)",
 		"element": "Dark",
-		"name": "Frankenstein"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Frankenstein",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Driller",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Crit R%/Def%)",
 		"element": "Light",
-		"name": "Frankenstein"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Def%/Hp%)",
+		"name": "Frankenstein",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Crane",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Crit R%/Def%)",
 		"element": "Wind",
-		"name": "Frankenstein"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Frankenstein",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Tractor",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Crit R%/Def%)",
 		"element": "Water",
-		"name": "Frankenstein"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Frankenstein",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Sonora",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Mummy"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Mummy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Karakum",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Mummy"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Mummy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Sahara",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Mummy"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Mummy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Namib",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Mummy"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Mummy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Nubia",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Mummy"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Mummy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Sin",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Fire",
-		"name": "Martial Artist"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Martial Artist",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Jackie",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Martial Artist"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Martial Artist",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hiro",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Martial Artist"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Martial Artist",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lo",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Martial Artist"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Martial Artist",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Luan",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Water",
-		"name": "Martial Artist"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Martial Artist",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Ignicus",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Charger Shark"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Charger Shark",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Calicus",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Charger Shark"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Charger Shark",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Rumicus",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Charger Shark"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Charger Shark",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Zephicus",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Charger Shark"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Charger Shark",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Aqcus",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Charger Shark"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit%/Atk%)",
+		"name": "Charger Shark",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Anne",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Cow Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Cow Girl",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Loren",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(SPD/ATK%/ATK%)",
 		"element": "Light",
-		"name": "Cow Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(ATK%/CRIT DMG%/HP%)",
+		"name": "Cow Girl",
+		"rating": 3,
+		"statPriority": ""
 	},
 	{
 		"awakenedName": "Cassie",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Cow Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Cow Girl",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hannah",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Cow Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Cow Girl",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Sera",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Cow Girl"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Cow Girl",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Basalt",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Battle Mammoth"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Battle Mammoth",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Marble",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Battle Mammoth"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Battle Mammoth",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Olivine",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Battle Mammoth"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Battle Mammoth",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Talc",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Battle Mammoth"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Battle Mammoth",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Granite",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Battle Mammoth"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Battle Mammoth",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Kuna",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Penguin Knight"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Penguin Knight",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Dona",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Penguin Knight"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Penguin Knight",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Res%"
 	},
 	{
 		"awakenedName": "Mav",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Penguin Knight"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Penguin Knight",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Res%"
 	},
 	{
 		"awakenedName": "Toma",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit D%/Atk%)",
 		"element": "Water",
-		"name": "Penguin Knight"
+		"lateRuneList": "Rage / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Penguin Knight",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Naki",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Penguin Knight"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Penguin Knight",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Baekdu",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Beast Hunter"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Beast Hunter",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Suri",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Beast Hunter"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Beast Hunter",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Gangchun",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Beast Hunter"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Beast Hunter",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Nangrim",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Beast Hunter"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Beast Hunter",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hannam",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Beast Hunter"
+		"lateRuneList": "Rage / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Beast Hunter",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Woonhak",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Taoist"
+		"lateRuneList": "Despair / Destroy",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Taoist",
+		"rating": 3,
+		"statPriority": "Hp%, Def%, Spd"
 	},
 	{
 		"awakenedName": "Woochi",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Wind",
-		"name": "Taoist"
+		"lateRuneList": "Despair / Destroy",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Taoist",
+		"rating": 4,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Gildong",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Taoist"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Taoist",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hwadam",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Taoist"
+		"lateRuneList": "Despair / Destroy",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Taoist",
+		"rating": 4,
+		"statPriority": "Hp%, Def%, Res%"
 	},
 	{
 		"awakenedName": "Gunpyeong",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Taoist"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Taoist",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Glinodon",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Light",
-		"name": "Lizardman"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Lizardman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Velfinodon",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Wind",
-		"name": "Lizardman"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Lizardman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Kernodon",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Water",
-		"name": "Lizardman"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Lizardman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Igmanodon",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Fire",
-		"name": "Lizardman"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Lizardman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Devinodon",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Dark",
-		"name": "Lizardman"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Lizardman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Grotau",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Minotauros"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Minotauros",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Eintau",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Minotauros"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Minotauros",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Urtau",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Minotauros"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Minotauros",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Burentau",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Minotauros"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Minotauros",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Kamatau",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Minotauros"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Minotauros",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Tien Qin",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Drunken Master"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Drunken Master",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Huan",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Drunken Master"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Drunken Master",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Mao",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Drunken Master"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Drunken Master",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Xiao Chun",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Drunken Master"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Drunken Master",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Wei Shin",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Drunken Master"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Drunken Master",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Silver",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Light",
-		"name": "Living Armor"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Living Armor",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Copper",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Wind",
-		"name": "Living Armor"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Living Armor",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Nickel",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Water",
-		"name": "Living Armor"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Living Armor",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Iron",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Fire",
-		"name": "Living Armor"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Living Armor",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Zinc",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Dark",
-		"name": "Living Armor"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Living Armor",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Prom",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Grim Reaper"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Grim Reaper",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hiva",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Grim Reaper"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Grim Reaper",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hemos",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Water",
-		"name": "Grim Reaper"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Grim Reaper",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Sath",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Grim Reaper"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Grim Reaper",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Thrain",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Grim Reaper"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Acc%)",
+		"name": "Grim Reaper",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Linda",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Mystic Witch"
+		"lateRuneList": "Despair / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Mystic Witch",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Silia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Mystic Witch"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Mystic Witch",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Megan",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Mystic Witch"
+		"lateRuneList": "Swift / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Mystic Witch",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Rebecca",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Mystic Witch"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Mystic Witch",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Gina",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Mystic Witch"
+		"lateRuneList": "Despair / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Mystic Witch",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Imp Champion",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Imp Champion"
+		"lateRuneList": "Rage / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Imp Champion",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Pigma",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Imp Champion"
+		"lateRuneList": "Rage / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Imp Champion",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Yaku",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Imp Champion"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Imp Champion",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Fairo",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Imp Champion"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Imp Champion",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Loque",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Imp Champion"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Imp Champion",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Roger",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Bounty Hunter"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Bounty Hunter",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Wayne",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Bounty Hunter"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Bounty Hunter",
+		"rating": 3,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Randy",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Bounty Hunter"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Bounty Hunter",
+		"rating": 3,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Jamie",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Bounty Hunter"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Bounty Hunter",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Walkers",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Bounty Hunter"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Bounty Hunter",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Fami",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Magical Archer"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Magical Archer",
+		"rating": 3,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Ardella",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Magical Archer"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Magical Archer",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Bethony",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Magical Archer"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Magical Archer",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Sharron",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Magical Archer"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Magical Archer",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Chris",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Magical Archer"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Magical Archer",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Cassandra",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Magical Archer"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Magical Archer",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kai'en",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Vagabond"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Vagabond",
+		"rating": 3,
+		"statPriority": "Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Allen",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Vagabond"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Vagabond",
+		"rating": 2,
+		"statPriority": "Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Jubelle",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Vagabond"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Vagabond",
+		"rating": 3,
+		"statPriority": "Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Darion",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Vagabond"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Vagabond",
+		"rating": 3,
+		"statPriority": "Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Roid",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Vagabond"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Vagabond",
+		"rating": 2,
+		"statPriority": "Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Naomi",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Martial Cat"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Martial Cat",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Mina",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit D%/Atk%)",
 		"element": "Water",
-		"name": "Martial Cat"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Martial Cat",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Mei",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Martial Cat"
+		"lateRuneList": "Rage / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Martial Cat",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Miho",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Martial Cat"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Martial Cat",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Xiao Ling",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit D%/Atk%)",
 		"element": "Light",
-		"name": "Martial Cat"
+		"lateRuneList": "Rage / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Martial Cat",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hina",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Amazon"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Amazon",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Ellin",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Amazon"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Amazon",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Ceres",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Atk%/Crit D%/Atk%)",
 		"element": "Fire",
-		"name": "Amazon"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Amazon",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Mara",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Amazon"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Amazon",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lyn",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Amazon"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Amazon",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Dagorr",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Bearman"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Bearman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Gruda",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Bearman"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Bearman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Kungen",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Bearman"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Bearman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Haken",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Bearman"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Bearman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Ahman",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Bearman"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit R%/Hp%)",
+		"name": "Bearman",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Moria",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Atk%/Crit D%/Atk%)",
 		"element": "Wind",
-		"name": "High Elemental"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "High Elemental",
+		"rating": 3,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Ellena",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "High Elemental"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "High Elemental",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kahli",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit D%/Atk%)",
 		"element": "Fire",
-		"name": "High Elemental"
+		"lateRuneList": "Rage / Will",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "High Elemental",
+		"rating": 3,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Jumaline",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "High Elemental"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "High Elemental",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Shren",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "High Elemental"
+		"lateRuneList": "Violent / Destroy",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "High Elemental",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Purian",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Inferno"
+		"lateRuneList": "Swift / Blade",
+		"lateRuneValues": "(Spd/Crit R%/Atk%)",
+		"name": "Inferno",
+		"rating": 3,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Tagaros",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Inferno"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Inferno",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Drogan",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Inferno"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Inferno",
+		"rating": 3,
+		"statPriority": "Hp%, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Eludain",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Inferno"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Inferno",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Anduril",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Inferno"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Inferno",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kahn",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Griffon"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Griffon",
+		"rating": 3,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Spectra",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Griffon"
+		"lateRuneList": "Swift / Revenge",
+		"lateRuneValues": "(Spd/Crit R%/Hp%)",
+		"name": "Griffon",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Varus",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Griffon"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Spd/Crit R%/Hp%)",
+		"name": "Griffon",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Shamann",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Griffon"
+		"lateRuneList": "Vampire / Revenge",
+		"lateRuneValues": "(Hp%/Crit R%/Hp%)",
+		"name": "Griffon",
+		"rating": 3,
+		"statPriority": "Spd, Crit R%, Crit D%"
 	},
 	{
 		"awakenedName": "Bernard",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Griffon"
+		"lateRuneList": "Swift / Will",
+		"lateRuneValues": "(Spd/Crit R%/Hp%)",
+		"name": "Griffon",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Crit D%"
 	},
 	{
 		"awakenedName": "Kuhn",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Water",
-		"name": "Golem"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Golem",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Kugo",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Fire",
-		"name": "Golem"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Golem",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Maggi",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Dark",
-		"name": "Golem"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Golem",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Groggo",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Light",
-		"name": "Golem"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Golem",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Ragion",
+		"earlyRuneList": "3x Guard",
+		"earlyRuneValues": "(Def%/Def%/Def%)",
 		"element": "Wind",
-		"name": "Golem"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Golem",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Shailoq",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Serpent"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Serpent",
+		"rating": 3,
+		"statPriority": "Hp%, Spd, Crit R%"
 	},
 	{
 		"awakenedName": "Fao",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Serpent"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Serpent",
+		"rating": 3,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Mantura",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Serpent"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Serpent",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Elpuria",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Serpent"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Serpent",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Ermeda",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Serpent"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Serpent",
+		"rating": 3,
+		"statPriority": "Hp%, Def%, Res%"
 	},
 	{
 		"awakenedName": "Sharman",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Salamander"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Salamander",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Decamaron",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Salamander"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Salamander",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Krakdon",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Salamander"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Atk%/Atk%)",
+		"name": "Salamander",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kaimann",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Salamander"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Salamander",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lukan",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Salamander"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Salamander",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Icaru",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Inugami"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Inugami",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Raoq",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Inugami"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Inugami",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kro",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Inugami"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Inugami",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Belladeon",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Inugami"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Inugami",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Acc%"
 	},
 	{
 		"awakenedName": "Ramahan",
+		"earlyRuneList": "2x Guard / Blade",
+		"earlyRuneValues": "(Def%/Crit R%/Def%)",
 		"element": "Wind",
-		"name": "Inugami"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Def%/Crit D%/Def%)",
+		"name": "Inugami",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Def%"
 	},
 	{
 		"awakenedName": "Ramira",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit D%/Atk%)",
 		"element": "Water",
-		"name": "Harpy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Harpy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Lucasha",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Harpy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Harpy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Hellea",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Harpy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Harpy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kabilla",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Harpy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Harpy",
+		"rating": 3,
+		"statPriority": "Spd, Def%, Hp%"
 	},
 	{
 		"awakenedName": "Prilea",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Harpy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Harpy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Elucia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Fairy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Fairy",
+		"rating": 3,
+		"statPriority": "Hp%, Atk%, Def%"
 	},
 	{
 		"awakenedName": "Iselia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Fairy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Fairy",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Neal",
+		"earlyRuneList": "Fatal / Energy",
+		"earlyRuneValues": "(Atk%/Atk%/Hp%)",
 		"element": "Light",
-		"name": "Fairy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Atk%/Hp%)",
+		"name": "Fairy",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Atk%"
 	},
 	{
 		"awakenedName": "Aeilene",
+		"earlyRuneList": "Fatal / Energy",
+		"earlyRuneValues": "(Atk%/Atk%/Hp%)",
 		"element": "Wind",
-		"name": "Fairy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Atk%/Hp%)",
+		"name": "Fairy",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Sorin",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Fairy"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Fairy",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Shushu",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Howl"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Howl",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Chacha",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Howl"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Howl",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Lala",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Howl"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Howl",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Lulu",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Howl"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Howl",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Chichi",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Howl"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Howl",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Rizak",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Dark",
-		"name": "Garuda"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Acc%)",
+		"name": "Garuda",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Cahule",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Garuda"
+		"lateRuneList": "Swift / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Garuda",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Konamiya",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Garuda"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Garuda",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Teon",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Light",
-		"name": "Garuda"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Garuda",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Lindermen",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Wind",
-		"name": "Garuda"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Garuda",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Shamar",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Hellhound"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Hellhound",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Sieq",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Hellhound"
+		"lateRuneList": "Violent / Will",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Hellhound",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Shumar",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Hellhound"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Hellhound",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Tarq",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Spd/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Hellhound"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Hellhound",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Gamir",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Hellhound"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Hellhound",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Bremis",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Elemental"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Elemental",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Camules",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Elemental"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Elemental",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Res%"
 	},
 	{
 		"awakenedName": "Daharenos",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Hp%/Crit R%/Hp%)",
 		"element": "Water",
-		"name": "Elemental"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Elemental",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Priz",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Hp%/Crit R%/Hp%)",
 		"element": "Light",
-		"name": "Elemental"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Hp%/Crit R%/Hp%)",
+		"name": "Elemental",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Taharus",
+		"earlyRuneList": "Swift / Blade",
+		"earlyRuneValues": "(Hp%/Crit R%/Hp%)",
 		"element": "Wind",
-		"name": "Elemental"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Elemental",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Taru",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Imp"
+		"lateRuneList": "Rage / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Imp",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Garok",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Imp"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Imp",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Cogma",
+		"earlyRuneList": "Blade / Fatal",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Imp"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Imp",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Fynn",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Spd/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Imp"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit R%/Atk%)",
+		"name": "Imp",
+		"rating": 2,
+		"statPriority": "Crit R%, Spd, Crit D%"
 	},
 	{
 		"awakenedName": "Ralph",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Imp"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Imp",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Cheryl",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Pixie"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Pixie",
+		"rating": 2,
+		"statPriority": "Spd, Def%, Hp%"
 	},
 	{
 		"awakenedName": "Camaryn",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Pixie"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pixie",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Tatu",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Fire",
-		"name": "Pixie"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Pixie",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kacey",
+		"earlyRuneList": "Swift / Focus",
+		"earlyRuneValues": "(Hp%/Hp%/Acc%)",
 		"element": "Water",
-		"name": "Pixie"
+		"lateRuneList": "Despair / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Pixie",
+		"rating": 2,
+		"statPriority": "Spd, Acc%, Hp%"
 	},
 	{
 		"awakenedName": "Shannon",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Acc%)",
 		"element": "Wind",
-		"name": "Pixie"
+		"lateRuneList": "Despair / Focus",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Pixie",
+		"rating": 2,
+		"statPriority": "Spd, Acc%, Hp%"
 	},
 	{
 		"awakenedName": "Colleen",
+		"earlyRuneList": "Swift / Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Harpu"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Harpu",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Seren",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Dark",
-		"name": "Harpu"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Harpu",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Sisroo",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Harpu"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Harpu",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Sia",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Harpu"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Harpu",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Seal",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Harpu"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Harpu",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kaz",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Samurai"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Crit D%/Atk%)",
+		"name": "Samurai",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Spd"
 	},
 	{
 		"awakenedName": "Sige",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Dark",
-		"name": "Samurai"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Samurai",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Jun",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Fire",
-		"name": "Samurai"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Samurai",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Tosi",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Light",
-		"name": "Samurai"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Samurai",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Kaito",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Wind",
-		"name": "Samurai"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Samurai",
+		"rating": 4,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Jansson",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Viking"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Viking",
+		"rating": 2,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Geoffrey",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Viking"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Def%)",
+		"name": "Viking",
+		"rating": 3,
+		"statPriority": "Spd, Acc%, Hp%"
 	},
 	{
 		"awakenedName": "Janssen",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Spd/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Viking"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Viking",
+		"rating": 3,
+		"statPriority": "Spd, Hp%, Def%"
 	},
 	{
 		"awakenedName": "Huga",
+		"earlyRuneList": "3x Blade",
+		"earlyRuneValues": "(Atk%/Crit R%/Atk%)",
 		"element": "Water",
-		"name": "Viking"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Viking",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Walter",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Wind",
-		"name": "Viking"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Viking",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Gorgo",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Warbear"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Warbear",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Dagora",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Warbear"
+		"lateRuneList": "Violent / Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Warbear",
+		"rating": 3,
+		"statPriority": "Spd, Def%, Hp%"
 	},
 	{
 		"awakenedName": "Ursha",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Warbear"
+		"lateRuneList": "Rage / Destroy",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Warbear",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Lusha",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Warbear"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Warbear",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Ramagos",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Warbear"
+		"lateRuneList": "Vampire / Nemesis",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Warbear",
+		"rating": 2,
+		"statPriority": "Hp%, Res%, Spd"
 	},
 	{
 		"awakenedName": "Shakan",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Werewolf"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Werewolf",
+		"rating": 3,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Vigor",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Water",
-		"name": "Werewolf"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Werewolf",
+		"rating": 3,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Garoche",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Werewolf"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Werewolf",
+		"rating": 3,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Jultan",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Werewolf"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Werewolf",
+		"rating": 3,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Eshir",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Light",
-		"name": "Werewolf"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Hp%/Crit D%/Hp%)",
+		"name": "Werewolf",
+		"rating": 3,
+		"statPriority": "-"
 	},
 	{
 		"awakenedName": "Arkajan",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Light",
-		"name": "Yeti"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Yeti",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Tantra",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Fire",
-		"name": "Yeti"
+		"lateRuneList": "3x Revenge",
+		"lateRuneValues": "(Hp%/Hp%/Hp%)",
+		"name": "Yeti",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Kumae",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Dark",
-		"name": "Yeti"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Yeti",
+		"rating": 3,
+		"statPriority": "Crit R%, Crit D%, Hp%"
 	},
 	{
 		"awakenedName": "Kunda",
+		"earlyRuneList": "Fatal / Blade",
+		"earlyRuneValues": "(Atk%/Atk%/Atk%)",
 		"element": "Water",
-		"name": "Yeti"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Atk%/Crit D%/Atk%)",
+		"name": "Yeti",
+		"rating": 2,
+		"statPriority": "Crit R%, Crit D%, Atk%"
 	},
 	{
 		"awakenedName": "Rakaja",
+		"earlyRuneList": "3x Energy",
+		"earlyRuneValues": "(Hp%/Hp%/Hp%)",
 		"element": "Wind",
-		"name": "Yeti"
+		"lateRuneList": "Violent / Revenge",
+		"lateRuneValues": "(Spd/Hp%/Hp%)",
+		"name": "Yeti",
+		"rating": 2,
+		"statPriority": "Spd, Def%, Hp%"
 	}
 ]
