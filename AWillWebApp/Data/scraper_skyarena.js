@@ -7,6 +7,29 @@
  * Purpose: Grab all tr elements on page and parse them to create basic data model objects
  */
 
+const DOMElementsToImageInfo = (imageDOMElements) => {
+	let awakenedImage = ''
+	let image = ''
+
+	if (imageDOMElements && imageDOMElements.length > 1) {
+		const awakenedImageDOMElements = imageDOMElements[1].getElementsByTagName('img')
+		const normalImageDOMElements = imageDOMElements[0].getElementsByTagName('img')
+
+		if (awakenedImageDOMElements && awakenedImageDOMElements.length > 0) {
+			awakenedImage = awakenedImageDOMElements[0].getAttribute('src')
+		}
+
+		if (normalImageDOMElements && normalImageDOMElements.length > 0) {
+			image = normalImageDOMElements[0].getAttribute('src')
+		}
+	}
+
+	return {
+		awakenedImage,
+		image
+	}
+}
+
 const DOMElementsToRuneInfo = (runesDOMElements) => {
 	let runeList = ''
 	let runeValues = ''
@@ -44,6 +67,8 @@ const DOMRowToMonster = (rowDOM) => {
 	const earlyRuneInfo = DOMElementsToRuneInfo(rowDOM.getElementsByClassName('early-runes'))
 	const lateRuneInfo = DOMElementsToRuneInfo(rowDOM.getElementsByClassName('late-runes'))
 
+	const imageInfo = DOMElementsToImageInfo(rowDOM.getElementsByClassName('icon'))
+
 	return {
 		awakenedName,
 		earlyRuneList: earlyRuneInfo.runeList,
@@ -53,7 +78,8 @@ const DOMRowToMonster = (rowDOM) => {
 		lateRuneValues: lateRuneInfo.runeValues,
 		name,
 		rating,
-		statPriority
+		statPriority,
+		...imageInfo
 	}
 }
 
@@ -68,4 +94,30 @@ const parseMonsters = () => {
 	return generatedMonsters
 }
 
-const monsters = parseMonsters()
+const launchScroller = () => {	
+	const bottomThreshold = 500
+	const parseDelay = 1000
+	const scrollAmount = 250
+	const scrollInterval = 75
+	const launchParser = () => {
+		console.log('about to parse monsters...')
+		monsters = parseMonsters()
+	}
+	const runScrollCheck = () => {
+		const distanceToBottom = document.body.offsetHeight - window.pageYOffset
+		if (distanceToBottom <= bottomThreshold) {
+			window.clearInterval(scrollTimer)
+			console.log(`delay for ${parseDelay} millis for monster images load...`)
+			window.setTimeout(launchParser, parseDelay)
+			return
+		}
+		window.scrollTo({
+			behavior: 'smooth',
+			top: window.pageYOffset + scrollAmount
+		})
+	}
+	const scrollTimer = window.setInterval(runScrollCheck, scrollInterval)
+}
+
+let monsters = []
+launchScroller()
