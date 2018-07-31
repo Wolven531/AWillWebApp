@@ -8,7 +8,8 @@
 		"start": "react-scripts start",
 		"test": "react-scripts test --env=jsdom",
 		"wbpc": "rimraf ./dist && node node_modules/react-scripts/node_modules/webpack/bin/webpack.js --config webpack.config.js --progress",
-		"wbpc-v": "rimraf ./dist && node node_modules/react-scripts/node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod --progress"
+		"wbpc-v": "rimraf ./dist && node node_modules/react-scripts/node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod --progress",
+		"wbpc-w": "rimraf ./dist && node node_modules/react-scripts/node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --watch"
 	},
 	"author": "Anthony Williams",
 	"license": "ISC",

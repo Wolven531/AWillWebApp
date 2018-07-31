@@ -23,7 +23,7 @@
 
 .fetchdata {
 	align-items: center;
-	background-color: rgba(0, 200, 0, .8);
+	background-color: rgba(0, 200, 200, .8);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
