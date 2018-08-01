@@ -47,6 +47,6 @@ namespace AWillWebApp.Inside.Services
 			return ConvertMonstersToNames(filteredMonsters);
 		}
 
-		private IEnumerable<string> ConvertMonstersToNames(IEnumerable<Monster> monsters) => monsters.SelectMany(monster => new[] { monster.SearchableName, monster.AwakenedName });
+		private static IEnumerable<string> ConvertMonstersToNames(IEnumerable<Monster> monsters) => monsters.SelectMany(monster => new[] { monster.SearchableName, monster.AwakenedName });
 	}
 }
