@@ -72,7 +72,7 @@ export default class FetchData extends React.Component<{}, IFetchDataState> {
 			console.warn(`[searchApi] Unable to search API with searchQuery=${JSON.stringify(this.state.searchQuery)}`)
 			return
 		}
-		fetch('api/monsters/names')
+		fetch(`api/monsters/names/${this.state.searchQuery}`)
 			.then(response => response.json())
 			.then((searchResults: string[]) => {
 				console.log(`[searchApi] Got search results, setting state with searchResults=${searchResults.length}`)

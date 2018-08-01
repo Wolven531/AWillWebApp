@@ -30870,7 +30870,7 @@ var FetchData = /** @class */ (function (_super) {
                 console.warn("[searchApi] Unable to search API with searchQuery=" + JSON.stringify(_this.state.searchQuery));
                 return;
             }
-            fetch('api/monsters/names')
+            fetch("api/monsters/names/" + _this.state.searchQuery)
                 .then(function (response) { return response.json(); })
                 .then(function (searchResults) {
                 console.log("[searchApi] Got search results, setting state with searchResults=" + searchResults.length);
