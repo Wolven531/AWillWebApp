@@ -11,6 +11,6 @@ namespace AWillWebApp.Inside.Services
 
 	public interface IMonsterService
 	{
-		Task<IEnumerable<string>> SearchMonsterNames(string searchQuery);
+		Task<IEnumerable<string>> SearchMonsterNamesAsync(string searchQuery);
 	}
 }
