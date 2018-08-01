@@ -31,10 +31,15 @@ export default class FetchData extends React.Component<{}, IFetchDataState> {
 						<h3>Parameters</h3>
 						<label htmlFor="search-query">
 							<h4>Search Query (string)</h4>
-							<input type="text" id="search-query" name="search-query" value={this.state.searchQuery} onChange={this.handleSearchQueryUpdate} />
+							<input
+								type="text"
+								id="search-query"
+								name="search-query"
+								value={this.state.searchQuery}
+								onChange={this.handleSearchQueryUpdate} />
 						</label>
 					</div>
-					<button onClick={this.searchApi}>Search</button>
+					<button onClick={this.searchApiWithState}>Search</button>
 					{this.state.searchResults.length > 0 &&
 						<textarea
 							cols={20}
@@ -53,7 +58,7 @@ export default class FetchData extends React.Component<{}, IFetchDataState> {
 			return
 		}
 		const searchQuery = String(evt.target.value)
-		this.setState({ searchQuery })
+		this.searchApi(searchQuery)
 	}
 
 	private refreshData = () => {
@@ -67,16 +72,18 @@ export default class FetchData extends React.Component<{}, IFetchDataState> {
 			})
 	}
 
-	private searchApi = () => {
-		if (this.state.searchQuery === null || this.state.searchQuery === undefined || this.state.searchQuery.length < 1) {
-			console.warn(`[searchApi] Unable to search API with searchQuery=${JSON.stringify(this.state.searchQuery)}`)
+	private searchApi = (searchQuery: string) => {
+		if (!searchQuery) {
+			console.warn(`[searchApi] Unable to search API with searchQuery=${JSON.stringify(searchQuery)}`)
 			return
 		}
-		fetch(`api/monsters/names/${this.state.searchQuery}`)
+		fetch(`api/monsters/names/${searchQuery}`)
 			.then(response => response.json())
 			.then((searchResults: string[]) => {
-				console.log(`[searchApi] Got search results, setting state with searchResults=${searchResults.length}`)
-				this.setState({ searchResults })
+				console.log(`[searchApi] Got search results for searchQuery=${JSON.stringify(searchQuery)}, number searchResults=${searchResults.length}`)
+				this.setState({ searchQuery, searchResults })
 			})
 	}
+
+	private searchApiWithState = () => this.searchApi(this.state.searchQuery)
 }
