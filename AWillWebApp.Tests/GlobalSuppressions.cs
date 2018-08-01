@@ -49,3 +49,8 @@ using System.Diagnostics.CodeAnalysis;
 	"SA1515:Single-line comment must be preceded by blank line",
 	Justification = "Fights with the auto commenter")
 ]
+[assembly: SuppressMessage(
+	"StyleCop.CSharp.LayoutRules",
+	"SA1512:Single-line comments must not be followed by blank line",
+	Justification = "Fights with the auto commenter")
+]
