@@ -55,6 +55,8 @@ namespace AWillWebApp.Inside.Models
 
 		public string Name { get; }
 
+		public string SearchableName { get => $"{Element} {Name}"; }
+
 		public int Rating { get; }
 
 		public bool IsAwake { get; }
