@@ -33,6 +33,15 @@ namespace AWillWebApp.Controllers
 			return _MonsterService.SearchMonsterNamesAsync(string.Empty);
 		}
 
+		// GET: api/monsters/names/fire
+		[Route("names/{searchQuery}")]
+		[HttpGet]
+		public Task<IEnumerable<string>> SearchMonsterNames([FromRoute] string searchQuery)
+		{
+			_logger.LogDebug($"Searching MonsterService searchQuery='{searchQuery}'...");
+			return _MonsterService.SearchMonsterNamesAsync(searchQuery);
+		}
+
 		// GET: api/monsters
 		[HttpGet]
 		public Task<IEnumerable<Monster>> GetAllMonsters()

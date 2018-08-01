@@ -134,6 +134,23 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesElementWithWeirdCasing_ShouldReturnMatchingNamesOfMonstersWithElement()
+		{
+			// Setup
+			_mockMonsterRepository
+				.Setup(repository => repository.GetMonsters())
+				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
+			var expected = new string[] { "Dark name 1", "awake 1" };
+
+			// Execute
+			var actual = await fixture.SearchMonsterNamesAsync("DaRk");
+
+			// Verify
+			_mockMonsterRepository.VerifyAll();
+			actual.Should().BeEquivalentTo(expected);
+		}
+
+		[Fact]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesName_ShouldReturnMatchingNamesOfMonsters()
 		{
 			// Setup
@@ -151,6 +168,23 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesNameWithWeirdCasing_ShouldReturnMatchingNamesOfMonsters()
+		{
+			// Setup
+			_mockMonsterRepository
+				.Setup(repository => repository.GetMonsters())
+				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
+			var expected = new string[] { "Dark name 1", "awake 1" };
+
+			// Execute
+			var actual = await fixture.SearchMonsterNamesAsync("aME 1");
+
+			// Verify
+			_mockMonsterRepository.VerifyAll();
+			actual.Should().BeEquivalentTo(expected);
+		}
+
+		[Fact]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedName_ShouldReturnMatchingAwakenedNamesOfMonsters()
 		{
 			// Setup
@@ -161,6 +195,23 @@ namespace AWillWebApp.Tests.Inside.Services
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync("ake 1");
+
+			// Verify
+			_mockMonsterRepository.VerifyAll();
+			actual.Should().BeEquivalentTo(expected);
+		}
+
+		[Fact]
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedNameWithWeirdCasing_ShouldReturnMatchingAwakenedNamesOfMonsters()
+		{
+			// Setup
+			_mockMonsterRepository
+				.Setup(repository => repository.GetMonsters())
+				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
+			var expected = new string[] { "Dark name 1", "awake 1" };
+
+			// Execute
+			var actual = await fixture.SearchMonsterNamesAsync("aKE 1");
 
 			// Verify
 			_mockMonsterRepository.VerifyAll();

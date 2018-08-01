@@ -32,7 +32,7 @@ namespace AWillWebApp.Inside.Services
 				return ConvertMonstersToNames(allMonsters);
 			}
 
-			var searchWasElement = Enum.TryParse<Element>(searchQuery, out var searchElement);
+			var searchWasElement = Enum.TryParse<Element>(searchQuery, true, out var searchElement);
 			var filteredMonsters = new List<Monster>();
 
 			if (searchWasElement)
