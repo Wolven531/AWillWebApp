@@ -4,22 +4,24 @@
 
 namespace AWillWebApp.Controllers
 {
-	using System;
 	using System.Collections.Generic;
 	using System.Threading.Tasks;
 	using AWillWebApp.Inside.Models;
-	using AWillWebApp.Outside.Repositories;
+	using AWillWebApp.Inside.Services;
 	using Microsoft.AspNetCore.Mvc;
+	using Microsoft.Extensions.Logging;
 
 	[Route("api/monsters")]
 	[ApiController]
 	public class MonsterController : ControllerBase
 	{
-		private readonly IMonsterRepository _MonsterRepository;
+		private readonly IMonsterService _MonsterService;
+		private readonly ILogger<MonsterController> _logger;
 
-		public MonsterController(IMonsterRepository monsterRepository)
+		public MonsterController(IMonsterService monsterService, ILogger<MonsterController> logger)
 		{
-			_MonsterRepository = monsterRepository;
+			_MonsterService = monsterService;
+			_logger = logger;
 		}
 
 		// GET: api/monsters/names
@@ -27,22 +29,24 @@ namespace AWillWebApp.Controllers
 		[HttpGet]
 		public Task<IEnumerable<string>> GetAllMonsterNames()
 		{
-			return _MonsterRepository.GetMonsterNames();
+			_logger.LogDebug("Searching MonsterService with string.Empty to fetch all results...");
+			return _MonsterService.SearchMonsterNamesAsync(string.Empty);
 		}
 
 		// GET: api/monsters
 		[HttpGet]
 		public Task<IEnumerable<Monster>> GetAllMonsters()
 		{
-			return _MonsterRepository.GetMonsters();
+			_logger.LogDebug("Getting all monsters from MonsterService...");
+			return _MonsterService.GetMonstersAsync();
 		}
 
-		// GET: api/monsters/2e846d8d-a45d-4548-9240-e2ed7fa91e3c
-		[HttpGet("{id}")]
-		public Task<Monster> GetMonsterById([FromRoute] Guid id)
-		{
-			return _MonsterRepository.GetMonster(id);
-		}
+		//// GET: api/monsters/2e846d8d-a45d-4548-9240-e2ed7fa91e3c
+		//[HttpGet("{id}")]
+		//public Task<Monster> GetMonsterById([FromRoute] Guid id)
+		//{
+		//	return _MonsterRepository.GetMonster(id);
+		//}
 
 		//// POST: api/SampleDummyData
 		//[HttpPost]

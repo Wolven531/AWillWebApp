@@ -75,10 +75,9 @@ namespace AWillWebApp
 			_logger.LogInformation($"Loaded {monsters.Length} monsters from disk.");
 
 			var monsterRepository = new MonsterRepository(monsters);
-			var monsterService = new MonsterService(monsterRepository);
 
 			services.AddSingleton<IMonsterRepository>(monsterRepository);
-			services.AddSingleton<IMonsterService>(monsterService);
+			services.AddSingleton<IMonsterService, MonsterService>();
 
 			//// In production, the React files will be served from this directory
 			//services.AddSpaStaticFiles(configuration =>
