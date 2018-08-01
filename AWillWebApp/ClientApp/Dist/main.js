@@ -30848,6 +30848,13 @@ var FetchData = /** @class */ (function (_super) {
     __extends(FetchData, _super);
     function FetchData(props) {
         var _this = _super.call(this, props) || this;
+        _this.handleSearchQueryUpdate = function (evt) {
+            if (!evt || !evt.target) {
+                return;
+            }
+            var searchQuery = String(evt.target.value);
+            _this.setState({ searchQuery: searchQuery });
+        };
         _this.refreshData = function () {
             fetch('api/monsters/')
                 .then(function (response) { return response.json(); })
@@ -30858,24 +30865,40 @@ var FetchData = /** @class */ (function (_super) {
                 });
             });
         };
+        _this.searchApi = function () {
+            if (_this.state.searchQuery === null || _this.state.searchQuery === undefined || _this.state.searchQuery.length < 1) {
+                console.warn("[searchApi] Unable to search API with searchQuery=" + JSON.stringify(_this.state.searchQuery));
+                return;
+            }
+            fetch('api/monsters/names')
+                .then(function (response) { return response.json(); })
+                .then(function (searchResults) {
+                console.log("[searchApi] Got search results, setting state with searchResults=" + searchResults.length);
+                _this.setState({ searchResults: searchResults });
+            });
+        };
         _this.state = {
             loading: true,
-            monsters: []
+            monsters: [],
+            searchQuery: '',
+            searchResults: []
         };
         _this.refreshData();
         return _this;
     }
     FetchData.prototype.render = function () {
-        var _this = this;
-        var contents = this.state.loading ?
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("p", null,
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("em", null, "Loading...")) :
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("textarea", { readOnly: true, value: JSON.stringify(this.state.monsters, null, 4) });
         return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "fetchdata" },
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h1", null, "API Check"),
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h1", null, "API"),
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
-                contents,
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: function () { return _this.refreshData; } }, "Refresh"))));
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h2", null, "IMonsterRepository.GetMonsterNames()"),
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h3", null, "Parameters"),
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("label", { htmlFor: "search-query" },
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h4", null, "Search Query (string)"),
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { type: "text", id: "search-query", name: "search-query", value: this.state.searchQuery, onChange: this.handleSearchQueryUpdate }))),
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: this.searchApi }, "Search"),
+                this.state.searchResults.length > 0 &&
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("textarea", { cols: 20, readOnly: true, rows: 20, value: JSON.stringify(this.state.searchResults, null, 4) }))));
     };
     return FetchData;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]));

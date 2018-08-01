@@ -5,6 +5,8 @@ import 'isomorphic-fetch'
 export interface IFetchDataState {
 	loading: boolean
 	monsters: object[]
+	searchQuery: string
+	searchResults: string[]
 }
 
 export default class FetchData extends React.Component<{}, IFetchDataState> {
@@ -12,27 +14,46 @@ export default class FetchData extends React.Component<{}, IFetchDataState> {
 		super(props)
 		this.state = {
 			loading: true,
-			monsters: []
+			monsters: [],
+			searchQuery: '',
+			searchResults: []
 		}
 		this.refreshData()
 	}
 
 	public render() {
-		const contents = this.state.loading ?
-			<p><em>Loading...</em></p> :
-			<textarea readOnly={true} value={JSON.stringify(this.state.monsters, null, 4)}></textarea>
-
 		return (
 			<div className="fetchdata">
-				<h1>API Check</h1>
+				<h1>API</h1>
 				<div>
-					{contents}
-					<button onClick={() => this.refreshData}>
-						Refresh
-					</button>
+					<h2>IMonsterRepository.GetMonsterNames()</h2>
+					<div>
+						<h3>Parameters</h3>
+						<label htmlFor="search-query">
+							<h4>Search Query (string)</h4>
+							<input type="text" id="search-query" name="search-query" value={this.state.searchQuery} onChange={this.handleSearchQueryUpdate} />
+						</label>
+					</div>
+					<button onClick={this.searchApi}>Search</button>
+					{this.state.searchResults.length > 0 &&
+						<textarea
+							cols={20}
+							readOnly={true}
+							rows={20}
+							value={JSON.stringify(this.state.searchResults, null, 4)}>
+						</textarea>
+					}
 				</div>
 			</div>
 		)
+	}
+
+	private handleSearchQueryUpdate = (evt: React.ChangeEvent<HTMLInputElement>) => {
+		if (!evt || !evt.target) {
+			return
+		}
+		const searchQuery = String(evt.target.value)
+		this.setState({ searchQuery })
 	}
 
 	private refreshData = () => {
@@ -43,6 +64,19 @@ export default class FetchData extends React.Component<{}, IFetchDataState> {
 					loading: false,
 					monsters
 				})
+			})
+	}
+
+	private searchApi = () => {
+		if (this.state.searchQuery === null || this.state.searchQuery === undefined || this.state.searchQuery.length < 1) {
+			console.warn(`[searchApi] Unable to search API with searchQuery=${JSON.stringify(this.state.searchQuery)}`)
+			return
+		}
+		fetch('api/monsters/names')
+			.then(response => response.json())
+			.then((searchResults: string[]) => {
+				console.log(`[searchApi] Got search results, setting state with searchResults=${searchResults.length}`)
+				this.setState({ searchResults })
 			})
 	}
 }
