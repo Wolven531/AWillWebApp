@@ -1,0 +1,5 @@
+{
+	"$schema": "./cypress/cypress-schema.json",
+	"baseUrl": "https://localhost:5001",
+	"reporter": "landing"
+}
