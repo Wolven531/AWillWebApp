@@ -11,6 +11,7 @@ namespace AWillWebApp
 	using AWillWebApp.Outside.Repositories;
 	using Microsoft.AspNetCore.Builder;
 	using Microsoft.AspNetCore.Hosting;
+	using Microsoft.AspNetCore.Http;
 	//using Microsoft.AspNetCore.Http;
 	using Microsoft.AspNetCore.Mvc;
 	//using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
@@ -36,6 +37,7 @@ namespace AWillWebApp
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
+				app.UseHsts();
 				//app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
 				//{
 				//	HotModuleReplacement = true,
@@ -68,6 +70,11 @@ namespace AWillWebApp
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddLogging();
+			services.AddHttpsRedirection(options =>
+			{
+				options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
+				options.HttpsPort = 5001;
+			});
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
 			_logger.LogInformation($"Loading monsters from disk...");
