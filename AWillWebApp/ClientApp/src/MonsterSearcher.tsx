@@ -2,14 +2,14 @@
 import 'es6-promise'
 import 'isomorphic-fetch'
 
-export interface IFetchDataState {
+export interface IMonsterSearcherState {
 	loading: boolean
 	monsters: object[]
 	searchQuery: string
 	searchResults: string[]
 }
 
-export default class FetchData extends React.Component<{}, IFetchDataState> {
+export default class MonsterSearcher extends React.Component<{}, IMonsterSearcherState> {
 	constructor(props: any) {
 		super(props)
 		this.state = {
@@ -42,6 +42,8 @@ export default class FetchData extends React.Component<{}, IFetchDataState> {
 					<button onClick={this.searchApiWithState}>Search</button>
 					{this.state.searchResults.length > 0 &&
 						<textarea
+							id="search-results"
+							name="search-results"
 							cols={20}
 							readOnly={true}
 							rows={20}

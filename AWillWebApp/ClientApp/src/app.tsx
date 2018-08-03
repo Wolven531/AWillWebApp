@@ -9,7 +9,7 @@ import * as ReactDOM from 'react-dom'
 import { getText } from './lib'
 import ES6Lib from './es6lib'
 import Counter from './counter'
-import FetchData from './fetchdata'
+import MonsterSearcher from './MonsterSearcher'
 
 //import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/site.css'
@@ -25,12 +25,16 @@ import '../css/site.css'
 //$('#fillthiswithes6lib').html(myES6Object.getData())
 
 class App extends React.Component {
+	public componentDidMount() {
+		document.title = "Home"
+	}
+	
 	public render() {
 		return (
-			<React.Fragment>
-				<Counter />
-				<FetchData />
-			</React.Fragment>
+			// <React.Fragment>
+			// 	<Counter />
+			// </React.Fragment>
+			<MonsterSearcher />
 		)
 	}
 }
