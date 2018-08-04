@@ -1,0 +1,10 @@
+.search-results {
+	align-self: stretch;
+	border: 1px solid #333;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-evenly;
+	max-width: 800px;
+	overflow-x: scroll;
+}

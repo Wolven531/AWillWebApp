@@ -3,9 +3,12 @@
 import 'es6-promise'
 import 'isomorphic-fetch'
 
+import './MonsterSearcher.css'
+
 export interface IMonsterSearcherState {
 	loading: boolean
 	monsters: object[]
+	relevantMonsters: object[]
 	searchQuery: string
 	searchResults: string[]
 }
@@ -16,6 +19,7 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 		this.state = {
 			loading: true,
 			monsters: [],
+			relevantMonsters: [],
 			searchQuery: '',
 			searchResults: []
 		}
@@ -41,16 +45,19 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 						</label>
 					</div>
 					<button onClick={this.searchApiWithState}>Search</button>
-					{this.state.searchResults &&
-						<textarea
-							id="search-results"
-							name="search-results"
-							cols={20}
-							readOnly={true}
-							rows={20}
-							value={JSON.stringify(this.state.searchResults, null, 4)}>
-						</textarea>
-					}
+					<div className="search-results">
+						{this.state.searchResults && this.state.relevantMonsters.map((monster: any, ind) => {
+							return (
+								<div key={ind}>
+									<div>
+										{monster.awakenedName} ({monster.element} {monster.name})
+									</div>
+									<img src={monster.image} />
+									<img src={monster.awakenedImage} />
+								</div>
+							)
+						})}
+					</div>
 				</div>
 			</div>
 		)
@@ -83,7 +90,12 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 		fetch(`api/monsters/names/${searchQuery}`)
 			.then(response => response.json())
 			.then((searchResults: string[]) => {
-				this.setState({ searchQuery, searchResults })
+				let relevantMonsters: any[] = []
+				if (this.state.monsters) {
+					relevantMonsters = this.state.monsters.filter((monster: any) =>
+						searchResults.indexOf(monster.name) > -1 || searchResults.indexOf(monster.awakenedName) > -1)
+				}
+				this.setState({ relevantMonsters, searchQuery, searchResults })
 			})
 	}
 
