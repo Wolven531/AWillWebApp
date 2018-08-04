@@ -1,4 +1,5 @@
 ﻿import * as React from 'react'
+
 import 'es6-promise'
 import 'isomorphic-fetch'
 
@@ -40,7 +41,7 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 						</label>
 					</div>
 					<button onClick={this.searchApiWithState}>Search</button>
-					{this.state.searchResults.length > 0 &&
+					{this.state.searchResults &&
 						<textarea
 							id="search-results"
 							name="search-results"
@@ -75,14 +76,13 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 	}
 
 	private searchApi = (searchQuery: string) => {
-		if (!searchQuery) {
-			console.warn(`[searchApi] Unable to search API with searchQuery=${JSON.stringify(searchQuery)}`)
-			return
-		}
+		// if (!searchQuery) {
+		// 	console.warn(`[searchApi] Unable to search API with searchQuery=${JSON.stringify(searchQuery)}`)
+		// 	return
+		// }
 		fetch(`api/monsters/names/${searchQuery}`)
 			.then(response => response.json())
 			.then((searchResults: string[]) => {
-				console.log(`[searchApi] Got search results for searchQuery=${JSON.stringify(searchQuery)}, number searchResults=${searchResults.length}`)
 				this.setState({ searchQuery, searchResults })
 			})
 	}

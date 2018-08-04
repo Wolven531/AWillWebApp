@@ -885,23 +885,26 @@ var __extends = (this && this.__extends) || (function () {
 var $ = window.$ = window.jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery__;
 
 
+// import Counter from './counter'
+// import ES6Lib from './es6lib'
+// import { getText } from './lib'
 
-//import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 //// NOTE: vanilla JS
-//document.getElementById('fillthis').appendChild(document.createTextNode(getText()))
+// document.getElementById('fillthis').appendChild(document.createTextNode(getText()))
 //// NOTE: jQuery
-//$('#fillthiswithjquery').html('Filled by Jquery!')
+// $('#fillthiswithjquery').html('Filled by Jquery!')
 //// NOTE: ES6
-//const myES6Object = new ES6Lib()
-//$('#fillthiswithes6lib').html(myES6Object.getData())
+// const myES6Object = new ES6Lib()
+// $('#fillthiswithes6lib').html(myES6Object.getData())
 var App = /** @class */ (function (_super) {
     __extends(App, _super);
     function App() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     App.prototype.componentDidMount = function () {
-        document.title = "Home";
+        document.title = 'Home';
     };
     App.prototype.render = function () {
         return (
@@ -914,15 +917,15 @@ var App = /** @class */ (function (_super) {
 }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]));
 __WEBPACK_IMPORTED_MODULE_2_react_dom__["render"](__WEBPACK_IMPORTED_MODULE_1_react__["createElement"](App, null), document.getElementById('app'));
 //// NOTE: ReactJS
-//ReactDOM.render(
-//	<Counter />,
-//	document.getElementById('basicreactcomponent')
-//)
+// ReactDOM.render(
+// 	<Counter />,
+// 	document.getElementById('basicreactcomponent')
+// )
 //// NOTE: ReactJS with API
-//ReactDOM.render(
-//	<FetchData />,
-//	document.getElementById('reactcomponentwithapidata')
-//)
+// ReactDOM.render(
+// 	<FetchData />,
+// 	document.getElementById('reactcomponentwithapidata')
+// )
 
 
 /***/ }),
@@ -30827,14 +30830,13 @@ var MonsterSearcher = /** @class */ (function (_super) {
             });
         };
         _this.searchApi = function (searchQuery) {
-            if (!searchQuery) {
-                console.warn("[searchApi] Unable to search API with searchQuery=" + JSON.stringify(searchQuery));
-                return;
-            }
+            // if (!searchQuery) {
+            // 	console.warn(`[searchApi] Unable to search API with searchQuery=${JSON.stringify(searchQuery)}`)
+            // 	return
+            // }
             fetch("api/monsters/names/" + searchQuery)
                 .then(function (response) { return response.json(); })
                 .then(function (searchResults) {
-                console.log("[searchApi] Got search results for searchQuery=" + JSON.stringify(searchQuery) + ", number searchResults=" + searchResults.length);
                 _this.setState({ searchQuery: searchQuery, searchResults: searchResults });
             });
         };
@@ -30859,7 +30861,7 @@ var MonsterSearcher = /** @class */ (function (_super) {
                         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h4", null, "Search Query (string)"),
                         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { type: "text", id: "search-query", name: "search-query", value: this.state.searchQuery, onChange: this.handleSearchQueryUpdate }))),
                 __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: this.searchApiWithState }, "Search"),
-                this.state.searchResults.length > 0 &&
+                this.state.searchResults &&
                     __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("textarea", { id: "search-results", name: "search-results", cols: 20, readOnly: true, rows: 20, value: JSON.stringify(this.state.searchResults, null, 4) }))));
     };
     return MonsterSearcher;
