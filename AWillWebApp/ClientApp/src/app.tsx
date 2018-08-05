@@ -49,6 +49,6 @@ ReactDOM.render(<App />, document.getElementById('app'))
 
 //// NOTE: ReactJS with API
 // ReactDOM.render(
-// 	<FetchData />,
+// 	<MonsterSearcher />,
 // 	document.getElementById('reactcomponentwithapidata')
 // )

@@ -21,12 +21,11 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 			searchQuery: '',
 			searchResults: []
 		}
-		this.refreshData()
 	}
 
 	public render() {
 		return (
-			<div className="fetchdata">
+			<div className="monster-searcher">
 				<h1>API</h1>
 				<div>
 					<h2>IMonsterRepository.GetMonsterNames()</h2>
@@ -43,19 +42,19 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 						</label>
 					</div>
 					<button onClick={this.searchApiWithState}>Search</button>
-					<div className="search-results">
-						{this.state.searchResults && this.state.searchResults.map((searchResult: any, ind) => {
+					{this.state.searchResults.length > 0 && <div className="search-results">
+						{this.state.searchResults.map((searchResult: any, ind) => {
 							return (
-								<div key={ind}>
-									<div>
+								<div key={ind} className="search-result">
+									<div className="name-display">
 										{searchResult.awakenedName} ({searchResult.name})
 									</div>
-									<img src={searchResult.image} />
-									<img src={searchResult.awakenedImage} />
+									<img src={searchResult.image} className="normal-image" />
+									<img src={searchResult.awakenedImage} className="awakened-image" />
 								</div>
 							)
 						})}
-					</div>
+					</div>}
 				</div>
 			</div>
 		)
@@ -67,17 +66,6 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 		}
 		const searchQuery = String(evt.target.value)
 		this.searchApi(searchQuery)
-	}
-
-	private refreshData = () => {
-		fetch('api/monsters/')
-			.then(response => response.json())
-			.then(monsters => {
-				this.setState({
-					loading: false,
-					monsters
-				})
-			})
 	}
 
 	private searchApi = (searchQuery: string) => {

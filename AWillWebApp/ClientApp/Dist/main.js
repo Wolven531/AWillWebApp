@@ -1391,7 +1391,7 @@ __WEBPACK_IMPORTED_MODULE_2_react_dom__["render"](__WEBPACK_IMPORTED_MODULE_1_re
 // )
 //// NOTE: ReactJS with API
 // ReactDOM.render(
-// 	<FetchData />,
+// 	<MonsterSearcher />,
 // 	document.getElementById('reactcomponentwithapidata')
 // )
 
@@ -31290,16 +31290,6 @@ var MonsterSearcher = /** @class */ (function (_super) {
             var searchQuery = String(evt.target.value);
             _this.searchApi(searchQuery);
         };
-        _this.refreshData = function () {
-            fetch('api/monsters/')
-                .then(function (response) { return response.json(); })
-                .then(function (monsters) {
-                _this.setState({
-                    loading: false,
-                    monsters: monsters
-                });
-            });
-        };
         _this.searchApi = function (searchQuery) {
             // if (!searchQuery) {
             // 	console.warn(`[searchApi] Unable to search API with searchQuery=${JSON.stringify(searchQuery)}`)
@@ -31316,11 +31306,10 @@ var MonsterSearcher = /** @class */ (function (_super) {
             searchQuery: '',
             searchResults: []
         };
-        _this.refreshData();
         return _this;
     }
     MonsterSearcher.prototype.render = function () {
-        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "fetchdata" },
+        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "monster-searcher" },
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h1", null, "API"),
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
                 __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h2", null, "IMonsterRepository.GetMonsterNames()"),
@@ -31330,15 +31319,15 @@ var MonsterSearcher = /** @class */ (function (_super) {
                         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h4", null, "Search Query (string)"),
                         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { type: "text", id: "search-query", name: "search-query", value: this.state.searchQuery, onChange: this.handleSearchQueryUpdate }))),
                 __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: this.searchApiWithState }, "Search"),
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "search-results" }, this.state.searchResults && this.state.searchResults.map(function (searchResult, ind) {
-                    return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { key: ind },
-                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
+                this.state.searchResults.length > 0 && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "search-results" }, this.state.searchResults.map(function (searchResult, ind) {
+                    return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { key: ind, className: "search-result" },
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "name-display" },
                             searchResult.awakenedName,
                             " (",
                             searchResult.name,
                             ")"),
-                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", { src: searchResult.image }),
-                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", { src: searchResult.awakenedImage })));
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", { src: searchResult.image, className: "normal-image" }),
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", { src: searchResult.awakenedImage, className: "awakened-image" })));
                 })))));
     };
     return MonsterSearcher;
@@ -33102,7 +33091,7 @@ exports = module.exports = __webpack_require__(12)(false);
 
 
 // module
-exports.push([module.i, ".search-results {\n\talign-self: stretch;\n\tborder: 1px solid #333;\n\tdisplay: flex;\n\tflex: 1;\n\tflex-direction: row;\n\tjustify-content: space-evenly;\n\tmax-width: 800px;\n\toverflow-x: scroll;\n}\n", ""]);
+exports.push([module.i, ".search-results {\r\n\talign-self: stretch;\r\n\tborder: 1px solid #333;\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\tflex-direction: row;\r\n\tjustify-content: space-evenly;\r\n\tmax-width: 800px;\r\n\toverflow-x: scroll;\r\n}\r\n", ""]);
 
 // exports
 
@@ -33261,7 +33250,7 @@ exports = module.exports = __webpack_require__(12)(false);
 
 
 // module
-exports.push([module.i, "body {\n\tmargin: 0;\n\toverflow-y: scroll;\n\tpadding: 0;\n}\n\n#app {\n\talign-self: stretch;\n\tbackground-color: rgba(0, 0, 200, .8);\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: space-between;\n\tpadding-bottom: 50px;\n\toverflow-y: hidden;\n}\n\n#app > * {\n\tdisplay: flex;\n\tflex: 1;\n\tflex-direction: column;\n\tmargin: 10px;\n}\n\n.fetchdata {\n\talign-items: center;\n\tbackground-color: rgba(0, 200, 200, .8);\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: space-around;\n}\n\n.fetchdata > div {\n\talign-items: center;\n\talign-self: stretch;\n\tdisplay: flex;\n\tflex-direction: column;\n\tpadding: 10px;\n}\n\n.fetchdata textarea {\n\tdisplay: flex;\n\tmargin-bottom: 10px;\n\tmin-height: 200px;\n\twidth: 80%;\n}\n", ""]);
+exports.push([module.i, "body {\r\n\tmargin: 0;\r\n\toverflow-y: scroll;\r\n\tpadding: 0;\r\n}\r\n\r\n#app {\r\n\talign-self: stretch;\r\n\tbackground-color: rgba(0, 0, 200, .8);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\tpadding-bottom: 50px;\r\n\toverflow-y: hidden;\r\n}\r\n\r\n#app > * {\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\tflex-direction: column;\r\n\tmargin: 10px;\r\n}\r\n\r\n.monster-searcher {\r\n\talign-items: center;\r\n\tbackground-color: rgba(0, 200, 200, .8);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-around;\r\n}\r\n\r\n.monster-searcher > div {\r\n\talign-items: center;\r\n\talign-self: stretch;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tpadding: 10px;\r\n}\r\n", ""]);
 
 // exports
 
