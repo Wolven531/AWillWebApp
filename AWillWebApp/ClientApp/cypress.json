@@ -1,5 +1,9 @@
 {
 	"$schema": "./cypress/cypress-schema.json",
 	"baseUrl": "https://localhost:5001",
-	"reporter": "landing"
+	"integrationFolder": "cypress/e2e",
+	"reporter": "spec",
+	"video": false,
+	"viewportHeight": 900,
+	"viewportWidth": 1440
 }
