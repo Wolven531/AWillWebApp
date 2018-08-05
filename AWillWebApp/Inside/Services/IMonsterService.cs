@@ -13,6 +13,6 @@ namespace AWillWebApp.Inside.Services
 	{
 		Task<IEnumerable<Monster>> GetMonstersAsync();
 
-		Task<IEnumerable<string>> SearchMonsterNamesAsync(string searchQuery);
+		Task<IEnumerable<SearchResult>> SearchMonsterNamesAsync(string searchQuery);
 	}
 }

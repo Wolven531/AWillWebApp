@@ -27,7 +27,7 @@ namespace AWillWebApp.Controllers
 		// GET: api/monsters/names
 		[Route("names")]
 		[HttpGet]
-		public Task<IEnumerable<string>> GetAllMonsterNames()
+		public Task<IEnumerable<SearchResult>> GetAllMonsterNames()
 		{
 			_logger.LogDebug("Searching MonsterService with string.Empty to fetch all results...");
 			return _MonsterService.SearchMonsterNamesAsync(string.Empty);
@@ -36,7 +36,7 @@ namespace AWillWebApp.Controllers
 		// GET: api/monsters/names/fire
 		[Route("names/{searchQuery}")]
 		[HttpGet]
-		public Task<IEnumerable<string>> SearchMonsterNames([FromRoute] string searchQuery)
+		public Task<IEnumerable<SearchResult>> SearchMonsterNames([FromRoute] string searchQuery)
 		{
 			_logger.LogDebug($"Searching MonsterService searchQuery='{searchQuery}'...");
 			return _MonsterService.SearchMonsterNamesAsync(searchQuery);

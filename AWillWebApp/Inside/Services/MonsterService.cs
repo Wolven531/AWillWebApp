@@ -23,7 +23,7 @@ namespace AWillWebApp.Inside.Services
 			_logger = logger;
 		}
 
-		public async Task<IEnumerable<string>> SearchMonsterNamesAsync(string searchQuery)
+		public async Task<IEnumerable<SearchResult>> SearchMonsterNamesAsync(string searchQuery)
 		{
 			var allMonsters = await _monsterRepository.GetMonsters();
 			if (string.IsNullOrEmpty(searchQuery) || searchQuery.Length < 1)
@@ -61,6 +61,16 @@ namespace AWillWebApp.Inside.Services
 			return _monsterRepository.GetMonsters();
 		}
 
-		private static IEnumerable<string> ConvertMonstersToNames(IEnumerable<Monster> monsters) => monsters.SelectMany(monster => new[] { monster.SearchableName, monster.AwakenedName });
+		private static IEnumerable<SearchResult> ConvertMonstersToNames(IEnumerable<Monster> monsters)
+		{
+			var results = new List<SearchResult>();
+			for (int i = 0; i < monsters.Count(); i++)
+			{
+				results.Add(new SearchResult(i + 1, monsters.ElementAt(i)));
+			}
+
+			return results;
+		}
 	}
 }
+	

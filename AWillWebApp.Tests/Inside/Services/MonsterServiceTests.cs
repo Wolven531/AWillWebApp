@@ -65,13 +65,13 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfStrings()
+		public async Task SearchMonsterNames_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfSearchResults()
 		{
 			// Setup
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
 				.ReturnsAsync(Enumerable.Empty<Monster>());
-			var expected = Enumerable.Empty<string>();
+			var expected = Enumerable.Empty<SearchResult>();
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync(string.Empty);
@@ -82,14 +82,19 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryIsEmpty_ShouldReturnListOfMonsterNamesAsStrings()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryIsEmpty_ShouldReturnListOfSearchResults()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
+				.ReturnsAsync(monsters);
 
-			var expected = new string[] { "Dark name 1", "awake 1", "Fire name 2", "awake 2" };
+			var expected = new[]
+			{
+				new SearchResult(1, monsters.ElementAt(0)),
+				new SearchResult(2, monsters.ElementAt(1))
+			};
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync(string.Empty);
@@ -100,13 +105,13 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryDoesNotMatch_ShouldReturnEmptyListOfStrings()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryDoesNotMatch_ShouldReturnEmptyListOfSearchResults()
 		{
 			// Setup
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
 				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = Enumerable.Empty<string>();
+			var expected = Enumerable.Empty<SearchResult>();
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync("asdfqwer");
@@ -117,13 +122,14 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesElement_ShouldReturnMatchingNamesOfMonstersWithElement()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesElement_ShouldReturnSearchResultsWithElement()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = new string[] { "Dark name 1", "awake 1" };
+				.ReturnsAsync(monsters);
+			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync("Dark");
@@ -134,13 +140,14 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesElement_ShouldReturnMatchingNamesOfMonstersWithElement()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesElement_ShouldReturnSearchResultsWithElement()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = new string[] { "Dark name 1", "awake 1" };
+				.ReturnsAsync(monsters);
+			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync(" dARk ");
@@ -151,13 +158,14 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesElementWithWeirdCasing_ShouldReturnMatchingNamesOfMonstersWithElement()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesElementWithWeirdCasing_ShouldReturnSearchResultsWithElement()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = new string[] { "Dark name 1", "awake 1" };
+				.ReturnsAsync(monsters);
+			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync("DaRk");
@@ -168,13 +176,14 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesName_ShouldReturnMatchingNamesOfMonsters()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesName_ShouldReturnSearchResults()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = new string[] { "Dark name 1", "awake 1" };
+				.ReturnsAsync(monsters);
+			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync("ame 1");
@@ -185,13 +194,14 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesName_ShouldReturnMatchingNamesOfMonsters()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesName_ShouldReturnSearchResults()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = new string[] { "Dark name 1", "awake 1" };
+				.ReturnsAsync(monsters);
+			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync(" nAMe 1 ");
@@ -202,13 +212,14 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesNameWithWeirdCasing_ShouldReturnMatchingNamesOfMonsters()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesNameWithWeirdCasing_ShouldReturnSearchResults()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = new string[] { "Dark name 1", "awake 1" };
+				.ReturnsAsync(monsters);
+			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync("aME 1");
@@ -219,13 +230,14 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedName_ShouldReturnMatchingAwakenedNamesOfMonsters()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedName_ShouldReturnSearchResults()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = new string[] { "Dark name 1", "awake 1" };
+				.ReturnsAsync(monsters);
+			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync("ake 1");
@@ -236,13 +248,14 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesAwakenedName_ShouldReturnMatchingAwakenedNamesOfMonsters()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesAwakenedName_ShouldReturnSearchResults()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = new string[] { "Dark name 1", "awake 1" };
+				.ReturnsAsync(monsters);
+			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync(" aWAke 1 ");
@@ -253,13 +266,14 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[Fact]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedNameWithWeirdCasing_ShouldReturnMatchingAwakenedNamesOfMonsters()
+		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedNameWithWeirdCasing_ShouldReturnSearchResults()
 		{
 			// Setup
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
-				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
-			var expected = new string[] { "Dark name 1", "awake 1" };
+				.ReturnsAsync(monsters);
+			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
 			// Execute
 			var actual = await fixture.SearchMonsterNamesAsync("aKE 1");
@@ -269,7 +283,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		private IEnumerable<Monster> GenerateMonsters(Element[] monsterElements)
+		private static IEnumerable<Monster> GenerateMonsters(Element[] monsterElements)
 		{
 			var monsters = new List<Monster>();
 
