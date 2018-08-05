@@ -31307,21 +31307,12 @@ var MonsterSearcher = /** @class */ (function (_super) {
             // }
             fetch("api/monsters/names/" + searchQuery)
                 .then(function (response) { return response.json(); })
-                .then(function (searchResults) {
-                var relevantMonsters = [];
-                if (_this.state.monsters) {
-                    relevantMonsters = _this.state.monsters.filter(function (monster) {
-                        return searchResults.indexOf(monster.name) > -1 || searchResults.indexOf(monster.awakenedName) > -1;
-                    });
-                }
-                _this.setState({ relevantMonsters: relevantMonsters, searchQuery: searchQuery, searchResults: searchResults });
-            });
+                .then(function (searchResults) { return _this.setState({ searchQuery: searchQuery, searchResults: searchResults }); });
         };
         _this.searchApiWithState = function () { return _this.searchApi(_this.state.searchQuery); };
         _this.state = {
             loading: true,
             monsters: [],
-            relevantMonsters: [],
             searchQuery: '',
             searchResults: []
         };
@@ -31339,17 +31330,15 @@ var MonsterSearcher = /** @class */ (function (_super) {
                         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h4", null, "Search Query (string)"),
                         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { type: "text", id: "search-query", name: "search-query", value: this.state.searchQuery, onChange: this.handleSearchQueryUpdate }))),
                 __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: this.searchApiWithState }, "Search"),
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "search-results" }, this.state.searchResults && this.state.relevantMonsters.map(function (monster, ind) {
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "search-results" }, this.state.searchResults && this.state.searchResults.map(function (searchResult, ind) {
                     return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { key: ind },
                         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
-                            monster.awakenedName,
+                            searchResult.awakenedName,
                             " (",
-                            monster.element,
-                            " ",
-                            monster.name,
+                            searchResult.name,
                             ")"),
-                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", { src: monster.image }),
-                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", { src: monster.awakenedImage })));
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", { src: searchResult.image }),
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", { src: searchResult.awakenedImage })));
                 })))));
     };
     return MonsterSearcher;

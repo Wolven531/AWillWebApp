@@ -8,9 +8,8 @@ import './MonsterSearcher.css'
 export interface IMonsterSearcherState {
 	loading: boolean
 	monsters: object[]
-	relevantMonsters: object[]
 	searchQuery: string
-	searchResults: string[]
+	searchResults: any[]
 }
 
 export default class MonsterSearcher extends React.Component<{}, IMonsterSearcherState> {
@@ -19,7 +18,6 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 		this.state = {
 			loading: true,
 			monsters: [],
-			relevantMonsters: [],
 			searchQuery: '',
 			searchResults: []
 		}
@@ -46,14 +44,14 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 					</div>
 					<button onClick={this.searchApiWithState}>Search</button>
 					<div className="search-results">
-						{this.state.searchResults && this.state.relevantMonsters.map((monster: any, ind) => {
+						{this.state.searchResults && this.state.searchResults.map((searchResult: any, ind) => {
 							return (
 								<div key={ind}>
 									<div>
-										{monster.awakenedName} ({monster.element} {monster.name})
+										{searchResult.awakenedName} ({searchResult.name})
 									</div>
-									<img src={monster.image} />
-									<img src={monster.awakenedImage} />
+									<img src={searchResult.image} />
+									<img src={searchResult.awakenedImage} />
 								</div>
 							)
 						})}
@@ -89,14 +87,7 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 		// }
 		fetch(`api/monsters/names/${searchQuery}`)
 			.then(response => response.json())
-			.then((searchResults: string[]) => {
-				let relevantMonsters: any[] = []
-				if (this.state.monsters) {
-					relevantMonsters = this.state.monsters.filter((monster: any) =>
-						searchResults.indexOf(monster.name) > -1 || searchResults.indexOf(monster.awakenedName) > -1)
-				}
-				this.setState({ relevantMonsters, searchQuery, searchResults })
-			})
+			.then((searchResults: any[]) => this.setState({ searchQuery, searchResults }) )
 	}
 
 	private searchApiWithState = () => this.searchApi(this.state.searchQuery)
