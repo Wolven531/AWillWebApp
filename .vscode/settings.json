@@ -1,0 +1,23 @@
+{
+	"editor.autoIndent": true,
+	"editor.detectIndentation": false,
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
+	"editor.insertSpaces": false,
+	"editor.minimap.enabled": true,
+	"editor.renderWhitespace": "all",
+	"editor.tabSize": 4,
+	"files.autoSave": "onFocusChange",
+	"files.autoSaveDelay": 1000,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": false,
+	"prettier.semi": false,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 4,
+	"prettier.trailingComma": "none",
+	"prettier.useTabs": true,
+	"workbench.startupEditor": "none",
+	"gitlens.advanced.messages": {
+		"suppressShowKeyBindingsNotice": true
+	}
+}
