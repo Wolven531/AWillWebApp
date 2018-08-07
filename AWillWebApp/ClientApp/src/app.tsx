@@ -9,7 +9,8 @@ import * as ReactDOM from 'react-dom'
 // import Counter from './counter'
 // import ES6Lib from './es6lib'
 // import { getText } from './lib'
-import MonsterSearcher from './MonsterSearcher'
+// import MonsterSearcher from './MonsterSearcher'
+import { Login } from './Login'
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/site.css'
@@ -34,7 +35,8 @@ class App extends React.Component {
 			// <React.Fragment>
 			// 	<Counter />
 			// </React.Fragment>
-			<MonsterSearcher />
+			// <MonsterSearcher />
+			<Login />
 		)
 	}
 }

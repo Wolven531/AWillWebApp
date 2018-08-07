@@ -1,0 +1,64 @@
+.login {
+	background-color: rgba(0, 0, 0, .4);
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	padding: 10px;
+	width: 200px;
+}
+
+.login > form {
+	align-items: center;
+	color: #cff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 150px;
+	text-shadow: 0 0 10px #0ff;
+}
+
+.login > form input[type="text"],
+.login > form input[type="password"] {
+	background-color: rgba(255, 255, 255, .4);
+	border: 0;
+	caret-color: #0ff;
+	color: #0ff;
+	padding: 2px 5px;
+}
+
+.login .error,
+.login .error .dismiss-button {
+	background-color: #600;
+	border: 1px solid #f00;
+	color: #fff;
+	cursor: pointer;
+	text-shadow: 0 0 10px #ff0;
+}
+
+.login .error:hover,
+.login .error .dismiss-button:hover {
+	background-color: #a00;
+	border: 1px solid #fff;
+}
+
+.login .error {
+	align-items: center;
+	border-radius: 10px;
+	color: #f99;
+	display: flex;
+	font-size: 1em;
+	justify-content: space-between;
+	margin: 10px 0 0 0;
+	padding: 5px 7px 5px 5px;
+}
+
+.login .error .dismiss-button {
+	align-items: center;
+	font-size: .8em;
+	border-radius: 50%;
+	display: flex;
+	height: 30px;
+	justify-content: center;
+	width: 30px;
+}
