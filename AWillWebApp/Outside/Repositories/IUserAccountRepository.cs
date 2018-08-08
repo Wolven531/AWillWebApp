@@ -11,14 +11,14 @@ namespace AWillWebApp.Outside.Repositories
 
 	public interface IUserAccountRepository
 	{
-		Task<IEnumerable<UserAccount>> GetUserAccounts();
+		Task<IEnumerable<UserAccount>> GetUserAccountsAsync();
 
-		Task<UserAccount> GetUserAccountById(Guid id);
+		Task<UserAccount> GetUserAccountByIdAsync(Guid id);
 
-		Task<UserAccount> GetUserAccountByNumber(int number);
+		Task<UserAccount> GetUserAccountByNumberAsync(int number);
 
-		Task<UserAccount> GetUserAccountByUsername(string username);
+		Task<UserAccount> GetUserAccountByUsernameAsync(string username);
 
-		Task<UserAccount> AddUserAccount(UserAccount newUserAccount);
+		Task<UserAccount> AddUserAccountAsync(UserAccount newUserAccount);
 	}
 }

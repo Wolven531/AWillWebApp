@@ -28,7 +28,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccounts();
+			var actual = await _fixture.GetUserAccountsAsync();
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -52,7 +52,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccounts();
+			var actual = await _fixture.GetUserAccountsAsync();
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected, options => options.Excluding(userAccount => userAccount.HashedPassword));
@@ -68,7 +68,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccountById(Guid.NewGuid());
+			var actual = await _fixture.GetUserAccountByIdAsync(Guid.NewGuid());
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -89,7 +89,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccountById(Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c"));
+			var actual = await _fixture.GetUserAccountByIdAsync(Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c"));
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -108,7 +108,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccountById(Guid.NewGuid());
+			var actual = await _fixture.GetUserAccountByIdAsync(Guid.NewGuid());
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -124,7 +124,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccountByNumber(1);
+			var actual = await _fixture.GetUserAccountByNumberAsync(1);
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -145,7 +145,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccountByNumber(2);
+			var actual = await _fixture.GetUserAccountByNumberAsync(2);
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -164,7 +164,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccountByNumber(5);
+			var actual = await _fixture.GetUserAccountByNumberAsync(5);
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -180,7 +180,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccountByUsername("asdf");
+			var actual = await _fixture.GetUserAccountByUsernameAsync("asdf");
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -201,7 +201,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccountByUsername("user 2");
+			var actual = await _fixture.GetUserAccountByUsernameAsync("user 2");
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -220,7 +220,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.GetUserAccountByUsername("asdf");
+			var actual = await _fixture.GetUserAccountByUsernameAsync("asdf");
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -238,7 +238,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.AddUserAccount(newUserAccount);
+			var actual = await _fixture.AddUserAccountAsync(newUserAccount);
 
 			// Verify
 			actual.Should().BeEquivalentTo(
@@ -264,7 +264,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await _fixture.AddUserAccount(newUserAccount);
+			var actual = await _fixture.AddUserAccountAsync(newUserAccount);
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected, options => options.Excluding(userAccount => userAccount.HashedPassword));

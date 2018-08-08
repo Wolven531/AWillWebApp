@@ -16,10 +16,14 @@ namespace AWillWebApp.Outside.Repositories
 
 		public UserAccountRepository(IEnumerable<UserAccount> userAccounts)
 		{
-			_userAccounts = new List<UserAccount>(userAccounts);
+			_userAccounts = new List<UserAccount>();
+			foreach (var userAccount in userAccounts)
+			{
+				AddUserAccountAsync(userAccount);
+			}
 		}
 
-		public Task<UserAccount> AddUserAccount(UserAccount newUserAccount)
+		public Task<UserAccount> AddUserAccountAsync(UserAccount newUserAccount)
 		{
 			if (newUserAccount.Id == Guid.Empty)
 			{
@@ -42,22 +46,22 @@ namespace AWillWebApp.Outside.Repositories
 			return Task.FromResult(newUserAccount);
 		}
 
-		public Task<UserAccount> GetUserAccountById(Guid id)
+		public Task<UserAccount> GetUserAccountByIdAsync(Guid id)
 		{
 			return Task.FromResult(_userAccounts.FirstOrDefault(userAccount => userAccount.Id == id));
 		}
 
-		public Task<UserAccount> GetUserAccountByNumber(int number)
+		public Task<UserAccount> GetUserAccountByNumberAsync(int number)
 		{
 			return Task.FromResult(_userAccounts.FirstOrDefault(userAccount => userAccount.Number == number));
 		}
 
-		public Task<UserAccount> GetUserAccountByUsername(string username)
+		public Task<UserAccount> GetUserAccountByUsernameAsync(string username)
 		{
 			return Task.FromResult(_userAccounts.FirstOrDefault(userAccount => userAccount.Username == username));
 		}
 
-		public Task<IEnumerable<UserAccount>> GetUserAccounts()
+		public Task<IEnumerable<UserAccount>> GetUserAccountsAsync()
 		{
 			return Task.FromResult(_userAccounts.AsEnumerable());
 		}
