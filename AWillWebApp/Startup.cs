@@ -81,10 +81,14 @@ namespace AWillWebApp
 			var monsters = LoadMonstersFromDisk();
 			_logger.LogInformation($"Loaded {monsters.Length} monsters from disk.");
 
-			var monsterRepository = new MonsterRepository(monsters);
+			_logger.LogInformation($"Loading user accounts from disk...");
+			var userAccounts = LoadUserAccountsFromDisk();
+			_logger.LogInformation($"Loaded {userAccounts.Length} user accounts from disk.");
 
-			services.AddSingleton<IMonsterRepository>(monsterRepository);
+			services.AddSingleton<IMonsterRepository>(new MonsterRepository(monsters));
 			services.AddSingleton<IMonsterService, MonsterService>();
+
+			services.AddSingleton<IUserAccountRepository>(new UserAccountRepository(userAccounts));
 
 			//// In production, the React files will be served from this directory
 			//services.AddSpaStaticFiles(configuration =>
@@ -96,11 +100,21 @@ namespace AWillWebApp
 		private static Monster[] LoadMonstersFromDisk()
 		{
 			var monsterData = File.ReadAllText(
-							Path.GetRelativePath(
-								Directory.GetCurrentDirectory(),
-								Path.Join("Data", "monsters.json")),
-							Encoding.UTF8);
+				Path.GetRelativePath(
+					Directory.GetCurrentDirectory(),
+					Path.Join("Data", "monsters.json")),
+				Encoding.UTF8);
 			return JsonConvert.DeserializeObject<Monster[]>(monsterData);
+		}
+
+		private static UserAccount[] LoadUserAccountsFromDisk()
+		{
+			var userAccountData = File.ReadAllText(
+				Path.GetRelativePath(
+					Directory.GetCurrentDirectory(),
+					Path.Join("Data", "userAccounts.json")),
+				Encoding.UTF8);
+			return JsonConvert.DeserializeObject<UserAccount[]>(userAccountData);
 		}
 
 		//app.UseStaticFiles(new StaticFileOptions() {
