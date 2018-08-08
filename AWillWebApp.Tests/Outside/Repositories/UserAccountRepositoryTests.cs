@@ -16,7 +16,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 	[SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "Test names should contain underscores for readability")]
 	public class UserAccountRepositoryTests
 	{
-		private UserAccountRepository fixture;
+		private UserAccountRepository _fixture;
 
 		[Fact]
 		public async Task GetUserAccounts_WhenRepositoryIsEmpty_ShouldReturnEmptyList()
@@ -25,10 +25,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			var userAccounts = Enumerable.Empty<UserAccount>();
 			var expected = Enumerable.Empty<UserAccount>();
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccounts();
+			var actual = await _fixture.GetUserAccounts();
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -49,13 +49,13 @@ namespace AWillWebApp.Tests.Outside.Repositories
 				new UserAccount("user 2", "pass 2")
 			};
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccounts();
+			var actual = await _fixture.GetUserAccounts();
 
 			// Verify
-			actual.Should().BeEquivalentTo(expected);
+			actual.Should().BeEquivalentTo(expected, options => options.Excluding(userAccount => userAccount.HashedPassword));
 		}
 
 		[Fact]
@@ -65,10 +65,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			var userAccounts = Enumerable.Empty<UserAccount>();
 			UserAccount expected = null;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccountById(Guid.NewGuid());
+			var actual = await _fixture.GetUserAccountById(Guid.NewGuid());
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -86,10 +86,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			};
 			var expected = userAccount;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccountById(Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c"));
+			var actual = await _fixture.GetUserAccountById(Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c"));
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -105,10 +105,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 				new UserAccount("user 2", "pass 2") { Number = 2, Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") } };
 			UserAccount expected = null;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccountById(Guid.NewGuid());
+			var actual = await _fixture.GetUserAccountById(Guid.NewGuid());
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -121,10 +121,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			var userAccounts = Enumerable.Empty<UserAccount>();
 			UserAccount expected = null;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccountByNumber(1);
+			var actual = await _fixture.GetUserAccountByNumber(1);
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -142,10 +142,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			};
 			var expected = userAccount;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccountByNumber(2);
+			var actual = await _fixture.GetUserAccountByNumber(2);
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -161,10 +161,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 				new UserAccount("user 2", "pass 2") { Number = 2, Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") } };
 			UserAccount expected = null;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccountByNumber(5);
+			var actual = await _fixture.GetUserAccountByNumber(5);
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -177,10 +177,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			var userAccounts = Enumerable.Empty<UserAccount>();
 			UserAccount expected = null;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccountByUsername("asdf");
+			var actual = await _fixture.GetUserAccountByUsername("asdf");
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -198,10 +198,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			};
 			var expected = userAccount;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccountByUsername("user 2");
+			var actual = await _fixture.GetUserAccountByUsername("user 2");
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
@@ -217,52 +217,14 @@ namespace AWillWebApp.Tests.Outside.Repositories
 				new UserAccount("user 2", "pass 2") { Number = 2, Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") } };
 			UserAccount expected = null;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.GetUserAccountByUsername("asdf");
+			var actual = await _fixture.GetUserAccountByUsername("asdf");
 
 			// Verify
 			actual.Should().BeEquivalentTo(expected);
 		}
-
-		//[Fact]
-		//public async Task GetMonster_WhenRepositoryIsEmpty_ShouldReturnNull()
-		//{
-		//	// Setup
-		//	var monsters = Enumerable.Empty<Monster>();
-		//	Monster expected = null;
-
-		//	fixture = new MonsterRepository(monsters);
-
-		//	// Execute
-		//	var actual = await fixture.GetMonster(Guid.NewGuid());
-
-		//	// Verify
-		//	actual.Should().BeEquivalentTo(expected);
-		//}
-
-		//[Fact]
-		//public async Task GetMonster_WhenRepositoryHasMonsters_ShouldReturnMonsterAsModelObject()
-		//{
-		//	// Setup
-		//	var id1 = Guid.NewGuid();
-		//	var id2 = Guid.NewGuid();
-		//	var expected = new Monster("awake 2", "name 2", 3, false, Element.Wind, "awakenedimg2", "img2", null, null, null, null, null) { Id = id2 };
-		//	var monsters = new Monster[]
-		//	{
-		//		new Monster("awake 1", "name 1", 3, false, Element.Light, "awakenedimg", "img", null, null, null, null, null) { Id = id1 },
-		//		expected
-		//	};
-
-		//	fixture = new MonsterRepository(monsters);
-
-		//	// Execute
-		//	var actual = await fixture.GetMonster(id2);
-
-		//	// Verify
-		//	actual.Should().BeEquivalentTo(expected);
-		//}
 
 		[Fact]
 		public async Task AddUserAccount_WhenRepositoryIsEmptyAndNewUserAccountLacksIdAndNumber_ShouldAddUserAccountAndReturnIt()
@@ -273,14 +235,22 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			var expected = new UserAccount("user 1", "pass 1") { Number = 1 };
 			var originalId = expected.Id;
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.AddUserAccount(newUserAccount);
+			var actual = await _fixture.AddUserAccount(newUserAccount);
 
 			// Verify
-			actual.Should().BeEquivalentTo(expected, options => options.Excluding(userAccount => userAccount.Id));
+			actual.Should().BeEquivalentTo(
+				expected,
+				options => options
+					.Excluding(userAccount => userAccount.Id)
+					.Excluding(userAccount => userAccount.HashedPassword));
 			actual.Id.Should().NotBe(originalId);
+			actual.HashedPassword.Should().NotBe("pass 1");
+			// TODO: verify hashed password ?
+			//var passwordVerified = UserAccount.VerifyPassword(actual.HashedPassword, newUserAccount.HashedPassword);
+			//newUserAccount.VerifyPassword(actual.HashedPassword, newUserAccount.HashedPassword).Should().BeTrue();
 		}
 
 		[Fact]
@@ -291,13 +261,14 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			var newUserAccount = new UserAccount("user 1", "pass 1") { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") };
 			var expected = new UserAccount("user 1", "pass 1") { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c"), Number = 1 };
 
-			fixture = new UserAccountRepository(userAccounts);
+			_fixture = new UserAccountRepository(userAccounts);
 
 			// Execute
-			var actual = await fixture.AddUserAccount(newUserAccount);
+			var actual = await _fixture.AddUserAccount(newUserAccount);
 
 			// Verify
-			actual.Should().BeEquivalentTo(expected);
+			actual.Should().BeEquivalentTo(expected, options => options.Excluding(userAccount => userAccount.HashedPassword));
+			actual.HashedPassword.Should().NotBe("pass 1");
 		}
 	}
 }
