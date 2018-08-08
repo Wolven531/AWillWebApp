@@ -23,6 +23,23 @@ namespace AWillWebApp.Inside.Models
 			HashedPassword = CreatePasswordHash(password, _passwordSalt);
 		}
 
+		/// <summary>
+		/// Gets or sets the Id property of this account
+		/// This property should be used to uniquely identify this account within the current instance
+		/// of the repository
+		/// </summary>
+		public Guid Id { get; set; }
+
+		/// <summary>
+		/// Gets or sets the Number property of this account
+		/// This property should be used to uniquely identify this account across instances of the repository
+		/// </summary>
+		public int Number { get; set; }
+
+		public string Username { get; }
+
+		public string HashedPassword { get; }
+
 		// NOTE: see https://lockmedown.com/hash-right-implementing-pbkdf2-net/
 		public bool VerifyPassword(string passwordGuess, string savedHash)
 		{
@@ -85,22 +102,5 @@ namespace AWillWebApp.Inside.Models
 			cryptoRNG.GetBytes(salt);
 			return salt;
 		}
-
-		/// <summary>
-		/// Gets or sets the Id property of this account
-		/// This property should be used to uniquely identify this account within the current instance
-		/// of the repository
-		/// </summary>
-		public Guid Id { get; set; }
-
-		/// <summary>
-		/// Gets or sets the Number property of this account
-		/// This property should be used to uniquely identify this account across instances of the repository
-		/// </summary>
-		public int Number { get; set; }
-
-		public string Username { get; }
-
-		public string HashedPassword { get; }
 	}
 }
