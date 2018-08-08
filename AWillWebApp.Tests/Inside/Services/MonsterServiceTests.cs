@@ -13,10 +13,11 @@ namespace AWillWebApp.Tests.Inside.Services
 	using AWillWebApp.Outside.Repositories;
 	using FluentAssertions;
 	using Microsoft.Extensions.Logging;
+	using Microsoft.VisualStudio.TestTools.UnitTesting;
 	using Moq;
-	using Xunit;
 
 	[SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "Test names should contain underscores for readability")]
+	[TestClass]
 	public class MonsterServiceTests
 	{
 		private MonsterService fixture;
@@ -28,7 +29,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			fixture = new MonsterService(_mockMonsterRepository.Object, new Mock<ILogger<MonsterService>>().Object);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetMonstersAsync_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfMonsters()
 		{
 			// Setup
@@ -46,7 +47,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetMonstersAsync_WhenRepositoryHasMonsters_ShouldReturnListOfMonsters()
 		{
 			// Setup
@@ -64,7 +65,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfSearchResults()
 		{
 			// Setup
@@ -81,7 +82,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryIsEmpty_ShouldReturnListOfSearchResults()
 		{
 			// Setup
@@ -104,7 +105,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryDoesNotMatch_ShouldReturnEmptyListOfSearchResults()
 		{
 			// Setup
@@ -121,7 +122,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesElement_ShouldReturnSearchResultsWithElement()
 		{
 			// Setup
@@ -139,7 +140,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesElement_ShouldReturnSearchResultsWithElement()
 		{
 			// Setup
@@ -157,7 +158,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesElementWithWeirdCasing_ShouldReturnSearchResultsWithElement()
 		{
 			// Setup
@@ -175,7 +176,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesName_ShouldReturnSearchResults()
 		{
 			// Setup
@@ -193,7 +194,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesName_ShouldReturnSearchResults()
 		{
 			// Setup
@@ -211,7 +212,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesNameWithWeirdCasing_ShouldReturnSearchResults()
 		{
 			// Setup
@@ -229,7 +230,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedName_ShouldReturnSearchResults()
 		{
 			// Setup
@@ -247,7 +248,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesAwakenedName_ShouldReturnSearchResults()
 		{
 			// Setup
@@ -265,7 +266,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedNameWithWeirdCasing_ShouldReturnSearchResults()
 		{
 			// Setup

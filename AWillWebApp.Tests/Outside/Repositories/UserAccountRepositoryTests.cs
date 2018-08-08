@@ -11,14 +11,15 @@ namespace AWillWebApp.Tests.Outside.Repositories
 	using AWillWebApp.Inside.Models;
 	using AWillWebApp.Outside.Repositories;
 	using FluentAssertions;
-	using Xunit;
+	using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 	[SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "Test names should contain underscores for readability")]
+	[TestClass]
 	public class UserAccountRepositoryTests
 	{
 		private UserAccountRepository _fixture;
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccounts_WhenRepositoryIsEmpty_ShouldReturnEmptyList()
 		{
 			// Setup
@@ -34,7 +35,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccounts_WhenRepositoryHasUserAccounts_ShouldReturnListOfUserAccounts()
 		{
 			// Setup
@@ -45,8 +46,8 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			};
 			var expected = new UserAccount[]
 			{
-				new UserAccount("user 1", "pass 1"),
-				new UserAccount("user 2", "pass 2")
+				new UserAccount("user 1", "pass 1") { Number = 1 },
+				new UserAccount("user 2", "pass 2") { Number = 2 }
 			};
 
 			_fixture = new UserAccountRepository(userAccounts);
@@ -55,10 +56,14 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			var actual = await _fixture.GetUserAccountsAsync();
 
 			// Verify
-			actual.Should().BeEquivalentTo(expected, options => options.Excluding(userAccount => userAccount.HashedPassword));
+			actual.Should().BeEquivalentTo(
+				expected,
+				options => options
+					.Excluding(userAccount => userAccount.Id)
+					.Excluding(userAccount => userAccount.HashedPassword));
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccountById_WhenRepositoryIsEmpty_ShouldReturnNull()
 		{
 			// Setup
@@ -74,7 +79,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccountById_WhenRepositoryHasUserAccountsAndParamMatches_ShouldReturnUserAccount()
 		{
 			// Setup
@@ -95,14 +100,15 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccountById_WhenRepositoryHasUserAccountsAndParamDoesNotMatch_ShouldReturnNull()
 		{
 			// Setup
 			var userAccounts = new UserAccount[]
 			{
 				new UserAccount("user 1", "pass 1") { Number = 1 },
-				new UserAccount("user 2", "pass 2") { Number = 2, Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") } };
+				new UserAccount("user 2", "pass 2") { Number = 2, Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") }
+			};
 			UserAccount expected = null;
 
 			_fixture = new UserAccountRepository(userAccounts);
@@ -114,7 +120,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccountByNumber_WhenRepositoryIsEmpty_ShouldReturnNull()
 		{
 			// Setup
@@ -130,7 +136,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccountByNumber_WhenRepositoryHasUserAccountsAndParamMatches_ShouldReturnUserAccount()
 		{
 			// Setup
@@ -151,14 +157,15 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccountByNumber_WhenRepositoryHasUserAccountsAndParamDoesNotMatch_ShouldReturnNull()
 		{
 			// Setup
 			var userAccounts = new UserAccount[]
 			{
 				new UserAccount("user 1", "pass 1") { Number = 1 },
-				new UserAccount("user 2", "pass 2") { Number = 2, Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") } };
+				new UserAccount("user 2", "pass 2") { Number = 2, Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") }
+			};
 			UserAccount expected = null;
 
 			_fixture = new UserAccountRepository(userAccounts);
@@ -170,7 +177,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccountByUsername_WhenRepositoryIsEmpty_ShouldReturnNull()
 		{
 			// Setup
@@ -186,7 +193,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccountByUsername_WhenRepositoryHasUserAccountsAndParamMatches_ShouldReturnUserAccount()
 		{
 			// Setup
@@ -207,14 +214,15 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetUserAccountByUsername_WhenRepositoryHasUserAccountsAndParamDoesNotMatch_ShouldReturnNull()
 		{
 			// Setup
 			var userAccounts = new UserAccount[]
 			{
 				new UserAccount("user 1", "pass 1") { Number = 1 },
-				new UserAccount("user 2", "pass 2") { Number = 2, Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") } };
+				new UserAccount("user 2", "pass 2") { Number = 2, Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") }
+			};
 			UserAccount expected = null;
 
 			_fixture = new UserAccountRepository(userAccounts);
@@ -226,7 +234,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task AddUserAccount_WhenRepositoryIsEmptyAndNewUserAccountLacksIdAndNumber_ShouldAddUserAccountAndReturnIt()
 		{
 			// Setup
@@ -253,7 +261,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			//newUserAccount.VerifyPassword(actual.HashedPassword, newUserAccount.HashedPassword).Should().BeTrue();
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task AddUserAccount_WhenRepositoryIsEmptyAndNewUserAccountHasExistingId_ShouldAddUserAccountWithIdAndReturnIt()
 		{
 			// Setup

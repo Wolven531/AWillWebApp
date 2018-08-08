@@ -11,14 +11,15 @@ namespace AWillWebApp.Tests.Outside.Repositories
 	using AWillWebApp.Inside.Models;
 	using AWillWebApp.Outside.Repositories;
 	using FluentAssertions;
-	using Xunit;
+	using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 	[SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "Test names should contain underscores for readability")]
+	[TestClass]
 	public class MonsterRepositoryTests
 	{
 		private MonsterRepository fixture;
 
-		[Fact]
+		[TestMethod]
 		public async Task GetMonsterNames_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfStrings()
 		{
 			// Setup
@@ -34,7 +35,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetMonsterNames_WhenRepositoryHasMonsters_ShouldReturnListOfMonsterNamesAsStrings()
 		{
 			// Setup
@@ -54,7 +55,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetMonsters_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfMonsters()
 		{
 			// Setup
@@ -70,7 +71,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetMonsters_WhenRepositoryHasMonsters_ShouldReturnListOfMonstersAsModelObjects()
 		{
 			// Setup
@@ -90,7 +91,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetMonster_WhenRepositoryIsEmpty_ShouldReturnNull()
 		{
 			// Setup
@@ -106,7 +107,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task GetMonster_WhenRepositoryHasMonsters_ShouldReturnMonsterAsModelObject()
 		{
 			// Setup
@@ -128,7 +129,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task AddMonster_WhenRepositoryIsEmptyAndNewMonsterLacksId_ShouldAddMonsterAndReturnIt()
 		{
 			// Setup
@@ -146,7 +147,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Id.Should().NotBe(originalId);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task AddMonster_WhenRepositoryIsEmptyAndNewMonsterHasExistingId_ShouldAddMonsterWithIdAndReturnIt()
 		{
 			// Setup
@@ -162,7 +163,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task AddMonster_WhenRepositoryIsEmptyAndNewMonsterHasNumberZero_ShouldAddMonsterWithNumberAndReturnIt()
 		{
 			// Setup
@@ -179,7 +180,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected, options => options.Excluding(monster => monster.Id));
 		}
 
-		[Fact]
+		[TestMethod]
 		public async Task AddMonster_WhenRepositoryHasMonstersAndNewMonsterHasNumberZero_ShouldAddMonsterWithNumberAndReturnIt()
 		{
 			// Setup
