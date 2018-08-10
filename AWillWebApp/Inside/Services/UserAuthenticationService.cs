@@ -5,12 +5,25 @@
 namespace AWillWebApp.Inside.Services
 {
 	using System.Threading.Tasks;
+	using AWillWebApp.Outside.Repositories;
+	using Microsoft.Extensions.Logging;
 
 	public class UserAuthenticationService : IUserAuthenticationService
 	{
-		public Task<bool> AuthenticateUser(string username, string password)
+		private IUserAccountRepository _UserAccountRepository;
+		private ILogger<UserAuthenticationService> _Logger;
+
+		public UserAuthenticationService(IUserAccountRepository userAccountRepository, ILogger<UserAuthenticationService> logger)
 		{
-			return Task.FromResult(false);
+			_UserAccountRepository = userAccountRepository;
+			_Logger = logger;
+		}
+
+		public async Task<bool> AuthenticateUser(string username, string password)
+		{
+			var userAccount = await _UserAccountRepository.GetUserAccountByUsernameAsync(username);
+
+			return userAccount == null ? false : userAccount.VerifyPassword(password, userAccount.HashedPassword);
 		}
 	}
 }
