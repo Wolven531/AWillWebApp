@@ -12,7 +12,6 @@ namespace AWillWebApp
 	using Microsoft.AspNetCore.Builder;
 	using Microsoft.AspNetCore.Hosting;
 	using Microsoft.AspNetCore.Http;
-	//using Microsoft.AspNetCore.Http;
 	using Microsoft.AspNetCore.Mvc;
 	//using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 	//using Microsoft.AspNetCore.SpaServices.StaticFiles;
@@ -89,6 +88,7 @@ namespace AWillWebApp
 			services.AddSingleton<IMonsterService, MonsterService>();
 
 			services.AddSingleton<IUserAccountRepository>(new UserAccountRepository(userAccounts));
+			services.AddSingleton<IUserAuthenticationService, UserAuthenticationService>();
 
 			//// In production, the React files will be served from this directory
 			//services.AddSpaStaticFiles(configuration =>
