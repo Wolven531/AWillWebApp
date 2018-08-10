@@ -19,7 +19,7 @@ namespace AWillWebApp.Inside.Services
 			_Logger = logger;
 		}
 
-		public async Task<bool> AuthenticateUser(string username, string password)
+		public async Task<bool> AuthenticateUserAsync(string username, string password)
 		{
 			var userAccount = await _UserAccountRepository.GetUserAccountByUsernameAsync(username);
 

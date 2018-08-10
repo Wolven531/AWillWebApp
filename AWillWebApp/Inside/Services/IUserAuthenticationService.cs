@@ -8,6 +8,6 @@ namespace AWillWebApp.Inside.Services
 
 	public interface IUserAuthenticationService
 	{
-		Task<bool> AuthenticateUser(string username, string password);
+		Task<bool> AuthenticateUserAsync(string username, string password);
 	}
 }

@@ -28,7 +28,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task AuthenticateUser_WhenGivenEmptyUsernameAndPassword_ShouldReturnFalse()
+		public async Task AuthenticateUserAsync_WhenGivenEmptyUsernameAndPassword_ShouldReturnFalse()
 		{
 			// Setup
 			string actualUsername = null;
@@ -39,7 +39,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			var expected = false;
 
 			// Execute
-			var actual = await fixture.AuthenticateUser(string.Empty, string.Empty);
+			var actual = await fixture.AuthenticateUserAsync(string.Empty, string.Empty);
 
 			// Verify
 			_mockUserAccountRepository.VerifyAll();
@@ -48,7 +48,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task AuthenticateUser_WhenGivenUsernameAndPasswordThatDoNotMatch_ShouldReturnFalse()
+		public async Task AuthenticateUserAsync_WhenGivenUsernameAndPasswordThatDoNotMatch_ShouldReturnFalse()
 		{
 			// Setup
 			string actualUsername = null;
@@ -59,7 +59,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			var expected = false;
 
 			// Execute
-			var actual = await fixture.AuthenticateUser("user 1", "garbled");
+			var actual = await fixture.AuthenticateUserAsync("user 1", "garbled");
 
 			// Verify
 			_mockUserAccountRepository.VerifyAll();
@@ -68,7 +68,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task AuthenticateUser_WhenGivenUsernameAndPasswordThatMatch_ShouldReturnTrue()
+		public async Task AuthenticateUserAsync_WhenGivenUsernameAndPasswordThatMatch_ShouldReturnTrue()
 		{
 			// Setup
 			string actualUsername = null;
@@ -79,7 +79,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			var expected = true;
 
 			// Execute
-			var actual = await fixture.AuthenticateUser("user 1", "pass 1");
+			var actual = await fixture.AuthenticateUserAsync("user 1", "pass 1");
 
 			// Verify
 			_mockUserAccountRepository.VerifyAll();
