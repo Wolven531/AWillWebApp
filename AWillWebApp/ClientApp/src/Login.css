@@ -27,7 +27,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 150px;
+	height: 175px;
 	text-shadow: 0 0 10px #0ff;
 }
 
@@ -59,16 +59,24 @@
 	background-color: rgba(255, 255, 255, 0.4);
 	caret-color: #0ff;
 	color: #0ff;
+	text-indent: 10px;
 }
 
 .login .login-button {
 	background-color: #426fc5;
 	color: white;
+	cursor: pointer;
 	font-family: 'Open Sans';
+	font-weight: bold;
 	margin-top: 15px;
 	overflow: hidden;
 	padding: 4px 0;
 	text-transform: uppercase;
+}
+
+.login .login-button:hover {
+	/* background-color: #4B7EDD; */
+	background-color: #5691FF;
 }
 
 .login .error,
