@@ -18,6 +18,11 @@ class Login extends React.Component<{}, ILoginState> {
 		}
 	}
 
+	public componentDidMount() {
+		// NOTE: to refresh the page during CSS styling without HMR
+		// window.setTimeout(() => window.location.reload(), 2500)
+	}
+
 	public render() {
 		return (
 			<div className="login">
@@ -36,7 +41,7 @@ class Login extends React.Component<{}, ILoginState> {
 						onChange={this.handlePasswordChange}
 					/>
 
-					<input className="login-button" type="submit" value="Log In" />
+					<input className="login-button" type="submit" value="Login" />
 				</form>
 				{this.state.error && <h3 onClick={this.dismissError} className="error">
 					<button onClick={this.dismissError} className="dismiss-button">✖</button>
