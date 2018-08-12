@@ -72,11 +72,14 @@
 	overflow: hidden;
 	padding: 4px 0;
 	text-transform: uppercase;
+	transition: all 0.75s ease;
 }
 
 .login .login-button:hover {
-	/* background-color: #4B7EDD; */
 	background-color: #5691FF;
+	color: #0ff;
+	letter-spacing: 5px;
+	transition: all 0.75s ease;
 }
 
 .login .error,
