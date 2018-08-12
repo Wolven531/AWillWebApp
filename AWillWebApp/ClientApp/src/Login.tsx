@@ -36,7 +36,7 @@ class Login extends React.Component<{}, ILoginState> {
 						onChange={this.handlePasswordChange}
 					/>
 
-					<input type="submit" value="Log In" />
+					<input className="login-button" type="submit" value="Log In" />
 				</form>
 				{this.state.error && <h3 onClick={this.dismissError} className="error">
 					<button onClick={this.dismissError} className="dismiss-button">✖</button>

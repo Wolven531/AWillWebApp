@@ -62,3 +62,7 @@
 	justify-content: center;
 	width: 30px;
 }
+
+.login .login-button {
+	border-radius: 10px;
+}
