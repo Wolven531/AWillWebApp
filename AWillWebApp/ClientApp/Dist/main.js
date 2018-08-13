@@ -31283,15 +31283,44 @@ var Login = /** @class */ (function (_super) {
         _this.dismissError = function () { return _this.setState({ error: '' }); };
         _this.handleFormSubmission = function (evt) {
             evt.preventDefault();
-            if (!_this.state.username) {
+            var _a = _this.state, password = _a.password, username = _a.username;
+            if (!username) {
                 _this.setState({ error: 'Username is required' });
                 return;
             }
-            if (!_this.state.password) {
+            if (!password) {
                 _this.setState({ error: 'Password is required' });
                 return;
             }
+            var authenticationPostOptions = {
+                body: JSON.stringify({
+                    password: password,
+                    username: username
+                }),
+                cache: 'no-cache',
+                credentials: 'same-origin',
+                headers: {
+                    'Content-Type': 'application/json; charset=utf-8'
+                },
+                method: 'POST'
+            };
             _this.dismissError();
+            fetch('/api/auth', authenticationPostOptions)
+                .then(function (response) { return response.json(); })
+                .then(function (authenticationResult) {
+                if (!authenticationResult) {
+                    return;
+                }
+                if (!authenticationResult.success) {
+                    _this.setState({ error: 'Auth Failed' });
+                    return;
+                }
+                _this.setState({ error: '', loginSuccess: true });
+                window.setTimeout(function () {
+                    window.location.reload();
+                }, 2000);
+            })
+                .catch(function (error) { return console.error("Posting Authentication Error = " + error); });
         };
         _this.handlePasswordChange = function (evt) {
             var newPassword = evt.target.value;
@@ -31307,6 +31336,7 @@ var Login = /** @class */ (function (_super) {
         };
         _this.state = {
             error: '',
+            loginSuccess: false,
             password: '',
             username: ''
         };
@@ -31324,9 +31354,10 @@ var Login = /** @class */ (function (_super) {
                 __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("label", null, "Password"),
                 __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { type: "password", value: this.state.password, onChange: this.handlePasswordChange }),
                 __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { className: "login-button", type: "submit", value: "Login" })),
-            this.state.error && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h3", { onClick: this.dismissError, className: "error" },
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: this.dismissError, className: "dismiss-button" }, "\u2716"),
-                this.state.error)));
+            this.state.error && (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h3", { onClick: this.dismissError, className: "error" },
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: this.dismissError, className: "dismiss-button" }, "\u274C"),
+                this.state.error)),
+            this.state.loginSuccess && (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h3", { className: "success" }, "Success, redirecting..."))));
     };
     return Login;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]));
@@ -31392,7 +31423,7 @@ exports = module.exports = __webpack_require__(12)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);", ""]);
 
 // module
-exports.push([module.i, "/*\r\n\tBasic color scheme\r\n\r\n\t426fC5 = Blue\r\n\t00897b = Green\r\n\tf6774f = Orange\r\n\te94043 = Red\r\n*/\r\n\r\n#app > .login {\r\n\tbackground-color: rgba(0, 0, 0, 0.4);\r\n\tborder: 1px solid #000;\r\n\tborder-radius: 10px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: stretch;\r\n\tmargin: 0;\r\n\tpadding: 10px;\r\n\twidth: 200px;\r\n}\r\n\r\n.login > form {\r\n\talign-items: center;\r\n\tcolor: #cff;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\theight: 175px;\r\n\ttext-shadow: 0 0 10px #0ff;\r\n}\r\n\r\n.login > form > label {\r\n\tdisplay: flex;\r\n\tflex: 0.7;\r\n\tfont-family: 'Open Sans';\r\n\tmargin: 0 0 5px 0;\r\n}\r\n\r\n.login > form > label:not(:first-child) {\r\n\tmargin: 5px 0 5px 0;\r\n}\r\n\r\n.login > form > input {\r\n\talign-self: stretch;\r\n\tborder: 0;\r\n\tborder-radius: 10em;\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\theight: 40px;\r\n\tmargin-top: 5px;\r\n\toutline: none;\r\n\tpadding: 2px 5px;\r\n}\r\n\r\n.login > form input[type='text'],\r\n.login > form input[type='password'] {\r\n\tbackground-color: rgba(255, 255, 255, 0.4);\r\n\tcaret-color: #0ff;\r\n\tcolor: #0ff;\r\n\ttext-indent: 10px;\r\n}\r\n\r\n.login .login-button {\r\n\tbackground-color: #426fc5;\r\n\tcolor: white;\r\n\tcursor: pointer;\r\n\tfont-family: 'Open Sans';\r\n\tfont-weight: bold;\r\n\tmargin-top: 15px;\r\n\toverflow: hidden;\r\n\tpadding: 4px 0;\r\n\ttext-transform: uppercase;\r\n\ttransition: all 0.75s ease;\r\n}\r\n\r\n.login .login-button:hover {\r\n\tbackground-color: #5691FF;\r\n\tcolor: #0ff;\r\n\tletter-spacing: 5px;\r\n\ttransition: all 0.75s ease;\r\n}\r\n\r\n.login .error,\r\n.login .error .dismiss-button {\r\n\tbackground-color: #600;\r\n\tborder: 1px solid #f00;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\ttext-shadow: 0 0 10px #ff0;\r\n}\r\n\r\n.login .error:hover,\r\n.login .error .dismiss-button:hover {\r\n\tbackground-color: #a00;\r\n\tborder: 1px solid #fff;\r\n}\r\n\r\n.login .error {\r\n\talign-items: center;\r\n\tborder-radius: 10px;\r\n\tcolor: #f99;\r\n\tdisplay: flex;\r\n\tfont-size: 1em;\r\n\tjustify-content: space-between;\r\n\tmargin: 10px 0 0 0;\r\n\tpadding: 5px 7px 5px 5px;\r\n}\r\n\r\n.login .error .dismiss-button {\r\n\talign-items: center;\r\n\tfont-size: 0.8em;\r\n\tborder-radius: 50%;\r\n\tdisplay: flex;\r\n\theight: 30px;\r\n\tjustify-content: center;\r\n\twidth: 30px;\r\n}\r\n", ""]);
+exports.push([module.i, "/*\r\n\tBasic color scheme\r\n\r\n\t426fC5 = Blue\r\n\t00897b = Green\r\n\tf6774f = Orange\r\n\te94043 = Red\r\n*/\r\n\r\n#app > .login {\r\n\tbackground-color: rgba(0, 0, 0, 0.4);\r\n\tborder: 1px solid #000;\r\n\tborder-radius: 10px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: stretch;\r\n\tmargin: 0;\r\n\tpadding: 10px;\r\n\twidth: 200px;\r\n}\r\n\r\n.login > form {\r\n\talign-items: center;\r\n\tcolor: #cff;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\theight: 175px;\r\n\ttext-shadow: 0 0 10px #0ff;\r\n}\r\n\r\n.login > form > label {\r\n\tdisplay: flex;\r\n\tflex: 0.7;\r\n\tfont-family: 'Open Sans';\r\n\tmargin: 0 0 5px 0;\r\n}\r\n\r\n.login > form > label:not(:first-child) {\r\n\tmargin: 5px 0 5px 0;\r\n}\r\n\r\n.login > form > input {\r\n\talign-self: stretch;\r\n\tborder: 0;\r\n\tborder-radius: 10em;\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\theight: 40px;\r\n\tmargin-top: 5px;\r\n\toutline: none;\r\n\tpadding: 2px 5px;\r\n}\r\n\r\n.login > form input[type='text'],\r\n.login > form input[type='password'] {\r\n\tbackground-color: rgba(255, 255, 255, 0.4);\r\n\tcaret-color: #0ff;\r\n\tcolor: #0ff;\r\n\ttext-indent: 10px;\r\n}\r\n\r\n.login .login-button {\r\n\tbackground-color: #426fc5;\r\n\tcolor: white;\r\n\tcursor: pointer;\r\n\tfont-family: 'Open Sans';\r\n\tfont-weight: bold;\r\n\tmargin-top: 15px;\r\n\toverflow: hidden;\r\n\tpadding: 4px 0;\r\n\ttext-transform: uppercase;\r\n\ttransition: all 0.75s ease;\r\n}\r\n\r\n.login .login-button:hover {\r\n\tbackground-color: #5691FF;\r\n\tcolor: #0ff;\r\n\tletter-spacing: 5px;\r\n\ttransition: all 0.75s ease;\r\n}\r\n\r\n.login .error,\r\n.login .error .dismiss-button {\r\n\tbackground-color: #600;\r\n\tborder: 1px solid #f00;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\ttext-shadow: 0 0 10px #ff0;\r\n}\r\n\r\n.login .error:hover,\r\n.login .error .dismiss-button:hover {\r\n\tbackground-color: #a00;\r\n\tborder: 1px solid #fff;\r\n}\r\n\r\n.login .error,\r\n.login .success {\r\n\talign-items: center;\r\n\tborder-radius: 10px;\r\n\tcolor: #f99;\r\n\tdisplay: flex;\r\n\tfont-size: 1em;\r\n\tjustify-content: space-between;\r\n\tmargin: 10px 0 0 0;\r\n\tpadding: 5px 7px 5px 5px;\r\n}\r\n\r\n.login .error .dismiss-button {\r\n\talign-items: center;\r\n\tfont-size: 0.8em;\r\n\tborder-radius: 50%;\r\n\tdisplay: flex;\r\n\theight: 30px;\r\n\tjustify-content: center;\r\n\twidth: 30px;\r\n}\r\n\r\n.login .success {\r\n\tbackground-color: #060;\r\n\tborder: 1px solid #0f0;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\tjustify-content: center;\r\n\ttext-align: center;\r\n\ttext-shadow: 0 0 10px #0f0;\r\n}\r\n\r\n.login .success:hover {\r\n\tbackground-color: #0a0;\r\n\tborder: 1px solid #fff;\r\n}\r\n", ""]);
 
 // exports
 

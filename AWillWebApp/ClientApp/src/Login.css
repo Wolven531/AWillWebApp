@@ -97,7 +97,8 @@
 	border: 1px solid #fff;
 }
 
-.login .error {
+.login .error,
+.login .success {
 	align-items: center;
 	border-radius: 10px;
 	color: #f99;
@@ -116,4 +117,19 @@
 	height: 30px;
 	justify-content: center;
 	width: 30px;
+}
+
+.login .success {
+	background-color: #060;
+	border: 1px solid #0f0;
+	color: #fff;
+	cursor: pointer;
+	justify-content: center;
+	text-align: center;
+	text-shadow: 0 0 10px #0f0;
+}
+
+.login .success:hover {
+	background-color: #0a0;
+	border: 1px solid #fff;
 }
