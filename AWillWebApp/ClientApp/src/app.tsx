@@ -6,6 +6,12 @@ const $ = (window as any).$ = (window as any).jQuery = jQuery
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
+import { BrowserHistoryBuildOptions, createBrowserHistory } from 'history'
+import { Provider } from 'react-redux'
+import { ConnectedRouter } from 'react-router-redux'
+
+import configureStore from './store/configureStore'
+
 // import Counter from './counter'
 // import ES6Lib from './es6lib'
 // import { getText } from './lib'
@@ -25,6 +31,15 @@ import '../css/site.css'
 // const myES6Object = new ES6Lib()
 // $('#fillthiswithes6lib').html(myES6Object.getData())
 
+// Create browser history to use in the Redux store
+const baseNode = document.getElementsByTagName('base')[0]
+const baseUrl = baseNode ? baseNode.getAttribute('href') : '/'
+const history = createBrowserHistory({ basename: baseUrl } as BrowserHistoryBuildOptions)
+
+// Get the application-wide store instance, prepopulating with state from the server where available.
+const initialState = (window as any).initialReduxState
+const store = configureStore(history, initialState)
+
 class App extends React.Component {
 	public componentDidMount() {
 		document.title = 'Home'
@@ -36,7 +51,12 @@ class App extends React.Component {
 			// 	<Counter />
 			// </React.Fragment>
 			// <MonsterSearcher />
-			<Login />
+			// TODO: find out why Provider store is not enough for compiler
+			<Provider store={store}>
+				<ConnectedRouter history={history}>
+					<Login store={store} />
+				</ConnectedRouter>
+			</Provider>
 		)
 	}
 }

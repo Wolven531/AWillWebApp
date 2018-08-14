@@ -1,6 +1,11 @@
 import * as React from 'react'
+import { Store } from 'redux'
 
 import './Login.css'
+
+interface ILoginProps {
+	store: Store
+}
 
 interface ILoginState {
 	error: string
@@ -9,7 +14,7 @@ interface ILoginState {
 	username: string
 }
 
-class Login extends React.Component<{}, ILoginState> {
+class Login extends React.Component<ILoginProps, ILoginState> {
 	constructor(props: any) {
 		super(props)
 		this.state = {
@@ -23,6 +28,7 @@ class Login extends React.Component<{}, ILoginState> {
 	public componentDidMount() {
 		// NOTE: to refresh the page during CSS styling without HMR
 		// window.setTimeout(() => window.location.reload(), 2500)
+		console.log(`checking state of store = ${JSON.stringify((this.props.store as any).authentication)}`)
 	}
 
 	public render() {
