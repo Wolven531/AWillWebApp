@@ -1,22 +1,72 @@
-// const incrementCountType = 'INCREMENT_COUNT'
-// const decrementCountType = 'DECREMENT_COUNT'
-const initialState = { loggedIn: false }
+const SET_LOGIN_PASSWORD = 'set_login_password'
+const SET_LOGIN_USERNAME = 'set_login_username'
 
-export const actionCreators = {
-	// increment: () => ({ type: incrementCountType }),
-	// decrement: () => ({ type: decrementCountType })
+/*
+	This interface is used to represent the action this reducer is capable
+	of processing
+*/
+interface IAuthenticationReducerAction {
+	payload: any
+	type: string
 }
 
-export const reducer = (state: any, action: any) => {
-	state = state || initialState
+/*
+	This interface is used to represent the state maintained by this reducer
+*/
+interface IAuthenticationState {
+	loggedIn: boolean
+	password: string
+	username: string
+}
 
-	// if (action.type === incrementCountType) {
-	// 	return { ...state, count: state.count + 1 }
-	// }
+/*
+	This is the initial state for this reducer
+*/
+const initialState: IAuthenticationState = {
+	loggedIn: false,
+	password: '',
+	username: ''
+}
 
-	// if (action.type === decrementCountType) {
-	// 	return { ...state, count: state.count - 1 }
-	// }
+/*
+	This is a map of functions that create actions which may be processed by
+	this reducer
+*/
+const actionCreators = {
+	setLoginPassword: (newPassword: string): IAuthenticationReducerAction => ({
+		payload: { newPassword },
+		type: SET_LOGIN_PASSWORD
+	}),
+	setLoginUsername: (newUsername: string): IAuthenticationReducerAction => ({
+		payload: { newUsername },
+		type: SET_LOGIN_USERNAME
+	})
+}
+
+const reducer = (
+	state: Partial<IAuthenticationState> = initialState,
+	action: IAuthenticationReducerAction
+) => {
+	const { payload, type } = action
+
+	if (type === SET_LOGIN_PASSWORD) {
+		return {
+			...state,
+			password: payload.newPassword
+		}
+	}
+
+	if (type === SET_LOGIN_USERNAME) {
+		return {
+			...state,
+			username: payload.newUsername
+		}
+	}
 
 	return state
+}
+
+export {
+	actionCreators,
+	reducer
 }

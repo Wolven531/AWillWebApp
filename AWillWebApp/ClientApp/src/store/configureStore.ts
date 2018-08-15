@@ -1,14 +1,15 @@
 ﻿import { routerMiddleware, routerReducer } from 'react-router-redux'
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux'
 import thunk from 'redux-thunk'
-import * as Authentication from './Authentication'
-import * as Counter from './Counter'
+import { reducer as authentication } from './Authentication'
+// import * as Counter from './Counter'
 // import * as WeatherForecasts from './WeatherForecasts'
 
-export default function configureStore(history: any, initialState: any) {
+export default function configureStore(history: any) {
+// export default function configureStore(history: any, initialState: any) {
 	const reducers = {
-		authentication: Authentication.reducer,
-		counter: Counter.reducer
+		authentication
+		// counter: Counter.reducer
 		// weatherForecasts: WeatherForecasts.reducer
 	}
 
@@ -24,14 +25,19 @@ export default function configureStore(history: any, initialState: any) {
 		enhancers.push((window as any).devToolsExtension())
 	}
 
+	// NOTE: need to cast as any to make the TSC happy
 	const rootReducer = combineReducers({
 		...reducers,
 		routing: routerReducer
-	})
+	} as any)
 
 	return createStore(
 		rootReducer,
-		initialState,
 		compose(applyMiddleware(...middleware), ...enhancers)
 	)
+	// return createStore(
+	// 	rootReducer,
+	// 	initialState,
+	// 	compose(applyMiddleware(...middleware), ...enhancers)
+	// )
 }

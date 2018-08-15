@@ -1,14 +1,15 @@
 ﻿// TODO: find a way to avoid including
 // jquery in app entry as follows
 import * as jQuery from 'jquery'
-const $ = (window as any).$ = (window as any).jQuery = jQuery
+const $ = ((window as any).$ = (window as any).jQuery = jQuery)
 
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
 import { BrowserHistoryBuildOptions, createBrowserHistory } from 'history'
 import { Provider } from 'react-redux'
-import { ConnectedRouter } from 'react-router-redux'
+import { Redirect, Route, Router } from 'react-router-dom'
+// import { ConnectedRouter } from 'react-router-redux'
 
 import configureStore from './store/configureStore'
 
@@ -34,11 +35,31 @@ import '../css/site.css'
 // Create browser history to use in the Redux store
 const baseNode = document.getElementsByTagName('base')[0]
 const baseUrl = baseNode ? baseNode.getAttribute('href') : '/'
-const history = createBrowserHistory({ basename: baseUrl } as BrowserHistoryBuildOptions)
+const history = createBrowserHistory({
+	basename: baseUrl
+} as BrowserHistoryBuildOptions)
 
 // Get the application-wide store instance, prepopulating with state from the server where available.
-const initialState = (window as any).initialReduxState
-const store = configureStore(history, initialState)
+// const initialState = (window as any).initialReduxState
+// const store = configureStore(history, initialState)
+const store = configureStore(history)
+
+const HomePage = () => <div>Homepage</div>
+
+const PrivateRoute = ({ component: Component, ...rest }: any) => (
+	<Route
+		{...rest}
+		render={props =>
+			localStorage.getItem('user') ? (
+				<Component {...props} />
+			) : (
+				<Redirect
+					to={{ pathname: '/login', state: { from: props.location } }}
+				/>
+			)
+		}
+	/>
+)
 
 class App extends React.Component {
 	public componentDidMount() {
@@ -53,9 +74,17 @@ class App extends React.Component {
 			// <MonsterSearcher />
 			// TODO: find out why Provider store is not enough for compiler
 			<Provider store={store}>
+				{/*
 				<ConnectedRouter history={history}>
 					<Login store={store} />
 				</ConnectedRouter>
+				*/}
+				<Router history={history}>
+					<React.Fragment>
+						<PrivateRoute exact path="/" component={HomePage} />
+						<Route path="/login" component={Login} />
+					</React.Fragment>
+				</Router>
 			</Provider>
 		)
 	}

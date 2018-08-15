@@ -35,14 +35,14 @@
 		<Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
 		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
 		<Message Importance="high" Text="Performing first-run Webpack build..." />
-		<!-- <Exec WorkingDirectory="$(SpaRoot)" Command="npm run wbpc-v" /> -->
-		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run wbpc" />
+		<!-- <Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack-vendor" /> -->
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack" />
 	</Target>
 	<Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
 		<!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
 		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
-		<!-- <Exec WorkingDirectory="$(SpaRoot)" Command="npm run wbpc-v" /> -->
-		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run wbpc --env.prod" />
+		<!-- <Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack-vendor" /> -->
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack --env.prod" />
 		<!-- Include the newly-built files in the publish output -->
 		<ItemGroup>
 			<DistFiles Include="$(SpaRoot)\dist\**; $(SpaRoot)build-ssr\**" />
