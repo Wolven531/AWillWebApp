@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"allowJs": true,
 		"baseUrl": ".",
-		"module": "es2015",
+		"module": "esnext",
 		"moduleResolution": "node",
 		"experimentalDecorators": true,
 		"target": "es5",
@@ -13,9 +13,9 @@
 		"types": [ "webpack-env" ],
 		"lib": [
 			"dom",
-			"es5",
-			"es2015.promise"
-			//"es6",
+			//"es5",
+			//"es2015.promise"
+			"es6"
 			//"es7",
 			//"es2017"
 		],
