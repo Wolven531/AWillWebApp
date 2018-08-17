@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 
-import { actionCreators } from './store/Authentication'
+import { actionCreators, IAuthenticationReducerAction } from './store/Authentication'
 
 import './Login.css'
 
@@ -16,7 +16,7 @@ const mapStateToProps = (state: any) => {
 	}
 }
 
-const mapDispatchToProps = (dispatch: (action: any) => any) => {
+const mapDispatchToProps = (dispatch: (action: IAuthenticationReducerAction) => any) => {
 	console.log(`[mapDispatchToProps | Login]`)
 	const dismissError = () => {
 		// this.setState({ error: '' })
