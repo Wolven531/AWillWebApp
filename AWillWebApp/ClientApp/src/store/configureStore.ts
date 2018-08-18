@@ -2,10 +2,12 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux'
 import thunk from 'redux-thunk'
 import { reducer as authentication } from './Authentication'
+
+import { History } from 'history'
 // import * as Counter from './Counter'
 // import * as WeatherForecasts from './WeatherForecasts'
 
-export default function configureStore(history: any) {
+export default function configureStore(history: History) {
 // export default function configureStore(history: any, initialState: any) {
 	const reducers = {
 		authentication
