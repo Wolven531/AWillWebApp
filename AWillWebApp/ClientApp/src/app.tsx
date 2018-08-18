@@ -36,15 +36,16 @@ const store = configureStore(history)
 const PrivateRoute = ({ component: Component, ...rest }: any) => (
 	<Route
 		{...rest}
-		render={props =>
-			localStorage.getItem('user') ? (
+		render={props => {
+			const user = localStorage.getItem('user')
+			return user && user !== 'undefined' ? (
 				<Component {...props} />
 			) : (
 				<Redirect
 					to={{ pathname: '/login', state: { from: props.location } }}
 				/>
 			)
-		}
+		}}
 	/>
 )
 

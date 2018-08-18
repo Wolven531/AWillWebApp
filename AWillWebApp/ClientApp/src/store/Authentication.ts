@@ -1,3 +1,5 @@
+import {userConstants} from '../LoginPage'
+
 const ATTEMPT_LOGIN = 'attempt_login'
 const SET_LOGIN_PASSWORD = 'set_login_password'
 const SET_LOGIN_USERNAME = 'set_login_username'
@@ -72,6 +74,23 @@ const reducer = (
 	// 		password: payload.newPassword
 	// 	}
 	// }
+
+	if (type === userConstants.LOGIN_SUCCESS) {
+		return {
+			...state,
+			loggedIn: true
+		}
+	}
+
+	if (type === userConstants.LOGOUT) {
+		return {
+			...state,
+			loggedIn: false,
+			password: '',
+			username: '',
+			validCredentials: false
+		}
+	}
 
 	if (type === SET_LOGIN_PASSWORD) {
 		return {

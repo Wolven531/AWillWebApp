@@ -1,5 +1,22 @@
 import * as React from 'react'
+import { connect } from 'react-redux'
 
-const HomePage = () => <div>Homepage</div>
+import { userActions, userConstants } from './LoginPage'
 
-export { HomePage }
+const HomePage = (props: any) => {
+	const handleLogout = () => {
+		props.dispatch(userActions.logout())
+		window.location.reload()
+	}
+
+	return (
+		<div>
+			<h2>Homepage</h2>
+			<button onClick={handleLogout}>Logout</button>
+		</div>
+	)
+}
+
+const connectedHomePage = connect()(HomePage)
+
+export { connectedHomePage as HomePage }
