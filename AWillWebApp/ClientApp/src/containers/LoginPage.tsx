@@ -60,7 +60,7 @@ const alertActions = {
 // 	}
 // }
 
-const login = (username: string, password: string, history: History) => {
+const login = (username: string, password: string) => {
 	const failure = (error: any) => {
 		return { type: userConstants.LOGIN_FAILURE, error }
 	}

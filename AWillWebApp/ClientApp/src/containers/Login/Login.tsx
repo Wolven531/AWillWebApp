@@ -90,7 +90,7 @@ class Login extends React.Component<{}, ILoginState> {
 
 		this.dismissError()
 		userActions
-			.login(username, password, (this.props as any).history)(
+			.login(username, password)(
 				(this.props as any).dispatch
 			)
 			.then(

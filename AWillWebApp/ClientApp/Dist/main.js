@@ -1614,7 +1614,7 @@ var alertActions = {
 // 		return { type: userConstants.GETALL_FAILURE, error }
 // 	}
 // }
-var login = function (username, password, history) {
+var login = function (username, password) {
     var failure = function (error) {
         return { type: userConstants.LOGIN_FAILURE, error: error };
     };
@@ -38388,7 +38388,7 @@ var Login = /** @class */ (function (_super) {
             }
             _this.dismissError();
             __WEBPACK_IMPORTED_MODULE_2__LoginPage__["a" /* userActions */]
-                .login(username, password, _this.props.history)(_this.props.dispatch)
+                .login(username, password)(_this.props.dispatch)
                 .then(function () {
                 console.log('resolve');
             }, function (wasAuthFailure) {
