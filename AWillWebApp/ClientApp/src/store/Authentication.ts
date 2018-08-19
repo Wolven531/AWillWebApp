@@ -1,4 +1,4 @@
-import {userConstants} from '../LoginPage'
+import {userConstants} from '../containers/LoginPage'
 
 const ATTEMPT_LOGIN = 'attempt_login'
 const SET_LOGIN_PASSWORD = 'set_login_password'

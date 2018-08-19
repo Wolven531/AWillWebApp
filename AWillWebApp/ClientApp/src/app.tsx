@@ -15,8 +15,8 @@ import configureStore from './store/configureStore'
 
 // import Counter from './counter'
 // import MonsterSearcher from './MonsterSearcher'
-import { HomePage } from './HomePage'
-import { Login } from './Login'
+import { HomePage } from './containers/HomePage'
+import { Login } from './containers/Login/Login'
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/site.css'

@@ -1,6 +1,6 @@
 import { History } from 'history'
 
-import { userService } from './UserService'
+import { userService } from '../services/UserService'
 
 const alertConstants = {
 	CLEAR: 'ALERT_CLEAR',
@@ -76,7 +76,7 @@ const login = (username: string, password: string, history: History) => {
 		return userService.login(username, password).then(
 			(user: any) => {
 				dispatch(success(user))
-				history.push('/')
+				// history.push('/')
 				return new Promise<boolean>(() => true)
 			},
 			(error: any) => {
