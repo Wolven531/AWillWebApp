@@ -38387,8 +38387,9 @@ var Login = /** @class */ (function (_super) {
                 return;
             }
             _this.dismissError();
+            var dispatch = _this.props.dispatch;
             __WEBPACK_IMPORTED_MODULE_2__LoginPage__["a" /* userActions */]
-                .login(username, password)(_this.props.dispatch)
+                .login(username, password)(dispatch)
                 .then(function () {
                 console.log('resolve');
             }, function (wasAuthFailure) {

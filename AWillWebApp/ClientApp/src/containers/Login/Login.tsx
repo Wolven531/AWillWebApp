@@ -89,10 +89,10 @@ class Login extends React.Component<{}, ILoginState> {
 		}
 
 		this.dismissError()
+		const dispatch = (this.props as any).dispatch
+
 		userActions
-			.login(username, password)(
-				(this.props as any).dispatch
-			)
+			.login(username, password)(dispatch)
 			.then(
 				() => {
 					console.log('resolve')
