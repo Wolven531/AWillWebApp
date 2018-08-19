@@ -5,14 +5,14 @@ import 'isomorphic-fetch'
 
 import './MonsterSearcher.css'
 
-export interface IMonsterSearcherState {
+interface IMonsterSearcherState {
 	loading: boolean
 	monsters: object[]
 	searchQuery: string
 	searchResults: any[]
 }
 
-export default class MonsterSearcher extends React.Component<{}, IMonsterSearcherState> {
+class MonsterSearcher extends React.Component<{}, IMonsterSearcherState> {
 	constructor(props: any) {
 		super(props)
 		this.state = {
@@ -79,4 +79,9 @@ export default class MonsterSearcher extends React.Component<{}, IMonsterSearche
 	}
 
 	private searchApiWithState = () => this.searchApi(this.state.searchQuery)
+}
+
+export {
+	IMonsterSearcherState,
+	MonsterSearcher
 }
