@@ -1,7 +1,8 @@
+import { createBrowserHistory, History } from 'history'
 import * as React from 'react'
 import { connect } from 'react-redux'
 
-import { userActions, userConstants } from '../LoginPage'
+import { userActions, userConstants } from '../UserActions'
 
 import './Login.css'
 
@@ -94,11 +95,21 @@ class Login extends React.Component<{}, ILoginState> {
 		userActions
 			.login(username, password)(dispatch)
 			.then(
-				() => {
-					console.log('resolve')
+				(success: boolean) => {
+					if (!success) {
+						this.setState({ error: 'Auth Failed' })
+						return
+					}
+					const hist: History = (this.props as any).history
+					const unlisten = hist.listen((location, action) => {
+						// NOTE: location is an object like window.location
+						console.log(action, location.pathname, location.state)
+						window.location.assign(location.pathname)
+					})
+					hist.push('/')
 				},
-				(wasAuthFailure: boolean) => {
-					console.log(`reject, wasAuthFailure=${wasAuthFailure}`)
+				(error: any) => {
+					console.log(`[reject | handleFormSubmission | Login] Error=${error}`)
 					window.location.reload()
 				}
 			)
@@ -124,11 +135,20 @@ class Login extends React.Component<{}, ILoginState> {
 }
 
 const mapStateToProps = (state: any) => {
-	const { authentication, history } = state
+	const { authentication, routing } = state
 	const { loggingIn } = authentication
+	const hist = createBrowserHistory()
+
+	// TODO: work on routing?
+	if (!routing.location) {
+		routing.location = hist.location
+	}
+
+	// TODO: figure out why history is not passed in
 	return {
-		history,
-		loggingIn
+		history: hist || history,
+		loggingIn,
+		routing
 	}
 }
 

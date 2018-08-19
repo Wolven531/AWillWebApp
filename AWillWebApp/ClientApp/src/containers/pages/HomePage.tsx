@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 
-import { userActions, userConstants } from './LoginPage'
+import { userActions, userConstants } from '../UserActions'
 
 const HomePage = (props: any) => {
 	const handleLogout = () => {

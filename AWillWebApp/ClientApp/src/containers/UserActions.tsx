@@ -60,7 +60,7 @@ const alertActions = {
 // 	}
 // }
 
-const login = (username: string, password: string) => {
+const login = (username: string, password: string): ((dispatch: any) => Promise<boolean>) => {
 	const failure = (error: any) => {
 		return { type: userConstants.LOGIN_FAILURE, error }
 	}
@@ -71,23 +71,31 @@ const login = (username: string, password: string) => {
 		return { type: userConstants.LOGIN_SUCCESS, user }
 	}
 
-	return (dispatch: any): Promise<any> => {
+	return (dispatch: any): Promise<boolean> => {
 		dispatch(request({ username }))
-		return userService.login(username, password).then(
-			(user: any) => {
-				dispatch(success(user))
-				// history.push('/')
-				return new Promise<boolean>(() => true)
-			},
-			(error: any) => {
-				console.log(`[login | LoginPage | callback | error] error = ${JSON.stringify(error)}`)
-				dispatch(failure(error.toString()))
-				dispatch(alertActions.error(error.toString()))
-				return new Promise<boolean>(() => false)
-			}
-		).catch((err: any) => {
-			console.error(`SOMETHIGN WENT AWRY = ${err}`)
-		})
+		return userService
+			.login(username, password)(dispatch)
+			.then(
+				(wasSuccessful: boolean) => {
+					dispatch(success(wasSuccessful))
+					// history.push('/')
+					return new Promise<boolean>((resolve, reject) => resolve(wasSuccessful))
+				},
+				(error: any) => {
+					console.log(
+						`[login | UserActions | callback | error] error = ${JSON.stringify(
+							error
+						)}`
+					)
+					dispatch(failure(error.toString()))
+					dispatch(alertActions.error(error.toString()))
+					return new Promise<boolean>((resolve, reject) => reject(error))
+				}
+			)
+			.catch((err: any) => {
+				console.error(`[UserActions | catch] = ${err}`)
+				return new Promise<boolean>((resolve, reject) => reject(err))
+			})
 	}
 }
 

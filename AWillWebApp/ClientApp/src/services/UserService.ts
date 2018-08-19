@@ -43,7 +43,7 @@ const getById = (id: any) => {
 	// )
 }
 
-const login = (username: string, password: string): Promise<any> => {
+const login = (username: string, password: string): (dispatch: any) => Promise<boolean> => {
 	const authenticationPostOptions = {
 		body: JSON.stringify({
 			password,
@@ -57,50 +57,44 @@ const login = (username: string, password: string): Promise<any> => {
 		method: 'POST'
 	}
 
-	return fetch('/api/auth', authenticationPostOptions as any)
+	return (dispatch: any): Promise<boolean> => {
+		return fetch('/api/auth', authenticationPostOptions as any)
 		// .then(response => response.json())
 		.then(handleResponse)
 		.then(authenticationResult => {
 			if (!authenticationResult) {
 				console.log(`[login | UserService | callback] no result`)
-				return
+				return new Promise<boolean>((resolve, reject) => {
+					reject('[login | UserService | callback] There was no result')
+				})
 			}
 			if (!authenticationResult.success) {
 				console.log(`[login | UserService | callback] auth failed`)
 				// this.setState({ error: 'Auth Failed' })
-				return
+				return new Promise<boolean>((resolve, reject) => {
+					resolve(false)
+				})
 			}
 			// TODO: update this to token after backend has one
 			console.warn(`[login | UserService | callback] auth succeeded, storing username for BAD auth...`)
 			localStorage.setItem('user', username)
 			// console.log(`[login | UserService | callback] auth succeeded, storing token...`)
 			// localStorage.setItem('user', JSON.stringify(authenticationResult.token))
-			return authenticationResult
+			return new Promise<boolean>((resolve, reject) => {
+				resolve(true)
+			})
 		// 	this.setState({ error: '', loginSuccess: true })
 		// 	window.setTimeout(() => {
 		// 		window.location.reload()
 		// 	}, 2000)
 		})
-		.catch(error =>
+		.catch(error => {
 			console.error(`Posting Authentication Error = ${error}`)
-		)
-	// const requestOptions = {
-	// 	body: JSON.stringify({ username, password }),
-	// 	headers: { 'Content-Type': 'application/json' },
-	// 	method: 'POST'
-	// }
-
-	// return fetch(`${APIUrl}/users/authenticate`, requestOptions)
-	// 	.then(handleResponse)
-	// 	.then(user => {
-	// 		// login successful if there's a jwt token in the response
-	// 		if (user.token) {
-	// 			// store user details and jwt token in local storage to keep user logged in between page refreshes
-	// 			localStorage.setItem('user', JSON.stringify(user))
-	// 		}
-
-	// 		return user
-	// 	})
+			return new Promise<boolean>((resolve, reject) => {
+				reject(`[login | UserService | callback] error = ${error}`)
+			})
+		})
+	}
 }
 
 const logout = () => {
