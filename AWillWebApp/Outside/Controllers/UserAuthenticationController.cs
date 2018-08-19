@@ -1,4 +1,4 @@
-﻿// <copyright file="UserAccountController.cs" company="AWill Inc">
+﻿// <copyright file="UserAuthenticationController.cs" company="AWill Inc">
 // Copyright (c) 2018 AWill Inc; All rights reserved.
 // </copyright>
 
