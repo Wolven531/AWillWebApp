@@ -7,6 +7,7 @@
 		<SpaRoot>ClientApp\</SpaRoot>
 		<DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
 		<AssemblyName>AWillWebApp</AssemblyName>
+		<UserSecretsId>04735408-c189-4813-853f-28d45c8538a4</UserSecretsId>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="coverlet.msbuild" Version="2.1.1" />
