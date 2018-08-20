@@ -58,14 +58,19 @@ class App extends React.Component {
 	public render() {
 		return (
 			// <MonsterSearcher />
-			<Provider store={store}>
-				<Router history={history}>
-					<React.Fragment>
-						<PrivateRoute exact path="/" component={HomePage} />
-						<Route path="/login" component={Login} />
-					</React.Fragment>
-				</Router>
-			</Provider>
+			<div id="page-container">
+				<div id="content-wrap">
+					<Provider store={store}>
+						<Router history={history}>
+							<React.Fragment>
+								<PrivateRoute exact path="/" component={HomePage} />
+								<Route path="/login" component={Login} />
+							</React.Fragment>
+						</Router>
+					</Provider>
+				</div>
+				<footer id="footer">Anthony Williams &copy; 2018</footer>
+			</div>
 		)
 	}
 }

@@ -1556,7 +1556,149 @@ var generatePath = function generatePath() {
 /* harmony default export */ __webpack_exports__["a"] = (generatePath);
 
 /***/ }),
-/* 23 */,
+/* 23 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return userActions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return userConstants; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__services_UserService__ = __webpack_require__(114);
+
+var alertConstants = {
+    CLEAR: 'ALERT_CLEAR',
+    ERROR: 'ALERT_ERROR',
+    SUCCESS: 'ALERT_SUCCESS'
+};
+var alertActions = {
+    clear: function () { return ({ type: alertConstants.CLEAR }); },
+    error: function (message) { return ({ type: alertConstants.ERROR, message: message }); },
+    success: function (message) { return ({ type: alertConstants.SUCCESS, message: message }); }
+};
+// const deleteUser = (id: any) => {
+// 	return (dispatch: any) => {
+// 		dispatch(request(id))
+// 		userService
+// 			.deleteUser(id)
+// 			.then(
+// 				(user: any) => dispatch(success(id)),
+// 				(error: any) => dispatch(failure(id, error.toString()))
+// 			)
+// 	}
+// 	const request = (requestId: any) => {
+// 		return { type: userConstants.DELETE_REQUEST, requestId }
+// 	}
+// 	const success = (successId: any) => {
+// 		return { type: userConstants.DELETE_SUCCESS, successId }
+// 	}
+// 	const failure = (failureId: any, error: any) => {
+// 		return { type: userConstants.DELETE_FAILURE, failureId, error }
+// 	}
+// }
+// const getAll = () => {
+// 	return (dispatch: any) => {
+// 		dispatch(request())
+// 		userService
+// 			.getAll()
+// 			.then(
+// 				(users: any) => dispatch(success(users)),
+// 				(error: any) => dispatch(failure(error.toString()))
+// 			)
+// 	}
+// 	const request = () => {
+// 		return { type: userConstants.GETALL_REQUEST }
+// 	}
+// 	const success = (users: any) => {
+// 		return { type: userConstants.GETALL_SUCCESS, users }
+// 	}
+// 	const failure = (error: any) => {
+// 		return { type: userConstants.GETALL_FAILURE, error }
+// 	}
+// }
+var login = function (username, password) {
+    var failure = function (error) {
+        return { type: userConstants.LOGIN_FAILURE, error: error };
+    };
+    var request = function (user) {
+        return { type: userConstants.LOGIN_REQUEST, user: user };
+    };
+    var success = function (user) {
+        return { type: userConstants.LOGIN_SUCCESS, user: user };
+    };
+    return function (dispatch) {
+        dispatch(request({ username: username }));
+        return __WEBPACK_IMPORTED_MODULE_0__services_UserService__["a" /* userService */]
+            .login(username, password)(dispatch)
+            .then(function (wasSuccessful) {
+            dispatch(success(wasSuccessful));
+            // history.push('/')
+            return new Promise(function (resolve, reject) { return resolve(wasSuccessful); });
+        }, function (error) {
+            console.log("[login | UserActions | callback | error] error = " + JSON.stringify(error));
+            dispatch(failure(error.toString()));
+            dispatch(alertActions.error(error.toString()));
+            return new Promise(function (resolve, reject) { return reject(error); });
+        })
+            .catch(function (err) {
+            console.error("[UserActions | catch] = " + err);
+            return new Promise(function (resolve, reject) { return reject(err); });
+        });
+    };
+};
+var logout = function () {
+    __WEBPACK_IMPORTED_MODULE_0__services_UserService__["a" /* userService */].logout();
+    return { type: userConstants.LOGOUT };
+};
+// const register = (user: any, history: History) => {
+// 	return (dispatch: any) => {
+// 		dispatch(request(user))
+// 		userService.register(user).then(
+// 			(responseUser: any) => {
+// 				dispatch(success(responseUser))
+// 				history.push('/login')
+// 				dispatch(alertActions.success('Registration successful'))
+// 			},
+// 			(error: any) => {
+// 				dispatch(failure(error.toString()))
+// 				dispatch(alertActions.error(error.toString()))
+// 			}
+// 		)
+// 	}
+// 	const request = (requestUser: any) => {
+// 		return { type: userConstants.REGISTER_REQUEST, requestUser }
+// 	}
+// 	const success = (successUser: any) => {
+// 		return { type: userConstants.REGISTER_SUCCESS, successUser }
+// 	}
+// 	const failure = (error: any) => {
+// 		return { type: userConstants.REGISTER_FAILURE, error }
+// 	}
+// }
+var userActions = {
+    // deleteUser,
+    // getAll,
+    login: login,
+    logout: logout
+    // register
+};
+var userConstants = {
+    DELETE_FAILURE: 'USERS_DELETE_FAILURE',
+    DELETE_REQUEST: 'USERS_DELETE_REQUEST',
+    DELETE_SUCCESS: 'USERS_DELETE_SUCCESS',
+    GETALL_FAILURE: 'USERS_GETALL_FAILURE',
+    GETALL_REQUEST: 'USERS_GETALL_REQUEST',
+    GETALL_SUCCESS: 'USERS_GETALL_SUCCESS',
+    LOGIN_FAILURE: 'USERS_LOGIN_FAILURE',
+    LOGIN_REQUEST: 'USERS_LOGIN_REQUEST',
+    LOGIN_SUCCESS: 'USERS_LOGIN_SUCCESS',
+    LOGOUT: 'USERS_LOGOUT',
+    REGISTER_FAILURE: 'USERS_REGISTER_FAILURE',
+    REGISTER_REQUEST: 'USERS_REGISTER_REQUEST',
+    REGISTER_SUCCESS: 'USERS_REGISTER_SUCCESS'
+};
+
+
+
+/***/ }),
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4868,7 +5010,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_router_dom__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__store_configureStore__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__containers_pages_HomePage__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__containers_pages_HomePage__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__containers_Login_Login__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__css_site_css__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__css_site_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__css_site_css__);
@@ -4944,11 +5086,14 @@ var App = /** @class */ (function (_super) {
     App.prototype.render = function () {
         return (
         // <MonsterSearcher />
-        __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_4_react_redux__["a" /* Provider */], { store: store },
-            __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["c" /* Router */], { history: history },
-                __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_react__["Fragment"], null,
-                    __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](PrivateRoute, { exact: true, path: "/", component: __WEBPACK_IMPORTED_MODULE_7__containers_pages_HomePage__["a" /* HomePage */] }),
-                    __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Route */], { path: "/login", component: __WEBPACK_IMPORTED_MODULE_8__containers_Login_Login__["a" /* Login */] })))));
+        __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("div", { id: "page-container" },
+            __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("div", { id: "content-wrap" },
+                __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_4_react_redux__["a" /* Provider */], { store: store },
+                    __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["c" /* Router */], { history: history },
+                        __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_react__["Fragment"], null,
+                            __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](PrivateRoute, { exact: true, path: "/", component: __WEBPACK_IMPORTED_MODULE_7__containers_pages_HomePage__["a" /* HomePage */] }),
+                            __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Route */], { path: "/login", component: __WEBPACK_IMPORTED_MODULE_8__containers_Login_Login__["a" /* Login */] }))))),
+            __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("footer", { id: "footer" }, "Anthony Williams \u00A9 2018")));
     };
     return App;
 }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]));
@@ -37935,7 +38080,7 @@ thunk.withExtraArgument = createThunkMiddleware;
 "use strict";
 /* unused harmony export actionCreators */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return reducer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__containers_UserActions__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__containers_UserActions__ = __webpack_require__(23);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -38177,7 +38322,32 @@ var userService = {
 
 
 /***/ }),
-/* 115 */,
+/* 115 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return connectedHomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__UserActions__ = __webpack_require__(23);
+
+
+
+var HomePage = function (props) {
+    var handleLogout = function () {
+        props.dispatch(__WEBPACK_IMPORTED_MODULE_2__UserActions__["a" /* userActions */].logout());
+        window.location.reload();
+    };
+    return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
+        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h2", null, "Homepage"),
+        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: handleLogout }, "Logout")));
+};
+var connectedHomePage = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])()(HomePage);
+
+
+
+/***/ }),
 /* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38187,7 +38357,7 @@ var userService = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__UserActions__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__UserActions__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Login_css__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Login_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Login_css__);
 var __extends = (this && this.__extends) || (function () {
@@ -38360,7 +38530,7 @@ exports = module.exports = __webpack_require__(51)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);", ""]);
 
 // module
-exports.push([module.i, "/*\r\n\tBasic color scheme\r\n\r\n\t426fC5 = Blue\r\n\t00897b = Green\r\n\tf6774f = Orange\r\n\te94043 = Red\r\n*/\r\n\r\n#app > .login {\r\n\tbackground-color: rgba(0, 0, 0, 0.4);\r\n\tborder: 1px solid #000;\r\n\tborder-radius: 10px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: stretch;\r\n\tmargin: 0;\r\n\tpadding: 10px;\r\n\twidth: 200px;\r\n}\r\n\r\n.login > form {\r\n\talign-items: center;\r\n\tcolor: #cff;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\theight: 175px;\r\n\ttext-shadow: 0 0 10px #0ff;\r\n}\r\n\r\n.login > form > label {\r\n\tdisplay: flex;\r\n\tflex: 0.7;\r\n\tfont-family: 'Open Sans';\r\n\tmargin: 0 0 5px 0;\r\n}\r\n\r\n.login > form > label:not(:first-child) {\r\n\tmargin: 5px 0 5px 0;\r\n}\r\n\r\n.login > form > input {\r\n\talign-self: stretch;\r\n\tborder: 0;\r\n\tborder-radius: 10em;\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\theight: 40px;\r\n\tmargin-top: 5px;\r\n\toutline: none;\r\n\tpadding: 2px 5px;\r\n}\r\n\r\n.login > form input[type='text'],\r\n.login > form input[type='password'] {\r\n\tbackground-color: rgba(255, 255, 255, 0.4);\r\n\tcaret-color: #0ff;\r\n\tcolor: #0ff;\r\n\ttext-indent: 10px;\r\n}\r\n\r\n.login .login-button {\r\n\tbackground-color: #426fc5;\r\n\tcolor: white;\r\n\tcursor: pointer;\r\n\tfont-family: 'Open Sans';\r\n\tfont-weight: bold;\r\n\tmargin-top: 15px;\r\n\toverflow: hidden;\r\n\tpadding: 4px 0;\r\n\ttext-transform: uppercase;\r\n\ttransition: all 0.75s ease;\r\n}\r\n\r\n.login .login-button:hover {\r\n\tbackground-color: #5691FF;\r\n\tcolor: #0ff;\r\n\tletter-spacing: 5px;\r\n\ttransition: all 0.75s ease;\r\n}\r\n\r\n.login .error,\r\n.login .error .dismiss-button {\r\n\tbackground-color: #600;\r\n\tborder: 1px solid #f00;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\ttext-shadow: 0 0 10px #ff0;\r\n}\r\n\r\n.login .error:hover,\r\n.login .error .dismiss-button:hover {\r\n\tbackground-color: #a00;\r\n\tborder: 1px solid #fff;\r\n}\r\n\r\n.login .error,\r\n.login .success {\r\n\talign-items: center;\r\n\tborder-radius: 10px;\r\n\tcolor: #f99;\r\n\tdisplay: flex;\r\n\tfont-size: 1em;\r\n\tjustify-content: space-between;\r\n\tmargin: 10px 0 0 0;\r\n\tpadding: 5px 7px 5px 5px;\r\n}\r\n\r\n.login .error .dismiss-button {\r\n\talign-items: center;\r\n\tfont-size: 0.8em;\r\n\tborder-radius: 50%;\r\n\tdisplay: flex;\r\n\theight: 30px;\r\n\tjustify-content: center;\r\n\twidth: 30px;\r\n}\r\n\r\n.login .success {\r\n\tbackground-color: #060;\r\n\tborder: 1px solid #0f0;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\tjustify-content: center;\r\n\ttext-align: center;\r\n\ttext-shadow: 0 0 10px #0f0;\r\n}\r\n\r\n.login .success:hover {\r\n\tbackground-color: #0a0;\r\n\tborder: 1px solid #fff;\r\n}\r\n", ""]);
+exports.push([module.i, "#app .login {\r\n\tbackground-color: rgba(0, 0, 0, 0.67);\r\n\tborder: 1px solid #000;\r\n\tborder-radius: 10px;\r\n\tcolor: #fff;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: stretch;\r\n\tmargin: 0;\r\n\tpadding: 10px;\r\n\twidth: 200px;\r\n}\r\n\r\n.login > form {\r\n\talign-items: center;\r\n\t/* color: #9f0; */\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\theight: 175px;\r\n\t/* text-shadow: 0 0 10px #690; */\r\n}\r\n\r\n.login > form > label {\r\n\tdisplay: flex;\r\n\tflex: 0.7;\r\n\tfont-family: 'Open Sans';\r\n\tmargin: 0 0 5px 0;\r\n}\r\n\r\n.login > form > label:not(:first-child) {\r\n\tmargin: 5px 0 5px 0;\r\n}\r\n\r\n.login > form > input {\r\n\talign-self: stretch;\r\n\tborder: 0;\r\n\tborder-radius: 10em;\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\theight: 40px;\r\n\tmargin-top: 5px;\r\n\toutline: none;\r\n\tpadding: 2px 5px;\r\n}\r\n\r\n.login > form input[type='text'],\r\n.login > form input[type='password'] {\r\n\tbackground-color: rgba(255, 255, 255, 0.4);\r\n\tcaret-color: #9f0;\r\n\tcolor: #ff0;\r\n\ttext-indent: 10px;\r\n}\r\n\r\n.login .login-button {\r\n\t/* background-color: #426fc5; */\r\n\tbackground-color: #00897b;\r\n\t/* color: #000; */\r\n\tcursor: pointer;\r\n\tfont-family: 'Open Sans';\r\n\tfont-weight: bold;\r\n\tmargin-top: 15px;\r\n\toverflow: hidden;\r\n\tpadding: 4px 0;\r\n\ttext-transform: uppercase;\r\n\ttransition: all 0.75s ease;\r\n}\r\n\r\n.login .login-button:hover {\r\n\t/* background-color: #5691FF; */\r\n\tbackground-color: #03beac;\r\n\tcolor: #fff;\r\n\tletter-spacing: 5px;\r\n\ttransition: all 0.75s ease;\r\n}\r\n\r\n/* TODO: Figure out why removing outline seems to not work */\r\n/*\r\n.login .login-button:focus,\r\n.login .login-button::-moz-focus-inner,\r\n.login .login-button::-moz-focus-outer {\r\n\toutline: none;\r\n}\r\n*/\r\n\r\n.login .error,\r\n.login .error .dismiss-button {\r\n\tbackground-color: #600;\r\n\tborder: 1px solid #f00;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\ttext-shadow: 0 0 10px #ff0;\r\n}\r\n\r\n.login .error:hover,\r\n.login .error .dismiss-button:hover {\r\n\tbackground-color: #a00;\r\n\tborder: 1px solid #fff;\r\n}\r\n\r\n.login .error,\r\n.login .success {\r\n\talign-items: center;\r\n\tborder-radius: 10px;\r\n\tcolor: #f99;\r\n\tdisplay: flex;\r\n\tfont-size: 1em;\r\n\tjustify-content: space-between;\r\n\tmargin: 10px 0 0 0;\r\n\tpadding: 5px 7px 5px 5px;\r\n}\r\n\r\n.login .error .dismiss-button {\r\n\talign-items: center;\r\n\tfont-size: 0.8em;\r\n\tborder-radius: 50%;\r\n\tdisplay: flex;\r\n\theight: 30px;\r\n\tjustify-content: center;\r\n\twidth: 30px;\r\n}\r\n\r\n.login .success {\r\n\tbackground-color: #060;\r\n\tborder: 1px solid #0f0;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\tjustify-content: center;\r\n\ttext-align: center;\r\n\ttext-shadow: 0 0 10px #0f0;\r\n}\r\n\r\n.login .success:hover {\r\n\tbackground-color: #0a0;\r\n\tborder: 1px solid #fff;\r\n}\r\n", ""]);
 
 // exports
 
@@ -38516,181 +38686,12 @@ if(false) {
 
 exports = module.exports = __webpack_require__(51)(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);", ""]);
 
 // module
-exports.push([module.i, "body {\r\n\tmargin: 0;\r\n\toverflow-y: scroll;\r\n\tpadding: 0;\r\n}\r\n\r\n#app {\r\n\talign-self: stretch;\r\n\tbackground-color: rgba(0, 0, 200, .8);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\tpadding-bottom: 50px;\r\n\toverflow-y: hidden;\r\n}\r\n\r\n#app > * {\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\tflex-direction: column;\r\n\tmargin: 10px;\r\n}\r\n\r\n.monster-searcher {\r\n\talign-items: center;\r\n\tbackground-color: rgba(0, 200, 200, .8);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-around;\r\n}\r\n\r\n.monster-searcher > div {\r\n\talign-items: center;\r\n\talign-self: stretch;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tpadding: 10px;\r\n}\r\n", ""]);
+exports.push([module.i, "/*\r\n\tBasic color scheme\r\n\r\n\t426fC5 = Blue\r\n\t5691FF = Highlight Blue\r\n\t00897b = Green\r\n\tf6774f = Orange\r\n\te94043 = Red\r\n*/\r\n\r\nbody {\r\n\tmargin: 0;\r\n\t/* overflow-y: scroll; */\r\n\tpadding: 0;\r\n}\r\n\r\nbody *:focus,\r\nbody *::-moz-focus-inner {\r\n\toutline: none;\r\n}\r\n\r\n#page-container {\r\n\tbackground-color: rgba(255, 128, 0, 0.8);\r\n\tmin-height: 100vh;\r\n\tposition: relative;\r\n}\r\n\r\n#content-wrap {\r\n\tpadding-bottom: 2.5rem; /* Footer height */\r\n}\r\n\r\n#footer {\r\n\tbottom: 0;\r\n\tcolor: #333;\r\n\tfont-family: 'Open Sans';\r\n\tfont-size: 0.8em;\r\n\tletter-spacing: 2px;\r\n\theight: 2.5rem; /* Footer height */\r\n\tposition: absolute;\r\n\twidth: 100%;\r\n}\r\n\r\n@supports (display: grid) {\r\n\t#page-container {\r\n\t\tdisplay: grid; /* new */\r\n\t\tgrid-template-columns: 100%; /* new */\r\n\t\tgrid-template-rows: 1fr auto; /* new */\r\n\t\tposition: static; /* override */\r\n\t}\r\n\r\n\t#content-wrap {\r\n\t\talign-items: center;\r\n\t\tdisplay: grid;\r\n\t\tjustify-items: center;\r\n\t\tpadding-bottom: 0; /* override */\r\n\t}\r\n\r\n\t#footer {\r\n\t\talign-items: center;\r\n\t\tdisplay: grid;\r\n\t\t/* override */\r\n\t\t/* height: auto; */\r\n\t\tjustify-items: center;\r\n\t\tposition: static; /* override */\r\n\t}\r\n}\r\n\r\n/* #app {\r\n\talign-self: stretch;\r\n\tbackground-color: rgba(0, 0, 200, 0.8);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\tpadding-bottom: 50px;\r\n\toverflow-y: hidden;\r\n}\r\n\r\n#app > * {\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\tflex-direction: column;\r\n\tmargin: 10px;\r\n} */\r\n", ""]);
 
 // exports
-
-
-/***/ }),
-/* 122 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return connectedHomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__UserActions__ = __webpack_require__(123);
-
-
-
-var HomePage = function (props) {
-    var handleLogout = function () {
-        props.dispatch(__WEBPACK_IMPORTED_MODULE_2__UserActions__["a" /* userActions */].logout());
-        window.location.reload();
-    };
-    return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h2", null, "Homepage"),
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: handleLogout }, "Logout")));
-};
-var connectedHomePage = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])()(HomePage);
-
-
-
-/***/ }),
-/* 123 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return userActions; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return userConstants; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__services_UserService__ = __webpack_require__(114);
-
-var alertConstants = {
-    CLEAR: 'ALERT_CLEAR',
-    ERROR: 'ALERT_ERROR',
-    SUCCESS: 'ALERT_SUCCESS'
-};
-var alertActions = {
-    clear: function () { return ({ type: alertConstants.CLEAR }); },
-    error: function (message) { return ({ type: alertConstants.ERROR, message: message }); },
-    success: function (message) { return ({ type: alertConstants.SUCCESS, message: message }); }
-};
-// const deleteUser = (id: any) => {
-// 	return (dispatch: any) => {
-// 		dispatch(request(id))
-// 		userService
-// 			.deleteUser(id)
-// 			.then(
-// 				(user: any) => dispatch(success(id)),
-// 				(error: any) => dispatch(failure(id, error.toString()))
-// 			)
-// 	}
-// 	const request = (requestId: any) => {
-// 		return { type: userConstants.DELETE_REQUEST, requestId }
-// 	}
-// 	const success = (successId: any) => {
-// 		return { type: userConstants.DELETE_SUCCESS, successId }
-// 	}
-// 	const failure = (failureId: any, error: any) => {
-// 		return { type: userConstants.DELETE_FAILURE, failureId, error }
-// 	}
-// }
-// const getAll = () => {
-// 	return (dispatch: any) => {
-// 		dispatch(request())
-// 		userService
-// 			.getAll()
-// 			.then(
-// 				(users: any) => dispatch(success(users)),
-// 				(error: any) => dispatch(failure(error.toString()))
-// 			)
-// 	}
-// 	const request = () => {
-// 		return { type: userConstants.GETALL_REQUEST }
-// 	}
-// 	const success = (users: any) => {
-// 		return { type: userConstants.GETALL_SUCCESS, users }
-// 	}
-// 	const failure = (error: any) => {
-// 		return { type: userConstants.GETALL_FAILURE, error }
-// 	}
-// }
-var login = function (username, password) {
-    var failure = function (error) {
-        return { type: userConstants.LOGIN_FAILURE, error: error };
-    };
-    var request = function (user) {
-        return { type: userConstants.LOGIN_REQUEST, user: user };
-    };
-    var success = function (user) {
-        return { type: userConstants.LOGIN_SUCCESS, user: user };
-    };
-    return function (dispatch) {
-        dispatch(request({ username: username }));
-        return __WEBPACK_IMPORTED_MODULE_0__services_UserService__["a" /* userService */]
-            .login(username, password)(dispatch)
-            .then(function (wasSuccessful) {
-            dispatch(success(wasSuccessful));
-            // history.push('/')
-            return new Promise(function (resolve, reject) { return resolve(wasSuccessful); });
-        }, function (error) {
-            console.log("[login | UserActions | callback | error] error = " + JSON.stringify(error));
-            dispatch(failure(error.toString()));
-            dispatch(alertActions.error(error.toString()));
-            return new Promise(function (resolve, reject) { return reject(error); });
-        })
-            .catch(function (err) {
-            console.error("[UserActions | catch] = " + err);
-            return new Promise(function (resolve, reject) { return reject(err); });
-        });
-    };
-};
-var logout = function () {
-    __WEBPACK_IMPORTED_MODULE_0__services_UserService__["a" /* userService */].logout();
-    return { type: userConstants.LOGOUT };
-};
-// const register = (user: any, history: History) => {
-// 	return (dispatch: any) => {
-// 		dispatch(request(user))
-// 		userService.register(user).then(
-// 			(responseUser: any) => {
-// 				dispatch(success(responseUser))
-// 				history.push('/login')
-// 				dispatch(alertActions.success('Registration successful'))
-// 			},
-// 			(error: any) => {
-// 				dispatch(failure(error.toString()))
-// 				dispatch(alertActions.error(error.toString()))
-// 			}
-// 		)
-// 	}
-// 	const request = (requestUser: any) => {
-// 		return { type: userConstants.REGISTER_REQUEST, requestUser }
-// 	}
-// 	const success = (successUser: any) => {
-// 		return { type: userConstants.REGISTER_SUCCESS, successUser }
-// 	}
-// 	const failure = (error: any) => {
-// 		return { type: userConstants.REGISTER_FAILURE, error }
-// 	}
-// }
-var userActions = {
-    // deleteUser,
-    // getAll,
-    login: login,
-    logout: logout
-    // register
-};
-var userConstants = {
-    DELETE_FAILURE: 'USERS_DELETE_FAILURE',
-    DELETE_REQUEST: 'USERS_DELETE_REQUEST',
-    DELETE_SUCCESS: 'USERS_DELETE_SUCCESS',
-    GETALL_FAILURE: 'USERS_GETALL_FAILURE',
-    GETALL_REQUEST: 'USERS_GETALL_REQUEST',
-    GETALL_SUCCESS: 'USERS_GETALL_SUCCESS',
-    LOGIN_FAILURE: 'USERS_LOGIN_FAILURE',
-    LOGIN_REQUEST: 'USERS_LOGIN_REQUEST',
-    LOGIN_SUCCESS: 'USERS_LOGIN_SUCCESS',
-    LOGOUT: 'USERS_LOGOUT',
-    REGISTER_FAILURE: 'USERS_REGISTER_FAILURE',
-    REGISTER_REQUEST: 'USERS_REGISTER_REQUEST',
-    REGISTER_SUCCESS: 'USERS_REGISTER_SUCCESS'
-};
-
 
 
 /***/ })

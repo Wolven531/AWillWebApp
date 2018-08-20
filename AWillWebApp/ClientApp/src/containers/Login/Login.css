@@ -1,18 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
-/*
-	Basic color scheme
-
-	426fC5 = Blue
-	00897b = Green
-	f6774f = Orange
-	e94043 = Red
-*/
-
-#app > .login {
-	background-color: rgba(0, 0, 0, 0.4);
+#app .login {
+	background-color: rgba(0, 0, 0, 0.67);
 	border: 1px solid #000;
 	border-radius: 10px;
+	color: #fff;
 	display: flex;
 	flex-direction: column;
 	justify-content: stretch;
@@ -23,12 +15,12 @@
 
 .login > form {
 	align-items: center;
-	color: #cff;
+	/* color: #9f0; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 175px;
-	text-shadow: 0 0 10px #0ff;
+	/* text-shadow: 0 0 10px #690; */
 }
 
 .login > form > label {
@@ -57,14 +49,15 @@
 .login > form input[type='text'],
 .login > form input[type='password'] {
 	background-color: rgba(255, 255, 255, 0.4);
-	caret-color: #0ff;
-	color: #0ff;
+	caret-color: #9f0;
+	color: #ff0;
 	text-indent: 10px;
 }
 
 .login .login-button {
-	background-color: #426fc5;
-	color: white;
+	/* background-color: #426fc5; */
+	background-color: #00897b;
+	/* color: #000; */
 	cursor: pointer;
 	font-family: 'Open Sans';
 	font-weight: bold;
@@ -76,11 +69,21 @@
 }
 
 .login .login-button:hover {
-	background-color: #5691FF;
-	color: #0ff;
+	/* background-color: #5691FF; */
+	background-color: #03beac;
+	color: #fff;
 	letter-spacing: 5px;
 	transition: all 0.75s ease;
 }
+
+/* TODO: Figure out why removing outline seems to not work */
+/*
+.login .login-button:focus,
+.login .login-button::-moz-focus-inner,
+.login .login-button::-moz-focus-outer {
+	outline: none;
+}
+*/
 
 .login .error,
 .login .error .dismiss-button {
