@@ -59,6 +59,11 @@ class App extends React.Component {
 		return (
 			// <MonsterSearcher />
 			<div id="page-container">
+				<header id="header">
+					Tracker Beta
+					<br/>
+					👌
+				</header>
 				<div id="content-wrap">
 					<Provider store={store}>
 						<Router history={history}>

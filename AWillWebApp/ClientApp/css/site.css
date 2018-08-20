@@ -30,6 +30,20 @@ body *::-moz-focus-inner {
 
 #content-wrap {
 	padding-bottom: 2.5rem; /* Footer height */
+	padding-top: 5rem; /* Header height */
+}
+
+#header {
+	top: 0;
+	color: #333;
+	font-family: 'Open Sans';
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 5rem; /* Header height */
+	position: absolute;
+	text-align: center;
+	width: 100%;
 }
 
 #footer {
@@ -47,7 +61,7 @@ body *::-moz-focus-inner {
 	#page-container {
 		display: grid; /* new */
 		grid-template-columns: 100%; /* new */
-		grid-template-rows: 1fr auto; /* new */
+		grid-template-rows: auto 1fr auto; /* new */
 		position: static; /* override */
 	}
 
@@ -56,6 +70,14 @@ body *::-moz-focus-inner {
 		display: grid;
 		justify-items: center;
 		padding-bottom: 0; /* override */
+		padding-top: 0; /* override */
+	}
+
+	#header {
+		align-items: center;
+		display: grid;
+		justify-items: center;
+		position: static; /* override */
 	}
 
 	#footer {

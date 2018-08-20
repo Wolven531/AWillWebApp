@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 
 import { userActions, userConstants } from '../UserActions'
 
+// const
+
 const HomePage = (props: any) => {
 	const handleLogout = () => {
 		props.dispatch(userActions.logout())
