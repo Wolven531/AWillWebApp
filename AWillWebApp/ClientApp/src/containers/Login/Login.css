@@ -57,20 +57,21 @@
 .login .login-button {
 	/* background-color: #426fc5; */
 	background-color: #00897b;
-	/* color: #000; */
+	border: 1px solid #000;
+	color: #333;
 	cursor: pointer;
 	font-family: 'Open Sans';
 	font-weight: bold;
 	margin-top: 15px;
 	overflow: hidden;
 	padding: 4px 0;
-	text-transform: uppercase;
 	transition: all 0.75s ease;
 }
 
 .login .login-button:hover {
 	/* background-color: #5691FF; */
 	background-color: #03beac;
+	border-color: #fff;
 	color: #fff;
 	letter-spacing: 5px;
 	transition: all 0.75s ease;
