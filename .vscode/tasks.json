@@ -10,6 +10,17 @@
 				"${workspaceFolder}/AWillWebApp/AWillWebApp.csproj"
 			],
 			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Run Dotnet App",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"run",
+				"-p",
+				"${workspaceFolder}/AWillWebApp/AWillWebApp.csproj"
+			],
+			"problemMatcher": "$msCompile"
 		}
 	]
 }
