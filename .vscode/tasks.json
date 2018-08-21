@@ -3,8 +3,8 @@
 	"tasks": [
 		{
 			"label": "build",
-			"command": "dotnet",
 			"type": "process",
+			"command": "dotnet",
 			"args": [
 				"build",
 				"${workspaceFolder}/AWillWebApp/AWillWebApp.csproj"
@@ -12,15 +12,27 @@
 			"problemMatcher": "$msCompile"
 		},
 		{
-			"label": "Run Dotnet App",
-			"command": "dotnet",
+			"label": "Run dotnet app",
 			"type": "process",
+			"command": "dotnet",
 			"args": [
 				"run",
 				"-p",
 				"${workspaceFolder}/AWillWebApp/AWillWebApp.csproj"
 			],
 			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Run webpack watcher",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"webpack-watch",
+				"--prefix",
+				"${workspaceFolder}/AWillWebApp/ClientApp/"
+			],
+			"problemMatcher": []
 		}
 	]
 }
