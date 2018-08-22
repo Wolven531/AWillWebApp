@@ -7,6 +7,7 @@
 		"build": "react-scripts build",
 		"cy": "cypress open",
 		"e2e": "cypress run",
+		"unit": "jest",
 		"start": "react-scripts start",
 		"test": "react-scripts test --env=jsdom",
 		"webpack": "rimraf ./dist && node node_modules/react-scripts/node_modules/webpack/bin/webpack.js --config webpack.config.js --progress",
@@ -16,9 +17,12 @@
 	"author": "Anthony Williams",
 	"license": "ISC",
 	"devDependencies": {
-		"@babel/core": "^7.0.0-beta.54",
-		"@babel/preset-env": "^7.0.0-beta.54",
-		"@babel/preset-react": "^7.0.0-beta.54",
+		"@babel/core": "^7.0.0-rc.2",
+		"@babel/plugin-proposal-class-properties": "^7.0.0-rc.2",
+		"@babel/plugin-proposal-object-rest-spread": "^7.0.0-rc.2",
+		"@babel/preset-env": "^7.0.0-rc.2",
+		"@babel/preset-react": "^7.0.0-rc.2",
+		"@types/jest": "^23.3.1",
 		"@types/jquery": "^3.3.5",
 		"@types/pathjs": "^0.8.33",
 		"@types/react": "^16.4.6",
@@ -29,12 +33,20 @@
 		"@types/redux": "^3.6.0",
 		"@types/webpack-env": "^1.13.6",
 		"babel-core": "^7.0.0-beta.3",
+		"babel-jest": "^22.0.6",
 		"babel-loader": "^8.0.0-beta.4",
+		"babel-preset-react-app": "^3.1.2",
 		"css-loader": "^1.0.0",
 		"cypress": "^3.0.3",
+		"enzyme": "^3.4.4",
+		"enzyme-adapter-react-16": "^1.2.0",
 		"extract-text-webpack-plugin": "^3.0.2",
+		"jest": "^23.5.0",
+		"jest-environment-enzyme": "^6.0.3",
+		"jest-enzyme": "^6.0.3",
 		"ngrok": "^3.0.1",
 		"style-loader": "^0.21.0",
+		"ts-jest": "^23.1.4",
 		"ts-loader": "^3.5.0",
 		"typescript": "^2.9.2",
 		"url-loader": "^1.0.1"
@@ -59,5 +71,13 @@
 		"redux": "^4.0.0",
 		"redux-thunk": "^2.3.0",
 		"rimraf": "^2.6.2"
+	},
+	"jest": {
+		"setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
+		"unmockedModulePathPatterns": [
+			"react",
+			"enzyme",
+			"jest-enzyme"
+		]
 	}
 }
