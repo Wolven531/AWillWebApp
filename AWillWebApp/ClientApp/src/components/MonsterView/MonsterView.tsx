@@ -7,6 +7,7 @@ class MonsterView extends React.Component<{ monster: any }> {
 	}
 
 	public render() {
+		console.info('[MonsterView | render]')
 		return (<div>
 			<h3>Monster View</h3>
 		</div>)

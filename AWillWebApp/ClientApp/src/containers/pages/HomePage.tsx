@@ -10,6 +10,7 @@ class HomePage extends React.Component<{ dispatch: ((action: any) => void) }> {
 	}
 
 	public render() {
+		console.info('[HomePage | render]')
 		return (
 			<div>
 				<h1>Homepage</h1>

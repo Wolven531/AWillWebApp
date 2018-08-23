@@ -37832,6 +37832,7 @@ module.exports = Array.isArray || function (arr) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redux_thunk__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Authentication__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Monster__ = __webpack_require__(124);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -37844,12 +37845,14 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 
 
 
+
 // import * as Counter from './Counter'
 // import * as WeatherForecasts from './WeatherForecasts'
 function configureStore(history) {
     // export default function configureStore(history: any, initialState: any) {
     var reducers = {
-        authentication: __WEBPACK_IMPORTED_MODULE_3__Authentication__["a" /* reducer */]
+        authentication: __WEBPACK_IMPORTED_MODULE_3__Authentication__["a" /* reducer */],
+        monster: __WEBPACK_IMPORTED_MODULE_4__Monster__["b" /* reducer */]
         // counter: Counter.reducer
         // weatherForecasts: WeatherForecasts.reducer
     };
@@ -38364,6 +38367,7 @@ var HomePage = /** @class */ (function (_super) {
         console.info('[HomePage | componentDidMount]');
     };
     HomePage.prototype.render = function () {
+        console.info('[HomePage | render]');
         return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h1", null, "Homepage"),
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: this.handleLogout }, "Logout"),
@@ -38751,6 +38755,7 @@ var MonsterView = /** @class */ (function (_super) {
         console.info('[MonsterView | componentDidMount]');
     };
     MonsterView.prototype.render = function () {
+        console.info('[MonsterView | render]');
         return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h3", null, "Monster View")));
     };
@@ -38768,7 +38773,8 @@ var MonsterView = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MonsterView_MonsterView__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store_Monster__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MonsterView_MonsterView__ = __webpack_require__(122);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -38782,6 +38788,7 @@ var __extends = (this && this.__extends) || (function () {
 
 
 
+
 var NoMonsterDisplay = function () { return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null, "You have no monsters!"); };
 var MonsterCollectionView = /** @class */ (function (_super) {
     __extends(MonsterCollectionView, _super);
@@ -38790,18 +38797,72 @@ var MonsterCollectionView = /** @class */ (function (_super) {
     }
     MonsterCollectionView.prototype.componentDidMount = function () {
         console.info('[MonsterCollectionView | componentDidMount]');
+        this.props.dispatch(__WEBPACK_IMPORTED_MODULE_2__store_Monster__["a" /* actionCreators */].loadMonsters());
     };
     MonsterCollectionView.prototype.render = function () {
+        console.info('[MonsterCollectionView | render]');
         if (!this.props.monsters || this.props.monsters.length < 1) {
             return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](NoMonsterDisplay, null);
         }
         return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h2", null, "Monster Collection View"),
-            this.props.monsters.map(function (monster) { return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_2__MonsterView_MonsterView__["a" /* MonsterView */], { monster: monster })); })));
+            this.props.monsters.map(function (monster) { return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_3__MonsterView_MonsterView__["a" /* MonsterView */], { monster: monster })); })));
     };
     return MonsterCollectionView;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]));
-var connectedMonsterCollectionView = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])()(MonsterCollectionView);
+var mapStateToProps = function (state) {
+    var monster = state.monster;
+    var monsters = monster.monsters;
+    console.info("[MonsterCollectionView | mapStateToProps] Num monsters = " + monsters.length);
+    return {
+        monsters: []
+    };
+};
+var connectedMonsterCollectionView = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])(mapStateToProps)(MonsterCollectionView);
+
+
+
+/***/ }),
+/* 124 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return actionCreators; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return reducer; });
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+var LOAD_MONSTERS = 'load_monsters';
+/*
+    This is the initial state for this reducer
+*/
+var initialState = {
+    monsters: []
+};
+/*
+    This is a map of functions that create actions which may be processed by
+    this reducer
+*/
+var actionCreators = {
+    loadMonsters: function () { return ({
+        payload: {},
+        type: LOAD_MONSTERS
+    }); }
+};
+var reducer = function (state, action) {
+    if (state === void 0) { state = initialState; }
+    var payload = action.payload, type = action.type;
+    if (type === LOAD_MONSTERS) {
+        console.info("[Monster | reducer | LOAD_MONSTERS]");
+        return __assign({}, state, { monsters: [{ name: 'mon 1' }] });
+    }
+    return state;
+};
 
 
 
