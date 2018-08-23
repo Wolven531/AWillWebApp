@@ -1,22 +1,28 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 
+import { MonsterCollectionView } from '../../components/MonsterCollectionView/MonsterCollectionView'
 import { userActions, userConstants } from '../UserActions'
 
-// const
-
-const HomePage = (props: any) => {
-	const handleLogout = () => {
-		props.dispatch(userActions.logout())
-		window.location.reload()
+class HomePage extends React.Component<{ dispatch: ((action: any) => void) }> {
+	public componentDidMount() {
+		console.info('[HomePage | componentDidMount]')
 	}
 
-	return (
-		<div>
-			<h2>Homepage</h2>
-			<button onClick={handleLogout}>Logout</button>
-		</div>
-	)
+	public render() {
+		return (
+			<div>
+				<h1>Homepage</h1>
+				<button onClick={this.handleLogout}>Logout</button>
+				<MonsterCollectionView />
+			</div>
+		)
+	}
+
+	private handleLogout = () => {
+		this.props.dispatch(userActions.logout())
+		window.location.reload()
+	}
 }
 
 const connectedHomePage = connect()(HomePage)

@@ -38334,20 +38334,43 @@ var userService = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__UserActions__ = __webpack_require__(23);
-
-
-
-// const
-var HomePage = function (props) {
-    var handleLogout = function () {
-        props.dispatch(__WEBPACK_IMPORTED_MODULE_2__UserActions__["a" /* userActions */].logout());
-        window.location.reload();
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_MonsterCollectionView_MonsterCollectionView__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__UserActions__ = __webpack_require__(23);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
-    return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h2", null, "Homepage"),
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: handleLogout }, "Logout")));
-};
+})();
+
+
+
+
+var HomePage = /** @class */ (function (_super) {
+    __extends(HomePage, _super);
+    function HomePage() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.handleLogout = function () {
+            _this.props.dispatch(__WEBPACK_IMPORTED_MODULE_3__UserActions__["a" /* userActions */].logout());
+            window.location.reload();
+        };
+        return _this;
+    }
+    HomePage.prototype.componentDidMount = function () {
+        console.info('[HomePage | componentDidMount]');
+    };
+    HomePage.prototype.render = function () {
+        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h1", null, "Homepage"),
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { onClick: this.handleLogout }, "Logout"),
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_2__components_MonsterCollectionView_MonsterCollectionView__["a" /* MonsterCollectionView */], null)));
+    };
+    return HomePage;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]));
 var connectedHomePage = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])()(HomePage);
 
 
@@ -38697,6 +38720,89 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ope
 exports.push([module.i, "/*\r\n\tBasic color scheme\r\n\r\n\t426fC5 = Blue\r\n\t5691FF = Highlight Blue\r\n\t00897b = Green\r\n\tf6774f = Orange\r\n\te94043 = Red\r\n*/\r\n\r\nbody {\r\n\tmargin: 0;\r\n\t/* overflow-y: scroll; */\r\n\tpadding: 0;\r\n}\r\n\r\nbody *:focus,\r\nbody *::-moz-focus-inner {\r\n\toutline: none;\r\n}\r\n\r\n#page-container {\r\n\tbackground-color: rgba(255, 128, 0, 0.8);\r\n\tbackground: linear-gradient(0deg, #ff8000, #ffc000);\r\n\tmin-height: 100vh;\r\n\tposition: relative;\r\n}\r\n\r\n#content-wrap {\r\n\tpadding-bottom: 2.5rem; /* Footer height */\r\n\tpadding-top: 5rem; /* Header height */\r\n}\r\n\r\n#header {\r\n\ttop: 0;\r\n\tcolor: #333;\r\n\tfont-family: 'Open Sans';\r\n\tfont-size: 1.2em;\r\n\tfont-weight: bold;\r\n\tletter-spacing: 2px;\r\n\theight: 5rem; /* Header height */\r\n\tposition: absolute;\r\n\ttext-align: center;\r\n\twidth: 100%;\r\n}\r\n\r\n#footer {\r\n\tbottom: 0;\r\n\tcolor: #333;\r\n\tfont-family: 'Open Sans';\r\n\tfont-size: 0.8em;\r\n\tletter-spacing: 2px;\r\n\theight: 2.5rem; /* Footer height */\r\n\tposition: absolute;\r\n\twidth: 100%;\r\n}\r\n\r\n@supports (display: grid) {\r\n\t#page-container {\r\n\t\tdisplay: grid; /* new */\r\n\t\tgrid-template-columns: 100%; /* new */\r\n\t\tgrid-template-rows: auto 1fr auto; /* new */\r\n\t\tposition: static; /* override */\r\n\t}\r\n\r\n\t#content-wrap {\r\n\t\talign-items: center;\r\n\t\tdisplay: grid;\r\n\t\tjustify-items: center;\r\n\t\tpadding-bottom: 0; /* override */\r\n\t\tpadding-top: 0; /* override */\r\n\t}\r\n\r\n\t#header {\r\n\t\talign-items: center;\r\n\t\tdisplay: grid;\r\n\t\tjustify-items: center;\r\n\t\tposition: static; /* override */\r\n\t}\r\n\r\n\t#footer {\r\n\t\talign-items: center;\r\n\t\tdisplay: grid;\r\n\t\t/* override */\r\n\t\t/* height: auto; */\r\n\t\tjustify-items: center;\r\n\t\tposition: static; /* override */\r\n\t}\r\n}\r\n\r\n/* #app {\r\n\talign-self: stretch;\r\n\tbackground-color: rgba(0, 0, 200, 0.8);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\tpadding-bottom: 50px;\r\n\toverflow-y: hidden;\r\n}\r\n\r\n#app > * {\r\n\tdisplay: flex;\r\n\tflex: 1;\r\n\tflex-direction: column;\r\n\tmargin: 10px;\r\n} */\r\n", ""]);
 
 // exports
+
+
+/***/ }),
+/* 122 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterView; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+// import { connect } from 'react-redux'
+var MonsterView = /** @class */ (function (_super) {
+    __extends(MonsterView, _super);
+    function MonsterView() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    MonsterView.prototype.componentDidMount = function () {
+        console.info('[MonsterView | componentDidMount]');
+    };
+    MonsterView.prototype.render = function () {
+        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h3", null, "Monster View")));
+    };
+    return MonsterView;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]));
+
+
+
+/***/ }),
+/* 123 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return connectedMonsterCollectionView; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MonsterView_MonsterView__ = __webpack_require__(122);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var NoMonsterDisplay = function () { return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null, "You have no monsters!"); };
+var MonsterCollectionView = /** @class */ (function (_super) {
+    __extends(MonsterCollectionView, _super);
+    function MonsterCollectionView() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    MonsterCollectionView.prototype.componentDidMount = function () {
+        console.info('[MonsterCollectionView | componentDidMount]');
+    };
+    MonsterCollectionView.prototype.render = function () {
+        if (!this.props.monsters || this.props.monsters.length < 1) {
+            return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](NoMonsterDisplay, null);
+        }
+        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h2", null, "Monster Collection View"),
+            this.props.monsters.map(function (monster) { return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_2__MonsterView_MonsterView__["a" /* MonsterView */], { monster: monster })); })));
+    };
+    return MonsterCollectionView;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]));
+var connectedMonsterCollectionView = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])()(MonsterCollectionView);
+
 
 
 /***/ })
