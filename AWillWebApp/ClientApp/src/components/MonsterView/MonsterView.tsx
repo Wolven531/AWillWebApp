@@ -1,6 +1,7 @@
 import * as React from 'react'
-import { Monster } from '../../models/monster'
 // import { connect } from 'react-redux'
+
+import { Monster } from '../../models/monster'
 
 class MonsterView extends React.Component<{ monster: Monster }> {
 	public componentDidMount() {
@@ -29,6 +30,7 @@ class MonsterView extends React.Component<{ monster: Monster }> {
 					</p>
 				</section>
 				<section>
+					{/*
 					<img
 						src={monster.image}
 						alt={`Image of monster - ${monster.element} ${monster.name}`}
@@ -39,6 +41,7 @@ class MonsterView extends React.Component<{ monster: Monster }> {
 						alt={`Image of awakened monster - ${monster.awakenedName}`}
 						title={`Image of awakened monster - ${monster.awakenedName}`}
 					/>
+					*/}
 				</section>
 			</div>
 		)
