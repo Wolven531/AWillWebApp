@@ -21,7 +21,6 @@ class MonsterCollectionView extends React.Component<{
 		}
 		return (
 			<div>
-				<h2>Monster Collection View</h2>
 				{this.props.monsters.map(monster => (
 					<MonsterView monster={monster} key={`${monster.element}-${monster.name}-${monster.awakenedName}`} />
 				))}
