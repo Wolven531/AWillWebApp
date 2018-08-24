@@ -1,36 +1,57 @@
 ﻿/*
  * Author: Anthony Williams
- * Version: Baretta
- * Date: 07/30/2018
+ * Version: Cassiopeia
+ * Date: 08/24/2018
  * Target Site: summonerswarskyarena.info
  * Target URL: https://summonerswarskyarena.info/monster-list/
  * Purpose: Grab all tr elements on page and parse them to create basic data model objects
  */
 
-const DOMElementsToImageInfo = (imageDOMElements) => {
+const getBase64Image = img => {
+	const canvas = document.createElement('canvas')
+	const { height, width } = img
+	canvas.width = width
+	canvas.height = height
+
+	const ctx = canvas.getContext('2d')
+	ctx.drawImage(img, 0, 0, width, height)
+
+	const dataURL = canvas.toDataURL('image/png')
+
+	// NOTE: remove data type for lighter storage footprint
+	return dataURL.replace(/^data:image\/(png|jpg|gif);base64,/, '')
+}
+
+const DOMElementsToImageInfo = imageDOMElements => {
 	let awakenedImage = ''
+	let awakenedImageSource = ''
 	let image = ''
+	let imageSource = ''
 
 	if (imageDOMElements && imageDOMElements.length > 1) {
 		const awakenedImageDOMElements = imageDOMElements[1].getElementsByTagName('img')
 		const normalImageDOMElements = imageDOMElements[0].getElementsByTagName('img')
 
 		if (awakenedImageDOMElements && awakenedImageDOMElements.length > 0) {
-			awakenedImage = awakenedImageDOMElements[0].getAttribute('src')
+			awakenedImageSource = awakenedImageDOMElements[0].getAttribute('src')
+			awakenedImage = getBase64Image(awakenedImageDOMElements[0])
 		}
 
 		if (normalImageDOMElements && normalImageDOMElements.length > 0) {
-			image = normalImageDOMElements[0].getAttribute('src')
+			imageSource = normalImageDOMElements[0].getAttribute('src')
+			image = getBase64Image(normalImageDOMElements[0])
 		}
 	}
 
 	return {
 		awakenedImage,
-		image
+		awakenedImageSource,
+		image,
+		imageSource
 	}
 }
 
-const DOMElementsToRuneInfo = (runesDOMElements) => {
+const DOMElementsToRuneInfo = runesDOMElements => {
 	let runeList = ''
 	let runeValues = ''
 
@@ -54,7 +75,7 @@ const DOMElementsToRuneInfo = (runesDOMElements) => {
 	}
 }
 
-const DOMRowToMonster = (rowDOM) => {
+const DOMRowToMonster = rowDOM => {
 	const nameElements = rowDOM.getElementsByClassName('name')
 	const rating = parseInt(rowDOM.getElementsByClassName('rating')[0].textContent, 10)
 	const statPriority = rowDOM.getElementsByClassName('stat-priority')[0].textContent
@@ -94,8 +115,8 @@ const parseMonsters = () => {
 	return generatedMonsters
 }
 
-const launchScroller = () => {	
-	const bottomThreshold = 500
+const launchScroller = () => {
+	const bottomThreshold = 750
 	const parseDelay = 1000
 	const scrollAmount = 250
 	const scrollInterval = 75
