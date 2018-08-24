@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 
-import { MonsterCollectionView } from '../../components/MonsterCollectionView/MonsterCollectionView'
+import { MonsterCollectionView } from '../MonsterCollectionView/MonsterCollectionView'
 import { userActions, userConstants } from '../UserActions'
 
 class HomePage extends React.Component<{ dispatch: ((action: any) => void) }> {

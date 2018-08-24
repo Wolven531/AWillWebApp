@@ -2,11 +2,15 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 
 import { actionCreators as monsterActions } from '../../store/Monster'
-import { MonsterView } from '../MonsterView/MonsterView'
+
+import { MonsterView } from '../../components/MonsterView/MonsterView'
 
 const NoMonsterDisplay = () => <div>You have no monsters!</div>
 
-class MonsterCollectionView extends React.Component<{ monsters?: any[], dispatch: ((action: any) => void) }> {
+class MonsterCollectionView extends React.Component<{
+	monsters?: any[]
+	dispatch: ((action: any) => void)
+}> {
 	public componentDidMount() {
 		console.info('[MonsterCollectionView | componentDidMount]')
 		this.props.dispatch(monsterActions.loadMonsters())
@@ -34,7 +38,7 @@ const mapStateToProps = (state: any) => {
 	console.info(`[MonsterCollectionView | mapStateToProps] Num monsters = ${monsters.length}`)
 
 	return {
-		monsters: []
+		monsters
 	}
 }
 
