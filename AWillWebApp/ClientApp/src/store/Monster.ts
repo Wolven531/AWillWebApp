@@ -1,3 +1,7 @@
+import { Monster } from '../models/monster'
+
+const monstersFromDisk: Monster[] = require('../../../Data/monsters.json')
+
 const LOAD_MONSTERS = 'load_monsters'
 
 /*
@@ -29,30 +33,23 @@ const initialState: IMonsterState = {
 */
 const actionCreators = {
 	loadMonsters: (): IMonsterReducerAction => ({
-		payload: { },
+		payload: {},
 		type: LOAD_MONSTERS
 	})
 }
 
-const reducer = (
-	state: Partial<IMonsterState> = initialState,
-	action: IMonsterReducerAction
-) => {
+const reducer = (state: Partial<IMonsterState> = initialState, action: IMonsterReducerAction) => {
 	const { payload, type } = action
 
 	if (type === LOAD_MONSTERS) {
 		console.info(`[Monster | reducer | LOAD_MONSTERS]`)
 		return {
 			...state,
-			monsters: [{ name: 'mon 1' }]
+			monsters: monstersFromDisk
 		}
 	}
 
 	return state
 }
 
-export {
-	actionCreators,
-	IMonsterReducerAction,
-	reducer
-}
+export { actionCreators, IMonsterReducerAction, reducer }
