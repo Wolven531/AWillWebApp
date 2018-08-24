@@ -7,7 +7,6 @@ import './MonsterSearcher.css'
 
 interface IMonsterSearcherState {
 	loading: boolean
-	monsters: object[]
 	searchQuery: string
 	searchResults: any[]
 }
@@ -17,7 +16,6 @@ class MonsterSearcher extends React.Component<{}, IMonsterSearcherState> {
 		super(props)
 		this.state = {
 			loading: true,
-			monsters: [],
 			searchQuery: '',
 			searchResults: []
 		}
@@ -38,23 +36,26 @@ class MonsterSearcher extends React.Component<{}, IMonsterSearcherState> {
 								id="search-query"
 								name="search-query"
 								value={this.state.searchQuery}
-								onChange={this.handleSearchQueryUpdate} />
+								onChange={this.handleSearchQueryUpdate}
+							/>
 						</label>
 					</div>
 					<button onClick={this.searchApiWithState}>Search</button>
-					{this.state.searchResults.length > 0 && <div className="search-results">
-						{this.state.searchResults.map((searchResult: any, ind) => {
-							return (
-								<div key={ind} className="search-result">
-									<div className="name-display">
-										{searchResult.awakenedName} ({searchResult.name})
+					{this.state.searchResults.length > 0 && (
+						<div className="search-results">
+							{this.state.searchResults.map((searchResult: any, ind) => {
+								return (
+									<div key={ind} className="search-result">
+										<div className="name-display">
+											{searchResult.awakenedName} ({searchResult.name})
+										</div>
+										<img src={searchResult.image} className="normal-image" />
+										<img src={searchResult.awakenedImage} className="awakened-image" />
 									</div>
-									<img src={searchResult.image} className="normal-image" />
-									<img src={searchResult.awakenedImage} className="awakened-image" />
-								</div>
-							)
-						})}
-					</div>}
+								)
+							})}
+						</div>
+					)}
 				</div>
 			</div>
 		)
@@ -75,13 +76,10 @@ class MonsterSearcher extends React.Component<{}, IMonsterSearcherState> {
 		// }
 		fetch(`api/monsters/names/${searchQuery}`)
 			.then(response => response.json())
-			.then((searchResults: any[]) => this.setState({ searchQuery, searchResults }) )
+			.then((searchResults: any[]) => this.setState({ searchQuery, searchResults }))
 	}
 
 	private searchApiWithState = () => this.searchApi(this.state.searchQuery)
 }
 
-export {
-	IMonsterSearcherState,
-	MonsterSearcher
-}
+export { IMonsterSearcherState, MonsterSearcher }
