@@ -30,18 +30,16 @@ class MonsterView extends React.Component<{ monster: Monster }> {
 					</p>
 				</section>
 				<section>
-					{/*
 					<img
-						src={monster.image}
+						src={`data:image/png;base64,${monster.image}`}
 						alt={`Image of monster - ${monster.element} ${monster.name}`}
 						title={`Image of monster - ${monster.element} ${monster.name}`}
 					/>
 					<img
-						src={monster.awakenedImage}
+						src={`data:image/png;base64,${monster.awakenedImage}`}
 						alt={`Image of awakened monster - ${monster.awakenedName}`}
 						title={`Image of awakened monster - ${monster.awakenedName}`}
 					/>
-					*/}
 				</section>
 			</div>
 		)
