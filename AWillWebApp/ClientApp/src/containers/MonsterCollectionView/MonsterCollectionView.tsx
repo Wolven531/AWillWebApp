@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 
 import { actionCreators as monsterActions } from '../../store/Monster'
 
-import { MonsterView } from '../../components/MonsterView/MonsterView'
 import { Monster } from '../../models/monster'
+import { MonsterView } from '../../components/MonsterView/MonsterView'
 
 const NoMonsterDisplay = () => <div>You have no monsters!</div>
 
@@ -26,7 +26,7 @@ class MonsterCollectionView extends React.Component<{
 			<div>
 				<h2>Monster Collection View</h2>
 				{this.props.monsters.map(monster => (
-					<MonsterView monster={monster} key={monster.awakenedName} />
+					<MonsterView monster={monster} key={`${monster.element}-${monster.name}-${monster.awakenedName}`} />
 				))}
 			</div>
 		)
