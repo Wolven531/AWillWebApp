@@ -15,6 +15,7 @@ import configureStore from './store/configureStore'
 
 // import Counter from './counter'
 // import MonsterSearcher from './MonsterSearcher'
+import { AllMonstersPage } from './containers/pages/AllMonstersPage'
 import { HomePage } from './containers/pages/HomePage'
 import { Login } from './containers/Login/Login'
 
@@ -68,6 +69,7 @@ class App extends React.Component {
 							<React.Fragment>
 								<PrivateRoute exact path="/" component={HomePage} />
 								<Route path="/login" component={Login} />
+								<Route path="/monsters" component={AllMonstersPage} />
 							</React.Fragment>
 						</Router>
 					</Provider>

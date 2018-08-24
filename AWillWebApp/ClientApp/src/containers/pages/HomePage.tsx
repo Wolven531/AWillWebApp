@@ -15,7 +15,6 @@ class HomePage extends React.Component<{ dispatch: ((action: any) => void) }> {
 			<div>
 				<h1>Homepage</h1>
 				<button onClick={this.handleLogout}>Logout</button>
-				<MonsterCollectionView />
 			</div>
 		)
 	}

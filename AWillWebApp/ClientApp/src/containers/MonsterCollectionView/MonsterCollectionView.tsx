@@ -1,8 +1,6 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 
-import { actionCreators as monsterActions } from '../../store/Monster'
-
 import { Monster } from '../../models/monster'
 import { MonsterView } from '../../components/MonsterView/MonsterView'
 
@@ -14,7 +12,6 @@ class MonsterCollectionView extends React.Component<{
 }> {
 	public componentDidMount() {
 		console.info('[MonsterCollectionView | componentDidMount]')
-		this.props.dispatch(monsterActions.loadMonsters())
 	}
 
 	public render() {
