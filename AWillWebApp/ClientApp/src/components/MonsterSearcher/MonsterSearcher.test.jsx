@@ -17,8 +17,6 @@ Enzyme.configure({
 // 	})
 // })
 
-
-
 describe('MonsterSearcher', () => {
 	test('qwer', () => {
 		const fixture = shallow(<MonsterSearcher />)
