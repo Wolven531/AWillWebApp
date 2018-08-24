@@ -3,21 +3,21 @@
 import * as jQuery from 'jquery'
 const $ = ((window as any).$ = (window as any).jQuery = jQuery)
 
+import { BrowserHistoryBuildOptions, createBrowserHistory } from 'history'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-
-import { BrowserHistoryBuildOptions, createBrowserHistory } from 'history'
 import { Provider } from 'react-redux'
 import { Redirect, Route, Router } from 'react-router-dom'
-// import { ConnectedRouter } from 'react-router-redux'
 
 import configureStore from './store/configureStore'
 
-// import Counter from './counter'
 // import MonsterSearcher from './MonsterSearcher'
 import { AllMonstersPage } from './containers/pages/AllMonstersPage'
+import { Footer } from './components/Footer/Footer'
+import { Header } from './components/Header/Header'
 import { HomePage } from './containers/pages/HomePage'
 import { Login } from './containers/Login/Login'
+import { NavBar } from './components/NavBar/NavBar'
 
 import '../css/site.css'
 
@@ -41,9 +41,7 @@ const PrivateRoute = ({ component: Component, ...rest }: any) => (
 			return user && user !== 'undefined' ? (
 				<Component {...props} />
 			) : (
-				<Redirect
-					to={{ pathname: '/login', state: { from: props.location } }}
-				/>
+				<Redirect to={{ pathname: '/login', state: { from: props.location } }} />
 			)
 		}}
 	/>
@@ -56,13 +54,9 @@ class App extends React.Component {
 
 	public render() {
 		return (
-			// <MonsterSearcher />
 			<div id="page-container">
-				<header id="header">
-					Tracker Beta
-					<br/>
-					👌
-				</header>
+				<Header />
+				<NavBar />
 				<div id="content-wrap">
 					<Provider store={store}>
 						<Router history={history}>
@@ -74,7 +68,7 @@ class App extends React.Component {
 						</Router>
 					</Provider>
 				</div>
-				<footer id="footer">Anthony Williams &copy; 2018</footer>
+				<Footer />
 			</div>
 		)
 	}
