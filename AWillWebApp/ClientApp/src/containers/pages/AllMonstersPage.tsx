@@ -14,7 +14,7 @@ class AllMonstersPage extends React.Component<{ dispatch: ((action: any) => void
 	public render() {
 		console.info('[AllMonstersPage | render]')
 		return (
-			<div>
+			<div id="all-monster-page">
 				<h1>All Monsters</h1>
 				<MonsterCollectionView />
 			</div>

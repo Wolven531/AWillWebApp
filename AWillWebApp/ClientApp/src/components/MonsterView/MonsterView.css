@@ -1,0 +1,56 @@
+.monster-view {
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid #000;
+	padding: 3px;
+}
+
+.monster-view h3 {
+	color: #fff;
+	display: grid;
+	font-size: 1rem;
+	justify-items: center;
+	white-space: nowrap;
+}
+
+.monster-view p {
+	color: #333;
+	font-weight: bold;
+	margin: 2px 0;
+	white-space: nowrap;
+}
+
+.monster-view .monster-stats {
+	display: grid;
+	padding-bottom: 5px;
+}
+
+.monster-view .monster-stat-label {
+	align-items: center;
+	display: grid;
+	font-size: 1rem;
+	grid-column: 1 / 2;
+	padding-left: 5px;
+}
+
+.monster-view .monster-stat {
+	align-items: center;
+	color: #fff;
+	display: grid;
+	font-size: 0.8rem;
+	font-weight: normal;
+	grid-column: 3 / 4;
+	padding-right: 5px;
+	text-align: right;
+}
+
+.monster-view .monster-images {
+	display: grid;
+	grid-column-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	margin-bottom: 10px;
+}
+
+.monster-view .monster-images img {
+	border: 1px solid #fff;
+}

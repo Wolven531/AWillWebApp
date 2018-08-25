@@ -1,0 +1,38 @@
+.monster-collection-view {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 0.3rem;
+	grid-row-gap: 0.3rem;
+}
+
+@media only screen and (min-width: 600px) {
+	.monster-collection-view {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 0.6rem;
+		grid-row-gap: 0.6rem;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.monster-collection-view {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 0.9rem;
+		grid-row-gap: 0.9rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.monster-collection-view {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 1.2rem;
+		grid-row-gap: 1.2rem;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.monster-collection-view {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap: 1.5rem;
+		grid-row-gap: 1.5rem;
+	}
+}

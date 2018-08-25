@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import { Monster } from '../../models/monster'
 import { MonsterView } from '../../components/MonsterView/MonsterView'
 
+import './MonsterCollectionView.css'
+
 const NoMonsterDisplay = () => <div>You have no monsters!</div>
 
 class MonsterCollectionView extends React.Component<{
@@ -20,7 +22,7 @@ class MonsterCollectionView extends React.Component<{
 			return <NoMonsterDisplay />
 		}
 		return (
-			<div>
+			<div className="monster-collection-view">
 				{this.props.monsters.map(monster => (
 					<MonsterView monster={monster} key={`${monster.element}-${monster.name}-${monster.awakenedName}`} />
 				))}

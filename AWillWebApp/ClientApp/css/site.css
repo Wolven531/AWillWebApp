@@ -86,6 +86,12 @@ body *::-moz-focus-inner {
 	width: 100%;
 }
 
+#all-monster-page h1 {
+	display: grid;
+	text-align: center;
+	width: 100%;
+}
+
 @supports (display: grid) {
 	#page-container {
 		display: grid; /* new */
