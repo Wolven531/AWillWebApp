@@ -33,11 +33,8 @@ const initialState: IMonsterState = {
 const actionCreators = {
 	loadMonstersFromApi: () => async (dispatch: (action: IMonsterReducerAction) => void) => {
 		dispatch({ type: REQUEST_MONSTERS, payload: {} })
-
-		const url = `api/monsters`
-		const response = await fetch(url)
+		const response = await fetch('api/monsters')
 		const monsters: Monster[] = await response.json()
-
 		dispatch({ type: RECEIVE_MONSTERS, payload: { monsters } })
 	}
 }
@@ -46,12 +43,9 @@ const reducer = (state: Partial<IMonsterState> = initialState, action: IMonsterR
 	const { payload, type } = action
 
 	if (type === RECEIVE_MONSTERS) {
-		const monsters: Monster[] = payload.monsters
-		console.info(`[Monster | reducer | RECEIVE_MONSTERS] Number monsters = ${monsters.length}`)
-
 		return {
 			...state,
-			monsters
+			monsters: payload.monsters
 		}
 	}
 
