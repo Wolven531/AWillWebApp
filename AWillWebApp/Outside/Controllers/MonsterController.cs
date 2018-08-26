@@ -98,7 +98,11 @@ namespace AWillWebApp.Controllers
 				monster.EarlyRuneValues,
 				monster.LateRuneList,
 				monster.LateRuneValues,
-				monster.StatPriority));
+				monster.StatPriority)
+			{
+				Id = monster.Id,
+				Number = monster.Number
+			});
 		}
 
 		private void LogResponseSize(string responseString)
