@@ -1,8 +1,7 @@
 import { Monster } from '../models/monster'
 
-const monstersFromDisk: Monster[] = require('../../../Data/monsters.json')
-
-const LOAD_MONSTERS = 'load_monsters'
+const REQUEST_MONSTERS = 'request_monsters'
+const RECEIVE_MONSTERS = 'receive_monsters'
 
 /*
 	This interface is used to represent the action this reducer is capable
@@ -17,7 +16,7 @@ interface IMonsterReducerAction {
 	This interface is used to represent the state maintained by this reducer
 */
 interface IMonsterState {
-	monsters: any[]
+	monsters: Monster[]
 }
 
 /*
@@ -32,20 +31,27 @@ const initialState: IMonsterState = {
 	this reducer
 */
 const actionCreators = {
-	loadMonsters: (): IMonsterReducerAction => ({
-		payload: {},
-		type: LOAD_MONSTERS
-	})
+	loadMonstersFromApi: () => async (dispatch: (action: IMonsterReducerAction) => void) => {
+		dispatch({ type: REQUEST_MONSTERS, payload: {} })
+
+		const url = `api/monsters`
+		const response = await fetch(url)
+		const monsters: Monster[] = await response.json()
+
+		dispatch({ type: RECEIVE_MONSTERS, payload: { monsters } })
+	}
 }
 
 const reducer = (state: Partial<IMonsterState> = initialState, action: IMonsterReducerAction) => {
 	const { payload, type } = action
 
-	if (type === LOAD_MONSTERS) {
-		console.info(`[Monster | reducer | LOAD_MONSTERS]`)
+	if (type === RECEIVE_MONSTERS) {
+		const monsters: Monster[] = payload.monsters
+		console.info(`[Monster | reducer | RECEIVE_MONSTERS] Number monsters = ${monsters.length}`)
+
 		return {
 			...state,
-			monsters: monstersFromDisk
+			monsters
 		}
 	}
 

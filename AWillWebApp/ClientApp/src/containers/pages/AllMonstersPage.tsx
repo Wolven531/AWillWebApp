@@ -8,7 +8,7 @@ import { MonsterCollectionView } from '../MonsterCollectionView/MonsterCollectio
 class AllMonstersPage extends React.Component<{ dispatch: ((action: any) => void) }> {
 	public componentDidMount() {
 		console.info('[AllMonstersPage | componentDidMount]')
-		this.props.dispatch(monsterActions.loadMonsters())
+		this.props.dispatch(monsterActions.loadMonstersFromApi())
 	}
 
 	public render() {
