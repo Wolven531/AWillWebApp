@@ -5,6 +5,7 @@
 namespace AWillWebApp.Controllers
 {
 	using System.Collections.Generic;
+	using System.Linq;
 	using System.Threading.Tasks;
 	using AWillWebApp.Inside.Models;
 	using AWillWebApp.Inside.Services;
@@ -15,6 +16,9 @@ namespace AWillWebApp.Controllers
 	[ApiController]
 	public class MonsterController : ControllerBase
 	{
+		private const float KilobyteScale = 1000.0f;
+		private const float MegabyteScale = 1000.0f * KilobyteScale;
+
 		private readonly IMonsterService _MonsterService;
 		private readonly ILogger<MonsterController> _logger;
 
@@ -44,10 +48,35 @@ namespace AWillWebApp.Controllers
 
 		// GET: api/monsters
 		[HttpGet]
-		public Task<IEnumerable<Monster>> GetAllMonsters()
+		public async Task<IEnumerable<Monster>> GetAllMonstersAsync([FromQuery] bool withImages = false)
 		{
 			_logger.LogDebug("Getting all monsters from MonsterService...");
-			return _MonsterService.GetMonstersAsync();
+			var monsters = await _MonsterService.GetMonstersAsync();
+			_logger.LogDebug($"Returning {monsters.Count()} monsters (withImages={withImages})...");
+
+			if (!withImages)
+			{
+				monsters = StripMonsterImages(monsters);
+			}
+
+			return monsters;
+		}
+
+		private static IEnumerable<Monster> StripMonsterImages(IEnumerable<Monster> monsters)
+		{
+			return monsters.Select(monster => new Monster(
+				monster.AwakenedName,
+				monster.Name,
+				monster.Rating,
+				false,
+				monster.Element,
+				string.Empty,
+				string.Empty,
+				monster.EarlyRuneList,
+				monster.EarlyRuneValues,
+				monster.LateRuneList,
+				monster.LateRuneValues,
+				monster.StatPriority));
 		}
 
 		//// GET: api/monsters/2e846d8d-a45d-4548-9240-e2ed7fa91e3c
