@@ -11,6 +11,7 @@ namespace AWillWebApp.Controllers
 	using AWillWebApp.Inside.Services;
 	using Microsoft.AspNetCore.Mvc;
 	using Microsoft.Extensions.Logging;
+	using Newtonsoft.Json;
 
 	[Route("api/monsters")]
 	[ApiController]
@@ -59,7 +60,28 @@ namespace AWillWebApp.Controllers
 				monsters = StripMonsterImages(monsters);
 			}
 
+			LogResponseSize(_logger, JsonConvert.SerializeObject(monsters));
+
 			return monsters;
+		}
+
+		private static void LogResponseSize(ILogger<MonsterController> instanceLogger, string responseString)
+		{
+			var responseSize = responseString.Length;
+			var sizeDisplay = string.Empty;
+
+			if (responseSize > MegabyteScale)
+			{
+				var mbSize = responseSize / MegabyteScale;
+				sizeDisplay = $"{mbSize:n2} Mb";
+			}
+			else if (responseSize > KilobyteScale)
+			{
+				var kbSize = responseSize / KilobyteScale;
+				sizeDisplay = $"{kbSize:n2} Kb";
+			}
+
+			instanceLogger.LogDebug($"Response Size = {sizeDisplay} ({responseSize:n0} bytes)");
 		}
 
 		private static IEnumerable<Monster> StripMonsterImages(IEnumerable<Monster> monsters)
