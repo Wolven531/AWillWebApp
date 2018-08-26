@@ -60,7 +60,7 @@ namespace AWillWebApp.Controllers
 				monsters = StripMonsterImages(monsters);
 			}
 
-			LogResponseSize(_logger, JsonConvert.SerializeObject(monsters));
+			LogResponseSize(JsonConvert.SerializeObject(monsters));
 
 			return monsters;
 		}
@@ -99,6 +99,11 @@ namespace AWillWebApp.Controllers
 				monster.LateRuneList,
 				monster.LateRuneValues,
 				monster.StatPriority));
+		}
+
+		private void LogResponseSize(string responseString)
+		{
+			LogResponseSize(_logger, responseString);
 		}
 
 		//// GET: api/monsters/2e846d8d-a45d-4548-9240-e2ed7fa91e3c
