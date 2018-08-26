@@ -290,7 +290,7 @@ namespace AWillWebApp.Tests.Inside.Services
 
 			for (var a = 0; a < monsterElements.Length; a++)
 			{
-				monsters.Add(new Monster($"awake {a + 1}", $"name {a + 1}", 3, false, monsterElements[a], $"awakenedimg{a + 1}", $"img{a + 1}", null, null, null, null, null));
+				monsters.Add(new Monster($"awake {a + 1}", $"name {a + 1}", 3, monsterElements[a], $"awakenedimg{a + 1}", $"img{a + 1}", null, null, null, null, null));
 			}
 
 			return monsters.AsEnumerable();
