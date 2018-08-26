@@ -1,19 +1,41 @@
 .monster-view {
 	background-color: rgba(0, 0, 0, 0.3);
-	border: 1px solid #000;
-	padding: 3px;
+	border: 1px solid #333;
+	padding: 5px;
+}
+
+.monster-view.dark {
+	background-color: rgba(180, 0, 255, 1);
+	color: #009;
+}
+
+.monster-view.fire {
+	background-color: rgba(255, 0, 0, 0.8);
+	color: #fd0;
+}
+
+.monster-view.light {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.monster-view.water {
+	background-color: rgba(0, 0, 255, 0.8);
+	color: #0cc;
+}
+
+.monster-view.wind {
+	background-color: rgba(230, 210, 0, 1);
+	color: #823;
 }
 
 .monster-view h3 {
-	color: #fff;
 	display: grid;
-	font-size: 1rem;
+	font-size: 1.15rem;
 	justify-items: center;
 	white-space: nowrap;
 }
 
 .monster-view p {
-	color: #333;
 	font-weight: bold;
 	margin: 2px 0;
 	white-space: nowrap;
@@ -21,25 +43,29 @@
 
 .monster-view .monster-stats {
 	display: grid;
+	grid-template-columns: 1fr 1fr;
 	padding-bottom: 5px;
+}
+
+.monster-view .monster-stats p {
+	margin: 0;
 }
 
 .monster-view .monster-stat-label {
 	align-items: center;
 	display: grid;
 	font-size: 1rem;
-	grid-column: 1 / 2;
 	padding-left: 5px;
 }
 
 .monster-view .monster-stat {
 	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	display: grid;
 	font-size: 0.8rem;
 	font-weight: normal;
-	grid-column: 3 / 4;
-	padding-right: 5px;
+	padding: 3px 7px;
 	text-align: right;
 }
 
@@ -52,5 +78,26 @@
 }
 
 .monster-view .monster-images img {
-	border: 1px solid #fff;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.monster-view.dark .monster-images img {
+	border-color: #609;
+}
+
+.monster-view.fire .monster-images img {
+	border-color: #700;
+}
+
+.monster-view.light .monster-images img {
+	border-color: #333;
+}
+
+.monster-view.water .monster-images img {
+	border-color: #0cc;
+}
+
+.monster-view.wind .monster-images img {
+	border-color: #823;
 }

@@ -3,6 +3,7 @@
 	grid-template-columns: 1fr;
 	grid-column-gap: 0.3rem;
 	grid-row-gap: 0.3rem;
+	padding: 0 1rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -21,18 +22,10 @@
 	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
 	.monster-collection-view {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-column-gap: 1.2rem;
 		grid-row-gap: 1.2rem;
-	}
-}
-
-@media only screen and (min-width: 1500px) {
-	.monster-collection-view {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-column-gap: 1.5rem;
-		grid-row-gap: 1.5rem;
 	}
 }

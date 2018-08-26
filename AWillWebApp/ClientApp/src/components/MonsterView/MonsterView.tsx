@@ -14,7 +14,7 @@ class MonsterView extends React.Component<{ monster: Monster }> {
 		console.info('[MonsterView | render]')
 		const { monster } = this.props
 		return (
-			<div className="monster-view">
+			<div className={`monster-view ${monster.element.toLowerCase()}`}>
 				<h3>
 					{monster.awakenedName} ({monster.element} {monster.name})
 				</h3>
