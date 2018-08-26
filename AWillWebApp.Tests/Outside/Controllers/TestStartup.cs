@@ -50,7 +50,9 @@ namespace AWillWebApp
 
 		//// This method gets called by the runtime. Use this method to add services to the container.
 		//// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+#pragma warning disable CA1822 // Dispose static method warning
 		public void ConfigureServices(IServiceCollection services)
+#pragma warning restore CA1822
 		{
 			services.AddLogging();
 			services.AddHttpsRedirection(options =>

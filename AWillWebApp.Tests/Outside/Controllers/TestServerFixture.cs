@@ -52,7 +52,11 @@ namespace AWillWebApp.Tests.Outside.Controllers
 		{
 		}
 
+#pragma warning disable CA1822 // Dispose static method warning
+#pragma warning disable CA1801 // Dispose unused parameter warning
 		private void RegisterDefaultServices(IServiceCollection services)
+#pragma warning restore CA1822
+#pragma warning restore CA1801
 		{
 		}
 	}
