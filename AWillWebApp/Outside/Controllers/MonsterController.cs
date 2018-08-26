@@ -4,6 +4,7 @@
 
 namespace AWillWebApp.Controllers
 {
+	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Threading.Tasks;
@@ -48,6 +49,7 @@ namespace AWillWebApp.Controllers
 		}
 
 		// GET: api/monsters
+		// GET: api/monsters?withImages=true
 		[HttpGet]
 		public async Task<IEnumerable<Monster>> GetAllMonstersAsync([FromQuery] bool withImages = false)
 		{
@@ -63,6 +65,25 @@ namespace AWillWebApp.Controllers
 			LogResponseSize(JsonConvert.SerializeObject(monsters));
 
 			return monsters;
+		}
+
+		// GET: api/monsters/8adb050b-3cad-4359-b5f9-b4cd4a07db00
+		// GET: api/monsters/8adb050b-3cad-4359-b5f9-b4cd4a07db00?withImages=true
+		[HttpGet("{monsterId}")]
+		[HttpGet]
+		public async Task<Monster> GetMonsterByIdAsync([FromRoute] Guid monsterId, [FromQuery] bool withImages = false)
+		{
+			_logger.LogDebug($"Getting monster with Id={monsterId} (withImages={withImages})...");
+			var monster = await _MonsterService.GetMonsterByIdAsync(monsterId);
+
+			if (!withImages)
+			{
+				monster = StripMonsterImages(monster);
+			}
+
+			LogResponseSize(JsonConvert.SerializeObject(monster));
+
+			return monster;
 		}
 
 		private static void LogResponseSize(ILogger<MonsterController> instanceLogger, string responseString)
@@ -84,9 +105,8 @@ namespace AWillWebApp.Controllers
 			instanceLogger.LogDebug($"Response Size = {sizeDisplay} ({responseSize:n0} bytes)");
 		}
 
-		private static IEnumerable<Monster> StripMonsterImages(IEnumerable<Monster> monsters)
-		{
-			return monsters.Select(monster => new Monster(
+		private static Monster StripMonsterImages(Monster monster) =>
+			new Monster(
 				monster.AwakenedName,
 				monster.Name,
 				monster.Rating,
@@ -101,20 +121,14 @@ namespace AWillWebApp.Controllers
 			{
 				Id = monster.Id,
 				Number = monster.Number
-			});
-		}
+			};
+
+		private static IEnumerable<Monster> StripMonsterImages(IEnumerable<Monster> monsters) => monsters.Select(StripMonsterImages);
 
 		private void LogResponseSize(string responseString)
 		{
 			LogResponseSize(_logger, responseString);
 		}
-
-		//// GET: api/monsters/2e846d8d-a45d-4548-9240-e2ed7fa91e3c
-		//[HttpGet("{id}")]
-		//public Task<Monster> GetMonsterById([FromRoute] Guid id)
-		//{
-		//	return _MonsterRepository.GetMonster(id);
-		//}
 
 		//// POST: api/SampleDummyData
 		//[HttpPost]

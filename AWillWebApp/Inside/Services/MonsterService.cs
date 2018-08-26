@@ -57,8 +57,12 @@ namespace AWillWebApp.Inside.Services
 
 		public Task<IEnumerable<Monster>> GetMonstersAsync()
 		{
-			_logger.LogDebug("returning all monsters...");
 			return _monsterRepository.GetMonsters();
+		}
+
+		public Task<Monster> GetMonsterByIdAsync(Guid monsterId)
+		{
+			return _monsterRepository.GetMonster(monsterId);
 		}
 
 		private static IEnumerable<SearchResult> ConvertMonstersToNames(IEnumerable<Monster> monsters)
