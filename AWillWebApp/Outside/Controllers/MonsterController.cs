@@ -90,7 +90,6 @@ namespace AWillWebApp.Controllers
 				monster.AwakenedName,
 				monster.Name,
 				monster.Rating,
-				false,
 				monster.Element,
 				string.Empty,
 				string.Empty,

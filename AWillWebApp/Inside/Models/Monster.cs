@@ -14,7 +14,6 @@ namespace AWillWebApp.Inside.Models
 			string awakenedName,
 			string name,
 			int rating,
-			bool isAwake,
 			Element element,
 			string awakenedImage,
 			string image,
@@ -27,7 +26,6 @@ namespace AWillWebApp.Inside.Models
 			AwakenedName = awakenedName;
 			Name = name;
 			Rating = rating;
-			IsAwake = isAwake;
 			Element = element;
 			AwakenedImage = awakenedImage;
 			Image = image;
@@ -58,8 +56,6 @@ namespace AWillWebApp.Inside.Models
 		public string SearchableName { get => $"{Element} {Name}"; }
 
 		public int Rating { get; }
-
-		public bool IsAwake { get; }
 
 		[JsonConverter(typeof(StringEnumConverter))]
 		public Element Element { get; }
