@@ -2,7 +2,8 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 
 import { Monster } from '../../models/monster'
-import { MonsterView } from '../MonsterView/MonsterView'
+
+import { MonsterView } from '../../components/MonsterView/MonsterView'
 
 import './MonsterCollectionView.css'
 
