@@ -2,6 +2,8 @@ import { Monster } from '../models/monster'
 
 const REQUEST_MONSTERS = 'request_monsters'
 const RECEIVE_MONSTERS = 'receive_monsters'
+const REQUEST_SINGLE_MONSTER = 'request_single_monster'
+const RECEIVE_SINGLE_MONSTER = 'receive_single_monster'
 
 /*
 	This interface is used to represent the action this reducer is capable
@@ -31,6 +33,12 @@ const initialState: IMonsterState = {
 	this reducer
 */
 const actionCreators = {
+	loadMonsterWithImages: (monsterId: string) => async (dispatch: (action: IMonsterReducerAction) => void) => {
+		dispatch({ type: REQUEST_SINGLE_MONSTER, payload: { monsterId } })
+		const response = await fetch(`api/monsters/${monsterId}`)
+		const monsterWithImage: Monster = await response.json()
+		dispatch({ type: RECEIVE_SINGLE_MONSTER, payload: { monsterWithImage } })
+	},
 	loadMonstersFromApi: () => async (dispatch: (action: IMonsterReducerAction) => void) => {
 		dispatch({ type: REQUEST_MONSTERS, payload: {} })
 		const response = await fetch('api/monsters')
@@ -46,6 +54,13 @@ const reducer = (state: Partial<IMonsterState> = initialState, action: IMonsterR
 		return {
 			...state,
 			monsters: payload.monsters
+		}
+	}
+
+	if (type === RECEIVE_SINGLE_MONSTER) {
+		return {
+			...state,
+			monsterWithImage: payload.monsterWithImage
 		}
 	}
 

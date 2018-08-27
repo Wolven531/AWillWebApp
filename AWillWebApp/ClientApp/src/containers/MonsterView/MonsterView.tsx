@@ -1,18 +1,39 @@
 import * as React from 'react'
-// import { connect } from 'react-redux'
+import { connect } from 'react-redux'
+
+import { actionCreators as monsterActions } from '../../store/Monster'
 
 import { Monster } from '../../models/monster'
 
 import './MonsterView.css'
 
-class MonsterView extends React.Component<{ monster: Monster }> {
+class MonsterView extends React.Component<{
+	dispatch: ((action: any) => void)
+	monster: Monster
+	monsterWithImage: Monster | undefined
+}> {
 	public componentDidMount() {
-		console.info('[MonsterView | componentDidMount]')
+		// console.info('[MonsterView | componentDidMount]')
+		// if (!this.props.monster.image || this.props.monster.image === '') {
+		// 	this.props.dispatch(monsterActions.loadMonsterWithImages(this.props.monster.id))
+		// }
+	}
+
+	public componentWillMount() {
+		// console.info('[MonsterView | componentWillMount]')
+		// if (!this.props.monster.image || this.props.monster.image === '') {
+		// 	this.props.dispatch(monsterActions.loadMonsterWithImages(this.props.monster.id))
+		// }
+	}
+
+	public shouldComponentUpdate(nextProps: any, nextState: any, nextContext: any): boolean {
+		// console.log(`[shouldComponentUpdate | MonsterView] ${JSON.stringify(nextProps)}`)
+		return false
 	}
 
 	public render() {
 		console.info('[MonsterView | render]')
-		const { monster } = this.props
+		const { monster, monsterWithImage } = this.props
 		return (
 			<div className={`monster-view ${monster.element.toLowerCase()}`}>
 				<h3>
@@ -20,12 +41,12 @@ class MonsterView extends React.Component<{ monster: Monster }> {
 				</h3>
 				<section className="monster-images">
 					<img
-						src={`data:image/png;base64,${monster.image}`}
+						src={`data:image/png;base64,${monsterWithImage && monsterWithImage.image}`}
 						alt={`Image of monster - ${monster.element} ${monster.name}`}
 						title={`Image of monster - ${monster.element} ${monster.name}`}
 					/>
 					<img
-						src={`data:image/png;base64,${monster.awakenedImage}`}
+						src={`data:image/png;base64,${monsterWithImage && monsterWithImage.awakenedImage}`}
 						alt={`Image of awakened monster - ${monster.awakenedName}`}
 						title={`Image of awakened monster - ${monster.awakenedName}`}
 					/>
@@ -49,4 +70,15 @@ class MonsterView extends React.Component<{ monster: Monster }> {
 	}
 }
 
-export { MonsterView }
+const mapStateToProps = (state: any) => {
+	const { monster } = state
+	const { monsterWithImage } = monster
+
+	return {
+		monsterWithImage
+	}
+}
+
+const connectedMonsterView = connect(mapStateToProps)(MonsterView)
+
+export { connectedMonsterView as MonsterView }

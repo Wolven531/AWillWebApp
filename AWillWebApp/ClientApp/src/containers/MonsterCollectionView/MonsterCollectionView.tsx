@@ -2,7 +2,7 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 
 import { Monster } from '../../models/monster'
-import { MonsterView } from '../../components/MonsterView/MonsterView'
+import { MonsterView } from '../MonsterView/MonsterView'
 
 import './MonsterCollectionView.css'
 
@@ -24,7 +24,10 @@ class MonsterCollectionView extends React.Component<{
 		return (
 			<div className="monster-collection-view">
 				{this.props.monsters.map(monster => (
-					<MonsterView monster={monster} key={`${monster.element}-${monster.name}-${monster.awakenedName}`} />
+					<MonsterView
+						key={`${monster.element}-${monster.name}-${monster.awakenedName}`}
+						monster={monster}
+						/>
 				))}
 			</div>
 		)

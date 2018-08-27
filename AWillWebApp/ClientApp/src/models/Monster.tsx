@@ -1,4 +1,6 @@
 class Monster {
+	public id: string = ''
+
 	constructor(
 		public name: string,
 		public awakenedName: string,
