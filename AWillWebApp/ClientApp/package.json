@@ -12,7 +12,7 @@
 		"test": "react-scripts test --env=jsdom",
 		"webpack": "rimraf ./dist && node node_modules/react-scripts/node_modules/webpack/bin/webpack.js --config webpack.config.js --progress",
 		"webpack-vendor": "rimraf ./dist && node node_modules/react-scripts/node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod --progress",
-		"webpack-watch": "rimraf ./dist && node node_modules/react-scripts/node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --watch"
+		"webpack-watch": "rimraf ./dist && npx webpack --config webpack.config.js --progress --watch"
 	},
 	"author": "Anthony Williams",
 	"license": "ISC",
@@ -49,7 +49,8 @@
 		"ts-jest": "^23.1.4",
 		"ts-loader": "^3.5.0",
 		"typescript": "^2.9.2",
-		"url-loader": "^1.1.1"
+		"url-loader": "^1.1.1",
+		"webpack": "~3.8.1"
 	},
 	"dependencies": {
 		"csstype": "^2.5.6",
