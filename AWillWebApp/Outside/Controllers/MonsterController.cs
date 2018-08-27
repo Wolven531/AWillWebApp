@@ -69,7 +69,7 @@ namespace AWillWebApp.Controllers
 
 		// GET: api/monsters/8adb050b-3cad-4359-b5f9-b4cd4a07db00
 		// GET: api/monsters/8adb050b-3cad-4359-b5f9-b4cd4a07db00?withImages=true
-		[HttpGet("{monsterId}")]
+		[Route("{monsterId}")]
 		[HttpGet]
 		public async Task<Monster> GetMonsterByIdAsync([FromRoute] Guid monsterId, [FromQuery] bool withImages = false)
 		{
