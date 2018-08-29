@@ -36,28 +36,28 @@ namespace AWillWebApp.Tests.Outside.Controllers
 		//	customServices.AddSingleton(_mockMonstersRepository.Object);
 		//}
 
-		[TestMethod]
-		public async Task GetIndex_WhenInvoked_ShouldReturnReactAppPage()
-		{
-			// Setup
-			//_mockMonstersRepository.SetupGet(r => r.Monsters).Returns(new[]
-			//{
-			//	new Monster(),
-			//	new Monster()
-			//}.ToAsyncEnumerable());
+		//[TestMethod]
+		//public async Task GetIndex_WhenInvoked_ShouldReturnReactAppPage()
+		//{
+		//	// Setup
+		//	//_mockMonstersRepository.SetupGet(r => r.Monsters).Returns(new[]
+		//	//{
+		//	//	new Monster(),
+		//	//	new Monster()
+		//	//}.ToAsyncEnumerable());
 
-			var client = TestServer.CreateClient();
-			var homepage = new Uri($"{BaseUrl}");
+		//	var client = TestServer.CreateClient();
+		//	var homepage = new Uri($"{BaseUrl}");
 
-			// Execute
-			var response = await client.GetAsync(homepage);
+		//	// Execute
+		//	var response = await client.GetAsync(homepage);
 
-			// Verify
-			homepage.AbsoluteUri.Should().Be("https://localhost:5001/");
-			response.StatusCode.Should().Be(HttpStatusCode.OK);
-			response.Content.Headers.ContentType.MediaType.Should().Be("application/json");
-			//var actual = JToken.Parse(await response.Content.ReadAsStringAsync());
-		}
+		//	// Verify
+		//	homepage.AbsoluteUri.Should().Be("https://localhost:5001/");
+		//	response.StatusCode.Should().Be(HttpStatusCode.OK);
+		//	response.Content.Headers.ContentType.MediaType.Should().Be("application/json");
+		//	//var actual = JToken.Parse(await response.Content.ReadAsStringAsync());
+		//}
 
 #pragma warning disable CA1063 // Implement IDisposable Correctly
 		public override void Dispose()
