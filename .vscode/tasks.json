@@ -33,6 +33,15 @@
 				"${workspaceFolder}/AWillWebApp/ClientApp/"
 			],
 			"problemMatcher": []
+		},
+		{
+			"label": "Get C# Code Coverage",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
+			},
+			"command": "dotnet test /p:CollectCoverage=true",
+			"problemMatcher": []
 		}
 	]
 }
