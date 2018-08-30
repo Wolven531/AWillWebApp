@@ -19,5 +19,6 @@
 	"workbench.startupEditor": "none",
 	"gitlens.advanced.messages": {
 		"suppressShowKeyBindingsNotice": true
-	}
+	},
+	"coverage-gutters.xmlname": "coverage.opencover.xml"
 }
