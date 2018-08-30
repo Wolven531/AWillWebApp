@@ -65,6 +65,8 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
+		// [TestMethod]
+
 		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfSearchResults()
 		{
