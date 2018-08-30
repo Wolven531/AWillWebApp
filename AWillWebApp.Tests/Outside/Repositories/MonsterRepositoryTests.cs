@@ -199,5 +199,25 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			// Verify
 			actual.Should().BeEquivalentTo(expected, options => options.Excluding(monster => monster.Id));
 		}
+
+		[TestMethod]
+		public async Task AddMonster_WhenRepositoryHasExactMonster_ShouldJustReturnExistingMonster()
+		{
+			// Setup
+			var existingMonsterWithNewValues = new Monster("new awake 1", "new name 1", 3, Element.Wind, "new awakenedimg1", "new img1", null, null, null, null, null) { Id = Guid.Parse("6beb6507-f68d-4d3d-8abf-0e04015c1119") };
+			var expected = new Monster("awake 1", "name 1", 4, Element.Light, "awakenedimg", "img", null, null, null, null, null) { Id = Guid.Parse("6beb6507-f68d-4d3d-8abf-0e04015c1119") };
+			var monsters = new Monster[]
+			{
+				expected
+			};
+
+			fixture = new MonsterRepository(monsters);
+
+			// Execute
+			var actual = await fixture.AddMonster(existingMonsterWithNewValues);
+
+			// Verify
+			actual.Should().BeEquivalentTo(expected);
+		}
 	}
 }
