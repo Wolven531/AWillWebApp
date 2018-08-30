@@ -42,6 +42,15 @@
 			},
 			"command": "dotnet test /p:CollectCoverage=true",
 			"problemMatcher": []
+		},
+		{
+			"label": "Convert coverage to report",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
+			},
+			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" \"-reporttypes:HTML;HTMLSummary;HTMLChart\"",
+			"problemMatcher": []
 		}
 	]
 }
