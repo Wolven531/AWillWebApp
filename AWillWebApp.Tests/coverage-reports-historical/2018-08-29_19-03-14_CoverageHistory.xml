@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2018-08-29_19-03-14" tag="">
+  <assembly name="AWillWebApp">
+    <class name="AWillWebApp.Controllers.HomeController" coveredlines="0" coverablelines="3" totallines="17" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Controllers.MonsterController" coveredlines="0" coverablelines="69" totallines="151" coveredbranches="0" totalbranches="12" />
+    <class name="AWillWebApp.Controllers.UserAccountController" coveredlines="0" coverablelines="21" totallines="59" coveredbranches="0" totalbranches="4" />
+    <class name="AWillWebApp.Controllers.UserAuthenticationController" coveredlines="0" coverablelines="15" totallines="44" coveredbranches="0" totalbranches="2" />
+    <class name="AWillWebApp.Inside.Models.LoginData" coveredlines="0" coverablelines="2" totallines="18" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Inside.Models.Monster" coveredlines="39" coverablelines="39" totallines="77" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Inside.Models.SearchResult" coveredlines="13" coverablelines="21" totallines="37" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Inside.Models.UserAccount" coveredlines="52" coverablelines="52" totallines="106" coveredbranches="5" totalbranches="6" />
+    <class name="AWillWebApp.Inside.Services.MonsterService" coveredlines="40" coverablelines="43" totallines="79" coveredbranches="11" totalbranches="12" />
+    <class name="AWillWebApp.Inside.Services.UserAuthenticationService" coveredlines="9" coverablelines="9" totallines="29" coveredbranches="3" totalbranches="4" />
+    <class name="AWillWebApp.Outside.Repositories.MonsterRepository" coveredlines="32" coverablelines="34" totallines="64" coveredbranches="9" totalbranches="10" />
+    <class name="AWillWebApp.Outside.Repositories.UserAccountRepository" coveredlines="34" coverablelines="36" totallines="69" coveredbranches="7" totalbranches="8" />
+    <class name="AWillWebApp.Program" coveredlines="0" coverablelines="5" totallines="21" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Startup" coveredlines="0" coverablelines="62" totallines="168" coveredbranches="0" totalbranches="6" />
+    <class name="AWillWebApp.Views.ErrorModel" coveredlines="0" coverablelines="5" totallines="23" coveredbranches="0" totalbranches="4" />
+  </assembly>
+  <assembly name="AWillWebApp.Views" />
+</coverage>
