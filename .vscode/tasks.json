@@ -40,7 +40,7 @@
 			"options": {
 				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
 			},
-			"command": "dotnet test /p:CollectCoverage=true",
+			"command": "dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=\"opencover\"",
 			"problemMatcher": []
 		},
 		{
