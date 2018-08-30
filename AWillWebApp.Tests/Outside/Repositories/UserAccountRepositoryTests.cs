@@ -278,5 +278,25 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			actual.Should().BeEquivalentTo(expected, options => options.Excluding(userAccount => userAccount.HashedPassword));
 			actual.HashedPassword.Should().NotBe("pass 1");
 		}
+
+		[TestMethod]
+		public async Task AddUserAccount_WhenRepositoryHasExactUserAccount_ShouldAddUserAccountWithIdAndReturnIt()
+		{
+			// Setup
+			var sameUserAccountWithNewValues = new UserAccount("new user 1", "new pass 1") { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") };
+			var expected = new UserAccount("user 1", "pass 1") { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") };
+			var userAccounts = new []
+			{
+				expected
+			};
+
+			_fixture = new UserAccountRepository(userAccounts);
+
+			// Execute
+			var actual = await _fixture.AddUserAccountAsync(sameUserAccountWithNewValues);
+
+			// Verify
+			actual.Should().BeEquivalentTo(expected);
+		}
 	}
 }
