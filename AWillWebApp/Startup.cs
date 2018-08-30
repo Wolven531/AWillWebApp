@@ -4,6 +4,7 @@
 
 namespace AWillWebApp
 {
+	using System.Diagnostics.CodeAnalysis;
 	using System.IO;
 	using System.Text;
 	using AWillWebApp.Inside.Models;
@@ -21,6 +22,7 @@ namespace AWillWebApp
 	using Microsoft.Extensions.Logging;
 	using Newtonsoft.Json;
 
+	[ExcludeFromCodeCoverage]
 	public sealed class Startup
 	{
 		private readonly ILogger<Startup> _logger;

@@ -5,9 +5,11 @@
 namespace AWillWebApp.Views
 {
 	using System.Diagnostics;
+	using System.Diagnostics.CodeAnalysis;
 	using Microsoft.AspNetCore.Mvc;
 	using Microsoft.AspNetCore.Mvc.RazorPages;
 
+	[ExcludeFromCodeCoverage]
 	public class ErrorModel : PageModel
 	{
 		public string RequestId { get; set; }
