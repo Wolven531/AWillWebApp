@@ -12,7 +12,7 @@ This repository makes use of several modern frontend and backend technologies an
 
 ## Current Code Coverage
 
-![Combined Coverage](/AWillWebApp.Tests/coverage-reports/badge_combined.svg) Combined Coverage
+![Combined Coverage](/AWillWebApp.Tests/coverage-reports/badge_combined.svg) Combined Coverage (SVG that animates between Branch and Line)
 
 ![Branch Coverage](/AWillWebApp.Tests/coverage-reports/badge_branchcoverage.svg) Branch Coverage
 
