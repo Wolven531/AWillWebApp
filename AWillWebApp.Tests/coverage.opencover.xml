@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CoverageSession>
-  <Summary numSequencePoints="350" visitedSequencePoints="223" numBranchPoints="350" visitedBranchPoints="223" sequenceCoverage="0.637" branchCoverage="0.637" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="10" numClasses="20" visitedMethods="50" numMethods="71" />
+  <Summary numSequencePoints="350" visitedSequencePoints="226" numBranchPoints="350" visitedBranchPoints="226" sequenceCoverage="0.646" branchCoverage="0.646" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="10" numClasses="20" visitedMethods="51" numMethods="71" />
   <Modules>
-    <Module hash="9C72D58C-0C8B-40A8-ADAA-DD994D07004A">
+    <Module hash="23B5006B-4730-4DC2-AF0F-B89F3A72B704">
       <ModulePath>/repos/AWillWebApp/AWillWebApp.Tests/bin/Debug/netcoreapp2.1/AWillWebApp.Views.dll</ModulePath>
-      <ModuleTime>2018-08-30T02:02:31</ModuleTime>
+      <ModuleTime>2018-08-31T04:45:10</ModuleTime>
       <ModuleName>AWillWebApp.Views</ModuleName>
       <Files>
         <File uid="1" fullPath="/repos/AWillWebApp/AWillWebApp/Views/Error.cshtml" />
@@ -64,9 +64,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="D5B3A8F0-172C-48F9-BFE1-1E7C59B49FE8">
+    <Module hash="0D22D8CB-C678-4514-B1DB-4CB9E8E7E562">
       <ModulePath>/repos/AWillWebApp/AWillWebApp.Tests/bin/Debug/netcoreapp2.1/AWillWebApp.dll</ModulePath>
-      <ModuleTime>2018-08-30T02:02:31</ModuleTime>
+      <ModuleTime>2018-08-31T04:45:10</ModuleTime>
       <ModuleName>AWillWebApp</ModuleName>
       <Files>
         <File uid="3" fullPath="/repos/AWillWebApp/AWillWebApp/Outside/Repositories/MonsterRepository.cs" />
@@ -622,7 +622,7 @@
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="19" visitedSequencePoints="16" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="0.842" branchCoverage="1" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="4" />
+          <Summary numSequencePoints="19" visitedSequencePoints="19" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="1" branchCoverage="1" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="4" />
           <FullName>AWillWebApp.Inside.Services.MonsterService</FullName>
           <Methods>
             <Method cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="1" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
@@ -638,18 +638,18 @@
               <BranchPoints />
               <MethodPoint vc="3" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="59" ec="1" el="61" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="1" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="1" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Threading.Tasks.Task`1&lt;AWillWebApp.Inside.Models.Monster&gt; AWillWebApp.Inside.Services.MonsterService::GetMonsterByIdAsync(System.Guid)</Name>
               <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="0" upsid="64" ordinal="0" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="9" />
-                <SequencePoint vc="0" upsid="65" ordinal="1" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="9" />
-                <SequencePoint vc="0" upsid="66" ordinal="2" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" upsid="64" ordinal="0" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" upsid="65" ordinal="1" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" upsid="66" ordinal="2" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" upsid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="64" ec="1" el="66" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+              <MethodPoint vc="3" upsid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="64" ec="1" el="66" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="1" branchCoverage="1" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="1" branchCoverage="1" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
@@ -678,11 +678,11 @@
               <Name>System.Void AWillWebApp.Inside.Services.MonsterService::.ctor(AWillWebApp.Outside.Repositories.IMonsterRepository,Microsoft.Extensions.Logging.ILogger`1&lt;AWillWebApp.Inside.Services.MonsterService&gt;)</Name>
               <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="14" upsid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="9" />
-                <SequencePoint vc="14" upsid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="9" />
-                <SequencePoint vc="14" upsid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="9" />
-                <SequencePoint vc="14" upsid="23" ordinal="3" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="9" />
-                <SequencePoint vc="14" upsid="24" ordinal="4" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="15" upsid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="15" upsid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="15" upsid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="15" upsid="23" ordinal="3" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="15" upsid="24" ordinal="4" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="5" upsid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="20" ec="1" el="24" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
@@ -851,7 +851,7 @@
               <Name>System.Guid AWillWebApp.Inside.Models.Monster::get_Id()</Name>
               <FileRef uid="12" />
               <SequencePoints>
-                <SequencePoint vc="44" upsid="44" ordinal="0" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="46" upsid="44" ordinal="0" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="12" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="44" ec="1" el="44" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
@@ -1005,31 +1005,31 @@
               <Name>System.Void AWillWebApp.Inside.Models.Monster::.ctor(System.String,System.String,System.Int32,AWillWebApp.Inside.Models.Element,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</Name>
               <FileRef uid="12" />
               <SequencePoints>
-                <SequencePoint vc="41" upsid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="17" ordinal="4" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="18" ordinal="5" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="19" ordinal="6" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="20" ordinal="7" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="21" ordinal="8" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="22" ordinal="9" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="23" ordinal="10" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="24" ordinal="11" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="25" ordinal="12" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="26" ordinal="13" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="27" ordinal="14" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="28" ordinal="15" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="29" ordinal="16" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="30" ordinal="17" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="31" ordinal="18" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="32" ordinal="19" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="33" ordinal="20" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="34" ordinal="21" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="35" ordinal="22" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="36" ordinal="23" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="12" />
-                <SequencePoint vc="41" upsid="37" ordinal="24" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="17" ordinal="4" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="18" ordinal="5" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="19" ordinal="6" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="20" ordinal="7" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="21" ordinal="8" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="22" ordinal="9" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="23" ordinal="10" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="24" ordinal="11" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="25" ordinal="12" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="26" ordinal="13" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="27" ordinal="14" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="28" ordinal="15" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="29" ordinal="16" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="30" ordinal="17" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="31" ordinal="18" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="32" ordinal="19" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="33" ordinal="20" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="34" ordinal="21" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="35" ordinal="22" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="36" ordinal="23" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="43" upsid="37" ordinal="24" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="12" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="25" upsid="0" p8:type="SequencePoint" ordinal="14" offset="14" sc="0" sl="13" ec="1" el="37" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
