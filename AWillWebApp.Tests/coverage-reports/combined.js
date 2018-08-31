@@ -321,69 +321,69 @@ window.matchMedia || (window.matchMedia = function() {
 }());
 
 
-var historyChartData14c063c60c5c434390286399758df9b5 = {
-    "series" : [[100]],
-    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (39/39)<br />Total lines: 77']
-};
-
-var historyChartData2231ce53512a4197bc95360b94b34d1f = {
+var historyChartDatad10705d873264793a799fd3ced499193 = {
     "series" : [[0]],
     "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 0% (0/3)<br />Total lines: 17']
 };
 
-var historyChartDatab685d9c7ff7445dd9c025cdc01fe189f = {
-    "series" : [[61.9]],
-    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 61.9% (13/21)<br />Total lines: 37']
-};
-
-var historyChartData7dad633694874c23835b5ce26aceddac = {
+var historyChartDatab6e29e438cfe49f19691f42dce3d3001 = {
     "series" : [[0]],
     "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 0% (0/2)<br />Total lines: 18']
 };
 
-var historyChartDatae7c9a055da31420e8b01494328efd176 = {
+var historyChartData56d9cbddf4e14ab28ecd2e31f8ab503f = {
+    "series" : [[100]],
+    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (39/39)<br />Total lines: 77']
+};
+
+var historyChartDataf9a1f0ba803c4f56b82cfe546afda97a = {
+    "series" : [[61.9,100]],
+    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 61.9% (13/21)<br />Total lines: 37','<h3>8/31/18 - 5:37:51 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (13/13)<br />Total lines: 37']
+};
+
+var historyChartDatac952c5accf4d4932ac21f50c6f3edc9c = {
     "series" : [[0],[0]],
     "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 0% (0/69)<br /><span class="branchcoverage"></span> Branch coverage: 0% (0/12)<br />Total lines: 151']
 };
 
-var historyChartDataffbe7f29f335458e988745965aefa932 = {
-    "series" : [[0],[0]],
-    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 0% (0/15)<br /><span class="branchcoverage"></span> Branch coverage: 0% (0/2)<br />Total lines: 44']
-};
-
-var historyChartData292878f6500940bb81aeeab0d5057402 = {
-    "series" : [[100],[83.3]],
-    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (52/52)<br /><span class="branchcoverage"></span> Branch coverage: 83.3% (5/6)<br />Total lines: 106']
-};
-
-var historyChartDatafb120e4d273a449eab3e78ba6adb8a60 = {
+var historyChartData91bc32610d9248dc84df9bfdd2745563 = {
     "series" : [[0],[0]],
     "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 0% (0/21)<br /><span class="branchcoverage"></span> Branch coverage: 0% (0/4)<br />Total lines: 59']
 };
 
-var historyChartData6d11db31ee394648bd2a19febfc08004 = {
-    "series" : [[94.1,100],[90,100]],
-    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 94.1% (32/34)<br /><span class="branchcoverage"></span> Branch coverage: 90% (9/10)<br />Total lines: 64','<h3>8/29/18 - 7:16:30 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (34/34)<br /><span class="branchcoverage"></span> Branch coverage: 100% (10/10)<br />Total lines: 64']
+var historyChartDataefb79c2c79674139b60aaf48331f9a67 = {
+    "series" : [[0],[0]],
+    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 0% (0/15)<br /><span class="branchcoverage"></span> Branch coverage: 0% (0/2)<br />Total lines: 44']
 };
 
-var historyChartData0e9ee871bf5c4558a9aec9ce8b6b3cdb = {
-    "series" : [[93,100],[91.6,91.6]],
-    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 93% (40/43)<br /><span class="branchcoverage"></span> Branch coverage: 91.6% (11/12)<br />Total lines: 79','<h3>8/30/18 - 10:45:26 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (43/43)<br /><span class="branchcoverage"></span> Branch coverage: 91.6% (11/12)<br />Total lines: 79']
+var historyChartData96a0110267df4ca798b032d1688d3a39 = {
+    "series" : [[100],[83.3]],
+    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (52/52)<br /><span class="branchcoverage"></span> Branch coverage: 83.3% (5/6)<br />Total lines: 106']
 };
 
-var historyChartDataf7807d0830f640e49533e80c16795b87 = {
-    "series" : [[100],[75]],
-    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (9/9)<br /><span class="branchcoverage"></span> Branch coverage: 75% (3/4)<br />Total lines: 29']
-};
-
-var historyChartData4a39fdb519b5440fb12fc026499ceb4b = {
+var historyChartData631f58c31b8e46c78a9e0c27f87f08a4 = {
     "series" : [[94.4,100],[87.5,100]],
     "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 94.4% (34/36)<br /><span class="branchcoverage"></span> Branch coverage: 87.5% (7/8)<br />Total lines: 69','<h3>8/29/18 - 7:34:35 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (36/36)<br /><span class="branchcoverage"></span> Branch coverage: 100% (8/8)<br />Total lines: 69']
 };
 
-var historyChartData776695a70a5a44dcb9e7515e862721e0 = {
-    "series" : [[52.6,53.1,64.2,64.8,65.6],[51.4,52.9,62,63.7,63.7]],
-    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 52.6% (219/416)<br /><span class="branchcoverage"></span> Branch coverage: 51.4% (35/68)<br />Total lines: 962','<h3>8/29/18 - 7:16:30 PM</h3><br /><span class="linecoverage"></span> Line coverage: 53.1% (221/416)<br /><span class="branchcoverage"></span> Branch coverage: 52.9% (36/68)<br />Total lines: 962','<h3>8/29/18 - 7:25:59 PM</h3><br /><span class="linecoverage"></span> Line coverage: 64.2% (221/344)<br /><span class="branchcoverage"></span> Branch coverage: 62% (36/58)<br />Total lines: 750','<h3>8/29/18 - 7:34:35 PM</h3><br /><span class="linecoverage"></span> Line coverage: 64.8% (223/344)<br /><span class="branchcoverage"></span> Branch coverage: 63.7% (37/58)<br />Total lines: 750','<h3>8/30/18 - 10:45:26 PM</h3><br /><span class="linecoverage"></span> Line coverage: 65.6% (226/344)<br /><span class="branchcoverage"></span> Branch coverage: 63.7% (37/58)<br />Total lines: 750']
+var historyChartData41fe4772f2fd4ca7869111a4b3617579 = {
+    "series" : [[94.1,100],[90,100]],
+    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 94.1% (32/34)<br /><span class="branchcoverage"></span> Branch coverage: 90% (9/10)<br />Total lines: 64','<h3>8/29/18 - 7:16:30 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (34/34)<br /><span class="branchcoverage"></span> Branch coverage: 100% (10/10)<br />Total lines: 64']
+};
+
+var historyChartData57f8c594e1b14fcdb5df5d695e046365 = {
+    "series" : [[100],[75]],
+    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (9/9)<br /><span class="branchcoverage"></span> Branch coverage: 75% (3/4)<br />Total lines: 29']
+};
+
+var historyChartData9cf4fbbe04654350b273deeea370a8e8 = {
+    "series" : [[93,100],[91.6,91.6]],
+    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 93% (40/43)<br /><span class="branchcoverage"></span> Branch coverage: 91.6% (11/12)<br />Total lines: 79','<h3>8/30/18 - 10:45:26 PM</h3><br /><span class="linecoverage"></span> Line coverage: 100% (43/43)<br /><span class="branchcoverage"></span> Branch coverage: 91.6% (11/12)<br />Total lines: 79']
+};
+
+var historyChartData38c9f49593ad45a3927e016a68e5925c = {
+    "series" : [[52.6,53.1,64.2,64.8,65.6,67.2,66.3],[51.4,52.9,62,63.7,63.7,63.7,62.9]],
+    "tooltips" : ['<h3>8/29/18 - 6:26:33 PM</h3><br /><span class="linecoverage"></span> Line coverage: 52.6% (219/416)<br /><span class="branchcoverage"></span> Branch coverage: 51.4% (35/68)<br />Total lines: 962','<h3>8/29/18 - 7:16:30 PM</h3><br /><span class="linecoverage"></span> Line coverage: 53.1% (221/416)<br /><span class="branchcoverage"></span> Branch coverage: 52.9% (36/68)<br />Total lines: 962','<h3>8/29/18 - 7:25:59 PM</h3><br /><span class="linecoverage"></span> Line coverage: 64.2% (221/344)<br /><span class="branchcoverage"></span> Branch coverage: 62% (36/58)<br />Total lines: 750','<h3>8/29/18 - 7:34:35 PM</h3><br /><span class="linecoverage"></span> Line coverage: 64.8% (223/344)<br /><span class="branchcoverage"></span> Branch coverage: 63.7% (37/58)<br />Total lines: 750','<h3>8/30/18 - 10:45:26 PM</h3><br /><span class="linecoverage"></span> Line coverage: 65.6% (226/344)<br /><span class="branchcoverage"></span> Branch coverage: 63.7% (37/58)<br />Total lines: 750','<h3>8/31/18 - 5:37:51 PM</h3><br /><span class="linecoverage"></span> Line coverage: 67.2% (226/336)<br /><span class="branchcoverage"></span> Branch coverage: 63.7% (37/58)<br />Total lines: 750','<h3>8/31/18 - 5:37:52 PM</h3><br /><span class="linecoverage"></span> Line coverage: 66.3% (217/327)<br /><span class="branchcoverage"></span> Branch coverage: 62.9% (34/54)<br />Total lines: 721']
 };
 
 var assemblies = [
@@ -396,7 +396,7 @@ var assemblies = [
       { "name": "AWillWebApp.Controllers.UserAuthenticationController", "reportPath": "AWillWebApp_UserAuthenticationController.htm", "coveredLines": 0, "uncoveredLines": 15, "coverableLines": 15, "totalLines": 44, "coverageType": "LineCoverage", "methodCoverage": "-", "coveredBranches": 0, "totalBranches": 2, "lineCoverageHistory": [0], "branchCoverageHistory": [0] },
       { "name": "AWillWebApp.Inside.Models.LoginData", "reportPath": "AWillWebApp_LoginData.htm", "coveredLines": 0, "uncoveredLines": 2, "coverableLines": 2, "totalLines": 18, "coverageType": "LineCoverage", "methodCoverage": "-", "coveredBranches": 0, "totalBranches": 0, "lineCoverageHistory": [0], "branchCoverageHistory": [] },
       { "name": "AWillWebApp.Inside.Models.Monster", "reportPath": "AWillWebApp_Monster.htm", "coveredLines": 39, "uncoveredLines": 0, "coverableLines": 39, "totalLines": 77, "coverageType": "LineCoverage", "methodCoverage": "-", "coveredBranches": 0, "totalBranches": 0, "lineCoverageHistory": [100], "branchCoverageHistory": [] },
-      { "name": "AWillWebApp.Inside.Models.SearchResult", "reportPath": "AWillWebApp_SearchResult.htm", "coveredLines": 13, "uncoveredLines": 8, "coverableLines": 21, "totalLines": 37, "coverageType": "LineCoverage", "methodCoverage": "-", "coveredBranches": 0, "totalBranches": 0, "lineCoverageHistory": [61.9], "branchCoverageHistory": [] },
+      { "name": "AWillWebApp.Inside.Models.SearchResult", "reportPath": "AWillWebApp_SearchResult.htm", "coveredLines": 13, "uncoveredLines": 0, "coverableLines": 13, "totalLines": 37, "coverageType": "LineCoverage", "methodCoverage": "-", "coveredBranches": 0, "totalBranches": 0, "lineCoverageHistory": [61.9,100], "branchCoverageHistory": [] },
       { "name": "AWillWebApp.Inside.Models.UserAccount", "reportPath": "AWillWebApp_UserAccount.htm", "coveredLines": 52, "uncoveredLines": 0, "coverableLines": 52, "totalLines": 106, "coverageType": "LineCoverage", "methodCoverage": "-", "coveredBranches": 5, "totalBranches": 6, "lineCoverageHistory": [100], "branchCoverageHistory": [83.3] },
       { "name": "AWillWebApp.Inside.Services.MonsterService", "reportPath": "AWillWebApp_MonsterService.htm", "coveredLines": 43, "uncoveredLines": 0, "coverableLines": 43, "totalLines": 79, "coverageType": "LineCoverage", "methodCoverage": "-", "coveredBranches": 11, "totalBranches": 12, "lineCoverageHistory": [93,100], "branchCoverageHistory": [91.6,91.6] },
       { "name": "AWillWebApp.Inside.Services.UserAuthenticationService", "reportPath": "AWillWebApp_UserAuthenticationService.htm", "coveredLines": 9, "uncoveredLines": 0, "coverableLines": 9, "totalLines": 29, "coverageType": "LineCoverage", "methodCoverage": "-", "coveredBranches": 3, "totalBranches": 4, "lineCoverageHistory": [100], "branchCoverageHistory": [75] },

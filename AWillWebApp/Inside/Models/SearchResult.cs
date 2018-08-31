@@ -15,14 +15,14 @@ namespace AWillWebApp.Inside.Models
 			AwakenedImage = monster.AwakenedImage;
 		}
 
-		public SearchResult(int resultNumber, string name, string awakenedName, string image, string awakenedImage)
-		{
-			ResultNumber = resultNumber;
-			Name = name;
-			AwakenedName = awakenedName;
-			Image = image;
-			AwakenedImage = awakenedImage;
-		}
+		// public SearchResult(int resultNumber, string name, string awakenedName, string image, string awakenedImage)
+		// {
+		// 	ResultNumber = resultNumber;
+		// 	Name = name;
+		// 	AwakenedName = awakenedName;
+		// 	Image = image;
+		// 	AwakenedImage = awakenedImage;
+		// }
 
 		public int ResultNumber { get; }
 
