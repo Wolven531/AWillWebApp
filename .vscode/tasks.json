@@ -61,6 +61,9 @@
 			"osx": {
 				"command": "open -a /Applications/FirefoxDeveloperEdition.app \"coverage-reports/index.htm\""
 			},
+			"windows": {
+				"command": "explorer coverage-reports\\index.htm"
+			},
 			"problemMatcher": []
 		}
 	]
