@@ -32,12 +32,48 @@
 			"problemMatcher": []
 		},
 		{
-			"label": "Convert coverage to report",
+			"label": "Run all coverage conversions",
+			"type": "process",
+			"problemMatcher": [],
+			"dependsOn": ["Convert coverage to HTML Chart (historical data)"]
+		},
+		{
+			"label": "Convert coverage to HTML Chart (historical data)",
 			"type": "shell",
 			"options": {
 				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
 			},
-			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" -reporttypes:HTML -reporttypes:HTMLSummary -reporttypes:HTMLChart -reporttypes:Badges",
+			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" -reporttypes:HTMLChart",
+			"problemMatcher": [],
+			"dependsOn": ["Convert coverage to HTML (full report)"]
+		},
+		{
+			"label": "Convert coverage to HTML (full report)",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
+			},
+			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" -reporttypes:HTML",
+			"problemMatcher": [],
+			"dependsOn": ["Convert coverage to HTML (summary)"]
+		},
+		{
+			"label": "Convert coverage to HTML (summary)",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
+			},
+			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" -reporttypes:HTMLSummary",
+			"problemMatcher": [],
+			"dependsOn": ["Convert coverage to SVG Badges"]
+		},
+		{
+			"label": "Convert coverage to SVG Badges",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
+			},
+			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" -reporttypes:Badges",
 			"problemMatcher": []
 		},
 		{
