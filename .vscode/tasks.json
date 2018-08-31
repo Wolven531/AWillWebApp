@@ -2,36 +2,24 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "build",
+			"label": "Build dotnet app",
 			"type": "process",
 			"command": "dotnet",
-			"args": [
-				"build",
-				"${workspaceFolder}/AWillWebApp/AWillWebApp.csproj"
-			],
+			"args": ["build", "${workspaceFolder}/AWillWebApp/AWillWebApp.csproj"],
 			"problemMatcher": "$msCompile"
 		},
 		{
 			"label": "Run dotnet app",
 			"type": "process",
 			"command": "dotnet",
-			"args": [
-				"run",
-				"-p",
-				"${workspaceFolder}/AWillWebApp/AWillWebApp.csproj"
-			],
+			"args": ["run", "-p", "${workspaceFolder}/AWillWebApp/AWillWebApp.csproj"],
 			"problemMatcher": "$msCompile"
 		},
 		{
 			"label": "Run webpack watcher",
 			"type": "shell",
 			"command": "npm",
-			"args": [
-				"run",
-				"webpack-watch",
-				"--prefix",
-				"${workspaceFolder}/AWillWebApp/ClientApp/"
-			],
+			"args": ["run", "webpack-watch", "--prefix", "${workspaceFolder}/AWillWebApp/ClientApp/"],
 			"problemMatcher": []
 		},
 		{
@@ -49,17 +37,17 @@
 			"options": {
 				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
 			},
-			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" \"-reporttypes:HTML;HTMLSummary;HTMLChart\"",
+			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" -reporttypes:HTML -reporttypes:HTMLSummary -reporttypes:HTMLChart",
 			"problemMatcher": []
 		},
 		{
-			"label": "View coverage report in Firefox Developer Edition",
+			"label": "View coverage report in browser",
 			"type": "shell",
 			"options": {
 				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
 			},
 			"osx": {
-				"command": "open -a /Applications/FirefoxDeveloperEdition.app \"coverage-reports/index.htm\""
+				"command": "open coverage-reports/index.htm"
 			},
 			"windows": {
 				"command": "explorer coverage-reports\\index.htm"
