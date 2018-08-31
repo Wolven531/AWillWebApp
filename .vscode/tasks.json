@@ -51,6 +51,17 @@
 			},
 			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" \"-reporttypes:HTML;HTMLSummary;HTMLChart\"",
 			"problemMatcher": []
+		},
+		{
+			"label": "View coverage report in Firefox Developer Edition",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
+			},
+			"osx": {
+				"command": "open -a /Applications/FirefoxDeveloperEdition.app \"coverage-reports/index.htm\""
+			},
+			"problemMatcher": []
 		}
 	]
 }
