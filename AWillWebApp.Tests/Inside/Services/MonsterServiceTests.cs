@@ -93,7 +93,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfSearchResults()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfSearchResults()
 		{
 			// Setup
 			_mockMonsterRepository
@@ -110,7 +110,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryIsEmpty_ShouldReturnListOfSearchResults()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryIsEmpty_ShouldReturnListOfSearchResults()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -133,7 +133,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryDoesNotMatch_ShouldReturnEmptyListOfSearchResults()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryDoesNotMatch_ShouldReturnEmptyListOfSearchResults()
 		{
 			// Setup
 			_mockMonsterRepository
@@ -150,7 +150,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesElement_ShouldReturnSearchResultsWithElement()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryMatchesElement_ShouldReturnSearchResultsWithElement()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -168,7 +168,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesElement_ShouldReturnSearchResultsWithElement()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesElement_ShouldReturnSearchResultsWithElement()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -186,7 +186,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesElementWithWeirdCasing_ShouldReturnSearchResultsWithElement()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryMatchesElementWithWeirdCasing_ShouldReturnSearchResultsWithElement()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -204,7 +204,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesName_ShouldReturnSearchResults()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryMatchesName_ShouldReturnSearchResults()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -222,7 +222,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesName_ShouldReturnSearchResults()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesName_ShouldReturnSearchResults()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -240,7 +240,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesNameWithWeirdCasing_ShouldReturnSearchResults()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryMatchesNameWithWeirdCasing_ShouldReturnSearchResults()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -258,7 +258,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedName_ShouldReturnSearchResults()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryMatchesAwakenedName_ShouldReturnSearchResults()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -276,7 +276,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesAwakenedName_ShouldReturnSearchResults()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryWithSpaceMatchesAwakenedName_ShouldReturnSearchResults()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -294,7 +294,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task SearchMonsterNames_WhenRepositoryHasMonstersAndQueryMatchesAwakenedNameWithWeirdCasing_ShouldReturnSearchResults()
+		public async Task SearchMonsterNamesAsync_WhenRepositoryHasMonstersAndQueryMatchesAwakenedNameWithWeirdCasing_ShouldReturnSearchResults()
 		{
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
