@@ -37,7 +37,7 @@
 			"options": {
 				"cwd": "${workspaceFolder}/AWillWebApp.Tests/"
 			},
-			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" -reporttypes:HTML -reporttypes:HTMLSummary -reporttypes:HTMLChart",
+			"command": "reportgenerator \"-reports:coverage.opencover.xml\" \"-targetdir:coverage-reports\" \"-historydir:coverage-reports-historical\" -reporttypes:HTML -reporttypes:HTMLSummary -reporttypes:HTMLChart -reporttypes:Badges",
 			"problemMatcher": []
 		},
 		{
