@@ -4,6 +4,7 @@
 
 namespace AWillWebApp.Tests.Inside.Services
 {
+	using System;
 	using System.Collections.Generic;
 	using System.Diagnostics.CodeAnalysis;
 	using System.Linq;
@@ -65,7 +66,31 @@ namespace AWillWebApp.Tests.Inside.Services
 			actual.Should().BeEquivalentTo(expected);
 		}
 
-		// [TestMethod]
+		[TestMethod]
+		public async Task GetMonsterByIdAsync_WhenRepositoryHasMonsters_ShouldReturnMonster()
+		{
+			// Setup
+			const string targetGuidStr = "421dc26d-eb34-4be4-b3f5-2f8a80d3754d";
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
+			monsters.ElementAt(0).Id = Guid.Parse("2b110876-430b-42eb-bebb-6718b03c6e18");
+			monsters.ElementAt(1).Id = Guid.Parse(targetGuidStr);
+
+			Guid? monsterIdUsed = null;
+			_mockMonsterRepository
+				.Setup(repository => repository.GetMonster(It.IsAny<Guid>()))
+				.Callback<Guid>(monsterId => monsterIdUsed = monsterId)
+				.ReturnsAsync(monsters.ElementAt(1));
+
+			var expected = monsters.ElementAt(1);
+
+			// Execute
+			var actual = await fixture.GetMonsterByIdAsync(Guid.Parse(targetGuidStr));
+
+			// Verify
+			_mockMonsterRepository.VerifyAll();
+			monsterIdUsed.Should().Be(Guid.Parse(targetGuidStr));
+			actual.Should().BeEquivalentTo(expected);
+		}
 
 		[TestMethod]
 		public async Task SearchMonsterNames_WhenRepositoryIsEmpty_ShouldReturnEmptyListOfSearchResults()
