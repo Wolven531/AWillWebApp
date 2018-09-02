@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CoverageSession>
-  <Summary numSequencePoints="326" visitedSequencePoints="253" numBranchPoints="326" visitedBranchPoints="253" sequenceCoverage="0.776" branchCoverage="0.776" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="12" numClasses="22" visitedMethods="53" numMethods="68" />
+  <Summary numSequencePoints="325" visitedSequencePoints="255" numBranchPoints="325" visitedBranchPoints="255" sequenceCoverage="0.785" branchCoverage="0.785" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="13" numClasses="22" visitedMethods="55" numMethods="68" />
   <Modules>
-    <Module hash="BF72946C-2CF9-4383-9615-02382A27D26A">
+    <Module hash="F88E2987-B626-4DDF-B567-A791F479FB26">
       <ModulePath>/repos/AWillWebApp/AWillWebApp.Tests/bin/Debug/netcoreapp2.1/AWillWebApp.Views.dll</ModulePath>
-      <ModuleTime>2018-09-02T05:04:28</ModuleTime>
+      <ModuleTime>2018-09-02T05:23:27</ModuleTime>
       <ModuleName>AWillWebApp.Views</ModuleName>
       <Files>
         <File uid="1" fullPath="/repos/AWillWebApp/AWillWebApp/Views/Error.cshtml" />
@@ -64,9 +64,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="1D41266B-027D-4C0B-B7A3-5A08D243DE0D">
+    <Module hash="5DC3D6CA-64FB-4FF7-87E0-63BBBA126D8A">
       <ModulePath>/repos/AWillWebApp/AWillWebApp.Tests/bin/Debug/netcoreapp2.1/AWillWebApp.dll</ModulePath>
-      <ModuleTime>2018-09-02T05:04:28</ModuleTime>
+      <ModuleTime>2018-09-02T05:23:27</ModuleTime>
       <ModuleName>AWillWebApp</ModuleName>
       <Files>
         <File uid="3" fullPath="/repos/AWillWebApp/AWillWebApp/Outside/Repositories/MonsterRepository.cs" />
@@ -501,11 +501,11 @@
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
           <FullName>AWillWebApp.Controllers.UserAuthenticationController/&lt;AttemptToAuthenticateUser&gt;d__3</FullName>
           <Methods>
             <Method cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.Void AWillWebApp.Controllers.UserAuthenticationController/&lt;AttemptToAuthenticateUser&gt;d__3::MoveNext()</Name>
               <FileRef uid="8" />
@@ -518,14 +518,13 @@
                 <SequencePoint vc="0" upsid="37" ordinal="5" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="8" />
                 <SequencePoint vc="0" upsid="38" ordinal="6" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="8" />
                 <SequencePoint vc="0" upsid="39" ordinal="7" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" upsid="41" ordinal="8" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" upsid="42" ordinal="9" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" upsid="40" ordinal="8" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="0" upsid="33" ordinal="0" path="0" offset="112" offsetend="114" sl="33" fileid="8" />
-                <BranchPoint vc="0" upsid="33" ordinal="1" path="1" offset="112" offsetend="181" sl="33" fileid="8" />
+                <BranchPoint vc="0" upsid="33" ordinal="0" path="0" offset="93" offsetend="95" sl="33" fileid="8" />
+                <BranchPoint vc="0" upsid="33" ordinal="1" path="1" offset="93" offsetend="162" sl="33" fileid="8" />
               </BranchPoints>
-              <MethodPoint vc="0" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="31" ec="1" el="42" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="0" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="31" ec="1" el="40" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -754,14 +753,14 @@
               <Name>System.Void AWillWebApp.Inside.Services.UserAuthenticationService::.ctor(AWillWebApp.Outside.Repositories.IUserAccountRepository,Microsoft.Extensions.Logging.ILogger`1&lt;AWillWebApp.Inside.Services.UserAuthenticationService&gt;)</Name>
               <FileRef uid="10" />
               <SequencePoints>
-                <SequencePoint vc="3" upsid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="10" />
-                <SequencePoint vc="3" upsid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="10" />
-                <SequencePoint vc="3" upsid="18" ordinal="2" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="10" />
-                <SequencePoint vc="3" upsid="19" ordinal="3" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="10" />
-                <SequencePoint vc="3" upsid="20" ordinal="4" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="3" upsid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="3" upsid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="3" upsid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="3" upsid="20" ordinal="3" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="3" upsid="21" ordinal="4" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="10" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="5" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="16" ec="1" el="20" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+              <MethodPoint vc="5" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="17" ec="1" el="21" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -775,46 +774,46 @@
               <Name>System.Void AWillWebApp.Inside.Services.UserAuthenticationService/&lt;AuthenticateUserAsync&gt;d__3::MoveNext()</Name>
               <FileRef uid="10" />
               <SequencePoints>
-                <SequencePoint vc="3" upsid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="10" />
-                <SequencePoint vc="3" upsid="24" ordinal="1" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="10" />
-                <SequencePoint vc="3" upsid="26" ordinal="2" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="10" />
-                <SequencePoint vc="3" upsid="27" ordinal="3" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="3" upsid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="3" upsid="25" ordinal="1" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="3" upsid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="3" upsid="28" ordinal="3" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="10" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="0" upsid="24" ordinal="0" path="0" offset="50" offsetend="52" sl="24" fileid="10" />
-                <BranchPoint vc="3" upsid="24" ordinal="1" path="1" offset="50" offsetend="119" sl="24" fileid="10" />
-                <BranchPoint vc="2" upsid="26" ordinal="2" path="0" offset="157" offsetend="159" sl="26" fileid="10" />
-                <BranchPoint vc="1" upsid="26" ordinal="3" path="1" offset="157" offsetend="189" sl="26" fileid="10" />
+                <BranchPoint vc="0" upsid="25" ordinal="0" path="0" offset="55" offsetend="57" sl="25" fileid="10" />
+                <BranchPoint vc="3" upsid="25" ordinal="1" path="1" offset="55" offsetend="124" sl="25" fileid="10" />
+                <BranchPoint vc="2" upsid="27" ordinal="2" path="0" offset="162" offsetend="164" sl="27" fileid="10" />
+                <BranchPoint vc="1" upsid="27" ordinal="3" path="1" offset="162" offsetend="199" sl="27" fileid="10" />
               </BranchPoints>
-              <MethodPoint vc="4" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="23" ec="1" el="27" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+              <MethodPoint vc="4" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="24" ec="1" el="28" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="1" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
           <FullName>AWillWebApp.Inside.Models.LoginData</FullName>
           <Methods>
-            <Method cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="1" branchCoverage="0" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="1" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.String AWillWebApp.Inside.Models.LoginData::get_Username()</Name>
               <FileRef uid="11" />
               <SequencePoints>
-                <SequencePoint vc="0" upsid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="6" upsid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="11" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+              <MethodPoint vc="1" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="1" branchCoverage="0" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="1" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.String AWillWebApp.Inside.Models.LoginData::get_Password()</Name>
               <FileRef uid="11" />
               <SequencePoints>
-                <SequencePoint vc="0" upsid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" upsid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="11" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" upsid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="16" ec="1" el="16" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+              <MethodPoint vc="1" upsid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="16" ec="1" el="16" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
