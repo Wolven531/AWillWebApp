@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 	<PropertyGroup>
 		<TargetFramework>netcoreapp2.1</TargetFramework>
 		<TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
@@ -10,43 +10,48 @@
 		<UserSecretsId>04735408-c189-4813-853f-28d45c8538a4</UserSecretsId>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="coverlet.msbuild" Version="2.1.1" />
-		<PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
-		<PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1" />
-		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.1" />
-		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
-		<PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
+		<PackageReference Include="coverlet.msbuild" Version="2.1.1"/>
+		<PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1"/>
+		<PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1"/>
+		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.1"/>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1"/>
+		<PackageReference Include="StyleCop.Analyzers" Version="1.0.2"/>
+		<PackageReference Include="System.IO.Compression.Brotli" Version="0.1.0-e180119-3" />
+		<!--
+			<PackageReference Include="System.Memory" Version="4.5.0-preview1-26119-04" />
+			<PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.0-preview1-26119-04" />
+		-->
 	</ItemGroup>
 	<ItemGroup>
-		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1"/>
 	</ItemGroup>
 	<ItemGroup>
 		<!-- Don't publish the SPA source files, but do show them in the project files list -->
-		<Content Remove="$(SpaRoot)**" />
-		<None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+		<Content Remove="$(SpaRoot)**"/>
+		<None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**"/>
 	</ItemGroup>
 	<Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And (!Exists('$(SpaRoot)dist') Or !Exists('$(SpaRoot)node_modules'))">
 		<!-- Ensure Node.js is installed -->
 		<Exec Command="node --version" ContinueOnError="true">
-			<Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+			<Output TaskParameter="ExitCode" PropertyName="ErrorCode"/>
 		</Exec>
-		<Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install"/>
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack"/>
+		<!-- <Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack-vendor" /> -->
+		<Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE."/>
 		<!-- In development, the dist files won't exist on the first run or when cloning to
 			a different machine, so rebuild them if not already present. -->
-		<Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
-		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
-		<Message Importance="high" Text="Performing first-run Webpack build..." />
-		<!-- <Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack-vendor" /> -->
-		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack" />
+		<Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..."/>
+		<Message Importance="high" Text="Performing first-run Webpack build..."/>
 	</Target>
 	<Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
 		<!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
-		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install"/>
 		<!-- <Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack-vendor" /> -->
-		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack --env.prod" />
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run webpack --env.prod"/>
 		<!-- Include the newly-built files in the publish output -->
 		<ItemGroup>
-			<DistFiles Include="$(SpaRoot)\dist\**; $(SpaRoot)build-ssr\**" />
+			<DistFiles Include="$(SpaRoot)\dist\**; $(SpaRoot)build-ssr\**"/>
 			<ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
 				<RelativePath>%(DistFiles.Identity)</RelativePath>
 				<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -54,15 +59,15 @@
 		</ItemGroup>
 	</Target>
 	<ProjectExtensions>
-	  <MonoDevelop>
-	    <Properties>
-	      <Policies>
-	        <TextStylePolicy TabWidth="4" TabsToSpaces="False" IndentWidth="4" EolMarker="Native" FileWidth="80" RemoveTrailingWhitespace="False" NoTabsAfterNonTabs="True" scope="text/x-csharp" />
-	        <CSharpFormattingPolicy IndentBlock="True" IndentBraces="False" IndentSwitchSection="True" IndentSwitchCaseSection="True" LabelPositioning="OneLess" NewLinesForBracesInTypes="True" NewLinesForBracesInMethods="True" NewLinesForBracesInProperties="True" NewLinesForBracesInAccessors="True" NewLinesForBracesInAnonymousMethods="True" NewLinesForBracesInControlBlocks="True" NewLinesForBracesInAnonymousTypes="True" NewLinesForBracesInObjectCollectionArrayInitializers="True" NewLinesForBracesInLambdaExpressionBody="True" NewLineForElse="True" NewLineForCatch="True" NewLineForFinally="True" NewLineForMembersInObjectInit="True" NewLineForMembersInAnonymousTypes="True" NewLineForClausesInQuery="True" SpacingAfterMethodDeclarationName="False" SpaceWithinMethodDeclarationParenthesis="False" SpaceBetweenEmptyMethodDeclarationParentheses="False" SpaceAfterMethodCallName="False" SpaceWithinMethodCallParentheses="False" SpaceBetweenEmptyMethodCallParentheses="False" SpaceAfterControlFlowStatementKeyword="True" SpaceWithinExpressionParentheses="False" SpaceWithinCastParentheses="False" SpaceWithinOtherParentheses="False" SpaceAfterCast="False" SpacesIgnoreAroundVariableDeclaration="False" SpaceBeforeOpenSquareBracket="False" SpaceBetweenEmptySquareBrackets="False" SpaceWithinSquareBrackets="False" SpaceAfterColonInBaseTypeDeclaration="True" SpaceAfterComma="True" SpaceAfterDot="False" SpaceAfterSemicolonsInForStatement="True" SpaceBeforeColonInBaseTypeDeclaration="True" SpaceBeforeComma="False" SpaceBeforeDot="False" SpaceBeforeSemicolonsInForStatement="False" SpacingAroundBinaryOperator="Single" WrappingPreserveSingleLine="True" WrappingKeepStatementsOnSingleLine="True" PlaceSystemDirectiveFirst="True" scope="text/x-csharp" />
-	        <TextStylePolicy TabWidth="4" TabsToSpaces="False" IndentWidth="4" EolMarker="Native" FileWidth="80" RemoveTrailingWhitespace="False" NoTabsAfterNonTabs="True" scope="text/x-json" />
-	        <JSONFormattingPolicy AutomaticFormatting="False" AutoStructureCompletion="True" BracePositions="SemiExpanded" FormatOnPaste="True" scope="text/x-json" />
-	      </Policies>
-	    </Properties>
-	  </MonoDevelop>
+		<MonoDevelop>
+			<Properties>
+				<Policies>
+					<TextStylePolicy TabWidth="4" TabsToSpaces="False" IndentWidth="4" EolMarker="Native" FileWidth="80" RemoveTrailingWhitespace="False" NoTabsAfterNonTabs="True" scope="text/x-csharp"/>
+					<TextStylePolicy TabWidth="4" TabsToSpaces="False" IndentWidth="4" EolMarker="Native" FileWidth="80" RemoveTrailingWhitespace="False" NoTabsAfterNonTabs="True" scope="text/x-json"/>
+					<CSharpFormattingPolicy IndentBlock="True" IndentBraces="False" IndentSwitchSection="True" IndentSwitchCaseSection="True" LabelPositioning="OneLess" NewLinesForBracesInTypes="True" NewLinesForBracesInMethods="True" NewLinesForBracesInProperties="True" NewLinesForBracesInAccessors="True" NewLinesForBracesInAnonymousMethods="True" NewLinesForBracesInControlBlocks="True" NewLinesForBracesInAnonymousTypes="True" NewLinesForBracesInObjectCollectionArrayInitializers="True" NewLinesForBracesInLambdaExpressionBody="True" NewLineForElse="True" NewLineForCatch="True" NewLineForFinally="True" NewLineForMembersInObjectInit="True" NewLineForMembersInAnonymousTypes="True" NewLineForClausesInQuery="True" SpacingAfterMethodDeclarationName="False" SpaceWithinMethodDeclarationParenthesis="False" SpaceBetweenEmptyMethodDeclarationParentheses="False" SpaceAfterMethodCallName="False" SpaceWithinMethodCallParentheses="False" SpaceBetweenEmptyMethodCallParentheses="False" SpaceAfterControlFlowStatementKeyword="True" SpaceWithinExpressionParentheses="False" SpaceWithinCastParentheses="False" SpaceWithinOtherParentheses="False" SpaceAfterCast="False" SpacesIgnoreAroundVariableDeclaration="False" SpaceBeforeOpenSquareBracket="False" SpaceBetweenEmptySquareBrackets="False" SpaceWithinSquareBrackets="False" SpaceAfterColonInBaseTypeDeclaration="True" SpaceAfterComma="True" SpaceAfterDot="False" SpaceAfterSemicolonsInForStatement="True" SpaceBeforeColonInBaseTypeDeclaration="True" SpaceBeforeComma="False" SpaceBeforeDot="False" SpaceBeforeSemicolonsInForStatement="False" SpacingAroundBinaryOperator="Single" WrappingPreserveSingleLine="True" WrappingKeepStatementsOnSingleLine="True" PlaceSystemDirectiveFirst="True" scope="text/x-csharp"/>
+					<JSONFormattingPolicy AutomaticFormatting="False" AutoStructureCompletion="True" BracePositions="SemiExpanded" FormatOnPaste="True" scope="text/x-json"/>
+				</Policies>
+			</Properties>
+		</MonoDevelop>
 	</ProjectExtensions>
 </Project>

@@ -6,6 +6,7 @@ namespace AWillWebApp
 {
 	using System.Diagnostics.CodeAnalysis;
 	using System.IO;
+	using System.Linq;
 	using System.Text;
 	using AWillWebApp.Inside.Models;
 	using AWillWebApp.Inside.Services;
@@ -14,6 +15,7 @@ namespace AWillWebApp
 	using Microsoft.AspNetCore.Hosting;
 	using Microsoft.AspNetCore.Http;
 	using Microsoft.AspNetCore.Mvc;
+	using Microsoft.AspNetCore.ResponseCompression;
 	//using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 	//using Microsoft.AspNetCore.SpaServices.StaticFiles;
 	//using Microsoft.AspNetCore.SpaServices.Webpack;
@@ -64,6 +66,7 @@ namespace AWillWebApp
 				routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
 				routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Home", action = "Index" });
 			});
+			app.UseResponseCompression();
 		}
 
 		// This method gets called by the runtime. Use this method to add services to the container.
@@ -91,6 +94,20 @@ namespace AWillWebApp
 
 			services.AddSingleton<IUserAccountRepository>(new UserAccountRepository(userAccounts));
 			services.AddSingleton<IUserAuthenticationService, UserAuthenticationService>();
+
+			services.AddSingleton<BrotliCompressionProvider>();
+
+			services.AddResponseCompression(options =>
+			{
+				options.Providers.Add<BrotliCompressionProvider>();
+				options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
+					new[]
+					{
+						"application/javascript",
+						"image/svg+xml",
+						"text/html"
+					});
+			});
 
 			//// In production, the React files will be served from this directory
 			//services.AddSpaStaticFiles(configuration =>
