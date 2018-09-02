@@ -39,7 +39,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			var expected = false;
 
 			// Execute
-			var actual = await fixture.AuthenticateUserAsync(string.Empty, string.Empty);
+			var actual = await fixture.AuthenticateUserAsync(new LoginData { Username = string.Empty, Password = string.Empty });
 
 			// Verify
 			_mockUserAccountRepository.VerifyAll();
@@ -59,7 +59,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			var expected = false;
 
 			// Execute
-			var actual = await fixture.AuthenticateUserAsync("user 1", "garbled");
+			var actual = await fixture.AuthenticateUserAsync(new LoginData { Username = "user 1", Password = "garbled" });
 
 			// Verify
 			_mockUserAccountRepository.VerifyAll();
@@ -79,7 +79,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			var expected = true;
 
 			// Execute
-			var actual = await fixture.AuthenticateUserAsync("user 1", "pass 1");
+			var actual = await fixture.AuthenticateUserAsync(new LoginData { Username = "user 1", Password = "pass 1" });
 
 			// Verify
 			_mockUserAccountRepository.VerifyAll();
