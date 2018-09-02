@@ -13,11 +13,12 @@ import configureStore from './store/configureStore'
 
 // import MonsterSearcher from './MonsterSearcher'
 import { AllMonstersPage } from './containers/pages/AllMonstersPage'
+import { HomePage } from './containers/pages/HomePage'
+
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
-import { HomePage } from './containers/pages/HomePage'
-import { Login } from './containers/Login/Login'
 import { NavBar } from './components/NavBar/NavBar'
+import { Login } from './containers/Login/Login'
 
 import '../css/site.css'
 
