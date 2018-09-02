@@ -285,7 +285,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			// Setup
 			var sameUserAccountWithNewValues = new UserAccount("new user 1", "new pass 1") { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") };
 			var expected = new UserAccount("user 1", "pass 1") { Id = Guid.Parse("2e846d8d-a45d-4548-9240-e2ed7fa91e3c") };
-			var userAccounts = new []
+			var userAccounts = new[]
 			{
 				expected
 			};

@@ -25,7 +25,7 @@ namespace AWillWebApp.Tests.Outside.Controllers
 	[TestClass]
 	public class HomeControllerTests : TestServerFixture
 	{
-		private const string BaseUrl = "https://localhost:5001";
+		// private const string BaseUrl = "https://localhost:5001";
 
 		// TODO: declare mock repo
 		//private Mock<IMonsterRepository> _mockMonstersRepository;
