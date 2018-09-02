@@ -11,9 +11,9 @@ namespace AWillWebApp.Inside.Services
 
 	public interface IMonsterService
 	{
-		Task<Monster> GetMonsterByIdAsync(Guid monsterId);
+		Task<Monster> GetMonsterByIdAsync(Guid monsterId, bool withImageData = false);
 
-		Task<IEnumerable<Monster>> GetMonstersAsync();
+		Task<IEnumerable<Monster>> GetMonstersAsync(bool withImageData = false);
 
 		Task<IEnumerable<SearchResult>> SearchMonsterNamesAsync(string searchQuery);
 	}

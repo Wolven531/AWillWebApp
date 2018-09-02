@@ -55,14 +55,28 @@ namespace AWillWebApp.Inside.Services
 			return ConvertMonstersToNames(filteredMonsters);
 		}
 
-		public Task<IEnumerable<Monster>> GetMonstersAsync()
+		public async Task<IEnumerable<Monster>> GetMonstersAsync(bool withImageData = false)
 		{
-			return _monsterRepository.GetMonsters();
+			var monsters = await _monsterRepository.GetMonsters();
+
+			if (!withImageData)
+			{
+				monsters = StripMonsterImages(monsters);
+			}
+
+			return monsters;
 		}
 
-		public Task<Monster> GetMonsterByIdAsync(Guid monsterId)
+		public async Task<Monster> GetMonsterByIdAsync(Guid monsterId, bool withImageData = false)
 		{
-			return _monsterRepository.GetMonster(monsterId);
+			var monster = await _monsterRepository.GetMonster(monsterId);
+
+			if (!withImageData)
+			{
+				monster = StripMonsterImages(monster);
+			}
+
+			return monster;
 		}
 
 		private static IEnumerable<SearchResult> ConvertMonstersToNames(IEnumerable<Monster> monsters)
@@ -75,5 +89,25 @@ namespace AWillWebApp.Inside.Services
 
 			return results;
 		}
+
+		private static IEnumerable<Monster> StripMonsterImages(IEnumerable<Monster> monsters) => monsters.Select(StripMonsterImages);
+
+		private static Monster StripMonsterImages(Monster monster) =>
+			new Monster(
+				monster.AwakenedName,
+				monster.Name,
+				monster.Rating,
+				monster.Element,
+				string.Empty,
+				string.Empty,
+				monster.EarlyRuneList,
+				monster.EarlyRuneValues,
+				monster.LateRuneList,
+				monster.LateRuneValues,
+				monster.StatPriority)
+			{
+				Id = monster.Id,
+				Number = monster.Number
+			};
 	}
 }

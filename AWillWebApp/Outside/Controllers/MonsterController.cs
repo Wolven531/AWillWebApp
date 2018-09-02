@@ -6,6 +6,7 @@ namespace AWillWebApp.Controllers
 {
 	using System;
 	using System.Collections.Generic;
+	using System.Diagnostics.CodeAnalysis;
 	using System.Linq;
 	using System.Threading.Tasks;
 	using AWillWebApp.Inside.Models;
@@ -18,9 +19,6 @@ namespace AWillWebApp.Controllers
 	[ApiController]
 	public class MonsterController : ControllerBase
 	{
-		private const float KilobyteScale = 1000.0f;
-		private const float MegabyteScale = 1000.0f * KilobyteScale;
-
 		private readonly IMonsterService _MonsterService;
 		private readonly ILogger<MonsterController> _logger;
 
@@ -54,14 +52,8 @@ namespace AWillWebApp.Controllers
 		public async Task<IEnumerable<Monster>> GetAllMonstersAsync([FromQuery] bool withImages = false)
 		{
 			_logger.LogDebug("Getting all monsters from MonsterService...");
-			var monsters = await _MonsterService.GetMonstersAsync();
+			var monsters = await _MonsterService.GetMonstersAsync(withImages);
 			_logger.LogDebug($"Returning {monsters.Count()} monsters (withImages={withImages})...");
-
-			if (!withImages)
-			{
-				monsters = StripMonsterImages(monsters);
-			}
-
 			LogResponseSize(JsonConvert.SerializeObject(monsters));
 
 			return monsters;
@@ -74,60 +66,16 @@ namespace AWillWebApp.Controllers
 		public async Task<Monster> GetMonsterByIdAsync([FromRoute] Guid monsterId, [FromQuery] bool withImages = false)
 		{
 			_logger.LogDebug($"Getting monster with Id={monsterId} (withImages={withImages})...");
-			var monster = await _MonsterService.GetMonsterByIdAsync(monsterId);
-
-			if (!withImages)
-			{
-				monster = StripMonsterImages(monster);
-			}
-
+			var monster = await _MonsterService.GetMonsterByIdAsync(monsterId, withImages);
 			LogResponseSize(JsonConvert.SerializeObject(monster));
 
 			return monster;
 		}
 
-		private static void LogResponseSize(ILogger<MonsterController> instanceLogger, string responseString)
-		{
-			var responseSize = responseString.Length;
-			var sizeDisplay = string.Empty;
-
-			if (responseSize > MegabyteScale)
-			{
-				var mbSize = responseSize / MegabyteScale;
-				sizeDisplay = $"{mbSize:n2} Mb";
-			}
-			else if (responseSize > KilobyteScale)
-			{
-				var kbSize = responseSize / KilobyteScale;
-				sizeDisplay = $"{kbSize:n2} Kb";
-			}
-
-			instanceLogger.LogDebug($"Response Size = {sizeDisplay} ({responseSize:n0} bytes)");
-		}
-
-		private static Monster StripMonsterImages(Monster monster) =>
-			new Monster(
-				monster.AwakenedName,
-				monster.Name,
-				monster.Rating,
-				monster.Element,
-				string.Empty,
-				string.Empty,
-				monster.EarlyRuneList,
-				monster.EarlyRuneValues,
-				monster.LateRuneList,
-				monster.LateRuneValues,
-				monster.StatPriority)
-			{
-				Id = monster.Id,
-				Number = monster.Number
-			};
-
-		private static IEnumerable<Monster> StripMonsterImages(IEnumerable<Monster> monsters) => monsters.Select(StripMonsterImages);
-
+		[ExcludeFromCodeCoverage]
 		private void LogResponseSize(string responseString)
 		{
-			LogResponseSize(_logger, responseString);
+			Utility.LogResponseSize(_logger, responseString);
 		}
 
 		//// POST: api/SampleDummyData
