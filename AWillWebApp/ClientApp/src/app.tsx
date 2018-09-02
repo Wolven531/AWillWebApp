@@ -1,7 +1,7 @@
-﻿// TODO: find a way to avoid including
-// jquery in app entry as follows
-import * as jQuery from 'jquery'
-const $ = ((window as any).$ = (window as any).jQuery = jQuery)
+﻿// // TODO: find a way to avoid including
+// // jquery in app entry as follows
+// import * as jQuery from 'jquery'
+// const $ = ((window as any).$ = (window as any).jQuery = jQuery)
 
 import { BrowserHistoryBuildOptions, createBrowserHistory } from 'history'
 import * as React from 'react'
