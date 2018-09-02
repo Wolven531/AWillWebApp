@@ -13,7 +13,8 @@
 			"type": "process",
 			"command": "dotnet",
 			"args": ["run", "-p", "${workspaceFolder}/AWillWebApp/AWillWebApp.csproj"],
-			"problemMatcher": "$msCompile"
+			"problemMatcher": "$msCompile",
+			"dependsOn": ["Build dotnet app"]
 		},
 		{
 			"label": "Run webpack watcher",
