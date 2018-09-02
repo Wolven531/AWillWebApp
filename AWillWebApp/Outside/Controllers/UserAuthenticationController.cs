@@ -30,15 +30,13 @@ namespace AWillWebApp.Controllers
 		public async Task<JsonResult> AttemptToAuthenticateUser([FromBody] LoginData authenticationData)
 		{
 			_logger.LogDebug($"Attempting to authenticate `{authenticationData.Username}`...");
-			var wasSuccessful = await _UserAuthenticationService.AuthenticateUserAsync(authenticationData.Username, authenticationData.Password);
+			var wasSuccessful = await _UserAuthenticationService.AuthenticateUserAsync(authenticationData);
 			_logger.LogDebug($"Authentication result, wasSuccessful={wasSuccessful}");
 
-			var authenticationResult = new JObject
+			return new JsonResult(new JObject
 			{
 				["success"] = wasSuccessful
-			};
-
-			return new JsonResult(authenticationResult);
+			});
 		}
 	}
 }

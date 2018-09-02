@@ -5,6 +5,7 @@
 namespace AWillWebApp.Inside.Services
 {
 	using System.Threading.Tasks;
+	using AWillWebApp.Inside.Models;
 	using AWillWebApp.Outside.Repositories;
 	using Microsoft.Extensions.Logging;
 
@@ -19,11 +20,11 @@ namespace AWillWebApp.Inside.Services
 			_Logger = logger;
 		}
 
-		public async Task<bool> AuthenticateUserAsync(string username, string password)
+		public async Task<bool> AuthenticateUserAsync(LoginData loginData)
 		{
-			var userAccount = await _UserAccountRepository.GetUserAccountByUsernameAsync(username);
+			var userAccount = await _UserAccountRepository.GetUserAccountByUsernameAsync(loginData.Username);
 
-			return userAccount == null ? false : userAccount.VerifyPassword(password, userAccount.HashedPassword);
+			return userAccount == null ? false : userAccount.VerifyPassword(loginData.Password, userAccount.HashedPassword);
 		}
 	}
 }

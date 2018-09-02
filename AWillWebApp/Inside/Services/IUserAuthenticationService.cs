@@ -5,9 +5,10 @@
 namespace AWillWebApp.Inside.Services
 {
 	using System.Threading.Tasks;
+	using AWillWebApp.Inside.Models;
 
 	public interface IUserAuthenticationService
 	{
-		Task<bool> AuthenticateUserAsync(string username, string password);
+		Task<bool> AuthenticateUserAsync(LoginData loginData);
 	}
 }
