@@ -5,6 +5,7 @@
 namespace AWillWebApp
 {
 	using System.Diagnostics.CodeAnalysis;
+	using System.IO;
 	using Microsoft.AspNetCore;
 	using Microsoft.AspNetCore.Hosting;
 	using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,16 @@ namespace AWillWebApp
 	{
 		private const float KilobyteScale = 1000.0f;
 		private const float MegabyteScale = 1000.0f * KilobyteScale;
+
+		public static Stream ConvertStringToStream(string valueToConvert)
+		{
+			var stream = new MemoryStream();
+			var writer = new StreamWriter(stream);
+			writer.Write(valueToConvert);
+			writer.Flush();
+			stream.Position = 0;
+			return stream;
+		}
 
 		public static void LogResponseSize(ILogger instanceLogger, string responseString)
 		{
