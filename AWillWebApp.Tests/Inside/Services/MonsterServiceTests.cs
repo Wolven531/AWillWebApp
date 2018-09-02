@@ -49,14 +49,30 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task GetMonstersAsync_WhenRepositoryHasMonsters_ShouldReturnListOfMonsters()
+		public async Task GetMonstersAsync_WhenRepositoryHasMonstersAndInvokedWithoutImageData_ShouldReturnListOfMonstersWithoutImageData()
 		{
 			// Setup
 			_mockMonsterRepository
 				.Setup(repository => repository.GetMonsters())
 				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
 
-			var expected = GenerateMonsters(new[] { Element.Dark, Element.Fire });
+			var expected = GenerateMonsters(new[] { Element.Dark, Element.Fire }).Select(monster =>
+				new Monster(
+					monster.AwakenedName,
+					monster.Name,
+					monster.Rating,
+					monster.Element,
+					string.Empty,
+					string.Empty,
+					monster.EarlyRuneList,
+					monster.EarlyRuneValues,
+					monster.LateRuneList,
+					monster.LateRuneValues,
+					monster.StatPriority)
+				{
+					Id = monster.Id,
+					Number = monster.Number
+				});
 
 			// Execute
 			var actual = await fixture.GetMonstersAsync();
@@ -67,7 +83,67 @@ namespace AWillWebApp.Tests.Inside.Services
 		}
 
 		[TestMethod]
-		public async Task GetMonsterByIdAsync_WhenRepositoryHasMonsters_ShouldReturnMonster()
+		public async Task GetMonstersAsync_WhenRepositoryHasMonstersAndInvokedWithImageData_ShouldReturnListOfMonstersWithImageData()
+		{
+			// Setup
+			_mockMonsterRepository
+				.Setup(repository => repository.GetMonsters())
+				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
+
+			var expected = GenerateMonsters(new[] { Element.Dark, Element.Fire });
+
+			// Execute
+			var actual = await fixture.GetMonstersAsync(true);
+
+			// Verify
+			_mockMonsterRepository.VerifyAll();
+			actual.Should().BeEquivalentTo(expected);
+		}
+
+		[TestMethod]
+		public async Task GetMonsterByIdAsync_WhenRepositoryHasMonstersAndInvokedWithoutImageData_ShouldReturnMonsterWithoutImageData()
+		{
+			// Setup
+			const string targetGuidStr = "421dc26d-eb34-4be4-b3f5-2f8a80d3754d";
+			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
+			monsters.ElementAt(0).Id = Guid.Parse("2b110876-430b-42eb-bebb-6718b03c6e18");
+			monsters.ElementAt(1).Id = Guid.Parse(targetGuidStr);
+
+			Guid? monsterIdUsed = null;
+			_mockMonsterRepository
+				.Setup(repository => repository.GetMonster(It.IsAny<Guid>()))
+				.Callback<Guid>(monsterId => monsterIdUsed = monsterId)
+				.ReturnsAsync(monsters.ElementAt(1));
+
+			var expected = monsters.Select(monster =>
+				new Monster(
+					monster.AwakenedName,
+					monster.Name,
+					monster.Rating,
+					monster.Element,
+					string.Empty,
+					string.Empty,
+					monster.EarlyRuneList,
+					monster.EarlyRuneValues,
+					monster.LateRuneList,
+					monster.LateRuneValues,
+					monster.StatPriority)
+				{
+					Id = monster.Id,
+					Number = monster.Number
+				}).ElementAt(1);
+
+			// Execute
+			var actual = await fixture.GetMonsterByIdAsync(Guid.Parse(targetGuidStr));
+
+			// Verify
+			_mockMonsterRepository.VerifyAll();
+			monsterIdUsed.Should().Be(Guid.Parse(targetGuidStr));
+			actual.Should().BeEquivalentTo(expected);
+		}
+
+		[TestMethod]
+		public async Task GetMonsterByIdAsync_WhenRepositoryHasMonstersAndInvokedWithImageData_ShouldReturnMonsterWithImageData()
 		{
 			// Setup
 			const string targetGuidStr = "421dc26d-eb34-4be4-b3f5-2f8a80d3754d";
@@ -84,7 +160,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			var expected = monsters.ElementAt(1);
 
 			// Execute
-			var actual = await fixture.GetMonsterByIdAsync(Guid.Parse(targetGuidStr));
+			var actual = await fixture.GetMonsterByIdAsync(Guid.Parse(targetGuidStr), true);
 
 			// Verify
 			_mockMonsterRepository.VerifyAll();
