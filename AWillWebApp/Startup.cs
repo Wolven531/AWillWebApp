@@ -6,7 +6,7 @@ namespace AWillWebApp
 {
 	using System.Diagnostics.CodeAnalysis;
 	using System.IO;
-	using System.Linq;
+	using System.IO.Compression;
 	using System.Text;
 	using AWillWebApp.Inside.Models;
 	using AWillWebApp.Inside.Services;
@@ -55,6 +55,7 @@ namespace AWillWebApp
 			}
 
 			app.UseHttpsRedirection();
+			app.UseResponseCompression();
 			app.UseStaticFiles();
 			app.UseStaticFiles(new StaticFileOptions()
 			{
@@ -66,7 +67,6 @@ namespace AWillWebApp
 				routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
 				routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Home", action = "Index" });
 			});
-			app.UseResponseCompression();
 		}
 
 		// This method gets called by the runtime. Use this method to add services to the container.
@@ -81,13 +81,13 @@ namespace AWillWebApp
 			});
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-			_logger.LogInformation($"Loading monsters from disk...");
+			_logger.LogCritical("Loading monsters from disk...");
 			var monsters = LoadMonstersFromDisk();
-			_logger.LogInformation($"Loaded {monsters.Length} monsters from disk.");
+			_logger.LogCritical($"Loaded {monsters.Length} monsters from disk.");
 
-			_logger.LogInformation($"Loading user accounts from disk...");
+			_logger.LogCritical("Loading user accounts from disk...");
 			var userAccounts = LoadUserAccountsFromDisk();
-			_logger.LogInformation($"Loaded {userAccounts.Length} user accounts from disk.");
+			_logger.LogCritical($"Loaded {userAccounts.Length} user accounts from disk.");
 
 			services.AddSingleton<IMonsterRepository>(new MonsterRepository(monsters));
 			services.AddSingleton<IMonsterService, MonsterService>();
@@ -97,16 +97,25 @@ namespace AWillWebApp
 
 			services.AddSingleton<BrotliCompressionProvider>();
 
+			services.Configure<GzipCompressionProviderOptions>(options => options.Level = CompressionLevel.Optimal);
 			services.AddResponseCompression(options =>
 			{
 				options.Providers.Add<BrotliCompressionProvider>();
-				options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
-					new[]
-					{
-						"application/javascript",
-						"image/svg+xml",
-						"text/html"
-					});
+				options.EnableForHttps = true;
+				options.MimeTypes = new[]
+				{
+					// NOTE: Default MIME types
+					"application/javascript",
+					"application/json",
+					"application/xml",
+					"text/css",
+					"text/html",
+					"text/json",
+					"text/plain",
+					"text/xml",
+					// NOTE: Custom MIME types
+					"image/svg+xml"
+				};
 			});
 
 			//// In production, the React files will be served from this directory
