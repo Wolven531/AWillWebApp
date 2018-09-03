@@ -7,7 +7,6 @@ namespace AWillWebApp.Controllers
 	using System;
 	using System.Collections.Generic;
 	using System.Diagnostics.CodeAnalysis;
-	using System.IO.Compression;
 	using System.Linq;
 	using System.Threading.Tasks;
 	using AWillWebApp.Inside.Models;
@@ -15,7 +14,6 @@ namespace AWillWebApp.Controllers
 	using Microsoft.AspNetCore.Mvc;
 	using Microsoft.Extensions.Logging;
 	using Newtonsoft.Json;
-	using Newtonsoft.Json.Linq;
 
 	[Route("api/monsters")]
 	[ApiController]
@@ -28,6 +26,32 @@ namespace AWillWebApp.Controllers
 		{
 			_MonsterService = monsterService;
 			_logger = logger;
+		}
+
+		// GET: api/monsters
+		// GET: api/monsters?withImages=true
+		[HttpGet]
+		public async Task<IEnumerable<Monster>> GetAllMonstersAsync([FromQuery] bool withImages = false)
+		{
+			_logger.LogDebug("Getting all monsters from MonsterService...");
+			var monsters = await _MonsterService.GetMonstersAsync(withImages);
+			_logger.LogDebug($"Returning {monsters.Count()} monsters (withImages={withImages})...");
+			LogResponseSize(JsonConvert.SerializeObject(monsters));
+
+			return monsters;
+		}
+
+		// GET: api/monsters/8adb050b-3cad-4359-b5f9-b4cd4a07db00
+		// GET: api/monsters/8adb050b-3cad-4359-b5f9-b4cd4a07db00?withImages=true
+		[Route("{monsterId}")]
+		[HttpGet]
+		public async Task<Monster> GetMonsterByIdAsync([FromRoute] Guid monsterId, [FromQuery] bool withImages = false)
+		{
+			_logger.LogDebug($"Getting monster with Id={monsterId} (withImages={withImages})...");
+			var monster = await _MonsterService.GetMonsterByIdAsync(monsterId, withImages);
+			LogResponseSize(JsonConvert.SerializeObject(monster));
+
+			return monster;
 		}
 
 		// GET: api/monsters/names
@@ -46,60 +70,6 @@ namespace AWillWebApp.Controllers
 		{
 			_logger.LogDebug($"Searching MonsterService searchQuery='{searchQuery}'...");
 			return _MonsterService.SearchMonsterNamesAsync(searchQuery);
-		}
-
-		// // GET: api/monsters
-		// // GET: api/monsters?withImages=true
-		// [HttpGet]
-		// public async Task<IEnumerable<Monster>> GetAllMonstersAsync([FromQuery] bool withImages = false)
-		// {
-		// 	_logger.LogDebug("Getting all monsters from MonsterService...");
-		// 	var monsters = await _MonsterService.GetMonstersAsync(withImages);
-		// 	_logger.LogDebug($"Returning {monsters.Count()} monsters (withImages={withImages})...");
-		// 	LogResponseSize(JsonConvert.SerializeObject(monsters));
-
-		// 	// using(var monsterStream = Utility.ConvertStringToStream(JsonConvert.SerializeObject(monsters)))
-		// 	// using (var compressor = new BrotliStream(Response.Body, CompressionMode.Compress))
-		// 	// {
-		// 	// 	monsterStream.CopyTo(compressor);
-		// 	// }
-
-		// 	return monsters;
-		// }
-
-		// GET: api/monsters
-		// GET: api/monsters?withImages=true
-		[HttpGet]
-		public async Task GetAllMonstersAsync([FromQuery] bool withImages = false)
-		{
-			_logger.LogDebug("Getting all monsters from MonsterService...");
-			var monsters = await _MonsterService.GetMonstersAsync(withImages);
-			_logger.LogDebug($"Returning {monsters.Count()} monsters (withImages={withImages})...");
-			LogResponseSize(JsonConvert.SerializeObject(monsters));
-
-			// NOTE: Compression:
-			// 0a) serialize ienumerable
-			// 0b) string to stream
-			// 1) compress stream
-			// 2) serialize compressed stream
-			using (var monsterStream = Utility.ConvertStringToStream(JsonConvert.SerializeObject(monsters)))
-			using (var compressor = new BrotliStream(Response.Body, CompressionMode.Compress))
-			{
-				monsterStream.CopyTo(compressor);
-			}
-		}
-
-		// GET: api/monsters/8adb050b-3cad-4359-b5f9-b4cd4a07db00
-		// GET: api/monsters/8adb050b-3cad-4359-b5f9-b4cd4a07db00?withImages=true
-		[Route("{monsterId}")]
-		[HttpGet]
-		public async Task<Monster> GetMonsterByIdAsync([FromRoute] Guid monsterId, [FromQuery] bool withImages = false)
-		{
-			_logger.LogDebug($"Getting monster with Id={monsterId} (withImages={withImages})...");
-			var monster = await _MonsterService.GetMonsterByIdAsync(monsterId, withImages);
-			LogResponseSize(JsonConvert.SerializeObject(monster));
-
-			return monster;
 		}
 
 		[ExcludeFromCodeCoverage]
