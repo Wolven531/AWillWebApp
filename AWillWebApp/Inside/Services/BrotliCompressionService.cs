@@ -1,4 +1,4 @@
-// <copyright file="BrotliCompressionProvider.cs" company="AWill Inc">
+﻿// <copyright file="BrotliCompressionService.cs" company="AWill Inc">
 // Copyright (c) 2018 AWill Inc; All rights reserved.
 // </copyright>
 
@@ -11,11 +11,11 @@ namespace AWillWebApp
 	using Microsoft.Extensions.Logging;
 
 	[ExcludeFromCodeCoverage]
-	public class BrotliCompressionProvider : ICompressionProvider
+	public class BrotliCompressionService : ICompressionProvider
 	{
-		private readonly ILogger<BrotliCompressionProvider> _Logger;
+		private readonly ILogger<BrotliCompressionService> _Logger;
 
-		public BrotliCompressionProvider(ILogger<BrotliCompressionProvider> logger)
+		public BrotliCompressionService(ILogger<BrotliCompressionService> logger)
 		{
 			_Logger = logger;
 			_Logger.LogCritical("[BrotliCompressionProvider] Creating compression provider");

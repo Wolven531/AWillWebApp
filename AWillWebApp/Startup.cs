@@ -95,12 +95,12 @@ namespace AWillWebApp
 			services.AddSingleton<IUserAccountRepository>(new UserAccountRepository(userAccounts));
 			services.AddSingleton<IUserAuthenticationService, UserAuthenticationService>();
 
-			services.AddSingleton<BrotliCompressionProvider>();
+			services.AddSingleton<BrotliCompressionService>();
 
 			services.Configure<GzipCompressionProviderOptions>(options => options.Level = CompressionLevel.Optimal);
 			services.AddResponseCompression(options =>
 			{
-				options.Providers.Add<BrotliCompressionProvider>();
+				options.Providers.Add<BrotliCompressionService>();
 				options.EnableForHttps = true;
 				options.MimeTypes = new[]
 				{
