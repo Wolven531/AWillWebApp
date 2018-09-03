@@ -1,4 +1,4 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+﻿@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono');
 
 /*
 	Basic color scheme
@@ -30,7 +30,7 @@ body *::-moz-focus-inner {
 #header {
 	top: 0;
 	color: #333;
-	font-family: 'Open Sans';
+	font-family: 'Nunito', sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -41,7 +41,7 @@ body *::-moz-focus-inner {
 }
 
 #nav-bar {
-	font-family: 'Open Sans';
+	font-family: 'Nunito', sans-serif;
 	height: 2rem; /* NavBar height */
 	width: 100%;
 }
@@ -78,7 +78,7 @@ body *::-moz-focus-inner {
 #footer {
 	bottom: 0;
 	color: #333;
-	font-family: 'Open Sans';
+	font-family: 'Nunito', sans-serif;
 	font-size: 0.8em;
 	letter-spacing: 2px;
 	height: 2.5rem; /* Footer height */
