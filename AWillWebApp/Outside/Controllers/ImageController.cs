@@ -1,5 +1,7 @@
 ﻿// <copyright file="ImageController.cs" company="AWill Inc">
 // Copyright (c) 2018 AWill Inc; All rights reserved.
+// Inspiration from
+// https://www.csharp-console-examples.com/general/c-base64-string-to-png-image/
 // </copyright>
 
 namespace AWillWebApp.Controllers
