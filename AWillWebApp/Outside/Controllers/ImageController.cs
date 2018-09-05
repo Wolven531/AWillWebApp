@@ -46,7 +46,7 @@ namespace AWillWebApp.Controllers
 		// GET: api/images/awake/8adb050b-3cad-4359-b5f9-b4cd4a07db00
 		[Route("awake/{monsterId}")]
 		[HttpGet]
-		public async Task<ActionResult> GetMonsterAwakeImageByIdAsync([FromRoute] Guid monsterId, [FromQuery] bool withImages = false)
+		public async Task<ActionResult> GetMonsterAwakeImageByIdAsync([FromRoute] Guid monsterId)
 		{
 			_logger.LogDebug($"Getting monster awake image with Id={monsterId}...");
 			var monster = await _MonsterService.GetMonsterByIdAsync(monsterId, true);
