@@ -114,6 +114,7 @@ namespace AWillWebApp
 					"text/plain",
 					"text/xml",
 					// NOTE: Custom MIME types
+					"image/png",
 					"image/svg+xml"
 				};
 			});
