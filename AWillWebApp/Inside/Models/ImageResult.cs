@@ -1,5 +1,7 @@
 ﻿// <copyright file="ImageResult.cs" company="AWill Inc">
 // Copyright (c) 2018 AWill Inc; All rights reserved.
+// Inspired by
+// https://blogs.msdn.microsoft.com/miah/2008/11/13/extending-mvc-returning-an-image-from-a-controller-action/
 // </copyright>
 
 namespace AWillWebApp.Inside.Models
