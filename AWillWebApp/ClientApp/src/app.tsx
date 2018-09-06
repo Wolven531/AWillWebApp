@@ -14,6 +14,7 @@ import configureStore from './store/configureStore'
 // import MonsterSearcher from './MonsterSearcher'
 import { AllMonstersPage } from './containers/pages/AllMonstersPage'
 import { HomePage } from './containers/pages/HomePage'
+import { MyMonstersPage } from './containers/pages/MyMonstersPage'
 
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
@@ -63,6 +64,7 @@ class App extends React.Component {
 						<Router history={history}>
 							<React.Fragment>
 								<PrivateRoute exact path="/" component={HomePage} />
+								<PrivateRoute exact path="/my-monsters" component={MyMonstersPage} />
 								<Route path="/login" component={Login} />
 								<Route path="/monsters" component={AllMonstersPage} />
 							</React.Fragment>
