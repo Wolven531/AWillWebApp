@@ -54,3 +54,8 @@ using System.Diagnostics.CodeAnalysis;
 	"SA1512:Single-line comments must not be followed by blank line",
 	Justification = "Fights with the auto commenter")
 ]
+[assembly: SuppressMessage(
+	"StyleCop.CSharp.ReadabilityRules",
+	"SA1413:Use trailing comma in multi-line initializers",
+	Justification = "Trailing commas are messy")
+]
