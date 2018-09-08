@@ -10,22 +10,23 @@
 		<UserSecretsId>04735408-c189-4813-853f-28d45c8538a4</UserSecretsId>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<StartupObject>AWillWebApp.Program</StartupObject>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="coverlet.msbuild" Version="2.2.1">
+		<PackageReference Include="Brotli.NET" Version="1.0.19" />
+		<PackageReference Include="coverlet.msbuild" Version="2.3.0">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.3" />
-		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.2-beta2">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta009">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="System.IO.Compression.Brotli" Version="0.1.0-e180119-3" />
+		<PackageReference Include="Microsoft.AspNetCore" Version="2.1.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.2" />
+		<PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.1" />
+		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.1" />
+		<PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
 		<!--
 			<PackageReference Include="System.Memory" Version="4.5.0-preview1-26119-04" />
 			<PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.0-preview1-26119-04" />
