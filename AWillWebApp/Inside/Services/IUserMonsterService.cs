@@ -16,7 +16,7 @@ namespace AWillWebApp.Inside.Services
 	public interface IUserMonsterService
 	{
 		/// <summary>
-		/// Returns the monster objects associated with a given user.
+		/// Return the monster objects associated with a given user.
 		/// </summary>
 		/// <param name="userId" type="System.Guid">The unique identifier of the user.</param>
 		/// <returns>A Task of type IEnumerable<Monster> representing the monsters associated with the userId.</returns>
