@@ -20,6 +20,7 @@ namespace AWillWebApp.Inside.Services
 	{
 		//private IUserAccountRepository _UserAccountRepository;
 		//private IMonsterRepository _MonsterRepository;
+		private readonly IUserMonsterRepository _UserMonsterRepository;
 		private ILogger<UserMonsterService> _Logger;
 
 		//public UserMonsterService(IUserAccountRepository userAccountRepository, IMonsterRepository monsterRepository, ILogger<UserMonsterService> logger)
@@ -29,8 +30,9 @@ namespace AWillWebApp.Inside.Services
 		//	_Logger = logger;
 		//}
 
-		public UserMonsterService(ILogger<UserMonsterService> logger)
+		public UserMonsterService(IUserMonsterRepository userMonsterRepository, ILogger<UserMonsterService> logger)
 		{
+			_UserMonsterRepository = userMonsterRepository;
 			_Logger = logger;
 		}
 
