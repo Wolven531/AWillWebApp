@@ -4,10 +4,12 @@ This repository makes use of several modern frontend and backend technologies an
 
 ## Technologies / Frameworks
 
-* dotnet core (2.1)
-* React (Typescript variant)
-* Redux
-* Cypress
+* dotnet core (`2.1.4xx`)
+* Cypress (`3.1.0`)
+* NodeJS (`10.10.0`)
+* NPM (`6.4.1`)
+* React (`16.4.2`) (Typescript variant)
+* Redux (`4.0.0`)
 * Visual Studio Code (for tasks)
 
 ## Current Code Coverage
@@ -17,6 +19,25 @@ This repository makes use of several modern frontend and backend technologies an
 ![Branch Coverage](/AWillWebApp.Tests/coverage-reports/badge_branchcoverage.svg) Branch Coverage
 
 ![Line Coverage](/AWillWebApp.Tests/coverage-reports/badge_linecoverage.svg) Line Coverage
+
+## Setup
+
+* Install Chocolatey (instructions [here](https://chocolatey.org/docs/installation#installing-chocolatey))
+* Install NodeJS: `choco install nodejs -y`
+* Update NPM: `npm i -g npm@latest`
+* Install frontend dependencies: `npm install` from `/AWillWebApp/ClientApp/`
+* Install backend dependencies `dotnet restore` from `/`
+* Trust local certs for HTTPS: `dotnet dev-certs https --trust`
+
+## First Run
+
+When visiting [https://localhost:5001](https://localhost:5001) for the first time on a machine, you will likely get a security exception.
+
+![localhost HTTPS security exception](/repo_images/invalid_cert.png)
+
+Make sure to add `https://localhost:5001` to the machines trusted list of exceptions, otherwise the site will be unusable (screenshot below is from Firefox).
+
+![add cert exception](/repo_images/add_cert_exception.png)
 
 ## Running
 
