@@ -10,7 +10,7 @@
 		<UserSecretsId>04735408-c189-4813-853f-28d45c8538a4</UserSecretsId>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<StartupObject>AWillWebApp.Program</StartupObject>
+		<StartupObject></StartupObject>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Brotli.NET" Version="1.0.19" />
