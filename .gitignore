@@ -267,4 +267,7 @@ AWillWebApp/ClientApp/dist/main.js
 AWillWebApp/Properties/PublishProfiles/*
 .vs/AWillWebApp/xs/*
 
-AWillWebApp.Tests/coverage-reports/AWillWebApp_*.htm
+AWillWebApp.Tests/coverage-reports/*.js
+AWillWebApp.Tests/coverage-reports/*.htm
+AWillWebApp.Tests/coverage-reports/*.css
+AWillWebApp.Tests/coverage-reports/icon*.svg
