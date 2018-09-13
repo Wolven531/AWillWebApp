@@ -11,6 +11,6 @@ namespace AWillWebApp.Outside.Repositories
 
 	public interface IUserMonsterRepository
 	{
-
+		Task<IEnumerable<UserMonster>> GetMonstersForUser(Guid userId);
 	}
 }

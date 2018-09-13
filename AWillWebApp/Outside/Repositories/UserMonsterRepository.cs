@@ -20,5 +20,10 @@ namespace AWillWebApp.Outside.Repositories
 			_UserMonsterMappings = userMonsterMappings;
 			_Logger = logger;
 		}
+
+		public Task<IEnumerable<UserMonster>> GetMonstersForUser(Guid userId)
+		{
+			return Task.FromResult(_UserMonsterMappings);
+		}
 	}
 }
