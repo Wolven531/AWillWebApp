@@ -6,7 +6,7 @@ namespace AWillWebApp.Outside.Repositories
 {
 	using System;
 	using System.Collections.Generic;
-	using System.Threading.Tasks;
+	using System.Linq;
 	using AWillWebApp.Inside.Models;
 	using Microsoft.Extensions.Logging;
 
@@ -21,9 +21,9 @@ namespace AWillWebApp.Outside.Repositories
 			_Logger = logger;
 		}
 
-		public Task<IEnumerable<UserMonster>> GetMonstersForUser(Guid userId)
+		public IEnumerable<UserMonster> GetMonstersForUser(Guid userId)
 		{
-			return Task.FromResult(_UserMonsterMappings);
+			return _UserMonsterMappings.Where(userMonster => userMonster.User.Id == userId);
 		}
 	}
 }

@@ -6,11 +6,10 @@ namespace AWillWebApp.Outside.Repositories
 {
 	using System;
 	using System.Collections.Generic;
-	using System.Threading.Tasks;
 	using AWillWebApp.Inside.Models;
 
 	public interface IUserMonsterRepository
 	{
-		Task<IEnumerable<UserMonster>> GetMonstersForUser(Guid userId);
+		IEnumerable<UserMonster> GetMonstersForUser(Guid userId);
 	}
 }
