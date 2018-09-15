@@ -35,7 +35,7 @@ When visiting [https://localhost:5001](https://localhost:5001) for the first tim
 
 ![localhost HTTPS security exception](/repo_images/invalid_cert.png)
 
-Make sure to add `https://localhost:5001` to the machines trusted list of exceptions, otherwise the site will be unusable (screenshot below is from Firefox).
+Make sure to add `https://localhost:5001` to the trusted list of exceptions for that machine, otherwise the site will be unusable on that machine (screenshot below is from Firefox).
 
 ![add cert exception](/repo_images/add_cert_exception.png)
 
