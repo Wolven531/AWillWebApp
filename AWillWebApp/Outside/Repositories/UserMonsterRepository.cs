@@ -21,6 +21,11 @@ namespace AWillWebApp.Outside.Repositories
 			_Logger = logger;
 		}
 
+		//public void AddMonsterToUser(Guid monsterId, Guid userId)
+		//{
+		//	throw new NotImplementedException();
+		//}
+
 		public IEnumerable<UserMonster> GetMonstersForUser(Guid userId)
 		{
 			return _UserMonsterMappings.Where(userMonster => userMonster.User.Id == userId);

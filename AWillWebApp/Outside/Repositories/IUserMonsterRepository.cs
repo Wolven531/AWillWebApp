@@ -11,5 +11,7 @@ namespace AWillWebApp.Outside.Repositories
 	public interface IUserMonsterRepository
 	{
 		IEnumerable<UserMonster> GetMonstersForUser(Guid userId);
+
+		//void AddMonsterToUser(Guid monsterId, Guid userId);
 	}
 }
