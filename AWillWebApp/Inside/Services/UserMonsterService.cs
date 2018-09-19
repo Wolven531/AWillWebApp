@@ -43,7 +43,10 @@ namespace AWillWebApp.Inside.Services
 		/// <returns>A Task of type IEnumerable<Monster> representing the monsters associated with the userId.</returns>
 		public Task<IEnumerable<Monster>> GetMonstersForUserAsync(Guid userId)
 		{
-			return Task.FromResult(Enumerable.Empty<Monster>());
+			var monsters = _UserMonsterRepository.GetMonstersForUser(userId);
+			_Logger.LogDebug($"Returning {monsters.Count()} monsters for user with id = ${userId}...");
+
+			return Task.FromResult(monsters.Select(userMonster => userMonster.Monster));
 		}
 	}
 }
