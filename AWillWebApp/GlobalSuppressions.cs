@@ -59,3 +59,8 @@ using System.Diagnostics.CodeAnalysis;
 	"SA1413:Use trailing comma in multi-line initializers",
 	Justification = "Trailing commas are messy")
 ]
+[assembly: SuppressMessage(
+	"StyleCop.CSharp.NamingRules",
+	"SA1300:Element must begin with upper-case letter",
+	Justification = "Ugly variable names")
+]
