@@ -5,6 +5,7 @@
 namespace AWillWebApp.Tests.Outside.Repositories
 {
 	using System;
+	using System.Collections.Generic;
 	using System.Diagnostics.CodeAnalysis;
 	using System.Linq;
 	using AWillWebApp.Inside.Models;
@@ -23,7 +24,7 @@ namespace AWillWebApp.Tests.Outside.Repositories
 		public void GetMonstersForUser_WhenUserMonsterRepositoryIsEmpty_ShouldReturnEmptyList()
 		{
 			// Setup
-			_fixture = new UserMonsterRepository(Enumerable.Empty<UserMonster>(), NullLogger<UserMonsterRepository>.Instance);
+			_fixture = new UserMonsterRepository(new Dictionary<UserAccount, IEnumerable<Monster>>(), NullLogger<UserMonsterRepository>.Instance);
 			var expected = Enumerable.Empty<UserMonster>();
 
 			// Execute
@@ -49,11 +50,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			};
 
 			_fixture = new UserMonsterRepository(
-				new[]
+				new Dictionary<UserAccount, IEnumerable<Monster>>
 				{
-					new UserMonster(userAccount1, monster1),
-					new UserMonster(userAccount1, monster2),
-					new UserMonster(userAccount2, monster1),
+					{ userAccount1, new[] { monster1, monster2 } },
+					{ userAccount2, new[] { monster1 } }
 				}, NullLogger<UserMonsterRepository>.Instance);
 
 			// Execute
@@ -74,11 +74,10 @@ namespace AWillWebApp.Tests.Outside.Repositories
 			var expected = Enumerable.Empty<UserMonster>();
 
 			_fixture = new UserMonsterRepository(
-				new[]
+				new Dictionary<UserAccount, IEnumerable<Monster>>
 				{
-					new UserMonster(userAccount1, monster1),
-					new UserMonster(userAccount1, monster2),
-					new UserMonster(userAccount2, monster1),
+					{ userAccount1, new[] { monster1, monster2 } },
+					{ userAccount2, new[] { monster1 } }
 				}, NullLogger<UserMonsterRepository>.Instance);
 
 			// Execute

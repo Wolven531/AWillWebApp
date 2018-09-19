@@ -12,14 +12,16 @@ namespace AWillWebApp.Outside.Repositories
 
 	public class UserMonsterRepository : IUserMonsterRepository
 	{
-		private readonly IEnumerable<UserMonster> _UserMonsterMappings;
+		private readonly IDictionary<UserAccount, IEnumerable<Monster>> _UserMonsterMappings;
 		private readonly ILogger<UserMonsterRepository> _Logger;
 
-		public UserMonsterRepository(IEnumerable<UserMonster> userMonsterMappings, ILogger<UserMonsterRepository> logger)
+		public UserMonsterRepository(IDictionary<UserAccount, IEnumerable<Monster>> userMonsterMappings, ILogger<UserMonsterRepository> logger)
 		{
 			_UserMonsterMappings = userMonsterMappings;
 			_Logger = logger;
 		}
+
+		private IEnumerable<Guid> _UserIds => _UserMonsterMappings.Keys.Select(userAccount => userAccount.Id);
 
 		//public void AddMonsterToUser(Guid monsterId, Guid userId)
 		//{
@@ -28,7 +30,15 @@ namespace AWillWebApp.Outside.Repositories
 
 		public IEnumerable<UserMonster> GetMonstersForUser(Guid userId)
 		{
-			return _UserMonsterMappings.Where(userMonster => userMonster.User.Id == userId);
+			if (!_UserIds.Contains(userId))
+			{
+				return Enumerable.Empty<UserMonster>();
+			}
+
+			var user = _UserMonsterMappings.Keys.First(userAccount => userAccount.Id == userId);
+			var relevantUserMonsters = _UserMonsterMappings[user].Select(monster => new UserMonster(user, monster));
+
+			return relevantUserMonsters;
 		}
 	}
 }
