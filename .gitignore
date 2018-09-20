@@ -267,6 +267,7 @@ AWillWebApp/ClientApp/dist/main.js
 AWillWebApp/Properties/PublishProfiles/*
 .vs/AWillWebApp/xs/*
 .vs/slnx.sqlite
+.vs/VSWorkspaceState.json
 
 AWillWebApp.Tests/coverage-reports/*.js
 AWillWebApp.Tests/coverage-reports/*.htm
