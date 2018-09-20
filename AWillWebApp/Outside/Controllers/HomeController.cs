@@ -8,7 +8,7 @@ namespace AWillWebApp.Controllers
 
 	public class HomeController : Controller
 	{
-		// GET: /<controller>/
+		// GET: /
 		public IActionResult Index()
 		{
 			return View();
