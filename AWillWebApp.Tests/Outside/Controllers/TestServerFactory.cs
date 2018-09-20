@@ -9,27 +9,19 @@ namespace AWillWebApp.Tests.Outside.Controllers
 	using Microsoft.AspNetCore.TestHost;
 	using Microsoft.Extensions.Configuration;
 	using Microsoft.Extensions.DependencyInjection;
+	using Microsoft.Extensions.Logging;
 	using Moq;
-
-	public enum LogLevel
-	{
-		Trace,
-		Debug,
-		Information,
-		Warning,
-		Error
-	}
 
 	public static class TestServerFactory
 	{
 		public static TestServer CreateTestServer()
 		{
-			return new TestServer(CreateWebHostBuilder<TestStartup>());
+			return new TestServer(CreateWebHostBuilder<Startup>());
 		}
 
 		public static TestServer CreateTestServer(Action<IServiceCollection> customServices)
 		{
-			return new TestServer(CreateWebHostBuilder<TestStartup>().ConfigureServices(customServices));
+			return new TestServer(CreateWebHostBuilder<Startup>().ConfigureServices(customServices));
 		}
 
 		public static IServiceScope CreateServiceScope(Action<IServiceCollection> customServices)
@@ -55,15 +47,15 @@ namespace AWillWebApp.Tests.Outside.Controllers
 				})
 				.ConfigureLogging((context, builder) =>
 				{
-					//builder.ClearProviders();
-					//var logLevelString = context.Configuration["LogLevel"];
-					//var appLogLevel = LogLevel.Information;
-					//if (logLevelString != null)
-					//{
-					//	appLogLevel = Enum.Parse<LogLevel>(logLevelString);
-					//}
-					//builder.AddFilter(level => level >= appLogLevel);
-					//builder.AddConsole();
+					builder.ClearProviders();
+					var logLevelString = context.Configuration["LogLevel"];
+					var appLogLevel = LogLevel.Information;
+					if (logLevelString != null)
+					{
+						appLogLevel = Enum.Parse<LogLevel>(logLevelString);
+					}
+					builder.AddFilter(level => level >= appLogLevel);
+					builder.AddConsole();
 				})
 				.UseStartup<T>();
 		}
