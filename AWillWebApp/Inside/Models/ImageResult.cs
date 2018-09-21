@@ -40,6 +40,7 @@ namespace AWillWebApp.Inside.Models
 
 			response.StatusCode = (int)HttpStatusCode.OK;
 			response.ContentType = ContentType;
+			response.ContentLength = ImageStream.Length;
 
 			while (shouldReadStream)
 			{
