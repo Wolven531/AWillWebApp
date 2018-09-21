@@ -8,7 +8,9 @@ namespace AWillWebApp.Tests.Outside.Controllers
 	using Microsoft.AspNetCore.TestHost;
 	using Microsoft.Extensions.DependencyInjection;
 
+#pragma warning disable CA1063 // Implement IDisposable Correctly
 	public abstract class TestServerFixture : IDisposable
+#pragma warning restore CA1063 // Implement IDisposable Correctly
 	{
 #pragma warning disable SA1401 // Fields must be private
 #pragma warning disable CA1051 // Do not declare visible instance fields
@@ -27,26 +29,21 @@ namespace AWillWebApp.Tests.Outside.Controllers
 			});
 		}
 
+#pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
+#pragma warning disable CA1063 // Implement IDisposable Correctly
 		public virtual void Dispose()
+#pragma warning restore CA1063 // Implement IDisposable Correctly
+#pragma warning restore CA1816 // Dispose methods should call SuppressFinalize
 		{
 			TestServer?.Dispose();
+			Dispose(true);
+			GC.SuppressFinalize(this);
+			return;
 		}
 
-//#pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
-//#pragma warning disable CA1063 // Implement IDisposable Correctly
-//		public virtual void Dispose()
-//#pragma warning restore CA1063 // Implement IDisposable Correctly
-//#pragma warning restore CA1816 // Dispose methods should call SuppressFinalize
-//		{
-//			TestServer?.Dispose();
-//			Dispose(true);
-//			GC.SuppressFinalize(this);
-//			return;
-//		}
-
-//		protected virtual void Dispose(bool cleanManagedAndNative)
-//		{
-//		}
+		protected virtual void Dispose(bool cleanManagedAndNative)
+		{
+		}
 
 		protected T GetService<T>()
 		{
