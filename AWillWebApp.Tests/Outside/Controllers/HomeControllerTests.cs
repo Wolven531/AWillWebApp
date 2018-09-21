@@ -14,6 +14,7 @@ namespace AWillWebApp.Tests.Outside.Controllers
 
 	[SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "Test names should contain underscores for readability")]
 	[SuppressMessage("StyleCop.CSharp.OrderingRules", "SA1202:Elements must be ordered by access", Justification = "Degrades test readability")]
+	[SuppressMessage("Style", "VSTHRD200:Use \"Async\" suffix for async methods", Justification = "Test names do not need Async")]
 	[TestClass]
 	public class HomeControllerTests : TestServerFixture
 	{
