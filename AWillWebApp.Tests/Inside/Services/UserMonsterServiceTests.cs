@@ -18,6 +18,7 @@ namespace AWillWebApp.Tests.Inside.Services
 	using Moq;
 
 	[SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "Test names should contain underscores for readability")]
+	[SuppressMessage("Style", "VSTHRD200:Use \"Async\" suffix for async methods", Justification = "Test names do not need Async")]
 	[TestClass]
 	public class UserMonsterServiceTests
 	{
