@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2018-09-21_21-33-03" tag="">
+  <assembly name="AWillWebApp">
+    <class name="AWillWebApp.Controllers.HomeController" coveredlines="3" coverablelines="3" totallines="17" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Controllers.ImageController" coveredlines="21" coverablelines="21" totallines="67" coveredbranches="2" totalbranches="4" />
+    <class name="AWillWebApp.Controllers.MonsterController" coveredlines="0" coverablelines="26" totallines="99" coveredbranches="0" totalbranches="4" />
+    <class name="AWillWebApp.Controllers.UserAccountController" coveredlines="21" coverablelines="21" totallines="59" coveredbranches="4" totalbranches="4" />
+    <class name="AWillWebApp.Controllers.UserAuthenticationController" coveredlines="14" coverablelines="14" totallines="42" coveredbranches="1" totalbranches="2" />
+    <class name="AWillWebApp.Inside.Models.JSONContent" coveredlines="4" coverablelines="4" totallines="19" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Inside.Models.LoginData" coveredlines="2" coverablelines="2" totallines="18" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Inside.Models.Monster" coveredlines="39" coverablelines="39" totallines="77" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Inside.Models.SearchResult" coveredlines="13" coverablelines="13" totallines="37" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Inside.Models.UserAccount" coveredlines="52" coverablelines="52" totallines="106" coveredbranches="5" totalbranches="6" />
+    <class name="AWillWebApp.Inside.Models.UserMonster" coveredlines="7" coverablelines="7" totallines="23" coveredbranches="0" totalbranches="0" />
+    <class name="AWillWebApp.Inside.Services.MonsterService" coveredlines="70" coverablelines="70" totallines="113" coveredbranches="17" totalbranches="20" />
+    <class name="AWillWebApp.Inside.Services.UserAuthenticationService" coveredlines="9" coverablelines="9" totallines="30" coveredbranches="3" totalbranches="4" />
+    <class name="AWillWebApp.Inside.Services.UserMonsterService" coveredlines="10" coverablelines="10" totallines="52" coveredbranches="2" totalbranches="2" />
+    <class name="AWillWebApp.Outside.Repositories.MonsterRepository" coveredlines="34" coverablelines="34" totallines="64" coveredbranches="10" totalbranches="10" />
+    <class name="AWillWebApp.Outside.Repositories.UserAccountRepository" coveredlines="36" coverablelines="36" totallines="69" coveredbranches="8" totalbranches="8" />
+    <class name="AWillWebApp.Outside.Repositories.UserMonsterRepository" coveredlines="14" coverablelines="14" totallines="44" coveredbranches="4" totalbranches="4" />
+  </assembly>
+  <assembly name="AWillWebApp.Views" />
+</coverage>
