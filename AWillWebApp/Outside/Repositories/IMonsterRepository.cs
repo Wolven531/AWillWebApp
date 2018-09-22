@@ -15,7 +15,7 @@ namespace AWillWebApp.Outside.Repositories
 
 		Task<IEnumerable<string>> GetMonsterNames();
 
-		Task<IEnumerable<Monster>> GetMonsters();
+		Task<IEnumerable<Monster>> GetMonsters(bool withImages = false);
 
 		Task<Monster> AddMonster(Monster newMonster);
 	}

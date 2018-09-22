@@ -36,7 +36,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		{
 			// Setup
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(Enumerable.Empty<Monster>());
 
 			var expected = Enumerable.Empty<string>();
@@ -54,7 +54,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		{
 			// Setup
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
 
 			var expected = GenerateMonsters(new[] { Element.Dark, Element.Fire }).Select(monster =>
@@ -88,7 +88,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		{
 			// Setup
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(true))
 				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
 
 			var expected = GenerateMonsters(new[] { Element.Dark, Element.Fire });
@@ -174,7 +174,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		{
 			// Setup
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(Enumerable.Empty<Monster>());
 			var expected = Enumerable.Empty<SearchResult>();
 
@@ -192,7 +192,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 
 			var expected = new[]
@@ -214,7 +214,7 @@ namespace AWillWebApp.Tests.Inside.Services
 		{
 			// Setup
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(GenerateMonsters(new[] { Element.Dark, Element.Fire }));
 			var expected = Enumerable.Empty<SearchResult>();
 
@@ -232,7 +232,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
@@ -250,7 +250,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
@@ -268,7 +268,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
@@ -286,7 +286,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
@@ -304,7 +304,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
@@ -322,7 +322,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
@@ -340,7 +340,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
@@ -358,7 +358,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 
@@ -376,7 +376,7 @@ namespace AWillWebApp.Tests.Inside.Services
 			// Setup
 			var monsters = GenerateMonsters(new[] { Element.Dark, Element.Fire });
 			_mockMonsterRepository
-				.Setup(repository => repository.GetMonsters())
+				.Setup(repository => repository.GetMonsters(false))
 				.ReturnsAsync(monsters);
 			var expected = new[] { new SearchResult(1, monsters.ElementAt(0)) };
 

@@ -36,7 +36,15 @@ namespace AWillWebApp.Outside.Repositories
 			return Task.FromResult(allNames.AsEnumerable());
 		}
 
-		public Task<IEnumerable<Monster>> GetMonsters() => Task.FromResult(_monsters.AsEnumerable());
+		public Task<IEnumerable<Monster>> GetMonsters(bool withImages = false)
+		{
+			if (!withImages)
+			{
+				return Task.FromResult(StripMonsterImages(_monsters));
+			}
+
+			return Task.FromResult(_monsters.AsEnumerable());
+		}
 
 		public Task<Monster> AddMonster(Monster newMonster)
 		{
@@ -60,5 +68,25 @@ namespace AWillWebApp.Outside.Repositories
 
 			return Task.FromResult(newMonster);
 		}
+
+		private static IEnumerable<Monster> StripMonsterImages(IEnumerable<Monster> monsters) => monsters.Select(StripMonsterImages);
+
+		private static Monster StripMonsterImages(Monster monster) =>
+			new Monster(
+				monster.AwakenedName,
+				monster.Name,
+				monster.Rating,
+				monster.Element,
+				string.Empty,
+				string.Empty,
+				monster.EarlyRuneList,
+				monster.EarlyRuneValues,
+				monster.LateRuneList,
+				monster.LateRuneValues,
+				monster.StatPriority)
+			{
+				Id = monster.Id,
+				Number = monster.Number
+			};
 	}
 }

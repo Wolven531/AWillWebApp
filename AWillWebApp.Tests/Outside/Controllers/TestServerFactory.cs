@@ -16,12 +16,14 @@ namespace AWillWebApp.Tests.Outside.Controllers
 	{
 		public static TestServer CreateTestServer()
 		{
-			return new TestServer(CreateWebHostBuilder<Startup>());
+			//return new TestServer(CreateWebHostBuilder<Startup>());
+			return new TestServer(CreateWebHostBuilder<TestStartup>());
 		}
 
 		public static TestServer CreateTestServer(Action<IServiceCollection> customServices)
 		{
-			return new TestServer(CreateWebHostBuilder<Startup>().ConfigureServices(customServices));
+			//return new TestServer(CreateWebHostBuilder<Startup>().ConfigureServices(customServices));
+			return new TestServer(CreateWebHostBuilder<TestStartup>().ConfigureServices(customServices));
 		}
 
 		public static IServiceScope CreateServiceScope(Action<IServiceCollection> customServices)
