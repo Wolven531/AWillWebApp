@@ -16,6 +16,7 @@ namespace AWillWebApp
 	using Microsoft.AspNetCore.Http;
 	using Microsoft.AspNetCore.Mvc;
 	using Microsoft.AspNetCore.ResponseCompression;
+	using Microsoft.Extensions.Configuration;
 	//using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 	//using Microsoft.AspNetCore.SpaServices.StaticFiles;
 	//using Microsoft.AspNetCore.SpaServices.Webpack;
@@ -25,13 +26,17 @@ namespace AWillWebApp
 	using Newtonsoft.Json;
 
 	[ExcludeFromCodeCoverage]
-	public sealed class Startup
+	public class Startup
 	{
 		private readonly ILogger<Startup> _logger;
+		private readonly IConfiguration _configuration;
+		private readonly IHostingEnvironment _hostingEnvironment;
 
-		public Startup(ILogger<Startup> logger)
+		public Startup(ILogger<Startup> logger, IConfiguration configuration, IHostingEnvironment hostingEnvironment)
 		{
 			_logger = logger;
+			_configuration = configuration;
+			_hostingEnvironment = hostingEnvironment;
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
