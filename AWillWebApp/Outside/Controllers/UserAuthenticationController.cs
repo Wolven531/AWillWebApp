@@ -27,7 +27,7 @@ namespace AWillWebApp.Controllers
 
 		// POST: api/auth
 		[HttpPost]
-		public async Task<JsonResult> AttemptToAuthenticateUser([FromBody] LoginData authenticationData)
+		public async Task<JsonResult> AttemptToAuthenticateUserAsync([FromBody] LoginData authenticationData)
 		{
 			_logger.LogDebug($"Attempting to authenticate `{authenticationData.Username}`...");
 			var wasSuccessful = await _UserAuthenticationService.AuthenticateUserAsync(authenticationData);
