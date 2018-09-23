@@ -64,3 +64,13 @@ using System.Diagnostics.CodeAnalysis;
 	"SA1300:Element must begin with upper-case letter",
 	Justification = "Ugly variable names")
 ]
+[assembly: SuppressMessage(
+	"Design",
+	"CA1063:Implement IDisposable Correctly",
+	Justification = "Unnecessary")
+]
+[assembly: SuppressMessage(
+	"Usage",
+	"CA1816:Dispose methods should call SuppressFinalize",
+	Justification = "Unnecessary")
+]
