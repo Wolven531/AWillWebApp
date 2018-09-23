@@ -14,21 +14,21 @@ namespace AWillWebApp
 	using Microsoft.Extensions.DependencyInjection;
 	using Microsoft.Extensions.Logging;
 
-	//public class TestStartup : Startup
-	public class TestStartup
+	public class TestStartup : Startup
+	//public class TestStartup
 	{
 		//protected override void AddWebpackMiddleware(IApplicationBuilder app)
 		//{
 		//}
 
 		public TestStartup(ILogger<Startup> logger, IConfiguration configuration, IHostingEnvironment hostingEnvironment)
-			//: base(logger, configuration, hostingEnvironment)
+			: base(logger, configuration, hostingEnvironment)
 		{
 		}
 
-		// NOTE: Overwrite the Configure from Startup
-		//public static new void Configure(IApplicationBuilder app, IHostingEnvironment env)
-		public static void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		//// NOTE: Overwrite the Configure from Startup
+		////public static new void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		public new void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
 			app.UseHsts();
 			app.UseHttpsRedirection();
@@ -42,8 +42,8 @@ namespace AWillWebApp
 		}
 
 		// NOTE: Overwrite the ConfigureServices from Startup
-		//public new void ConfigureServices(IServiceCollection services)
-		public void ConfigureServices(IServiceCollection services)
+		public new void ConfigureServices(IServiceCollection services)
+		//public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddLogging();
 			services.AddHttpsRedirection(options =>

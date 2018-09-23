@@ -29,21 +29,26 @@ namespace AWillWebApp.Tests.Outside.Controllers
 			});
 		}
 
-#pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
-#pragma warning disable CA1063 // Implement IDisposable Correctly
-		public virtual void Dispose()
-#pragma warning restore CA1063 // Implement IDisposable Correctly
-#pragma warning restore CA1816 // Dispose methods should call SuppressFinalize
+		public void Dispose()
 		{
-			TestServer?.Dispose();
-			Dispose(true);
-			GC.SuppressFinalize(this);
-			return;
+			TestServer.Dispose();
 		}
 
-		protected virtual void Dispose(bool cleanManagedAndNative)
-		{
-		}
+		//#pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
+		//#pragma warning disable CA1063 // Implement IDisposable Correctly
+		//		public virtual void Dispose()
+		//#pragma warning restore CA1063 // Implement IDisposable Correctly
+		//#pragma warning restore CA1816 // Dispose methods should call SuppressFinalize
+		//		{
+		//			TestServer?.Dispose();
+		//			Dispose(true);
+		//			GC.SuppressFinalize(this);
+		//			return;
+		//		}
+
+		//		protected virtual void Dispose(bool cleanManagedAndNative)
+		//		{
+		//		}
 
 		protected T GetService<T>()
 		{
