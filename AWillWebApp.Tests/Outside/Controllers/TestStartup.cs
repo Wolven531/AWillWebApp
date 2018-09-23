@@ -17,6 +17,8 @@ namespace AWillWebApp
 	public class TestStartup : Startup
 	//public class TestStartup
 	{
+		private readonly ILogger<Startup> _Logger;
+
 		//protected override void AddWebpackMiddleware(IApplicationBuilder app)
 		//{
 		//}
@@ -24,12 +26,14 @@ namespace AWillWebApp
 		public TestStartup(ILogger<Startup> logger, IConfiguration configuration, IHostingEnvironment hostingEnvironment)
 			: base(logger, configuration, hostingEnvironment)
 		{
+			_Logger = logger;
 		}
 
 		//// NOTE: Overwrite the Configure from Startup
 		////public static new void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		public new void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
+			_Logger.LogDebug($"env = {env}");
 			app.UseHsts();
 			app.UseHttpsRedirection();
 			app.UseResponseCompression();
