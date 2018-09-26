@@ -8,6 +8,7 @@ namespace AWillWebApp.Tests.Outside.Controllers
 	using System.Diagnostics.CodeAnalysis;
 	using System.Linq;
 	using System.Net;
+	using System.Net.Http.Headers;
 	using System.Threading.Tasks;
 	using AWillWebApp.Controllers;
 	using AWillWebApp.Inside.Models;
@@ -152,11 +153,16 @@ namespace AWillWebApp.Tests.Outside.Controllers
 			//_MockMonsterService.Verify(s => s.SearchMonsterNamesAsync(string.Empty), Times.Once);
 			//_MockMonsterRepository.VerifyAll();
 			//searchParam.Should().BeEquivalentTo(string.Empty);
+			var responseMessage = response.EnsureSuccessStatusCode();
 
+			// NOTE: Assert general request/response flow worked
+			responseMessage.IsSuccessStatusCode.Should().BeTrue();
+			// NOTE: Assert response content type
+			responseMessage.Content.Headers.ContentType.Should().BeEquivalentTo(new MediaTypeHeaderValue("application/json") { CharSet = "utf-8" });
+			// NOTE: Assert specific response status code
 			response.StatusCode.Should().Be(HttpStatusCode.OK);
-			response.Content.Headers.ContentType.MediaType.Should().Be("application/json");
 
-			var actual = JsonConvert.DeserializeObject<SearchResult[]>(await response.Content.ReadAsStringAsync());
+			//var actual = JsonConvert.DeserializeObject<SearchResult[]>(await response.Content.ReadAsStringAsync());
 			//actual.Select(searchResult => searchResult.ResultNumber).Should().BeEquivalentTo(new[] { 1, 2 });
 			//actual.Select(searchResult => searchResult.Name).Should().BeEquivalentTo(new[] { "", "" });
 		}
