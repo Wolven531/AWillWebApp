@@ -57,5 +57,5 @@ The easiest way to run any part of this project is to use the Visual Studio Code
 #### Install dotnet ReportGenerator
 
 ```DOS
-dotnet tool install --global dotnet-reportgenerator-globaltool --version 4.0.0-rc4
+dotnet tool install --global dotnet-reportgenerator-globaltool --version 4.0.0-rc5
 ```
